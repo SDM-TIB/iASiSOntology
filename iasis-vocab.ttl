@@ -6,7 +6,10 @@
 @prefix ssn: <http://www.w3.org/ns/ssn/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
-#########Classes
+##########################################################################################
+################################## Classes ############################################
+##########################################################################################
+
 iasis:Concept 	rdf:type	owl:Class;
 		rdfs:label	"Concept";
 		rdfs:comment "Constituents of thoughts or real world entities.";
@@ -15,7 +18,7 @@ iasis:Concept 	rdf:type	owl:Class;
 
 iasis:Annotation	rdf:type	owl:Class;
 			rdfs:label	"Annotation";
-			rdfs:comment "Explanation of a concept inclduing label, id and source of concept.";
+			rdfs:comment "Explanation of a concept including label, id and source of concept.";
 			dcterms:modified "2017-07-24"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
@@ -318,7 +321,7 @@ iasis:LiquidBiopsyObservation	rdf:type	owl:Class;
 
 
 ##########################################################################################
-########################### Properties ###################################################
+################################## Properties ############################################
 ##########################################################################################
 
 
