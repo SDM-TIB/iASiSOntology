@@ -327,14 +327,14 @@ iasis:id	rdf:type	owl:ObjectProperty;
 		rdfs:label	"AnnotationID";
 		rdfs:domain iasis:Annotation;
 		rdfs:range	rdfs:Literal;
-		rdfs:comment	"Identification of insances of Annotation class";	
+		rdfs:comment	"Identification of instances of Annotation class";	
 		dcterms:modified "2017-07-24"^^xsd:date;
 		dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
 iasis:id	rdfs:label	"ConceptID";
 		rdfs:domain iasis:Concept;
 		rdfs:range	rdfs:Literal;
-		rdfs:comment	"Identification of insances of Concept class";
+		rdfs:comment	"Identification of instances of Concept class";
 		dcterms:modified "2017-07-24"^^xsd:date;
 		dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
@@ -753,123 +753,140 @@ iasis:total_cn 	rdf:type owl:DatatypeProperty;
 		dcterms:creator <https://www.l3s.de/de/user/jozashoori>. 
 
 iasis:minor_allele 	rdf:type owl:DatatypeProperty;
-					rdfs:label	"minorAllele";
-					rdfs:domain iasis:CNV;
-				   	rdfs:range rdfs:Literal;
-					rdfs:comment	"Number of copies of the least frequent allele.";
-                  	dce:creator iasis:samaneh.
+			rdfs:label	"minorAllele";
+			rdfs:domain iasis:CNV;
+			rdfs:range rdfs:Literal;
+			rdfs:comment	"Number of copies of the least frequent allele.";
+			dcterms:modified "2017-07-24"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:methylation 	rdf:type owl:DatatypeProperty;
-					rdfs:label	"methylation";
-					rdfs:domain	iasis:CGI;
-					rdfs:range	rdfs:Literal;
-					rdfs:comment	"Methylation level: H (High) : beta-value > 0.8, L (Low) : beta-value < 0.2 ";
-                  	dce:creator iasis:samaneh.
+			rdfs:label	"methylation";
+			rdfs:domain	iasis:CGI;
+			rdfs:range	rdfs:Literal;
+			rdfs:comment	"Methylation level: H (High) : beta-value > 0.8, L (Low) : beta-value < 0.2 ";
+			dcterms:modified "2017-07-24"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 		
 iasis:zygosity	rdf:type owl:DatatypeProperty;
-				rdfs:label	"Zygosity";
-				rdfs:domain	iasis:Mutation;
-				rdfs:range	rdfs:Literal;	
-				rdfs:comment	"Information on whether the mutation was reported to be homozygous or heterozygous within the sample.";
-               	dce:creator iasis:samaneh.
+		rdfs:label	"Zygosity";
+		rdfs:domain	iasis:Mutation;
+		rdfs:range	rdfs:Literal;	
+		rdfs:comment	"Information on whether the mutation was reported to be homozygous or heterozygous within the sample.";
+		dcterms:modified "2017-07-24"^^xsd:date;
+		dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:loh	rdf:type owl:DatatypeProperty;
-			rdfs:label	"LOH";
-			rdfs:domain	iasis:Mutation;
-			rdfs:range	rdfs:Literal;
-			rdfs:comment	"LOH information on whether the gene was reported to have Loss of heterozygosity (a common genetic event in cancer development) in the sample. ";
-			dce:creator iasis:samaneh.
+		rdfs:label	"LOH";
+		rdfs:domain	iasis:Mutation;
+		rdfs:range	rdfs:Literal;
+		rdfs:comment	"LOH information on whether the gene was reported to have Loss of heterozygosity (a common genetic event in cancer development) in the sample. ";
+		dcterms:modified "2017-07-24"^^xsd:date;
+		dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:snp	rdf:type owl:DatatypeProperty;
-			rdfs:label	"SNP";
-			rdfs:domain	iasis:Mutation;
-			rdfs:range	rdfs:Literal;
-			rdfs:comment	"All the known SNPs are flagged as: is SNP.";
-            dce:creator iasis:samaneh.
+		rdfs:label	"SNP";
+		rdfs:domain	iasis:Mutation;
+		rdfs:range	rdfs:Literal;
+		rdfs:comment	"All the known SNPs are flagged as: is SNP.";
+		dcterms:modified "2017-07-24"^^xsd:date;
+		dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:regulation	rdf:type owl:DatatypeProperty;
-					rdfs:label	"Regulation";
-					rdfs:domain	iasis:GExp;
-					rdfs:range	rdfs:Literal;
-					rdfs:comment	"It could be over or under depending on the scores from different platforms if they are above or below the threshold.";
-            		dce:creator iasis:samaneh.
+			rdfs:label	"Regulation";
+			rdfs:domain	iasis:GExp;
+			rdfs:range	rdfs:Literal;
+			rdfs:comment	"It could be over or under depending on the scores from different platforms if they are above or below the threshold.";
+			dcterms:modified "2017-07-24"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:mutationDescription	rdf:type owl:DatatypeProperty;
-							rdfs:label	"mutationDescription";
-							rdfs:domain	iasis:Mutation;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment "Is extracted from mutation dataset. ";
-            				dce:creator iasis:samaneh.
+				rdfs:label	"mutationDescription";
+				rdfs:domain	iasis:Mutation;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment "Is extracted from mutation dataset. ";
+				dcterms:modified "2017-07-24"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:mutationType	rdf:type owl:DatatypeProperty;
-					rdfs:label	"MutationType";
-					rdfs:domain	iasis:CNV;
-					rdfs:range	rdfs:Literal;
-					rdfs:comment "Is extracted from CNV dataset";
-            		dce:creator iasis:samaneh.
+			rdfs:label	"MutationType";
+			rdfs:domain	iasis:CNV;
+			rdfs:range	rdfs:Literal;
+			rdfs:comment "Is extracted from CNV dataset";
+			dcterms:modified "2017-07-24"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:gene_isRelatedTo_sample	rdf:type	owl:ObjectProperty;
-								rdfs:label	"gene_isRelatedTo_sample";
-								rdfs:domain	iasis:Gene;
-								rdfs:range	iasis:Sample;
-								rdfs:comment "Relation between Gene and Sample classes.";
-								dce:creator	iasis:samaneh.
+				rdfs:label	"gene_isRelatedTo_sample";
+				rdfs:domain	iasis:Gene;
+				rdfs:range	iasis:Sample;
+				rdfs:comment "Relation between Gene and Sample classes.";
+				dcterms:modified "2017-07-24"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:cgi_isLocatedIn_gene	rdf:type owl:ObjectProperty;
-							rdfs:label	"cgi_isLocatedIn_gene";
-							rdfs:domain iasis:CGI;
-				 			rdfs:range iasis:Gene;
-							rdfs:comment	"Relation between CGI and Gene classes.";
-                 			dce:creator iasis:samaneh.
+				rdfs:label	"cgi_isLocatedIn_gene";
+				rdfs:domain iasis:CGI;
+				rdfs:range iasis:Gene;
+				rdfs:comment	"Relation between CGI and Gene classes.";
+				dcterms:modified "2017-07-24"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:cgi_isLocatedIn_sample	rdf:type owl:ObjectProperty;
-								rdfs:label	"cgi_isLocatedIn_sample";
-								rdfs:domain iasis:CGI;
-					 			rdfs:range iasis:Sample;
-								rdfs:comment	"Relation between CGI and Sample classes.";
-                 				dce:creator iasis:samaneh.
+				rdfs:label	"cgi_isLocatedIn_sample";
+				rdfs:domain iasis:CGI;
+				rdfs:range iasis:Sample;
+				rdfs:comment	"Relation between CGI and Sample classes.";
+				dcterms:modified "2017-07-24"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:cnv_isLocatedIn_gene	rdf:type owl:ObjectProperty;
-							rdfs:label	"cnv_isLocatedIn_gene";
-							rdfs:domain iasis:CNV;
-			     			rdfs:range iasis:Gene;
-							rdfs:comment	"Relation between CNV and Gene classes.";
-                 			dce:creator iasis:samaneh.
+				rdfs:label	"cnv_isLocatedIn_gene";
+				rdfs:domain iasis:CNV;
+			     	rdfs:range iasis:Gene;
+				rdfs:comment	"Relation between CNV and Gene classes.";
+				dcterms:modified "2017-07-24"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:cgi_isLocatedIn_tumor	rdf:type owl:ObjectProperty;
-							rdfs:label	"cgi_isLocatedIn_tumor";
-							rdfs:domain iasis:CGI;
-				 			rdfs:range iasis:Tumor;
-							rdfs:comment	"Relation between CGI and Tumor classes.";
-                 			dce:creator iasis:samaneh.
+				rdfs:label	"cgi_isLocatedIn_tumor";
+				rdfs:domain iasis:CGI;
+				rdfs:range iasis:Tumor;
+				rdfs:comment	"Relation between CGI and Tumor classes.";
+				dcterms:modified "2017-07-24"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:cnv_isLocatedIn_sample	rdf:type owl:ObjectProperty;
-								rdfs:label	"cnv_isLocatedIn_sample";
-								rdfs:domain iasis:CNV;
-				  				rdfs:range iasis:Sample;
-								rdfs:comment	"Relation between CNV and Sample classes.";
-                 				dce:creator iasis:samaneh.
+				rdfs:label	"cnv_isLocatedIn_sample";
+				rdfs:domain iasis:CNV;
+				rdfs:range iasis:Sample;
+				rdfs:comment	"Relation between CNV and Sample classes.";
+				dcterms:modified "2017-07-24"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:cnv_isLocatedIn_tumor	rdf:type owl:ObjectProperty;
-							rdfs:label	"cnv_isLocatedIn_tumor";
-							rdfs:domain iasis:CNV;
-				  			rdfs:range iasis:Tumor;	
-							dce:comment	"Relation between CNV and Tumor classes.";
-                 			dce:creator iasis:samaneh.
+				rdfs:label	"cnv_isLocatedIn_tumor";
+				rdfs:domain iasis:CNV;
+				rdfs:range iasis:Tumor;	
+				dce:comment	"Relation between CNV and Tumor classes.";
+				dcterms:modified "2017-07-24"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:mutation_isLocatedIn_gene	rdf:type owl:ObjectProperty;
-								rdfs:label	"MutationIsLocatedInGene";
-								rdfs:domain iasis:Mutation;
-				  				rdfs:range iasis:Gene;
-								rdfs:comment	"The gene in which the mutation occurs.";
-                 				dce:creator iasis:samaneh.
+				rdfs:label	"MutationIsLocatedInGene";
+				rdfs:domain iasis:Mutation;
+				rdfs:range iasis:Gene;
+				rdfs:comment	"The gene in which the mutation occurs.";
+				dcterms:modified "2017-07-24"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:mutation_isLocatedIn_tumor	rdf:type owl:ObjectProperty;
-									rdfs:label	"mutation_isLocatedIn_tumor";
-									rdfs:domain iasis:Mutation;
-				  					rdfs:range iasis:Tumor;
-									rdfs:comment	"The tumor in which the mutation occurs.";
-                 					dce:creator iasis:samaneh.
+					rdfs:label	"mutation_isLocatedIn_tumor";
+					rdfs:domain iasis:Mutation;
+				  	rdfs:range iasis:Tumor;
+					rdfs:comment	"The tumor in which the mutation occurs.";
+					dcterms:modified "2017-07-24"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:mutation_isLocatedIn_sample	rdf:type owl:ObjectProperty;
 									rdfs:label	"mutation_isLocatedIn_sample";
