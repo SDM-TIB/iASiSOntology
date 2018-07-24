@@ -16,7 +16,7 @@ iasis:Concept 	rdf:type	owl:Class;
 
 iasis:Annotation	rdf:type	owl:Class;
 			rdfs:label	"Annotation";
-			rdfs:comment "Explanation of a concept inclduing label, id source of concept.";
+			rdfs:comment "Explanation of a concept inclduing label, id and source of concept.";
 			dcterms:modified "2017-07-24"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
