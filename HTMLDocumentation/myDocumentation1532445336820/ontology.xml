@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.w3.org/2002/07/owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -38,24 +39,17 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/creatoe -->
+    <!-- http://purl.org/dc/terms/creator -->
 
 
-    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creatoe"/>
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/creator -->
+    <!-- http://purl.org/dc/terms/modified -->
 
 
-    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/cretaor -->
-
-
-    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/cretaor"/>
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
     
 
 
@@ -110,7 +104,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/annotates">
         <rdfs:domain rdf:resource="http://iasis/vocab/Publication"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Annotation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connection between mentionedIn or HasTopic relation with CUI.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">annotates</rdfs:label>
     </ObjectProperty>
@@ -123,7 +118,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/cgi_isLocatedIn_gene">
         <rdfs:domain rdf:resource="http://iasis/vocab/CGI"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Gene"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation between CGI and Gene classes.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cgi_isLocatedIn_gene</rdfs:label>
     </ObjectProperty>
@@ -136,7 +132,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/cgi_isLocatedIn_sample">
         <rdfs:domain rdf:resource="http://iasis/vocab/CGI"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Sample"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation between CGI and Sample classes.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cgi_isLocatedIn_sample</rdfs:label>
     </ObjectProperty>
@@ -149,7 +146,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/cgi_isLocatedIn_tumor">
         <rdfs:domain rdf:resource="http://iasis/vocab/CGI"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Tumor"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation between CGI and Tumor classes.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cgi_isLocatedIn_tumor</rdfs:label>
     </ObjectProperty>
@@ -171,7 +169,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/cnv_isClassifiedAs_mutationType">
         <rdfs:domain rdf:resource="http://iasis/vocab/CNV"/>
         <rdfs:range rdf:resource="http://iasis/vocab/MutationType"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The mutation type according to CNV data.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cnv_isClassifiedAs_mutationType</rdfs:label>
     </ObjectProperty>
@@ -184,7 +183,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/cnv_isLocatedIn_gene">
         <rdfs:domain rdf:resource="http://iasis/vocab/CNV"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Gene"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation between CNV and Gene classes.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cnv_isLocatedIn_gene</rdfs:label>
     </ObjectProperty>
@@ -197,7 +197,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/cnv_isLocatedIn_sample">
         <rdfs:domain rdf:resource="http://iasis/vocab/CNV"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Sample"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation between CNV and Sample classes.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cnv_isLocatedIn_sample</rdfs:label>
     </ObjectProperty>
@@ -211,7 +212,8 @@
         <rdfs:domain rdf:resource="http://iasis/vocab/CNV"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Tumor"/>
         <dc:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation between CNV and Tumor classes.</dc:comment>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cnv_isLocatedIn_tumor</rdfs:label>
     </ObjectProperty>
     
@@ -232,7 +234,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/cui_mentionedIn_publication">
         <rdfs:domain rdf:resource="http://iasis/vocab/Annotation"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Publication"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Direct connection that represents in which publication each CUI has been appeared. </rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cui_mentionedIn_publication</rdfs:label>
     </ObjectProperty>
@@ -245,7 +248,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/dbsnp">
         <rdfs:domain rdf:resource="http://iasis/vocab/EQTL"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Dbsnp"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Varriation ID in dbsnp database</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dbsnpID</rdfs:label>
     </ObjectProperty>
@@ -258,7 +262,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/drug_interactsWith_drug">
         <rdfs:domain rdf:resource="http://iasis/vocab/Drug"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Drug"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Represents drug-drug interactions.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug_interactsWith_drug</rdfs:label>
     </ObjectProperty>
@@ -271,7 +276,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/drug_interactsWith_enzyme">
         <rdfs:domain rdf:resource="http://iasis/vocab/Drug"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Enzyme"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Represents drug-enzyme (as target) interactions.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug_interactsWith_enzyme</rdfs:label>
     </ObjectProperty>
@@ -284,7 +290,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/drug_interactsWith_protein">
         <rdfs:domain rdf:resource="http://iasis/vocab/Drug"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Protein"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Represents drug-protein (as target) interactions.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug_interactsWith_protein</rdfs:label>
     </ObjectProperty>
@@ -297,7 +304,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/drug_isPredictedToHave_sideEffect">
         <rdfs:domain rdf:resource="http://iasis/vocab/Drug"/>
         <rdfs:range rdf:resource="http://iasis/vocab/SideEffect"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predicts drug-sideEffect relations using semEP.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug_isPredictedToHave_sideEffect</rdfs:label>
     </ObjectProperty>
@@ -310,7 +318,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/drug_isPredictedToInteractWith_drug">
         <rdfs:domain rdf:resource="http://iasis/vocab/Drug"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Drug"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predicts drug-drug interactions using semEP.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug_isPredictedToInteractWith_drug</rdfs:label>
     </ObjectProperty>
@@ -323,7 +332,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/drug_isPredictedToInteractWith_enzyme">
         <rdfs:domain rdf:resource="http://iasis/vocab/Drug"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Enzyme"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predicts drug-enzyme interactions using semEP.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug_isPredictedToInteractWith_enzyme</rdfs:label>
     </ObjectProperty>
@@ -336,7 +346,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/drug_isRelatedTo_dse">
         <rdfs:domain rdf:resource="http://iasis/vocab/Drug"/>
         <rdfs:range rdf:resource="http://iasis/vocab/DrugSideEffect"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connection between drug and drug-sideEffect relation.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug_isRelatedTo_dse</rdfs:label>
     </ObjectProperty>
@@ -349,7 +360,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/gene_isRelatedTo_sample">
         <rdfs:domain rdf:resource="http://iasis/vocab/Gene"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Sample"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation between Gene and Sample classes.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene_isRelatedTo_sample</rdfs:label>
     </ObjectProperty>
@@ -362,7 +374,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/gene_isTranscribedAs_transcription">
         <rdfs:domain rdf:resource="http://iasis/vocab/Gene"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Transcription"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">As connection between Gene and Transcription Relation.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene_isTranscribedAs_transcription</rdfs:label>
     </ObjectProperty>
@@ -375,7 +388,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/gexpChanges_occuredIn_gene">
         <rdfs:domain rdf:resource="http://iasis/vocab/EQTL"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Gene"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The gene where the GE level is changed.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DownstreamGene</rdfs:label>
     </ObjectProperty>
@@ -397,7 +411,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/hasAnnotation">
         <rdfs:domain rdf:resource="http://iasis/vocab/Publication"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Annotation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connection between mentionedIn or HasTopic relation with CUI.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasAnnotation</rdfs:label>
     </ObjectProperty>
@@ -410,7 +425,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/hasBiopsy">
         <rdfs:domain rdf:resource="http://iasis/vocab/LCPatient"/>
         <rdfs:range rdf:resource="http://iasis/vocab/LiquidBiopsy"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connection between patient and biopsy records.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasBiopsy</rdfs:label>
     </ObjectProperty>
@@ -423,7 +439,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/hasEcog">
         <rdfs:domain rdf:resource="http://iasis/vocab/LCPatient"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Ecog"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connection between patient and ecog records.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasEcog</rdfs:label>
     </ObjectProperty>
@@ -440,7 +457,8 @@
         <rdfs:range rdf:resource="http://iasis/vocab/EcogObservation"/>
         <rdfs:range rdf:resource="http://iasis/vocab/LiquidBiopsyObservation"/>
         <rdfs:range rdf:resource="http://iasis/vocab/TumorStageObservation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connection between Ecog and EcogObservation.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connection between LiquidBiopsy and LiquidBiopsyObservation </rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connection between TumorStage and TumorStageObservation.</rdfs:comment>
@@ -457,7 +475,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/hasSideEffect">
         <rdfs:domain rdf:resource="http://iasis/vocab/Drug"/>
         <rdfs:range rdf:resource="http://iasis/vocab/HPO"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Represents the side effect each drug may have.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasSideEffect</rdfs:label>
     </ObjectProperty>
@@ -470,7 +489,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/hasTumorStage">
         <rdfs:domain rdf:resource="http://iasis/vocab/LCPatient"/>
         <rdfs:range rdf:resource="http://iasis/vocab/TumorStage"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connection between patient and tumor stage records.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasTumorStage</rdfs:label>
     </ObjectProperty>
@@ -492,10 +512,6 @@
 
     <ObjectProperty rdf:about="http://iasis/vocab/identifier">
         <rdfs:domain rdf:resource="http://iasis/vocab/Observation"/>
-        <rdfs:range rdf:resource="http://iasis/vocab/Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The identifier of each patient observation.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObservationID</rdfs:label>
     </ObjectProperty>
     
 
@@ -506,7 +522,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/isRelatedTo">
         <rdfs:domain rdf:resource="http://iasis/vocab/Concept"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Relation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/farah"/>
+        <terms:creator rdf:resource="https://www.tib.eu/en/research-development/scientific-data-management/staff/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation between superclasses Concept and Relation classes</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AnnotationOfConcept</rdfs:label>
     </ObjectProperty>
@@ -519,7 +536,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/mentioned_in">
         <rdfs:domain rdf:resource="http://iasis/vocab/Drug"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Publication"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation that represents what drug has been mentioned in what publication.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mentioned_in</rdfs:label>
     </ObjectProperty>
@@ -532,7 +550,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/mutation_isClassifiedAs_mutationType">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://iasis/vocab/MutationType"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The mutation type according to mutation data.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mutation_isClassifiedAs_mutationType</rdfs:label>
     </ObjectProperty>
@@ -545,7 +564,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/mutation_isLocatedIn_gene">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Gene"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The gene in which the mutation occurs.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MutationIsLocatedInGene</rdfs:label>
     </ObjectProperty>
@@ -558,7 +578,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/mutation_isLocatedIn_sample">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Sample"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The sample in which the mutation occurs.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mutation_isLocatedIn_sample</rdfs:label>
     </ObjectProperty>
@@ -581,7 +602,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/mutation_isLocatedIn_tumor">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Tumor"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The tumor in which the mutation occurs.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mutation_isLocatedIn_tumor</rdfs:label>
     </ObjectProperty>
@@ -594,7 +616,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/mutation_isResistantTo_drug">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Drug"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Yes: if reported mutation confers drug resistance. -: means resistance data is unknown; there is no evidence for resistance or it is a known primary mutation.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mutation_isResistantTo_drug</rdfs:label>
     </ObjectProperty>
@@ -607,7 +630,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/mutation_mentionedIn_publication">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Publication"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extracted from Mutation dataset.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MutationMentionedInPublication</rdfs:label>
     </ObjectProperty>
@@ -629,7 +653,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/protein_isRelatedTo_physicalInteraction">
         <rdfs:domain rdf:resource="http://iasis/vocab/Protein"/>
         <rdfs:range rdf:resource="http://iasis/vocab/RBP_RNA_PhysicalInteraction"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connection between protein and RBP-RNA physical interaction relation. </rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein_isRelatedTo_physicalInteraction</rdfs:label>
     </ObjectProperty>
@@ -642,7 +667,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/provenance">
         <rdfs:domain rdf:resource="http://iasis/vocab/Concept"/>
         <rdfs:range rdf:resource="http://iasis/vocab/SourceName"/>
-        <dc:creator rdf:resource="http://iasis/vocab/farah"/>
+        <terms:creator rdf:resource="https://www.tib.eu/en/research-development/scientific-data-management/staff/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The name of the source from which the concept is extracted or derived</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provenance</rdfs:label>
     </ObjectProperty>
@@ -655,7 +681,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/publication_hasTopic_cui">
         <rdfs:domain rdf:resource="http://iasis/vocab/Publication"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Annotation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Direct connection that represents the topic of publication using CUI.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">publication_hasTopic_cui</rdfs:label>
     </ObjectProperty>
@@ -668,7 +695,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/relation_isRelatedTo_cui">
         <rdfs:domain rdf:resource="http://iasis/vocab/Relation"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Annotation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The connection between UMLS relation and CUI.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relation_isRelatedTo_cui</rdfs:label>
     </ObjectProperty>
@@ -681,7 +709,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/sample_isTakenFrom_tumor">
         <rdfs:domain rdf:resource="http://iasis/vocab/Sample"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Tumor"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:commnet rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The tumor from which the sample is taken.</rdfs:commnet>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sample_isTakenFrom_tumor</rdfs:label>
     </ObjectProperty>
@@ -694,7 +723,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/semanticTypes">
         <rdfs:domain rdf:resource="http://iasis/vocab/Annotation"/>
         <rdfs:range rdf:resource="http://iasis/vocab/SourceName"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A list with the allowed semantic_types for this Annotation in the UMLS. </rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">semanticType</rdfs:label>
     </ObjectProperty>
@@ -707,7 +737,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/sideEffect_isRelatedTo_dse">
         <rdfs:domain rdf:resource="http://iasis/vocab/SideEffect"/>
         <rdfs:range rdf:resource="http://iasis/vocab/DrugSideEffect"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connection between sideEffect and drug-sideEffect relation.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sideEffect_isRelatedTo_dse</rdfs:label>
     </ObjectProperty>
@@ -730,7 +761,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/transcript_isRelatedTo_physicalInteraction">
         <rdfs:domain rdf:resource="http://iasis/vocab/Transcript"/>
         <rdfs:range rdf:resource="http://iasis/vocab/RBP_RNA_PhysicalInteraction"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connection between transcript and RBP-RNA physical interaction relation.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transcript_isRelatedTo_physicalInteraction</rdfs:label>
     </ObjectProperty>
@@ -743,7 +775,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/transcript_isRelatedTo_transcription">
         <rdfs:domain rdf:resource="http://iasis/vocab/Transcript"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Transcription"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connection between transcription and corresponding transcript.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transcript_isRelatedTo_transcription</rdfs:label>
     </ObjectProperty>
@@ -756,7 +789,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/transcription_isExpressedAs_gexp">
         <rdfs:domain rdf:resource="http://iasis/vocab/Transcription"/>
         <rdfs:range rdf:resource="http://iasis/vocab/GExp"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connection between transcription and gene expression.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transcription_isExpressedAs_gexp</rdfs:label>
     </ObjectProperty>
@@ -769,7 +803,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/translates_as">
         <rdfs:domain rdf:resource="http://iasis/vocab/Transcript"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Protein"/>
-        <dc:creatoe rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connection between protein and the transcript from which it has been translated.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">translates_as</rdfs:label>
     </ObjectProperty>
@@ -782,7 +817,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/variant_affects_transcript">
         <rdfs:domain rdf:resource="http://iasis/vocab/SNP"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Transcript"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It&apos;s trans-eQTL: trans-acting expression quantitative trait loci, i.e. genomic variants that affect the expression of distant (trans) genes) from three sources: GTEx, Joehanes et al. and a Dutch group (Lude Franke)</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">variant_affects_transcript</rdfs:label>
     </ObjectProperty>
@@ -795,7 +831,8 @@
     <ObjectProperty rdf:about="http://iasis/vocab/variation_isLocatedIn_gene">
         <rdfs:domain rdf:resource="http://iasis/vocab/EQTL"/>
         <rdfs:range rdf:resource="http://iasis/vocab/Gene"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The gene on which the variation is located.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UpstreamGene</rdfs:label>
     </ObjectProperty>
@@ -830,7 +867,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/age">
         <rdfs:domain rdf:resource="http://iasis/vocab/Sample"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information about the information of sample</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AgeOfSample</rdfs:label>
     </DatatypeProperty>
@@ -843,7 +881,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/ageStart">
         <rdfs:domain rdf:resource="http://iasis/vocab/LCPatient"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age of patient.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ageStart</rdfs:label>
     </DatatypeProperty>
@@ -856,7 +895,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/annLabel">
         <rdfs:domain rdf:resource="http://iasis/vocab/Annotation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Label of instances of Annotation class</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AnnotationLabel</rdfs:label>
     </DatatypeProperty>
@@ -869,7 +909,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/authors">
         <rdfs:domain rdf:resource="http://iasis/vocab/Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Authors of publication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">authors</rdfs:label>
     </DatatypeProperty>
@@ -882,7 +923,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/avg_beta_value">
         <rdfs:domain rdf:resource="http://iasis/vocab/CGI"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Average beta-value across the normal population.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">averageBeta-value</rdfs:label>
     </DatatypeProperty>
@@ -895,7 +937,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/beta_value">
         <rdfs:domain rdf:resource="http://iasis/vocab/CGI"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beta-value for the probe in the tumour sample. Only values &gt; 0.8 (High) or &lt; 0.2 (Low) are included.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta-value</rdfs:label>
     </DatatypeProperty>
@@ -908,7 +951,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/biopsyList">
         <rdfs:domain rdf:resource="http://iasis/vocab/LiquidBiopsy"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Represents the list of liquid biopsy test that have been taken from patient. Not included in the original data from WP2, but is calulated as part of in-house preprocessing.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biopsyList</rdfs:label>
     </DatatypeProperty>
@@ -921,7 +965,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/birthDate">
         <rdfs:domain rdf:resource="http://iasis/vocab/LCPatient"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Birth date of the patient.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">birthDate</rdfs:label>
     </DatatypeProperty>
@@ -934,7 +979,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/cds_length">
         <rdfs:domain rdf:resource="http://iasis/vocab/Gene"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Length of the gene by counting the number of base pair that are included.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LengthOfGene</rdfs:label>
     </DatatypeProperty>
@@ -947,7 +993,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/cgi_chromosome">
         <rdfs:domain rdf:resource="http://iasis/vocab/CGI"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromosome in which the CGI is loacted</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CpGislandChromosome</rdfs:label>
     </DatatypeProperty>
@@ -969,7 +1016,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/cnv_chromosome">
         <rdfs:domain rdf:resource="http://iasis/vocab/CNV"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromose in which the CNV is located on</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cnvChromosome</rdfs:label>
     </DatatypeProperty>
@@ -982,7 +1030,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/cnv_end">
         <rdfs:domain rdf:resource="http://iasis/vocab/CNV"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ending point of CNV</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cnvEndPosition</rdfs:label>
     </DatatypeProperty>
@@ -995,7 +1044,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/cnv_start">
         <rdfs:domain rdf:resource="http://iasis/vocab/CNV"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Starting point of CNV</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cnvStartPosition</rdfs:label>
     </DatatypeProperty>
@@ -1017,7 +1067,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/copiesMicroliterFam">
         <rdfs:domain rdf:resource="http://iasis/vocab/LiquidBiopsyObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of mutated copies per microliter of blood</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">copiesMicroliterFam</rdfs:label>
     </DatatypeProperty>
@@ -1030,7 +1081,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/copiesMicroliterVic">
         <rdfs:domain rdf:resource="http://iasis/vocab/LiquidBiopsyObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of non-mutated copies per microliter of blood</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">copiesMicroliterVic</rdfs:label>
     </DatatypeProperty>
@@ -1043,7 +1095,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/description">
         <rdfs:domain rdf:resource="http://iasis/vocab/Annotation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A property of Annotation Class</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description</rdfs:label>
     </DatatypeProperty>
@@ -1056,7 +1109,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/diagnosisAge">
         <rdfs:domain rdf:resource="http://iasis/vocab/LCPatient"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The age on which the patient was diagnosed with Cancer.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosisAge</rdfs:label>
     </DatatypeProperty>
@@ -1069,7 +1123,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/diagnosisAgeGroup">
         <rdfs:domain rdf:resource="http://iasis/vocab/LCPatient"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The age group on which the patient was diagnosed with Cancer.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosisAgeGroup</rdfs:label>
     </DatatypeProperty>
@@ -1082,7 +1137,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/diagnosisDate">
         <rdfs:domain rdf:resource="http://iasis/vocab/LCPatient"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The date on which the patient was diagnosed with Cancer.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosisDate</rdfs:label>
     </DatatypeProperty>
@@ -1115,7 +1171,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/ecogDate">
         <rdfs:domain rdf:resource="http://iasis/vocab/EcogObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The date on which specific ecog has been recorded.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ecogDate</rdfs:label>
     </DatatypeProperty>
@@ -1128,7 +1185,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/ecogList">
         <rdfs:domain rdf:resource="http://iasis/vocab/TumorStage"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Represents the list of ecogs that have been recorded from patient. Not included in the original data from WP2, but is calulated as part of in-house preprocessing.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ecogList</rdfs:label>
     </DatatypeProperty>
@@ -1141,7 +1199,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/ecogValue">
         <rdfs:domain rdf:resource="http://iasis/vocab/EcogObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Range: [0 as fully active - 5 as Dead].</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ecogValue</rdfs:label>
     </DatatypeProperty>
@@ -1154,7 +1213,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/egfrMutation">
         <rdfs:domain rdf:resource="http://iasis/vocab/LCPatient"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Represents if EGFR has been mutated or not.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">egfrMutation</rdfs:label>
     </DatatypeProperty>
@@ -1167,7 +1227,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/eqtl_chromosome">
         <rdfs:domain rdf:resource="http://iasis/vocab/EQTL"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromosome position of eQTL.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eqtlChromosome</rdfs:label>
     </DatatypeProperty>
@@ -1180,7 +1241,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/eqtl_position">
         <rdfs:domain rdf:resource="http://iasis/vocab/EQTL"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genomic position of eQTL.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eqtlPosition</rdfs:label>
     </DatatypeProperty>
@@ -1193,7 +1255,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/fathmm_prediction">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Functional Analysis through Hidden Markov Models: predicts the functional consequences of both coding variants, i.e. non-synonymous single nucleotide variants (nsSNVs), and non-coding variants.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fathmm</rdfs:label>
     </DatatypeProperty>
@@ -1206,7 +1269,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/fathmm_score">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single p-value, ranging from 0 to 1. Scores above 0.5 are deleterious, but in order to highlight the most significant data in COSMIC, only scores ≥ 0.7 are classified as &apos;Pathogenic&apos;. Mutations are classed as &apos;Neutral&apos; if the score is ≤ 0.5.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fathmmScore</rdfs:label>
     </DatatypeProperty>
@@ -1219,7 +1283,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/gender">
         <rdfs:domain rdf:resource="http://iasis/vocab/LCPatient"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender of the patient.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender</rdfs:label>
     </DatatypeProperty>
@@ -1232,7 +1297,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/genomic_position">
         <rdfs:domain rdf:resource="http://iasis/vocab/CGI"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genomic position</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CpGislandGenomicPosition</rdfs:label>
     </DatatypeProperty>
@@ -1254,7 +1320,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/globalscore">
         <rdfs:domain rdf:resource="http://iasis/vocab/RBP_RNA_PhysicalInteraction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creatoe rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Global Score is an algorithm as part of catRAPID that integrates the information coming from protein and RNA fragments into an overall binding propensity value. The distribution of the interaction propensities is used as input of a non-linear algorithm that predicts interacting / non-interacting protein-RNA pairs.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">globalscore</rdfs:label>
     </DatatypeProperty>
@@ -1267,7 +1334,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/histologySubtype1">
         <rdfs:domain rdf:resource="http://iasis/vocab/Sample"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Histological classification (level 1) of the sample.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PrimaryHistology_1stLevelSubclassification</rdfs:label>
     </DatatypeProperty>
@@ -1280,7 +1348,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/histologySubtype2">
         <rdfs:domain rdf:resource="http://iasis/vocab/Sample"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Histological classification (level 2) of the sample.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PrimaryHistology_2ndLevelSubclassification</rdfs:label>
     </DatatypeProperty>
@@ -1296,13 +1365,23 @@
     
 
 
+    <!-- http://iasis/vocab/identifier -->
+
+
+    <DatatypeProperty rdf:about="http://iasis/vocab/identifier">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
     <!-- http://iasis/vocab/journal -->
 
 
     <DatatypeProperty rdf:about="http://iasis/vocab/journal">
         <rdfs:domain rdf:resource="http://iasis/vocab/Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journal of publication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">journal</rdfs:label>
     </DatatypeProperty>
@@ -1315,7 +1394,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/label">
         <rdfs:domain rdf:resource="http://iasis/vocab/Concept"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Label of instances of Concept class</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ConceptLabel</rdfs:label>
     </DatatypeProperty>
@@ -1328,7 +1408,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/loh">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOH information on whether the gene was reported to have Loss of heterozygosity (a common genetic event in cancer development) in the sample. </rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOH</rdfs:label>
     </DatatypeProperty>
@@ -1341,7 +1422,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/methylation">
         <rdfs:domain rdf:resource="http://iasis/vocab/CGI"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methylation level: H (High) : beta-value &gt; 0.8, L (Low) : beta-value &lt; 0.2 </rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methylation</rdfs:label>
     </DatatypeProperty>
@@ -1354,7 +1436,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/minor_allele">
         <rdfs:domain rdf:resource="http://iasis/vocab/CNV"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of copies of the least frequent allele.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">minorAllele</rdfs:label>
     </DatatypeProperty>
@@ -1367,7 +1450,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/monthsInTreatment">
         <rdfs:domain rdf:resource="http://iasis/vocab/LCPatient"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Represents the number of months patient has been under treatment. Not included in the original data from WP2, but is calulated as part of in-house preprocessing.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monthsInTreatment</rdfs:label>
     </DatatypeProperty>
@@ -1380,7 +1464,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/mutationDescription">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is extracted from mutation dataset. </rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mutationDescription</rdfs:label>
     </DatatypeProperty>
@@ -1393,7 +1478,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/mutationName">
         <rdfs:domain rdf:resource="http://iasis/vocab/LiquidBiopsyObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name of the mutation that is being studied</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mutationName</rdfs:label>
     </DatatypeProperty>
@@ -1406,7 +1492,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/mutationType">
         <rdfs:domain rdf:resource="http://iasis/vocab/CNV"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is extracted from CNV dataset</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MutationType</rdfs:label>
     </DatatypeProperty>
@@ -1419,7 +1506,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/mutation_NucleotideSeq">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The new column produced from Mutation CDS column, excluding c. Those including extra characters are ignored to be added to this column.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MutationNucleotideSequence</rdfs:label>
     </DatatypeProperty>
@@ -1432,7 +1520,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/mutation_aa">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peptide sequence of the mutation</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mutationAA</rdfs:label>
     </DatatypeProperty>
@@ -1445,7 +1534,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/mutation_cds">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleotide sequence of the mutation</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mutationCDS</rdfs:label>
     </DatatypeProperty>
@@ -1458,7 +1548,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/mutation_chromosome">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromosome in which the mutation is occured</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mutationChromosome</rdfs:label>
     </DatatypeProperty>
@@ -1471,7 +1562,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/mutation_end">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ending point of the mutation</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mutationEndPosition</rdfs:label>
     </DatatypeProperty>
@@ -1484,7 +1576,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/mutation_pepSeq">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A new column produced from Mutation AA column, excluding p. in mutation dataset</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MutationPeptideSequece</rdfs:label>
     </DatatypeProperty>
@@ -1497,7 +1590,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/mutation_somatic_status">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information on whether the sample was reported to be Confirmed Somatic, Previously Reported or Variant of unknown origin.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mutation_somatic_status</rdfs:label>
     </DatatypeProperty>
@@ -1510,7 +1604,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/mutation_start">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Starting point of the mutation</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mutationStartPosition</rdfs:label>
     </DatatypeProperty>
@@ -1523,7 +1618,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/mutation_strand">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strand in which the mutation is occured</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mutationStrand</rdfs:label>
     </DatatypeProperty>
@@ -1545,7 +1641,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/omixcore">
         <rdfs:domain rdf:resource="http://iasis/vocab/RBP_RNA_PhysicalInteraction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OmiXcore is an algorithm as part of catRAPID integrates the information coming from protein and &gt;14,000 lincRNA fragments into an overall binding propensity value. It is based on a non-linear algorithm trained on the interaction propensities of protein fragments for RNA regions to predict binding affinities (i.e. read counts normalized by expression levels).</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">omixcore</rdfs:label>
     </DatatypeProperty>
@@ -1558,7 +1655,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/primaryHistology">
         <rdfs:domain rdf:resource="http://iasis/vocab/Sample"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Histological classification of sample.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PrimaryHistology</rdfs:label>
     </DatatypeProperty>
@@ -1571,7 +1669,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/primaryTissue">
         <rdfs:domain rdf:resource="http://iasis/vocab/Sample"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primary tissue/cancer from which the sample originated.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PrimaryTissue</rdfs:label>
     </DatatypeProperty>
@@ -1584,7 +1683,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/qvalue">
         <rdfs:domain rdf:resource="http://iasis/vocab/EQTL"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">log10q</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">q-value</rdfs:label>
     </DatatypeProperty>
@@ -1597,7 +1697,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/regulation">
         <rdfs:domain rdf:resource="http://iasis/vocab/GExp"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It could be over or under depending on the scores from different platforms if they are above or below the threshold.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regulation</rdfs:label>
     </DatatypeProperty>
@@ -1610,7 +1711,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/resistance_mutation_pepSeq">
         <rdfs:domain rdf:resource="http://iasis/vocab/ResistanceMutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The new column produced from Mutation AA column, excluding p. in restanceMutation dataset</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ResistanceMutationPeptideSequence</rdfs:label>
     </DatatypeProperty>
@@ -1623,7 +1725,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/resultDate">
         <rdfs:domain rdf:resource="http://iasis/vocab/LiquidBiopsyObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date on which the biopsy result has been provided.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resultDate</rdfs:label>
     </DatatypeProperty>
@@ -1636,7 +1739,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/sampleDate">
         <rdfs:domain rdf:resource="http://iasis/vocab/LiquidBiopsyObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date on which the biopsy sample has been taken.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sampleDate</rdfs:label>
     </DatatypeProperty>
@@ -1649,7 +1753,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/sampleSource">
         <rdfs:domain rdf:resource="http://iasis/vocab/Sample"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Appears in resistanceMutation dataset</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sampleSource</rdfs:label>
     </DatatypeProperty>
@@ -1662,7 +1767,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/snp">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">All the known SNPs are flagged as: is SNP.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNP</rdfs:label>
     </DatatypeProperty>
@@ -1675,7 +1781,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/targetTotal">
         <rdfs:domain rdf:resource="http://iasis/vocab/LiquidBiopsyObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The percentage of circulating tumor DNA in the blood</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">targetTotal</rdfs:label>
     </DatatypeProperty>
@@ -1688,7 +1795,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/tissue">
         <rdfs:domain rdf:resource="http://iasis/vocab/EQTL"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The tissue in which variation has been observed.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tissue</rdfs:label>
     </DatatypeProperty>
@@ -1701,7 +1809,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/tissueSubtype1">
         <rdfs:domain rdf:resource="http://iasis/vocab/Sample"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sub classification (level 1) of the samples tissue of origin.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PrimaryTissue_1stLevelSubclassification</rdfs:label>
     </DatatypeProperty>
@@ -1714,7 +1823,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/tissueSubtype2">
         <rdfs:domain rdf:resource="http://iasis/vocab/Sample"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sub classification (level 2) of the samples tissue of origin.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PrimaryTissue_2ndLevelSubclassification</rdfs:label>
     </DatatypeProperty>
@@ -1734,7 +1844,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/total_cn">
         <rdfs:domain rdf:resource="http://iasis/vocab/CNV"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sum of the major and minor allele counts.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">totalCopyNumber</rdfs:label>
     </DatatypeProperty>
@@ -1747,7 +1858,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/toxicHabit">
         <rdfs:domain rdf:resource="http://iasis/vocab/LCPatient"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Represents if the patient is smoker or not.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">toxicHabit</rdfs:label>
     </DatatypeProperty>
@@ -1760,7 +1872,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/tumorStage">
         <rdfs:domain rdf:resource="http://iasis/vocab/TumorStageObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Range: [&apos;I&apos;,&apos;II&apos;,&apos;III&apos;,&apos;IV&apos;].</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tumorStage</rdfs:label>
     </DatatypeProperty>
@@ -1773,7 +1886,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/tumorStageDate">
         <rdfs:domain rdf:resource="http://iasis/vocab/TumorStageObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The date on which specific tumor stage has been recorded.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tumorStageDate</rdfs:label>
     </DatatypeProperty>
@@ -1786,7 +1900,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/tumor_origin">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes where the sample has originated from including the tumour type</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tumorOrigin</rdfs:label>
     </DatatypeProperty>
@@ -1799,7 +1914,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/two_sided_p-value">
         <rdfs:domain rdf:resource="http://iasis/vocab/CGI"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Combining two statistical tests in a two-part model.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">twoSidedP-value</rdfs:label>
     </DatatypeProperty>
@@ -1812,7 +1928,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/type">
         <rdfs:domain rdf:resource="http://iasis/vocab/EQTL"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regulatory variants are characterized as either cis or trans acting, reflecting the predicted nature of interactions and of course depending on the physical distance from the gene they regulate.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eQTLtype</rdfs:label>
     </DatatypeProperty>
@@ -1825,7 +1942,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/weeksInTreatment">
         <rdfs:domain rdf:resource="http://iasis/vocab/LCPatient"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:cretaor rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Represents the number of weeks patient has been under treatment. Not included in the original data from WP2, but is calulated as part of in-house preprocessing.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weeksInTreatment</rdfs:label>
     </DatatypeProperty>
@@ -1845,7 +1963,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/z_score">
         <rdfs:domain rdf:resource="http://iasis/vocab/GExp"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An indicative score taken from the gen_expression from different platforms.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z-score</rdfs:label>
     </DatatypeProperty>
@@ -1858,7 +1977,8 @@
     <DatatypeProperty rdf:about="http://iasis/vocab/zygosity">
         <rdfs:domain rdf:resource="http://iasis/vocab/Mutation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information on whether the mutation was reported to be homozygous or heterozygous within the sample.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zygosity</rdfs:label>
     </DatatypeProperty>
@@ -1882,7 +2002,8 @@
 
     <Class rdf:about="http://iasis/vocab/ASSOCIATED_WITH">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Relation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/farah"/>
+        <terms:creator rdf:resource="https://www.tib.eu/en/research-development/scientific-data-management/staff/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS Annotation.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AssociatedWith</rdfs:label>
     </Class>
@@ -1893,8 +2014,9 @@
 
 
     <Class rdf:about="http://iasis/vocab/Annotation">
-        <dc:creator rdf:resource="http://iasis/vocab/farah"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Explanation of a concept inclduing label, id source of concept.</rdfs:comment>
+        <terms:creator rdf:resource="https://www.tib.eu/en/research-development/scientific-data-management/staff/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Explanation of a concept including label, id and source of concept.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annotation</rdfs:label>
     </Class>
     
@@ -1905,7 +2027,8 @@
 
     <Class rdf:about="http://iasis/vocab/CAUSES">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Relation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/farah"/>
+        <terms:creator rdf:resource="https://www.tib.eu/en/research-development/scientific-data-management/staff/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS Annotation.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Causes</rdfs:label>
     </Class>
@@ -1917,7 +2040,8 @@
 
     <Class rdf:about="http://iasis/vocab/CGI">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CGIs are regions of the genome that contain a large number of CpG dinucleotide repeats. Although most CGIs linked to promoters are non-methylated, majority of CGIs may be completely methylated in normal cells.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CpG_island</rdfs:label>
     </Class>
@@ -1929,7 +2053,8 @@
 
     <Class rdf:about="http://iasis/vocab/CNV">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The genetic trait involving the variation of the number of copies of a particular gene present in the genome between individuals. </rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CopyNumberVariation</rdfs:label>
     </Class>
@@ -1941,7 +2066,8 @@
 
     <Class rdf:about="http://iasis/vocab/CancerGeneCensus">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Gene"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdf:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cancer Gene Census is a list of genes known to be involved in cancer.</rdf:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CancerGeneCensus</rdfs:label>
     </Class>
@@ -1953,7 +2079,8 @@
 
     <Class rdf:about="http://iasis/vocab/ClinicalRecord">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
-        <dc:creator rdf:resource="http://iasis/vocab/maria-esther"/>
+        <terms:creator rdf:resource="https://en.wikipedia.org/wiki/Mar%C3%ADa-Esther_Vidal"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Systematic documentation of a single patient&apos;s medical history and care across time within one particular health care provider&apos;s jurisdiction.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical Record</rdfs:label>
     </Class>
@@ -1964,7 +2091,8 @@
 
 
     <Class rdf:about="http://iasis/vocab/Concept">
-        <dc:creator rdf:resource="http://iasis/vocab/farah"/>
+        <terms:creator rdf:resource="https://www.tib.eu/en/research-development/scientific-data-management/staff/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Constituents of thoughts or real world entities.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Concept</rdfs:label>
     </Class>
@@ -1976,7 +2104,8 @@
 
     <Class rdf:about="http://iasis/vocab/Dbsnp">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdf:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database of single nucleotide polymorphisms (SNPs) and multiple small-scale variations that include insertions/deletions, microsatellites, and non-polymorphic variants.</rdf:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dbsnp</rdfs:label>
     </Class>
@@ -1988,7 +2117,8 @@
 
     <Class rdf:about="http://iasis/vocab/Drug">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdf:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A substance used as a medication or in the preparation of medication.</rdf:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drug</rdfs:label>
     </Class>
@@ -2000,7 +2130,8 @@
 
     <Class rdf:about="http://iasis/vocab/DrugSideEffect">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdf:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Drug SideEffect relation should be a class since has two properties</rdf:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DrugSideEffectRelation</rdfs:label>
     </Class>
@@ -2012,7 +2143,8 @@
 
     <Class rdf:about="http://iasis/vocab/EQTL">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdf:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An eQTL is a locus that explains a fraction of the genetic variance of a gene expression phenotype.</rdf:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eQTL</rdfs:label>
     </Class>
@@ -2023,7 +2155,8 @@
 
 
     <Class rdf:about="http://iasis/vocab/Ecog">
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECOG Performance Status describes a patient&apos;s level of functioning in terms of her/his ability for caring her/himself, daily activities and phyical abilities.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ecog</rdfs:label>
     </Class>
@@ -2035,7 +2168,8 @@
 
     <Class rdf:about="http://iasis/vocab/EcogObservation">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Observation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each time patient visits the hospital, the ecog is assessed as a new ecogObservation.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcogObservation</rdfs:label>
     </Class>
@@ -2047,7 +2181,8 @@
 
     <Class rdf:about="http://iasis/vocab/Enzyme">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdf:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Macromolecular biological catalyst that accelerate chemical reactions. Most enzymes are proteins.</rdf:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enzyme</rdfs:label>
     </Class>
@@ -2059,7 +2194,8 @@
 
     <Class rdf:about="http://iasis/vocab/GExp">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The phenotypic manifestation of a gene or genes by the processes of genetic transcription and genetic translation.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeneExpression</rdfs:label>
     </Class>
@@ -2071,7 +2207,8 @@
 
     <Class rdf:about="http://iasis/vocab/Gene">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genes, which are made up of DNA, are the basic physical and functional unit of heredity.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene</rdfs:label>
     </Class>
@@ -2090,7 +2227,8 @@
 
     <Class rdf:about="http://iasis/vocab/HasTopic">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Relation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation that shows which CUI has been appeared in each specific publication.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HasTopic</rdfs:label>
     </Class>
@@ -2102,7 +2240,8 @@
 
     <Class rdf:about="http://iasis/vocab/INHIBITS">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Relation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/farah"/>
+        <terms:creator rdf:resource="https://www.tib.eu/en/research-development/scientific-data-management/staff/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS Annotation.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inhibits</rdfs:label>
     </Class>
@@ -2114,7 +2253,8 @@
 
     <Class rdf:about="http://iasis/vocab/INITERACTS_WITH">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Relation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/farah"/>
+        <terms:creator rdf:resource="https://www.tib.eu/en/research-development/scientific-data-management/staff/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS Annotation.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InteractsWith</rdfs:label>
     </Class>
@@ -2127,7 +2267,8 @@
     <Class rdf:about="http://iasis/vocab/Image">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
         <vocab:partOf rdf:resource="http://iasis/vocab/ClinicalRecord"/>
-        <dc:creator rdf:resource="http://iasis/vocab/maria-esther"/>
+        <terms:creator rdf:resource="https://en.wikipedia.org/wiki/Mar%C3%ADa-Esther_Vidal"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patient&apos;s medical images.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedicalImage</rdfs:label>
     </Class>
@@ -2139,7 +2280,8 @@
 
     <Class rdf:about="http://iasis/vocab/LCPatient">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Patient"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdf:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A patient who is diagnosed with Lung Cancer.</rdf:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LungCancerPatient</rdfs:label>
     </Class>
@@ -2151,7 +2293,8 @@
 
     <Class rdf:about="http://iasis/vocab/LiquidBiopsy">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Test"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A test done on a sample of blood to look for cancer cells from a tumor that are circulating in the blood or for pieces of DNA from tumor cells that are in the blood.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LiquidBiopsy</rdfs:label>
     </Class>
@@ -2163,17 +2306,11 @@
 
     <Class rdf:about="http://iasis/vocab/LiquidBiopsyObservation">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Observation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each LiquidBiopsy on a patient would be documented as a separate observation.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LiquidBiopsyObservation</rdfs:label>
     </Class>
-    
-
-
-    <!-- http://iasis/vocab/Literal -->
-
-
-    <Class rdf:about="http://iasis/vocab/Literal"/>
     
 
 
@@ -2182,7 +2319,8 @@
 
     <Class rdf:about="http://iasis/vocab/MentionedIn">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Relation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/farah"/>
+        <terms:creator rdf:resource="https://www.tib.eu/en/research-development/scientific-data-management/staff/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation that shows in which publication each specific CUI term has been appeared.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MentionedIn</rdfs:label>
     </Class>
@@ -2194,7 +2332,8 @@
 
     <Class rdf:about="http://iasis/vocab/Mutation">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A permanent alteration in the DNA sequence that makes up a gene, such that the sequence differs from what is found in most people.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mutation</rdfs:label>
     </Class>
@@ -2213,7 +2352,8 @@
 
     <Class rdf:about="http://iasis/vocab/Observation">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active acquisition of data from patient.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observation</rdfs:label>
     </Class>
@@ -2225,7 +2365,8 @@
 
     <Class rdf:about="http://iasis/vocab/PREDISPOSES">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Relation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/farah"/>
+        <terms:creator rdf:resource="https://www.tib.eu/en/research-development/scientific-data-management/staff/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS Annotation.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predisposes</rdfs:label>
     </Class>
@@ -2237,7 +2378,8 @@
 
     <Class rdf:about="http://iasis/vocab/Patient">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdf:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who is receiving medical care.</rdf:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patient</rdfs:label>
     </Class>
@@ -2249,7 +2391,8 @@
 
     <Class rdf:about="http://iasis/vocab/Protein">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdf:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Large and complex molecules that play many critical roles in the body. They are required for the structure, function and regulation of the body&apos;s tissues and organs.</rdf:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein</rdfs:label>
     </Class>
@@ -2261,7 +2404,8 @@
 
     <Class rdf:about="http://iasis/vocab/Publication">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
-        <dc:creator rdf:resource="http://iasis/vocab/farah"/>
+        <terms:creator rdf:resource="https://www.tib.eu/en/research-development/scientific-data-management/staff/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scientific publications.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Publication</rdfs:label>
     </Class>
@@ -2273,7 +2417,8 @@
 
     <Class rdf:about="http://iasis/vocab/RBP_RNA_PhysicalInteraction">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Relation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdf:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interaction between RNA binding protein (the mediator factor) and RNA. </rdf:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RBP_RNA_interaction</rdfs:label>
     </Class>
@@ -2292,7 +2437,8 @@
 
     <Class rdf:about="http://iasis/vocab/ResistanceMutation">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Mutation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mutations identified in the literature as resistance mutations, including those conferring acquired resistance (after treatment) and intrinsic resistance (before treatment)</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ResistanceMutation</rdfs:label>
     </Class>
@@ -2311,7 +2457,8 @@
 
     <Class rdf:about="http://iasis/vocab/STIMULATES">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Relation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/farah"/>
+        <terms:creator rdf:resource="https://www.tib.eu/en/research-development/scientific-data-management/staff/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS Annotation.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stimulates</rdfs:label>
     </Class>
@@ -2323,7 +2470,8 @@
 
     <Class rdf:about="http://iasis/vocab/Sample">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specimen of a whole entity.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample</rdfs:label>
     </Class>
@@ -2335,7 +2483,8 @@
 
     <Class rdf:about="http://iasis/vocab/SideEffect">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdf:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An often harmful and unwanted effect of a drug or chemical that occurs along with the desired effect.</rdf:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SideEffect</rdfs:label>
     </Class>
@@ -2346,7 +2495,8 @@
 
 
     <Class rdf:about="http://iasis/vocab/SourceName">
-        <dc:creator rdf:resource="http://iasis/vocab/farah"/>
+        <terms:creator rdf:resource="https://www.tib.eu/en/research-development/scientific-data-management/staff/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source name.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SourceName</rdfs:label>
     </Class>
@@ -2359,7 +2509,8 @@
     <Class rdf:about="http://iasis/vocab/Test">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
         <vocab:partOf rdf:resource="http://iasis/vocab/ClinicalRecord"/>
-        <dc:creator rdf:resource="http://iasis/vocab/maria-esther"/>
+        <terms:creator rdf:resource="https://en.wikipedia.org/wiki/Mar%C3%ADa-Esther_Vidal"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medical procedure performed to detect, diagnose, or monitor diseases, disease processes, susceptibility, and determine a course of treatment.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedicalTest</rdfs:label>
     </Class>
@@ -2369,7 +2520,13 @@
     <!-- http://iasis/vocab/Transcript -->
 
 
-    <Class rdf:about="http://iasis/vocab/Transcript"/>
+    <Class rdf:about="http://iasis/vocab/Transcript">
+        <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Single-stranded RNA product synthesized by transcription of DNA.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transcript</rdfs:label>
+    </Class>
     
 
 
@@ -2378,7 +2535,8 @@
 
     <Class rdf:about="http://iasis/vocab/Transcription">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Relation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdf:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process during which DNA is converted to RNA, a more portable set of instructions for the cell.</rdf:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transcription</rdfs:label>
     </Class>
@@ -2390,7 +2548,8 @@
 
     <Class rdf:about="http://iasis/vocab/Tumor">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Concept"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tumor is an abnormal mass of tisuue that results when cells didive more than they should or do not die when they should.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tumor</rdfs:label>
     </Class>
@@ -2401,7 +2560,8 @@
 
 
     <Class rdf:about="http://iasis/vocab/TumorStage">
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Represents the assessment of the stage of tumor in a particular date.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TumorStage</rdfs:label>
     </Class>
@@ -2413,7 +2573,8 @@
 
     <Class rdf:about="http://iasis/vocab/TumorStageObservation">
         <rdfs:subClassOf rdf:resource="http://iasis/vocab/Observation"/>
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each tumor stage assessment will be recorded as a separate observation.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TumorStageObservation</rdfs:label>
     </Class>
@@ -2490,54 +2651,70 @@
 
 
     <rdf:Description rdf:about="http://iasis/vocab/cgi_study_id">
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ID of the study in which the CGI is mentioned</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CpGislandStudyID</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iasis/vocab/cnv_study_id">
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ID of the study in which the CNV is mentioned</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cnvStudyID</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iasis/vocab/dse_AvgFrequency">
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Represents the average frequecy of particular drug having specific side effect.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dse_AvgFrequency</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iasis/vocab/dse_StandardDeviation">
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:commnet rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Represents standard deviation from average frequecy of particular drug having specific side effect.</rdfs:commnet>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dse_StandardDeviation</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iasis/vocab/gexp_study_id">
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ID of the srudy in which the geneExpression is mentioned</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gexpStudyID</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iasis/vocab/id">
-        <dc:creator rdf:resource="http://iasis/vocab/farah"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identification of insances of Annotation class</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identification of insances of Concept class</rdfs:comment>
+        <terms:creator rdf:resource="https://www.tib.eu/en/research-development/scientific-data-management/staff/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identification of instances of Annotation class</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identification of instances of Concept class</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AnnotationID</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ConceptID</rdfs:label>
     </rdf:Description>
+    <rdf:Description rdf:about="http://iasis/vocab/identifier">
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The identifier of each patient observation.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObservationID</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://iasis/vocab/mutation_isLocatedIn_transcript">
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The transcript in which the mutation occurs.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mutation_isLocatedIn_transcript</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iasis/vocab/mutation_study_id">
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ID of the study in which the mutation is mentioned</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mutationStudyID</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iasis/vocab/title">
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Title of publication.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">title</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iasis/vocab/year">
-        <dc:creator rdf:resource="http://iasis/vocab/samaneh"/>
+        <terms:creator rdf:resource="https://www.l3s.de/de/user/jozashoori"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-24</terms:modified>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Year of Publication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">year</rdfs:label>
     </rdf:Description>
