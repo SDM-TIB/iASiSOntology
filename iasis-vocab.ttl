@@ -126,13 +126,6 @@ iasis:Gene 	rdf:type owl:Class;
 			dcterms:modified "2017-07-24"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:Tumor rdf:type owl:Class;
-			rdfs:label	"Tumor";
-			rdfs:subClassOf	iasis:Concept;
-			rdfs:comment "Tumor is an abnormal mass of tisuue that results when cells didive more than they should or do not die when they should.";
-			dcterms:modified "2017-07-24"^^xsd:date;
-			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
 iasis:Sample 	rdf:type owl:Class;
 				rdfs:label	"Sample";
 				rdfs:subClassOf	iasis:Concept;
