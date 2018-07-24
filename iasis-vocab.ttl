@@ -133,6 +133,13 @@ iasis:Sample 	rdf:type owl:Class;
 				dcterms:modified "2017-07-24"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+iasis:Tumor rdf:type owl:Class;
+			rdfs:label	"Tumor";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "Tumor is an abnormal mass of tisuue that results when cells didive more than they should or do not die when they should.";
+			dcterms:modified "2017-07-24"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
 iasis:Mutation 	rdf:type owl:Class;
 				rdfs:label	"Mutation";
 				rdfs:subClassOf	iasis:Concept;
@@ -834,6 +841,14 @@ iasis:cgi_isLocatedIn_sample	rdf:type owl:ObjectProperty;
 								rdfs:comment	"Relation between CGI and Sample classes.";
 								dcterms:modified "2017-07-24"^^xsd:date;
 								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:cgi_isLocatedIn_tumor	rdf:type owl:ObjectProperty;
+							rdfs:label	"cgi_isLocatedIn_tumor";
+							rdfs:domain iasis:CGI;
+				 			rdfs:range iasis:Tumor;
+							rdfs:comment	"Relation between CGI and Tumor classes.";
+							dcterms:modified "2017-07-24"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:cnv_isLocatedIn_gene	rdf:type owl:ObjectProperty;
 							rdfs:label	"cnv_isLocatedIn_gene";
