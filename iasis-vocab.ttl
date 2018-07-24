@@ -843,13 +843,6 @@ iasis:cnv_isLocatedIn_gene	rdf:type owl:ObjectProperty;
 							dcterms:modified "2017-07-24"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:cgi_isLocatedIn_tumor	rdf:type owl:ObjectProperty;
-							rdfs:label	"cgi_isLocatedIn_tumor";
-							rdfs:domain iasis:CGI;
-				 			rdfs:range iasis:Tumor;
-							rdfs:comment	"Relation between CGI and Tumor classes.";
-							dcterms:modified "2017-07-24"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:cnv_isLocatedIn_sample	rdf:type owl:ObjectProperty;
 								rdfs:label	"cnv_isLocatedIn_sample";
