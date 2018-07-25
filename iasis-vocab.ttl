@@ -4,7 +4,6 @@
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ssn: <http://www.w3.org/ns/ssn/> .
-@prefix dce: <http://purl.org/dc/elements/1.1/>.
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
 ##########################################################################################
@@ -871,7 +870,7 @@ iasis:cnv_isLocatedIn_tumor	rdf:type owl:ObjectProperty;
 							rdfs:label	"cnv_isLocatedIn_tumor";
 							rdfs:domain iasis:CNV;
 				  			rdfs:range iasis:Tumor;	
-							dce:comment	"Relation between CNV and Tumor classes.";
+							rdfs:comment	"Relation between CNV and Tumor classes.";
 							dcterms:modified "2017-07-24"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
