@@ -173,13 +173,6 @@ iasis:Transcript	rdf:type	owl:Class;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:CancerGeneCensus	rdf:type	owl:Class;
-						rdfs:label	"CancerGeneCensus";
-						rdfs:subClassOf	iasis:Gene;
-						rdf:comment "Cancer Gene Census is a list of genes known to be involved in cancer.";
-						dcterms:modified "2017-07-24"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
 #### WP3 requirements:
 
 iasis:Protein 	rdf:type owl:Class;
