@@ -537,14 +537,6 @@ iasis:mutation_pepSeq	rdf:type	owl:DatatypeProperty;
 						dcterms:modified "2017-07-24"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:resistance_mutation_pepSeq	rdf:type	owl:DatatypeProperty;
-									rdfs:label	"ResistanceMutationPeptideSequence";
-									rdfs:domain	iasis:ResistanceMutation;
-									rdfs:range rdfs:Literal;
-									rdfs:comment "The new column produced from Mutation AA column, excluding p. in restanceMutation dataset";
-									dcterms:modified "2017-07-24"^^xsd:date;
-									dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
 iasis:mutation_NucleotideSeq	rdf:type	owl:DatatypeProperty;
 								rdfs:label	"MutationNucleotideSequence";
 								rdfs:domain	iasis:Mutation;
