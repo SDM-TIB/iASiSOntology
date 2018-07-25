@@ -1004,14 +1004,6 @@ iasis:translates_as rdf:type owl:ObjectProperty;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:globalscore 	rdf:type owl:DatatypeProperty;
-					rdfs:label	"globalscore";
-					rdfs:domain iasis:RBP_RNA_PhysicalInteraction;
-                  	rdfs:range rdfs:Literal;
-					rdfs:comment	"Global Score is an algorithm as part of catRAPID that integrates the information coming from protein and RNA fragments into an overall binding propensity value. The distribution of the interaction propensities is used as input of a non-linear algorithm that predicts interacting / non-interacting protein-RNA pairs.";
-					dcterms:modified "2017-07-24"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
 iasis:omixcore 	rdf:type owl:DatatypeProperty;
 				rdfs:label	"omixcore";
 				rdfs:domain iasis:RBP_RNA_PhysicalInteraction;
