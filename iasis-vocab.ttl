@@ -173,13 +173,6 @@ iasis:Transcript	rdf:type	owl:Class;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:ResistanceMutation	rdf:type	owl:Class;
-							rdfs:label	"ResistanceMutation";
-							rdfs:subClassOf	iasis:Mutation;
-							rdfs:comment "Mutations identified in the literature as resistance mutations, including those conferring acquired resistance (after treatment) and intrinsic resistance (before treatment)";
-							dcterms:modified "2017-07-24"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
 iasis:CancerGeneCensus	rdf:type	owl:Class;
 						rdfs:label	"CancerGeneCensus";
 						rdfs:subClassOf	iasis:Gene;
