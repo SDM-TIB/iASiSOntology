@@ -897,7 +897,7 @@ iasis:mutation_isLocatedIn_sample	rdf:type owl:ObjectProperty;
 									dcterms:modified "2017-07-24"^^xsd:date;
 									dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:mutation_isLocatedIn_transcript	rdf:type	owl:ObjectPeroperty;	
+iasis:mutation_isLocatedIn_transcript	rdf:type	owl:ObjectProperty;	
 										rdfs:label	"mutation_isLocatedIn_transcript";
 										rdfs:domain iasis:Mutation;
 				  						rdfs:range iasis:Transcript;
