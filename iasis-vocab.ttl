@@ -1143,7 +1143,7 @@ iasis:hasSideEffect	rdf:type	owl:ObjectProperty;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:dse_AvgFrequency	rdf:type	owl:DataTypeProperty;
+iasis:dse_AvgFrequency	rdf:type	owl:DatatypeProperty;
 						rdfs:label	"dse_AvgFrequency";
 						rdfs:domain	iasis:DrugSideEffect;
 						rdfs:range	rdfs:Literal;
@@ -1151,7 +1151,7 @@ iasis:dse_AvgFrequency	rdf:type	owl:DataTypeProperty;
 						dcterms:modified "2017-07-24"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:dse_StandardDeviation	rdf:type	owl:DataTypeProperty;
+iasis:dse_StandardDeviation	rdf:type	owl:DatatypeProperty;
 							rdfs:label	"dse_StandardDeviation";
 							rdfs:domain	iasis:DrugSideEffect;
 							rdfs:range	rdfs:Literal;
