@@ -367,14 +367,6 @@ iasis:semanticTypes	rdf:type	owl:ObjectProperty;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:title	rdf:type	owl:DatatypeProperty;
-			rdfs:label	"title";
-			rdfs:domain	iasis:Publication;
-			rdfs:range	rdfs:Literal;
-			rdfs:comment	"Title of publication.";
-			dcterms:modified "2017-07-24"^^xsd:date;
-			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
 iasis:year	rdf:type	owl:DatatypeProperty;
 			rdfs:label	"year";
 			rdfs:domain	iasis:Publication;
