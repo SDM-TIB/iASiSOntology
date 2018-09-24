@@ -391,13 +391,6 @@ iasis:journal	rdf:type	owl:DatatypeProperty;
 				dcterms:modified "2017-07-24"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:relation_isRelatedTo_cui	rdf:type	owl:ObjectProperty;
-								rdfs:label	"relation_isRelatedTo_cui";
-								rdfs:domain	iasis:Relation;
-								rdfs:range	iasis:Annotation;	
-								rdfs:comment	"The connection between UMLS relation and CUI.";
-								dcterms:modified "2017-07-24"^^xsd:date;
-								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:cui_mentionedIn_publication	rdf:type	owl:ObjectProperty;
 									rdfs:label	"cui_mentionedIn_publication";
@@ -417,7 +410,7 @@ iasis:publication_hasTopic_cui	rdf:type	owl:ObjectProperty;
 
 iasis:hasAnnotation	rdf:type	owl:ObjectProperty;
 								rdfs:label	"hasAnnotation";
-								rdfs:domain	iasis:Publication;
+								rdfs:domain	iasis:Relation;
 								rdfs:range	iasis:Annotation;
 								rdfs:comment	"Connection between mentionedIn or HasTopic relation with CUI.";
 								dcterms:modified "2017-07-24"^^xsd:date;
@@ -425,7 +418,7 @@ iasis:hasAnnotation	rdf:type	owl:ObjectProperty;
 
 iasis:annotates	rdf:type	owl:ObjectProperty;
 							rdfs:label	"annotates";
-							rdfs:domain	iasis:Publication;
+							rdfs:domain	iasis:Relation;
 							rdfs:range	iasis:Annotation;
 							rdfs:comment	"Connection between mentionedIn or HasTopic relation with CUI.";
 							dcterms:modified "2017-07-24"^^xsd:date;
