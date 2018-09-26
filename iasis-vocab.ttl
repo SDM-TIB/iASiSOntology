@@ -405,23 +405,6 @@ iasis:journal	rdf:type	owl:DatatypeProperty;
 				dcterms:modified "2017-07-24"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-
-iasis:cui_mentionedIn_publication	rdf:type	owl:ObjectProperty;
-									rdfs:label	"cui_mentionedIn_publication";
-									rdfs:domain	iasis:Annotation;
-									rdfs:range	iasis:Publication;	
-									rdfs:comment	"Direct connection that represents in which publication each CUI has been appeared. ";
-									dcterms:modified "2017-07-24"^^xsd:date;
-									dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:publication_hasTopic_cui	rdf:type	owl:ObjectProperty;
-								rdfs:label	"publication_hasTopic_cui";
-								rdfs:domain	iasis:Publication;
-								rdfs:range	iasis:Annotation;
-								rdfs:comment	"Direct connection that represents the topic of publication using CUI.";
-								dcterms:modified "2017-07-24"^^xsd:date;
-								dcterms:creator <https://www.l3s.de/de/user/jozashoori>. 
-
 iasis:hasAnnotation	rdf:type	owl:ObjectProperty;
 								rdfs:label	"hasAnnotation";
 								rdfs:domain	iasis:Relation;
