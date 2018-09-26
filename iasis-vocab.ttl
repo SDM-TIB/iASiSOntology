@@ -166,13 +166,42 @@ iasis:Transcript	rdf:type	owl:Class;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-
 iasis:Tissue	rdf:type	owl:Class;
-					rdfs:label	"Tissue";
+					rdfs:label	"Primary Tissue";
 					rdfs:subClassOf	iasis:Concept;
-					rdfs:comment "A cellular organizational level between cells and a complete organ.";
-					dcterms:modified "2017-07-24"^^xsd:date;
+					rdfs:comment "The primary tissue/cancer from which the sample originated.";
+					dcterms:modified "2018-09-26"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:SubTissue	rdf:type	owl:Class;
+					rdfs:label	"Tissue Subtype";
+					rdfs:subClassOf	iasis:Tissue;
+					rdfs:comment "Sub classification (level 1 and level 2) of the samples tissue of origin.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+
+iasis:TissueType	rdf:type	owl:Class;
+					rdfs:label	"Primary Histology";
+					rdfs:subClassOf	iasis:Concept;
+					rdfs:comment "The histological classification of the tissue from which the sample originated.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:TissueSubType	rdf:type	owl:Class;
+					rdfs:label	"Histology Subtype";
+					rdfs:subClassOf	iasis:TissueType;
+					rdfs:comment "Further histological classification (level 1) of the sample.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:Zygosity	rdf:type	owl:Class;
+					rdfs:label	"Mutation Zygosity";
+					rdfs:subClassOf	iasis:Concept;
+					rdfs:comment "Type of mutation on whether the mutation was reported to be homozygous, heterozygous or unknown within the sample.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
 #### WP3 requirements:
 
 iasis:Protein 	rdf:type owl:Class;
