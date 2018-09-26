@@ -1084,37 +1084,53 @@ iasis:eqtl_position 	rdf:type owl:DatatypeProperty;
 
 #### Drug requirements:
 
-iasis:mentioned_in	rdf:type	owl:ObjectProperty;
-					rdfs:label	"mentioned_in";
-					rdfs:domain	iasis:Drug;
-					rdfs:range	iasis:Publication;
-					rdfs:comment	"Relation that represents what drug has been mentioned in what publication.";
-					dcterms:modified "2017-07-24"^^xsd:date;
+iasis:drugID	rdf:type owl:DatatypeProperty;
+					rdfs:label "Drug_ID";
+					rdfs:domain iasis:Drug;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Drug ID.";
+					dcterms:modified "2018-09-26"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:drug_interactsWith_protein	rdf:type	owl:ObjectProperty;
-									rdfs:label	"drug_interactsWith_protein";
-									rdfs:domain	iasis:Drug;
-									rdfs:range	iasis:Protein;
-									rdfs:comment	"Represents drug-protein (as target) interactions.";
-									dcterms:modified "2017-07-24"^^xsd:date;
-									dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+iasis:drugLabel	rdf:type owl:DatatypeProperty;
+					rdfs:label "DrugLabel";
+					rdfs:domain iasis:Drug;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Drug label.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:drug_interactsWith_enzyme	rdf:type	owl:ObjectProperty;
-								rdfs:label	"drug_interactsWith_enzyme";
-								rdfs:domain	iasis:Drug;
-								rdfs:range	iasis:Enzyme;
-								rdfs:comment	"Represents drug-enzyme (as target) interactions.";
-								dcterms:modified "2017-07-24"^^xsd:date;
-								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+iasis:phenotypeID rdf:type owl:DatatypeProperty;
+					rdfs:label "Phenotype_ID";
+					rdfs:domain iasis:Phenotype;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Phenotype ID.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:drug_isPredictedToInteractWith_enzyme	rdf:type	owl:ObjectProperty;
-											rdfs:label	"drug_isPredictedToInteractWith_enzyme";
-											rdfs:domain	iasis:Drug;
-											rdfs:range	iasis:Enzyme;
-											rdfs:comment	"Predicts drug-enzyme interactions using semEP.";
-											dcterms:modified "2017-07-24"^^xsd:date;
-											dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+iasis:phenotypeLabel	rdf:type owl:DatatypeProperty;
+					rdfs:label "PhenotypeLabel";
+					rdfs:domain iasis:Phenotype;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Phenotype Label.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:enzymeID	rdf:type owl:DatatypeProperty;
+					rdfs:label "Enzyme_ID";
+					rdfs:domain iasis:Enzyme;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Enzyme ID.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:enzymeLabel	rdf:type owl:DatatypeProperty;
+					rdfs:label "EnzymeLabel";
+					rdfs:domain iasis:Enzyme;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Enzyme Label.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:drug_interactsWith_drug	rdf:type	owl:ObjectProperty;
 								rdfs:label	"drug_interactsWith_drug";
@@ -1124,6 +1140,7 @@ iasis:drug_interactsWith_drug	rdf:type	owl:ObjectProperty;
 								dcterms:modified "2017-07-24"^^xsd:date;
 								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+
 iasis:drug_isPredictedToInteractWith_drug	rdf:type	owl:ObjectProperty;
 											rdfs:label	"drug_isPredictedToInteractWith_drug";
 											rdfs:domain	iasis:Drug;
@@ -1131,6 +1148,32 @@ iasis:drug_isPredictedToInteractWith_drug	rdf:type	owl:ObjectProperty;
 											rdfs:comment	"Predicts drug-drug interactions using semEP.";
 											dcterms:modified "2017-07-24"^^xsd:date;
 											dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:drug_interactsWith_enzyme	rdf:type	owl:ObjectProperty;
+								rdfs:label	"drug_interactsWith_enzyme";
+								rdfs:domain	iasis:Drug;
+								rdfs:range	iasis:Enzyme;
+								rdfs:comment	"Represents drug-enzyme (as target) interactions.";
+								dcterms:modified "2017-07-24"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+
+iasis:drug_isPredictedToInteractWith_enzyme	rdf:type	owl:ObjectProperty;
+											rdfs:label	"drug_isPredictedToInteractWith_enzyme";
+											rdfs:domain	iasis:Drug;
+											rdfs:range	iasis:Enzyme;
+											rdfs:comment	"Predicts drug-enzyme interactions using semEP.";
+											dcterms:modified "2017-07-24"^^xsd:date;
+											dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:drug_interactsWith_protein	rdf:type	owl:ObjectProperty;
+									rdfs:label	"drug_interactsWith_protein";
+									rdfs:domain	iasis:Drug;
+									rdfs:range	iasis:Protein;
+									rdfs:comment	"Represents drug-protein (as target) interactions.";
+									dcterms:modified "2017-07-24"^^xsd:date;
+									dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
 
 iasis:drug_isPredictedToHave_sideEffect	rdf:type	owl:ObjectProperty;
 										rdfs:label	"drug_isPredictedToHave_sideEffect";
@@ -1140,13 +1183,21 @@ iasis:drug_isPredictedToHave_sideEffect	rdf:type	owl:ObjectProperty;
 										dcterms:modified "2017-07-24"^^xsd:date;
 										dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:hasSideEffect	rdf:type	owl:ObjectProperty;
-					rdfs:label	"hasSideEffect";
-					rdfs:domain	iasis:Drug;
-					rdfs:range	iasis:HPO;
-					rdfs:comment	"Represents the side effect each drug may have.";
-					dcterms:modified "2017-07-24"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+iasis:drug_isRelatedTo_dse	rdf:type	owl:ObjectProperty;
+							rdfs:label	"drug_isRelatedTo_dse";
+							rdfs:domain	iasis:Drug;
+							rdfs:range	iasis:DrugSideEffect;
+							rdfs:comment	"Connection between drug and drug-sideEffect relation.";
+							dcterms:modified "2017-07-24"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:sideEffect_isRelatedTo_dse	rdf:type	owl:ObjectProperty;
+									rdfs:label	"sideEffect_isRelatedTo_dse";
+									rdfs:domain	iasis:SideEffect;
+									rdfs:range	iasis:DrugSideEffect;
+									rdfs:comment	"Connection between sideEffect and drug-sideEffect relation.";
+									dcterms:modified "2017-07-24"^^xsd:date;
+									dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:dse_AvgFrequency	rdf:type	owl:DatatypeProperty;
 						rdfs:label	"dse_AvgFrequency";
@@ -1164,21 +1215,14 @@ iasis:dse_StandardDeviation	rdf:type	owl:DatatypeProperty;
 							dcterms:modified "2017-07-24"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:drug_isRelatedTo_dse	rdf:type	owl:ObjectProperty;
-							rdfs:label	"drug_isRelatedTo_dse";
-							rdfs:domain	iasis:Drug;
-							rdfs:range	iasis:DrugSideEffect;
-							rdfs:comment	"Connection between drug and drug-sideEffect relation.";
-							dcterms:modified "2017-07-24"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:sideEffect_isRelatedTo_dse	rdf:type	owl:ObjectProperty;
-									rdfs:label	"sideEffect_isRelatedTo_dse";
-									rdfs:domain	iasis:SideEffect;
-									rdfs:range	iasis:DrugSideEffect;
-									rdfs:comment	"Connection between sideEffect and drug-sideEffect relation.";
-									dcterms:modified "2017-07-24"^^xsd:date;
-									dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+iasis:externalLink	rdf:type owl:DatatypeProperty;
+					rdfs:label "externalLink";
+					rdfs:domain iasis:Concept;
+				  	rdfs:range xsd:anyURI;
+                  			rdfs:comment "Link to external resources.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 #### WP2 requirements:
 
