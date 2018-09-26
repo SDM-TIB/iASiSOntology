@@ -539,7 +539,7 @@ iasis:description	rdf:type owl:DatatypeProperty;
 					rdfs:label	"Description";
 					rdfs:domain iasis:Annotation;
 				  	rdfs:range rdfs:Literal;
-                  	rdfs:comment "A property of Annotation Class";
+                  			rdfs:comment "A property of Annotation Class";
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
@@ -591,22 +591,14 @@ iasis:tissueSubTypeLabel	rdf:type owl:DatatypeProperty;
 			dcterms:modified "2018-09-26"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+iasis:zygosityLabel	rdf:type owl:DatatypeProperty;
+				rdfs:label	"ZygosityLabel";
+				rdfs:domain	iasis:Zygosity;
+				rdfs:range	rdfs:Literal;	
+				rdfs:comment	"Homozygous or heterozygous or nothing as unknown.";
+				dcterms:modified "2018-09-26"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:mutation_mentionedIn_publication	rdf:type owl:ObjectProperty;
-										rdfs:label	"MutationMentionedInPublication";
-										rdfs:domain iasis:Mutation;
-				   						rdfs:range iasis:Publication;
-										rdfs:comment	"Extracted from Mutation dataset.";
-										dcterms:modified "2017-07-24"^^xsd:date;
-										dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:mutation_pepSeq	rdf:type	owl:DatatypeProperty;
-						rdfs:label	"MutationPeptideSequece";
-						rdfs:domain	iasis:Mutation;
-						rdfs:range rdfs:Literal;
-						rdfs:comment "A new column produced from Mutation AA column, excluding p. in mutation dataset";
-						dcterms:modified "2017-07-24"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:mutation_NucleotideSeq	rdf:type	owl:DatatypeProperty;
 								rdfs:label	"MutationNucleotideSequence";
@@ -696,7 +688,7 @@ iasis:cnv_study_id	rdf:type owl:ObjectProperty;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:mutation_study_id	rdf:type owl:ObjectProperty;
+iasis:mutation_studyID	rdf:type owl:ObjectProperty;
 						rdfs:label	"mutationStudyID";
 						rdfs:domain iasis:Mutation;
 			   			rdfs:range rdfs:Literal;
@@ -704,7 +696,7 @@ iasis:mutation_study_id	rdf:type owl:ObjectProperty;
 						dcterms:modified "2017-07-24"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:cgi_study_id	rdf:type owl:ObjectProperty;
+iasis:cgi_studyID	rdf:type owl:ObjectProperty;
 					rdfs:label	"CpGislandStudyID";
 					rdfs:domain iasis:CGI;
 			   		rdfs:range rdfs:Literal;
@@ -712,7 +704,7 @@ iasis:cgi_study_id	rdf:type owl:ObjectProperty;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:gexp_study_id	rdf:type owl:ObjectProperty;
+iasis:gexp_studyID	rdf:type owl:ObjectProperty;
 					rdfs:label	"gexpStudyID";
 					rdfs:domain iasis:GExp;
 			   		rdfs:range rdfs:Literal;
@@ -768,14 +760,6 @@ iasis:tumor_origin 	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:z_score 	rdf:type owl:DatatypeProperty;
-				rdfs:label	"z-score";
-				rdfs:domain iasis:GExp;
-			  	rdfs:range rdfs:Literal;
-				rdfs:comment	"An indicative score taken from the gen_expression from different platforms.";
-				dcterms:modified "2017-07-24"^^xsd:date;
-				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
 iasis:beta_value	rdf:type owl:DatatypeProperty;
 					rdfs:label	"beta-value";
 					rdfs:domain iasis:CGI;
@@ -823,14 +807,6 @@ iasis:methylation 	rdf:type owl:DatatypeProperty;
 					rdfs:comment	"Methylation level: H (High) : beta-value > 0.8, L (Low) : beta-value < 0.2 ";
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-		
-iasis:zygosityLabel	rdf:type owl:DatatypeProperty;
-				rdfs:label	"ZygosityLabel";
-				rdfs:domain	iasis:Zygosity;
-				rdfs:range	rdfs:Literal;	
-				rdfs:comment	"Homozygous or heterozygous or nothing as unknown.";
-				dcterms:modified "2018-09-26"^^xsd:date;
-				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:loh	rdf:type owl:DatatypeProperty;
 			rdfs:label	"LOH";
@@ -872,11 +848,77 @@ iasis:mutationType	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+
+iasis:sampleSource	rdf:type	owl:DatatypeProperty;
+					rdfs:label	"sampleSource";
+					rdfs:domain	iasis:Sample;
+					rdfs:range	rdfs:Literal;
+					rdfs:comment "Appears in resistanceMutation dataset";
+					dcterms:modified "2017-07-24"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
 iasis:gene_isRelatedTo_sample	rdf:type	owl:ObjectProperty;
 								rdfs:label	"gene_isRelatedTo_sample";
 								rdfs:domain	iasis:Gene;
 								rdfs:range	iasis:Sample;
 								rdfs:comment "Relation between Gene and Sample classes.";
+								dcterms:modified "2017-07-24"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+
+iasis:gene_isTranscribedAs_transcript	rdf:type	owl:ObjectProperty;
+											rdfs:label	"gene_isTranscribedAs_transcript";
+											rdfs:domain	iasis:Gene;	
+											rdfs:range	iasis:Transcript;
+											rdfs:comment "Transcript of gene.";
+											dcterms:modified "2018-09-26"^^xsd:date;
+											dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:mutation_mentionedIn_publication	rdf:type owl:ObjectProperty;
+										rdfs:label	"MutationMentionedInPublication";
+										rdfs:domain iasis:Mutation;
+				   						rdfs:range iasis:Publication;
+										rdfs:comment	"Extracted from Mutation dataset.";
+										dcterms:modified "2017-07-24"^^xsd:date;
+										dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+
+iasis:mutation_isLocatedIn_gene	rdf:type owl:ObjectProperty;
+								rdfs:label	"MutationIsLocatedInGene";
+								rdfs:domain iasis:Mutation;
+				  				rdfs:range iasis:Gene;
+								rdfs:comment	"The gene in which the mutation occurs.";
+								dcterms:modified "2017-07-24"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:mutation_isLocatedIn_sample	rdf:type owl:ObjectProperty;
+									rdfs:label	"mutation_isLocatedIn_sample";
+									rdfs:domain iasis:Mutation;
+				  					rdfs:range iasis:Sample;
+									rdfs:comment	"The sample in which the mutation occurs.";
+									dcterms:modified "2017-07-24"^^xsd:date;
+									dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:mutation_isResistantTo_drug	rdf:type	owl:ObjectProperty;
+									rdfs:label	"mutation_isResistantTo_drug";
+									rdfs:domain	iasis:Mutation;
+									rdfs:range	iasis:Drug;
+									rdfs:comment	" Yes: if reported mutation confers drug resistance. -: means resistance data is unknown; there is no evidence for resistance or it is a known primary mutation.";
+									dcterms:modified "2017-07-24"^^xsd:date;
+									dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:mutation_isLocatedIn_transcript	rdf:type	owl:ObjectProperty;	
+										rdfs:label	"mutation_isLocatedIn_transcript";
+										rdfs:domain iasis:Mutation;
+				  						rdfs:range iasis:Transcript;
+										rdfs:comment	"The transcript in which the mutation occurs.";
+										dcterms:modified "2017-07-24"^^xsd:date;
+										dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+iasis:sample_isTakenFrom_tumor	rdf:type owl:ObjectProperty;
+								rdfs:label	"sample_isTakenFrom_tumor";
+								rdfs:domain iasis:Sample;
+								rdfs:range iasis:Tumor;
+								rdfs:commnet	"The tumor from which the sample is taken.";
 								dcterms:modified "2017-07-24"^^xsd:date;
 								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
@@ -896,14 +938,6 @@ iasis:cgi_isLocatedIn_sample	rdf:type owl:ObjectProperty;
 								dcterms:modified "2017-07-24"^^xsd:date;
 								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:cgi_isLocatedIn_tumor	rdf:type owl:ObjectProperty;
-							rdfs:label	"cgi_isLocatedIn_tumor";
-							rdfs:domain iasis:CGI;
-				 			rdfs:range iasis:Tumor;
-							rdfs:comment	"Relation between CGI and Tumor classes.";
-							dcterms:modified "2017-07-24"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
 iasis:cnv_isLocatedIn_gene	rdf:type owl:ObjectProperty;
 							rdfs:label	"cnv_isLocatedIn_gene";
 							rdfs:domain iasis:CNV;
@@ -921,93 +955,22 @@ iasis:cnv_isLocatedIn_sample	rdf:type owl:ObjectProperty;
 								dcterms:modified "2017-07-24"^^xsd:date;
 								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:cnv_isLocatedIn_tumor	rdf:type owl:ObjectProperty;
-							rdfs:label	"cnv_isLocatedIn_tumor";
-							rdfs:domain iasis:CNV;
-				  			rdfs:range iasis:Tumor;	
-							rdfs:comment	"Relation between CNV and Tumor classes.";
-							dcterms:modified "2017-07-24"^^xsd:date;
+
+iasis:gexp_isRelatedTo_gene	rdf:type owl:ObjectProperty;
+							rdfs:label "gexp_isRelatedTo_gene";
+							rdfs:domain iasis:Gexp;
+			     				rdfs:range iasis:Gene;
+							rdfs:comment	"Relation between Gexp and Gene classes.";
+							dcterms:modified "2018-09-26"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:mutation_isLocatedIn_gene	rdf:type owl:ObjectProperty;
-								rdfs:label	"MutationIsLocatedInGene";
-								rdfs:domain iasis:Mutation;
-				  				rdfs:range iasis:Gene;
-								rdfs:comment	"The gene in which the mutation occurs.";
-								dcterms:modified "2017-07-24"^^xsd:date;
-								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:mutation_isLocatedIn_tumor	rdf:type owl:ObjectProperty;
-									rdfs:label	"mutation_isLocatedIn_tumor";
-									rdfs:domain iasis:Mutation;
-				  					rdfs:range iasis:Tumor;
-									rdfs:comment	"The tumor in which the mutation occurs.";
-									dcterms:modified "2017-07-24"^^xsd:date;
-									dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:mutation_isLocatedIn_sample	rdf:type owl:ObjectProperty;
-									rdfs:label	"mutation_isLocatedIn_sample";
-									rdfs:domain iasis:Mutation;
-				  					rdfs:range iasis:Sample;
-									rdfs:comment	"The sample in which the mutation occurs.";
-									dcterms:modified "2017-07-24"^^xsd:date;
-									dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:mutation_isLocatedIn_transcript	rdf:type	owl:ObjectProperty;	
-										rdfs:label	"mutation_isLocatedIn_transcript";
-										rdfs:domain iasis:Mutation;
-				  						rdfs:range iasis:Transcript;
-										rdfs:comment	"The transcript in which the mutation occurs.";
-										dcterms:modified "2017-07-24"^^xsd:date;
-										dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:sample_isTakenFrom_tumor	rdf:type owl:ObjectProperty;
-								rdfs:label	"sample_isTakenFrom_tumor";
-								rdfs:domain iasis:Sample;
-								rdfs:range iasis:Tumor;
-								rdfs:commnet	"The tumor from which the sample is taken.";
-								dcterms:modified "2017-07-24"^^xsd:date;
-								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:mutation_isClassifiedAs_mutationType	rdf:type owl:ObjectProperty;
-											rdfs:label	"mutation_isClassifiedAs_mutationType";
-											rdfs:domain iasis:Mutation;
-											rdfs:range iasis:MutationType;
-											rdfs:comment	"The mutation type according to mutation data.";
-											dcterms:modified "2017-07-24"^^xsd:date;
-											dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:cnv_isClassifiedAs_mutationType	rdf:type owl:ObjectProperty;
-										rdfs:label	"cnv_isClassifiedAs_mutationType";
-										rdfs:domain iasis:CNV;
-										rdfs:range iasis:MutationType;
-										rdfs:comment	"The mutation type according to CNV data.";
-										dcterms:modified "2017-07-24"^^xsd:date;
-										dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:sampleSource	rdf:type	owl:DatatypeProperty;
-					rdfs:label	"sampleSource";
-					rdfs:domain	iasis:Sample;
-					rdfs:range	rdfs:Literal;
-					rdfs:comment "Appears in resistanceMutation dataset";
-					dcterms:modified "2017-07-24"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:gene_isTranscribedAs_transcription	rdf:type	owl:ObjectProperty;
-											rdfs:label	"gene_isTranscribedAs_transcription";
-											rdfs:domain	iasis:Gene;	
-											rdfs:range	iasis:Transcription;
-											rdfs:comment "As connection between Gene and Transcription Relation.";
-											dcterms:modified "2017-07-24"^^xsd:date;
-											dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:mutation_isResistantTo_drug	rdf:type	owl:ObjectProperty;
-									rdfs:label	"mutation_isResistantTo_drug";
-									rdfs:domain	iasis:Mutation;
-									rdfs:range	iasis:Drug;
-									rdfs:comment	" Yes: if reported mutation confers drug resistance. -: means resistance data is unknown; there is no evidence for resistance or it is a known primary mutation.";
-									dcterms:modified "2017-07-24"^^xsd:date;
-									dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+iasis:gexp_isRelatedTo_sample	rdf:type owl:ObjectProperty;
+							rdfs:label "gexp_isRelatedTo_gene";
+							rdfs:domain iasis:Gexp;
+			     				rdfs:range iasis:Sample;
+							rdfs:comment	"Relation between Gexp and Sample classes.";
+							dcterms:modified "2018-09-26"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 
 #### WP3 requirements:
