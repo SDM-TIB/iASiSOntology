@@ -52,7 +52,7 @@ iasis:Publication	rdf:type	owl:Class;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
-iasis:MentionedIn	rdf:type owl:Class;
+iasis:MENTIONED_IN	rdf:type owl:Class;
 					rdfs:label	"MentionedIn";
 					rdfs:subClassOf iasis:Relation;
 					rdfs:comment	"A relation that shows in which publication each specific CUI term has been appeared.";
