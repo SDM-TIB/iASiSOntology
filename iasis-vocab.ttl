@@ -379,6 +379,14 @@ iasis:hasAnnotation	rdf:type owl:ObjectProperty;
 
 #### WP4 requirements:
 
+iasis:pubmedID	rdf:type owl:DatatypeProperty;
+					rdfs:label "PubMed ID";
+					rdfs:domain iasis:Publication;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "PubMed ID.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
 iasis:semanticTypes	rdf:type	owl:ObjectProperty;
 					rdfs:label	"semanticType";
 					rdfs:domain	iasis:Annotation;
@@ -471,7 +479,61 @@ iasis:sampleLabel	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2018-09-26"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+iasis:sampleID	rdf:type owl:DatatypeProperty;
+					rdfs:label "SampleID";
+					rdfs:domain iasis:Sample;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Sample ID.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+iasis:tumorID	rdf:type owl:DatatypeProperty;
+					rdfs:label "TumorID";
+					rdfs:domain iasis:Tumor;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Tumor ID.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:mutationID	rdf:type owl:DatatypeProperty;
+					rdfs:label "MutationID";
+					rdfs:domain iasis:Mutation;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Mutation ID.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:mutationLabel	rdf:type owl:DatatypeProperty;
+					rdfs:label "MutationName";
+					rdfs:domain iasis:Mutation;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Mutation Name.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:cgiID	rdf:type owl:DatatypeProperty;
+					rdfs:label "CGI_ID";
+					rdfs:domain iasis:CGI;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "CGI ID.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:cnvID	rdf:type owl:DatatypeProperty;
+					rdfs:label "CNV_ID";
+					rdfs:domain iasis:CNV;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "CNV ID.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:sampleSource	rdf:type owl:DatatypeProperty;
+					rdfs:label "SampleSource";
+					rdfs:domain iasis:Sample;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Where the sample has originated from including the tumor type.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:description	rdf:type owl:DatatypeProperty;
 					rdfs:label	"Description";
@@ -489,7 +551,7 @@ iasis:cds_length 	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:age	rdf:type owl:DatatypeProperty;
+iasis:sampleAge	rdf:type owl:DatatypeProperty;
 			rdfs:label	"AgeOfSample";
 			rdfs:domain iasis:Sample;          
 		  	rdfs:range rdfs:Literal;
