@@ -337,21 +337,13 @@ iasis:LiquidBiopsyObservation	rdf:type	owl:Class;
 ########################### Properties ###################################################
 ##########################################################################################
 
-
-iasis:id	rdf:type	owl:ObjectProperty;
-			rdfs:label	"AnnotationID";
+iasis:cuiID	rdf:type	owl:ObjectProperty;
+			rdfs:label	"CUI_ID";
 			rdfs:domain iasis:Annotation;
 			rdfs:range	rdfs:Literal;
 			rdfs:comment	"Identification of instances of Annotation class";	
-			dcterms:modified "2017-07-24"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
-
-iasis:id	rdfs:label	"ConceptID";
-			rdfs:domain iasis:Concept;
-			rdfs:range	rdfs:Literal;
-			rdfs:comment	"Identification of instances of Concept class";
-			dcterms:modified "2017-07-24"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+			dcterms:modified "2018-09-26"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:annLabel	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"AnnotationLabel";
@@ -360,14 +352,6 @@ iasis:annLabel	rdf:type	owl:DatatypeProperty;
                 rdfs:comment	"Label of instances of Annotation class";
 				dcterms:modified "2017-07-24"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:label	rdf:type	owl:DatatypeProperty;
-			rdfs:label	"ConceptLabel";
-			rdfs:domain	iasis:Concept;
-			rdfs:range	rdfs:Literal;
-			rdfs:comment	"Label of instances of Concept class";
-			dcterms:modified "2017-07-24"^^xsd:date;
-			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:provenance	rdf:type	owl:ObjectProperty;
 					rdfs:label	"provenance";
@@ -385,6 +369,13 @@ iasis:isRelatedTo	rdf:type	owl:ObjectProperty;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
+iasis:hasAnnotation	rdf:type owl:ObjectProperty;
+								rdfs:label	"CUI Annotation";
+								rdfs:domain iasis:Concept;
+				  				rdfs:range iasis:Annotation;
+								rdfs:comment	"CUI annotation of the concept.";
+								dcterms:modified "2018-09-26"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 #### WP4 requirements:
 
@@ -456,6 +447,32 @@ iasis:annotates	rdf:type	owl:ObjectProperty;
 
 #### COSMIC requirements:
 
+iasis:geneLabel	rdf:type owl:DatatypeProperty;
+					rdfs:label "GeneName";
+					rdfs:domain iasis:Gene;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "HUGU name of the gene.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:geneHugoID	rdf:type owl:DatatypeProperty;
+					rdfs:label "GeneHUGU_ID";
+					rdfs:domain iasis:Gene;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "HUGU ID for the gene.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:sampleLabel	rdf:type owl:DatatypeProperty;
+					rdfs:label "SampleName";
+					rdfs:domain iasis:Sample;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "Sample Name.";
+					dcterms:modified "2018-09-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+
+
 iasis:description	rdf:type owl:DatatypeProperty;
 					rdfs:label	"Description";
 					rdfs:domain iasis:Annotation;
@@ -476,57 +493,42 @@ iasis:age	rdf:type owl:DatatypeProperty;
 			rdfs:label	"AgeOfSample";
 			rdfs:domain iasis:Sample;          
 		  	rdfs:range rdfs:Literal;
-			rdfs:comment	"Information about the information of sample";
+			rdfs:comment	"Information about the age of sample";
 			dcterms:modified "2017-07-24"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:primaryTissue	rdf:type owl:DatatypeProperty;
-					rdfs:label	"PrimaryTissue";
-					rdfs:domain iasis:Sample;
-					rdfs:range	rdfs:Literal;
-					rdfs:comment	"Primary tissue/cancer from which the sample originated.";
-					dcterms:modified "2017-07-24"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+iasis:subTissueLabel	rdf:type owl:DatatypeProperty;
+			rdfs:label	"TissueSubtypeLabel";
+			rdfs:domain iasis:SubTissue;          
+		  	rdfs:range rdfs:Literal;
+			rdfs:comment	"Name of Tissue Subtype.";
+			dcterms:modified "2018-09-26"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:tissueSubtype1	rdf:type owl:DatatypeProperty;
-						rdfs:label	"PrimaryTissue_1stLevelSubclassification";
-						rdfs:domain iasis:Sample;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment	"Sub classification (level 1) of the samples tissue of origin.";
-						dcterms:modified "2017-07-24"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+iasis:tissueTypeLabel	rdf:type owl:DatatypeProperty;
+			rdfs:label	"PrimaryHistologyLabel";
+			rdfs:domain iasis:TissueType;          
+		  	rdfs:range rdfs:Literal;
+			rdfs:comment	"Name of Primary Histology.";
+			dcterms:modified "2018-09-26"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:tissueSubtype2	rdf:type owl:DatatypeProperty;
-						rdfs:label	"PrimaryTissue_2ndLevelSubclassification";
-						rdfs:domain iasis:Sample;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment	"Sub classification (level 2) of the samples tissue of origin.";
-						dcterms:modified "2017-07-24"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+iasis:tissueLabel	rdf:type owl:DatatypeProperty;
+			rdfs:label	"PrimaryTissueLabel";
+			rdfs:domain iasis:Tissue;          
+		  	rdfs:range rdfs:Literal;
+			rdfs:comment	"Name of Primary Tissue.";
+			dcterms:modified "2018-09-26"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:primaryHistology	rdf:type owl:DatatypeProperty;
-						rdfs:label	"PrimaryHistology";
-						rdfs:domain iasis:Sample;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment	"Histological classification of sample.";
-						dcterms:modified "2017-07-24"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+iasis:tissueSubTypeLabel	rdf:type owl:DatatypeProperty;
+			rdfs:label	"HistologySubtypeLabel";
+			rdfs:domain iasis:TissueSubType;          
+		  	rdfs:range rdfs:Literal;
+			rdfs:comment	"Name of Histology Subtype.";
+			dcterms:modified "2018-09-26"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:histologySubtype1	rdf:type owl:DatatypeProperty;
-						rdfs:label	"PrimaryHistology_1stLevelSubclassification";
-						rdfs:domain iasis:Sample;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment	"Histological classification (level 1) of the sample.";
-						dcterms:modified "2017-07-24"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:histologySubtype2	rdf:type owl:DatatypeProperty;
-						rdfs:label	"PrimaryHistology_2ndLevelSubclassification";
-						rdfs:domain iasis:Sample;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment	"Histological classification (level 2) of the sample.";
-						dcterms:modified "2017-07-24"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:mutation_mentionedIn_publication	rdf:type owl:ObjectProperty;
 										rdfs:label	"MutationMentionedInPublication";
@@ -760,12 +762,12 @@ iasis:methylation 	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 		
-iasis:zygosity	rdf:type owl:DatatypeProperty;
-				rdfs:label	"Zygosity";
-				rdfs:domain	iasis:Mutation;
+iasis:zygosityLabel	rdf:type owl:DatatypeProperty;
+				rdfs:label	"ZygosityLabel";
+				rdfs:domain	iasis:Zygosity;
 				rdfs:range	rdfs:Literal;	
-				rdfs:comment	"Information on whether the mutation was reported to be homozygous or heterozygous within the sample.";
-				dcterms:modified "2017-07-24"^^xsd:date;
+				rdfs:comment	"Homozygous or heterozygous or nothing as unknown.";
+				dcterms:modified "2018-09-26"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:loh	rdf:type owl:DatatypeProperty;
