@@ -27,13 +27,6 @@ iasis:SourceName	rdf:type	owl:Class;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
-iasis:ClinicalRecord 	rdf:type owl:Class;
-						rdfs:label	"Clinical Record";
-						rdfs:subClassOf	iasis:Concept;
-						rdfs:comment "Systematic documentation of a single patient's medical history and care across time within one particular health care provider's jurisdiction.";
-						dcterms:modified "2017-07-24"^^xsd:date;
-						dcterms:creator <https://en.wikipedia.org/wiki/Mar%C3%ADa-Esther_Vidal>.
-
 iasis:Image rdf:type owl:Class;
 			rdfs:label	"MedicalImage";
 			rdfs:subClassOf	iasis:Concept;
@@ -173,6 +166,13 @@ iasis:Transcript	rdf:type	owl:Class;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+
+iasis:Tissue	rdf:type	owl:Class;
+					rdfs:label	"Tissue";
+					rdfs:subClassOf	iasis:Concept;
+					rdfs:comment "A cellular organizational level between cells and a complete organ.";
+					dcterms:modified "2017-07-24"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 #### WP3 requirements:
 
 iasis:Protein 	rdf:type owl:Class;
