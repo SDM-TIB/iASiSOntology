@@ -211,13 +211,6 @@ iasis:Protein 	rdf:type owl:Class;
 				dcterms:modified "2017-07-24"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:Transcription rdf:type owl:Class;
-					rdfs:label	"Transcription";
-					rdfs:subClassOf	iasis:Relation;
-					rdf:comment "A process during which DNA is converted to RNA, a more portable set of instructions for the cell.";
-				dcterms:modified "2017-07-24"^^xsd:date;
-				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
 iasis:RBP_RNA_PhysicalInteraction	rdf:type	owl:Class;
 									rdfs:label	"RBP_RNA_interaction";
 									rdfs:subClassOf	iasis:Relation;
@@ -232,13 +225,6 @@ iasis:EQTL	rdf:type owl:Class;
 			dcterms:modified "2017-07-24"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:Dbsnp	rdf:type owl:Class;
-			rdfs:label	"dbsnp";
-			rdfs:subClassOf	iasis:Concept;
-			rdf:comment "Database of single nucleotide polymorphisms (SNPs) and multiple small-scale variations that include insertions/deletions, microsatellites, and non-polymorphic variants.";
-			dcterms:modified "2017-07-24"^^xsd:date;
-			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
 #### Drug requirements:
 
 iasis:Drug	rdf:type owl:Class;
@@ -248,10 +234,10 @@ iasis:Drug	rdf:type owl:Class;
 			dcterms:modified "2017-07-24"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:SideEffect	rdf:type owl:Class;
-					rdfs:label	"SideEffect";
+iasis:Phenotype	rdf:type owl:Class;
+					rdfs:label	"Phenotype";
 					rdfs:subClassOf	iasis:Concept;
-					rdf:comment "An often harmful and unwanted effect of a drug or chemical that occurs along with the desired effect.";
+					rdf:comment "The set of observable characteristics of an individual resulting from the interaction of its genotype with the environment. This class include side effects that result from different drugs.";
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
