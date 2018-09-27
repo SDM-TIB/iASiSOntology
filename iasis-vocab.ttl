@@ -59,11 +59,11 @@ iasis:MENTIONED_IN	rdf:type owl:Class;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
-iasis:HasTopic	rdf:type owl:Class;
+iasis:HAS_TOPIC	rdf:type owl:Class;
 				rdfs:label	"HasTopic";
 				rdfs:subClassOf iasis:Relation;
 				rdfs:comment	"A relation that shows which CUI has been appeared in each specific publication.";
-				dcterms:modified "2017-07-24"^^xsd:date;
+				dcterms:modified "2018-09-27"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:ASSOCIATED_WITH	rdf:type owl:Class;
@@ -363,12 +363,12 @@ iasis:pubmedID	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2018-09-26"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:semanticTypes	rdf:type	owl:ObjectProperty;
+iasis:semanticType	rdf:type	owl:ObjectProperty;
 					rdfs:label	"semanticType";
 					rdfs:domain	iasis:Annotation;
 					rdfs:range	iasis:SourceName;
 					rdfs:comment	"A list with the allowed semantic_types for this Annotation in the UMLS. ";
-					dcterms:modified "2017-07-24"^^xsd:date;
+					dcterms:modified "2018-09-27"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:year	rdf:type	owl:DatatypeProperty;
