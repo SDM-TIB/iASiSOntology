@@ -284,51 +284,41 @@ iasis:TumorStage	rdf:type owl:Class;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:Ecog	rdf:type	owl:Class;
-			rdfs:label	"Ecog";
-			rdfs:comment "ECOG Performance Status describes a patient's level of functioning in terms of her/his ability for caring her/himself, daily activities and phyical abilities.";
-			dcterms:modified "2017-07-24"^^xsd:date;
+iasis:PerformanceStatus	rdf:type	owl:Class;
+			rdfs:label	"PerformanceStatus";
+			rdfs:comment "Performance Status describes a patient's level of functioning in terms of her/his ability for caring her/himself, daily activities and phyical abilities.";
+			dcterms:modified "2018-09-27"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:Observation	rdf:type	owl:Class;
-					rdfs:label	"Observation";
-					rdfs:subClassOf	iasis:Concept;
-					rdfs:comment	"Active acquisition of data from patient.";
-					dcterms:modified "2017-07-24"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:TumorStageObservation	rdf:type	owl:Class;
-							rdfs:label	"TumorStageObservation";
-							rdfs:subClassOf	iasis:Observation;
-							rdfs:comment "Each tumor stage assessment will be recorded as a separate observation.";
-							dcterms:modified "2017-07-24"^^xsd:date;
+iasis:FamiliarAntecedent	rdf:type	owl:Class;
+							rdfs:label	"FamiliarAntecedent";
+							rdfs:comment "Represents a list of familiar antecedents of the patient.";
+							dcterms:modified "2018-09-27"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:EcogObservation	rdf:type	owl:Class;
-						rdfs:label	"EcogObservation";
-						rdfs:subClassOf	iasis:Observation;
-						rdfs:comment "Each time patient visits the hospital, the ecog is assessed as a new ecogObservation.";
-						dcterms:modified "2017-07-24"^^xsd:date;
+iasis:Gender	rdf:type	owl:Class;
+						rdfs:label	"GenderOfPatient";
+						rdfs:comment "Represents the gender of the patients.";
+						dcterms:modified "2018-09-27"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:LiquidBiopsyObservation	rdf:type	owl:Class;
-								rdfs:label	"LiquidBiopsyObservation";
-								rdfs:subClassOf	iasis:Observation;
-								rdfs:comment "Each LiquidBiopsy on a patient would be documented as a separate observation.";
-								dcterms:modified "2017-07-24"^^xsd:date;
-								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+iasis:Gender	rdf:type	owl:Class;
+						rdfs:label	"GenderOfPatient";
+						rdfs:comment "Represents the gender of the patients.";
+						dcterms:modified "2018-09-27"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 
 ##########################################################################################
 ########################### Properties ###################################################
 ##########################################################################################
 
-iasis:cuiID	rdf:type	owl:ObjectProperty;
-			rdfs:label	"CUI_ID";
+iasis:annID	rdf:type	owl:ObjectProperty;
+			rdfs:label	"AnnotationID";
 			rdfs:domain iasis:Annotation;
 			rdfs:range	rdfs:Literal;
 			rdfs:comment	"Identification of instances of Annotation class";	
-			dcterms:modified "2018-09-26"^^xsd:date;
+			dcterms:modified "2018-09-27"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:annLabel	rdf:type	owl:DatatypeProperty;
