@@ -302,6 +302,12 @@ iasis:Gender	rdf:type	owl:Class;
 						dcterms:modified "2018-09-27"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+iasis:Chemotherapy	rdf:type	owl:Class;
+						rdfs:subClassOf iasis:Drug;
+						rdfs:label	"Chemotherapy";
+						rdfs:comment "Specific chemotherapy drugs prescribed to the Entity.";
+						dcterms:modified "2018-09-27"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 ##########################################################################################
 ########################### Properties ###################################################
