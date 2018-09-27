@@ -379,7 +379,7 @@ iasis:year	rdf:type	owl:DatatypeProperty;
 			dcterms:modified "2017-07-24"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:authors	rdf:type	owl:DatatypeProperty;
+iasis:author	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"authors";
 				rdfs:domain	iasis:Publication;
 				rdfs:range	rdfs:Literal;
