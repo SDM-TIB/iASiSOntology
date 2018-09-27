@@ -302,12 +302,6 @@ iasis:Gender	rdf:type	owl:Class;
 						dcterms:modified "2018-09-27"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:Gender	rdf:type	owl:Class;
-						rdfs:label	"GenderOfPatient";
-						rdfs:comment "Represents the gender of the patients.";
-						dcterms:modified "2018-09-27"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
 
 ##########################################################################################
 ########################### Properties ###################################################
