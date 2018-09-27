@@ -325,7 +325,7 @@ iasis:annLabel	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"AnnotationLabel";
 				rdfs:domain	iasis:Annotation;
 				rdfs:range	rdfs:Literal;
-                rdfs:comment	"Label of instances of Annotation class";
+                		rdfs:comment	"Label of instances of Annotation class";
 				dcterms:modified "2017-07-24"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
@@ -337,13 +337,6 @@ iasis:provenance	rdf:type	owl:ObjectProperty;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
-iasis:isRelatedTo	rdf:type	owl:ObjectProperty;
-					rdfs:label	"AnnotationOfConcept";
-					rdfs:domain iasis:Concept;
-					rdfs:range iasis:Relation;
-					rdfs:comment "Relation between superclasses Concept and Relation classes";
-					dcterms:modified "2017-07-24"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
 iasis:hasAnnotation	rdf:type owl:ObjectProperty;
 								rdfs:label	"CUI Annotation";
@@ -353,6 +346,13 @@ iasis:hasAnnotation	rdf:type owl:ObjectProperty;
 								dcterms:modified "2018-09-26"^^xsd:date;
 								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+iasis:hasAnnotation	rdf:type	owl:ObjectProperty;
+								rdfs:label	"hasAnnotation";
+								rdfs:domain	iasis:Relation;
+								rdfs:range	iasis:Annotation;
+								rdfs:comment	"Connection between mentionedIn or HasTopic relation with CUI.";
+								dcterms:modified "2017-07-24"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 #### WP4 requirements:
 
 iasis:pubmedID	rdf:type owl:DatatypeProperty;
@@ -393,15 +393,7 @@ iasis:journal	rdf:type	owl:DatatypeProperty;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	"Journal of publication";
 				dcterms:modified "2017-07-24"^^xsd:date;
-				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:hasAnnotation	rdf:type	owl:ObjectProperty;
-								rdfs:label	"hasAnnotation";
-								rdfs:domain	iasis:Relation;
-								rdfs:range	iasis:Annotation;
-								rdfs:comment	"Connection between mentionedIn or HasTopic relation with CUI.";
-								dcterms:modified "2017-07-24"^^xsd:date;
-								dcterms:creator <https://www.l3s.de/de/user/jozashoori>. 
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>. 
 
 iasis:annotates	rdf:type	owl:ObjectProperty;
 							rdfs:label	"annotates";
