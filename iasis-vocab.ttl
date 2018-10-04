@@ -1232,20 +1232,119 @@ iasis:externalLink	rdf:type owl:DatatypeProperty;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 #### WP2 requirements:
-###### clean #####
+
+iasis:hasPerformanceStatus	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasPerformanceStatus";
+						rdfs:domain	iasis:LCPatient;
+						rdfs:range	iasis:PerformanceStatus;
+						rdfs:comment	"Connection between patient with lung cancer and performance status observations.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:hasTki	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasTki";
+						rdfs:domain	iasis:LCPatient;
+						rdfs:range	iasis:TkiDrug;
+						rdfs:comment	"Connection between patient with lung cancer and the tki drugs that has been prescribed.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:hasImmunotherapy	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasImmunotherapy";
+						rdfs:domain	iasis:LCPatient;
+						rdfs:range	iasis:ImmunotherapyDrug;
+						rdfs:comment	"Connection between patient with lung cancer and the immunotherapy drugs that has been prescribed.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:hasFamiliarAntecedent	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasFamiliarAntecedent";
+						rdfs:domain	iasis:LCPatient;
+						rdfs:range	iasis:FamiliarAntecedent;
+						rdfs:comment	"Connection between patient with lung cancer and her/his familiar antecedents.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:hasDrug	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasDrug";
+						rdfs:domain	iasis:LCPatient;
+						rdfs:range	iasis:Drug;
+						rdfs:comment	"Connection between patient with lung cancer and the drugs that has been prescribed.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:hasDrugGroup	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasDrug";
+						rdfs:domain	iasis:LCPatient;
+						rdfs:range	iasis:DrugGroup;
+						rdfs:comment	"Connection between patient with lung cancer and the types of drugs that has been prescribed.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 
+iasis:hasComorbidity	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasComorbidity";
+						rdfs:domain	iasis:LCPatient;
+						rdfs:range	iasis:Comorbidity;
+						rdfs:comment	"Connection between patient with lung cancer and her/his Comorbidities.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+iasis:hasChemotherapy	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasChemotherapy";
+						rdfs:domain	iasis:LCPatient;
+						rdfs:range	iasis:ChemotherapyDrug;
+						rdfs:comment	"Connection between patient with lung cancer and the Chemotherapy drugs that has been prescribed.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+iasis:hasLiquidBiopsy	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasLiquidBiopsy";
+						rdfs:domain	iasis:LCPatient;
+						rdfs:range	iasis:LiquidBiopsy;
+						rdfs:comment	"Connection between patient with lung cancer and the liquid biopsy tests that has been run.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-#################
+iasis:hasMutation	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasMutation";
+						rdfs:domain	iasis:LiquidBiopsy;
+						rdfs:range	iasis:Mutation;
+						rdfs:comment	"Connection between liquid biopsy test and the mutation that has been observed.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+############### Data
+iasis:lcType	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"LungCancerType";
+				rdfs:domain iasis:Concept;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"The histology kind of the Lung Cancer.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:performanceStatusValue	rdf:type        owl:DatatypeProperty;	
+				rdfs:label	"PerformanceStatusValue";
+						rdfs:domain	iasis:PerformanceStatus;
+						rdfs:range	rdfs:Literal;
+						rdfs:comment	"The value of performance status observation.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:performanceStatusDate	rdf:type        owl:DatatypeProperty;	
+				rdfs:label	"PerformanceStatusDate";
+						rdfs:domain	iasis:PerformanceStatus;
+						rdfs:range	rdfs:Literal;
+						rdfs:comment	"The Date of performance status observation.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:gender	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"gender";
-				rdfs:domain iasis:LCPatient;
+				rdfs:domain	iasis:LCPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	"Gender of the patient.";
-				dcterms:modified "2017-07-24"^^xsd:date;
+				rdfs:comment	"Gender value of the patient.";
+				dcterms:modified "2017-10-04"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:birthDate	rdf:type	owl:DatatypeProperty;
@@ -1256,167 +1355,174 @@ iasis:birthDate	rdf:type	owl:DatatypeProperty;
 				dcterms:modified "2017-07-24"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:ageStart	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"ageStart";
+iasis:city	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"city";
 				rdfs:domain	iasis:LCPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	"Age of patient.";
-				dcterms:modified "2017-07-24"^^xsd:date;
+				rdfs:comment	"The city where the patient lives.";
+				dcterms:modified "2017-10-04"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:identifier	rdf:type	owl:ObjectProperty;
-					rdfs:label	"ObservationID";
-					rdfs:domain	iasis:Observation;
-					rdfs:range	rdfs:Literal;
-					rdfs:comment	"The identifier of each patient observation.";
-					dcterms:modified "2017-07-24"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:toxicHabit	rdf:type	owl:DatatypeProperty;
-					rdfs:label	"toxicHabit";
-					rdfs:domain	iasis:LCPatient;
-					rdfs:range	rdfs:Literal;
-					rdfs:comment	"Represents if the patient is smoker or not.";
-					dcterms:modified "2017-07-24"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:diagnosisAge	rdf:type	owl:DatatypeProperty;
-					rdfs:label	"diagnosisAge";
-					rdfs:domain	iasis:LCPatient;
-					rdfs:range	rdfs:Literal;
-					rdfs:comment "The age on which the patient was diagnosed with Cancer.";
-					dcterms:modified "2017-07-24"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:diagnosisAgeGroup	rdf:type	owl:DatatypeProperty;
-						rdfs:label	"diagnosisAgeGroup";
-						rdfs:domain	iasis:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "The age group on which the patient was diagnosed with Cancer.";
-						dcterms:modified "2017-07-24"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:diagnosisDate	rdf:type	owl:DatatypeProperty;
-					rdfs:label	"diagnosisDate";
-					rdfs:domain	iasis:LCPatient;
-					rdfs:range	xsd:date;
-					rdfs:comment "The date on which the patient was diagnosed with Cancer.";
-					dcterms:modified "2017-07-24"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:egfrMutation	rdf:type	owl:DatatypeProperty;
-					rdfs:label	"egfrMutation";
-					rdfs:domain	iasis:LCPatient;
-					rdfs:range	rdfs:Literal;
-					rdfs:comment	"Represents if EGFR has been mutated or not.";
-					dcterms:modified "2017-07-24"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:hasBiopsy	rdf:type	owl:ObjectProperty;
-				rdfs:label	"hasBiopsy";
+iasis:smoker	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"smoker";
 				rdfs:domain	iasis:LCPatient;
-				rdfs:range	iasis:LiquidBiopsy;
-				rdfs:comment	"Connection between patient and biopsy records.";
-				dcterms:modified "2017-07-24"^^xsd:date;
-				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:hasEcog	rdf:type	owl:ObjectProperty;
-				rdfs:label	"hasEcog";
-				rdfs:domain	iasis:LCPatient;
-				rdfs:range	iasis:Ecog;
-				rdfs:comment	"Connection between patient and ecog records.";
-				dcterms:modified "2017-07-24"^^xsd:date;
-				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:hasTumorStage	rdf:type	owl:ObjectProperty;
-					rdfs:label	"hasTumorStage";
-					rdfs:domain	iasis:LCPatient;	
-					rdfs:range	iasis:TumorStage;
-					rdfs:comment	"Connection between patient and tumor stage records.";
-					dcterms:modified "2017-07-24"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:hasObservation	rdf:type	owl:ObjectProperty;
-						rdfs:label	"hasBiopsyObservation";
-						rdfs:domain	iasis:LiquidBiopsy;
-						rdfs:range	iasis:LiquidBiopsyObservation;
-						rdfs:comment	"Connection between LiquidBiopsy and LiquidBiopsyObservation ";
-						dcterms:modified "2017-07-24"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:hasObservation	rdfs:label	"hasEcogObservation";
-						rdfs:domain	iasis:Ecog;
-						rdfs:range	iasis:EcogObservation;
-						rdfs:comment	"Connection between Ecog and EcogObservation.";
-						dcterms:modified "2017-07-24"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:hasObservation	rdfs:label	"hasTumorStageObservation";
-						rdfs:domain	iasis:TumorStage;
-						rdfs:range	iasis:TumorStageObservation;
-						rdfs:comment	"Connection between TumorStage and TumorStageObservation.";
-						dcterms:modified "2017-07-24"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:ecogDate	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"ecogDate";
-				rdfs:domain	iasis:EcogObservation;
-				rdfs:range	xsd:date;
-				rdfs:comment	"The date on which specific ecog has been recorded.";
-				dcterms:modified "2017-07-24"^^xsd:date;
-				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:tumorStageDate	rdf:type	owl:DatatypeProperty;
-						rdfs:label	"tumorStageDate";
-						rdfs:domain	iasis:TumorStageObservation;
-						rdfs:range	xsd:date;
-						rdfs:comment	"The date on which specific tumor stage has been recorded.";
-						dcterms:modified "2017-07-24"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:ecogValue	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"ecogValue";
-				rdfs:domain	iasis:EcogObservation;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment "Range: [0 as fully active - 5 as Dead].";
-				dcterms:modified "2017-07-24"^^xsd:date;
+				rdfs:comment	"Whether the patient smokes.";
+				dcterms:modified "2017-10-04"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:tumorStage	rdf:type	owl:DatatypeProperty;
-					rdfs:label	"tumorStage";
-					rdfs:domain	iasis:TumorStageObservation;
-					rdfs:range	rdfs:Literal;
-					rdfs:comment "Range: ['I','II','III','IV'].";
-					dcterms:modified "2017-07-24"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+iasis:biomarkers	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"biomarkers";
+				rdfs:domain	iasis:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient's biopsies have been studied in terms of biomarkers and if the result has been positive or negative in any biomarker.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:bioEgfr	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"bioEgfr";
+				rdfs:domain	iasis:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient's biopsies have been studied in terms of EGFR biomarker and if the result has been positive or negative in the case of this specific biomarker.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+
+iasis:bioAlk	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"bioAlk";
+				rdfs:domain	iasis:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient's biopsies have been studied in terms of ALK biomarker and if the result has been positive or negative in the case of this specific biomarker.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+
+iasis:bioRos1	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"bioRos1";
+				rdfs:domain	iasis:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient's biopsies have been studied in terms of ROS1 biomarker and if the result has been positive or negative in the case of this specific biomarker.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:chemotherapy	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"chemotherapy";
+				rdfs:domain	iasis:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has received chemotherapy oncology treatment.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:tki	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"tki";
+				rdfs:domain	iasis:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has received tki oncology treatment.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:immunotherapy	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"immunotherapy";
+				rdfs:domain	iasis:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has received immunotherapy oncology treatment.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:antiangiogentic	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"antiangiogentic";
+				rdfs:domain	iasis:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has received antiangiogentic oncology treatment.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:antiangiogentic	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"antiangiogentic";
+				rdfs:domain	iasis:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has received antiangiogentic oncology treatment.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:radiationtherapy	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"radiationtherapy";
+				rdfs:domain	iasis:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has received radiationtherapy oncology treatment.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:surgery	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"surgery";
+				rdfs:domain	iasis:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has received radiationtherapy oncology treatment.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:familiarAntecedents	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"familiarAntecedents";
+				rdfs:domain	iasis:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has families with antecedents of cancer.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+
+iasis:systemicProgression	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"systemicProgression";
+				rdfs:domain	iasis:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has developed systemic progression which means a progression of the tumor to other organs apart from lungs.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:localProgression	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"localProgression";
+				rdfs:domain	iasis:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether the patient has developed local progression which means a progression of the tumor in the lungs.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:brainMetastasis	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"brainMetastasis";
+				rdfs:domain	iasis:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Whether brain metastasis has been detected in the patient.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+
+iasis:survivalMonths	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"survivalMonths";
+				rdfs:domain	iasis:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Months from diagnosis to death or until the last documented record of the patient.";
+				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
 
 iasis:sampleDate	rdf:type	owl:DatatypeProperty;
 					rdfs:label	"sampleDate";
-					rdfs:domain	iasis:LiquidBiopsyObservation;
+					rdfs:domain	iasis:LiquidBiopsy;
 					rdfs:range	xsd:date;
 					rdfs:comment "Date on which the biopsy sample has been taken.";
-					dcterms:modified "2017-07-24"^^xsd:date;
+					dcterms:modified "2017-10-04"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:resultDate	rdf:type	owl:DatatypeProperty;
 					rdfs:label	"resultDate";
-					rdfs:domain	iasis:LiquidBiopsyObservation;
+					rdfs:domain	iasis:LiquidBiopsy;
 					rdfs:range	xsd:date;
 					rdfs:comment "Date on which the biopsy result has been provided.";
-					dcterms:modified "2017-07-24"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:mutationName	rdf:type	owl:DatatypeProperty;
-					rdfs:label	"mutationName";
-					rdfs:domain	iasis:LiquidBiopsyObservation;
-					rdfs:range	rdfs:Literal;
-					rdfs:comment "Name of the mutation that is being studied";
-					dcterms:modified "2017-07-24"^^xsd:date;
+					dcterms:modified "2017-10-04"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:targetTotal	rdf:type	owl:DatatypeProperty;
 					rdfs:label	"targetTotal";
-					rdfs:domain	iasis:LiquidBiopsyObservation;
+					rdfs:domain	iasis:LiquidBiopsy;
 					rdfs:range	rdfs:Literal;
 					rdfs:comment "The percentage of circulating tumor DNA in the blood";
 					dcterms:modified "2017-07-24"^^xsd:date;
@@ -1424,7 +1530,7 @@ iasis:targetTotal	rdf:type	owl:DatatypeProperty;
 
 iasis:copiesMicroliterFam	rdf:type	owl:DatatypeProperty;
 							rdfs:label	"copiesMicroliterFam";
-							rdfs:domain	iasis:LiquidBiopsyObservation;
+							rdfs:domain	iasis:LiquidBiopsy;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment "Number of mutated copies per microliter of blood";
 							dcterms:modified "2017-07-24"^^xsd:date;
@@ -1432,40 +1538,9 @@ iasis:copiesMicroliterFam	rdf:type	owl:DatatypeProperty;
 
 iasis:copiesMicroliterVic	rdf:type	owl:DatatypeProperty;
 							rdfs:label	"copiesMicroliterVic";
-							rdfs:domain	iasis:LiquidBiopsyObservation;
+							rdfs:domain	iasis:LiquidBiopsy;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment "Number of non-mutated copies per microliter of blood";
 							dcterms:modified "2017-07-24"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:monthsInTreatment	rdf:type	owl:DatatypeProperty;
-						rdfs:label	"monthsInTreatment";
-						rdfs:domain	iasis:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Represents the number of months patient has been under treatment. Not included in the original data from WP2, but is calulated as part of in-house preprocessing.";
-						dcterms:modified "2017-07-24"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:weeksInTreatment	rdf:type	owl:DatatypeProperty;
-						rdfs:label	"weeksInTreatment";
-						rdfs:domain	iasis:LCPatient;
-						rdfs:range	rdfs:Literal;
-						rdfs:comment "Represents the number of weeks patient has been under treatment. Not included in the original data from WP2, but is calulated as part of in-house preprocessing.";
-						dcterms:modified "2017-07-24"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:biopsyList	rdf:type	owl:DatatypeProperty;
-					rdfs:label	"biopsyList";
-					rdfs:domain	iasis:LiquidBiopsy;
-					rdfs:range	rdfs:Literal;
-					rdfs:comment "Represents the list of liquid biopsy test that have been taken from patient. Not included in the original data from WP2, but is calulated as part of in-house preprocessing.";
-					dcterms:modified "2017-07-24"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:ecogList	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"ecogList";
-				rdfs:domain	iasis:TumorStage;
-				rdfs:range	rdfs:Literal;
-				rdfs:comment "Represents the list of ecogs that have been recorded from patient. Not included in the original data from WP2, but is calulated as part of in-house preprocessing.";
-				dcterms:modified "2017-07-24"^^xsd:date;
-				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
