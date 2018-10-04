@@ -284,29 +284,71 @@ iasis:TumorStage	rdf:type owl:Class;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+iasis:StageAtDiagnosis	rdf:type owl:Class;
+					rdfs:label	"TumorStageAtDiagnosis";
+					rdfs:comment "The stage of cancer at diagnosis date.";
+					dcterms:modified "2017-10-04"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
 iasis:PerformanceStatus	rdf:type	owl:Class;
 			rdfs:label	"PerformanceStatus";
-			rdfs:comment "Performance Status describes a patient's level of functioning in terms of her/his ability for caring her/himself, daily activities and phyical abilities.";
+			rdfs:comment "Patient's level of functioning in terms of her/his ability for caring her/himself, daily activities and phyical abilities.";
 			dcterms:modified "2018-09-27"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:FamiliarAntecedent	rdf:type	owl:Class;
 							rdfs:label	"FamiliarAntecedent";
-							rdfs:comment "Represents a list of familiar antecedents of the patient.";
+							rdfs:comment "Familiar antecedents of the patient.";
 							dcterms:modified "2018-09-27"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:Gender	rdf:type	owl:Class;
 						rdfs:label	"GenderOfPatient";
-						rdfs:comment "Represents the gender of the patients.";
+						rdfs:comment "The gender of the patients.";
 						dcterms:modified "2018-09-27"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:Chemotherapy	rdf:type	owl:Class;
+iasis:ChemotherapyDrug	rdf:type	owl:Class;
 						rdfs:subClassOf iasis:Drug;
 						rdfs:label	"Chemotherapy";
 						rdfs:comment "Specific chemotherapy drugs prescribed to the Entity.";
 						dcterms:modified "2018-09-27"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+
+iasis:Comorbidity	rdf:type	owl:Class;
+						rdfs:subClassOf iasis:Concept;
+						rdfs:label	"Comorbidity";
+						rdfs:comment "Comorbidity is the presence of one or more additional diseases or disorders co-occurring with a primary disease or disorder; in the countable sense of the term, a comorbidity is each additional disorder or disease.";
+						dcterms:modified "2018-10-04"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:DrugGroup	rdf:type	owl:Class;
+						rdfs:subClassOf iasis:Concept;
+						rdfs:label	"DrugGroup";
+						rdfs:comment "The type of drugs that has been prescribed to the patient.";
+						dcterms:modified "2018-10-04"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:ImmunotherapyDrug	rdf:type	owl:Class;
+						rdfs:subClassOf iasis:Concept;
+						rdfs:label	"ImmunotherapyDrug";
+						rdfs:comment "Specific immunotherapy drugs prescribed to the patient.";
+						dcterms:modified "2018-10-04"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:TkiDrug	rdf:type	owl:Class;
+						rdfs:subClassOf iasis:Concept;
+						rdfs:label	"TkiDrug";
+						rdfs:comment "Specific tki drugs prescribed to the patient.";
+						dcterms:modified "2018-10-04"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:TumorType	rdf:type	owl:Class;
+						rdfs:subClassOf iasis:Concept;
+						rdfs:label	"TumorType";
+						rdfs:comment "The histology kind of the lung cancer. The type of tumor.";
+						dcterms:modified "2018-10-04"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 ##########################################################################################
@@ -1190,6 +1232,13 @@ iasis:externalLink	rdf:type owl:DatatypeProperty;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 #### WP2 requirements:
+###### clean #####
+
+
+
+
+
+#################
 
 iasis:gender	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"gender";
