@@ -388,7 +388,7 @@ iasis:hasAnnotation	rdf:type owl:ObjectProperty;
 								dcterms:modified "2018-09-26"^^xsd:date;
 								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:hasAnnotation	rdf:type	owl:ObjectProperty;
+iasis:relation_relatesTo_annotation	rdf:type	owl:ObjectProperty;
 								rdfs:label	"hasAnnotation";
 								rdfs:domain	iasis:Relation;
 								rdfs:range	iasis:Annotation;
