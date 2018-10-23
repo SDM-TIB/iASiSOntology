@@ -1165,7 +1165,7 @@ iasis:enzymeLabel	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2018-09-26"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:drug_interactsWith_drug	rdf:type	owl:ObjectProperty;
+iasis:drugDrugInteraction	rdf:type	owl:ObjectProperty;
 								rdfs:label	"drug_interactsWith_drug";
 								rdfs:domain	iasis:Drug;
 								rdfs:range	iasis:Drug;
@@ -1248,7 +1248,6 @@ iasis:dse_StandardDeviation	rdf:type	owl:DatatypeProperty;
 							dcterms:modified "2017-07-24"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-
 iasis:externalLink	rdf:type owl:DatatypeProperty;
 					rdfs:label "externalLink";
 					rdfs:domain iasis:Concept;
@@ -1257,6 +1256,61 @@ iasis:externalLink	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2018-09-26"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+iasis:drugDrugInteraction_noCYP	rdf:type	owl:ObjectProperty;
+								rdfs:label	"drugDrugInteraction_noCYP";
+								rdfs:domain	iasis:Drug;
+								rdfs:range	iasis:Drug;
+								rdfs:comment	"Interaction between drugs where no CYP enzyme is shared between the drugs (NCRDs).";
+								dcterms:modified "2017-10-23"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:drugDrugInteraction_sameCYP	rdf:type	owl:ObjectProperty;
+								rdfs:label	"drugDrugInteraction_sameCYP";
+								rdfs:domain	iasis:Drug;
+								rdfs:range	iasis:Drug;
+								rdfs:comment	"Interaction between drugs where both drugs are metabolized by the same CY.";
+								dcterms:modified "2017-10-23"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:drugDrugInteraction_effectiveness	rdf:type	owl:ObjectProperty;
+								rdfs:label	"drugDrugInteraction_direct";
+								rdfs:domain	iasis:Drug;
+								rdfs:range	iasis:Drug;
+								rdfs:comment	"Interaction between drugs where it impacts the effectiveness of them.";
+								dcterms:modified "2017-10-23"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:effectLabel	rdf:type	owl:ObjectProperty;
+								rdfs:label	"effectLabel";
+								rdfs:domain	iasis:Drug;
+								rdfs:range	rdfs:Literal;
+								rdfs:comment	"Effect Label";
+								dcterms:modified "2017-10-23"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:impactLabel	rdf:type	owl:ObjectProperty;
+								rdfs:label	"impactLabel";
+								rdfs:domain	iasis:Drug;
+								rdfs:range	rdfs:Literal;
+								rdfs:comment	"Impact Label.";
+								dcterms:modified "2017-10-23"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:affects	rdf:type	owl:ObjectProperty;
+								rdfs:label	"affects";
+								rdfs:domain	iasis:EffectInteraction;
+								rdfs:range	rdfs:Drug;
+								rdfs:comment	"The conncetion between drug that affects the other one through interactions with their interaction node.";
+								dcterms:modified "2017-10-23"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:affects	rdf:type	owl:ObjectProperty;
+								rdfs:label	"affects";
+								rdfs:domain	iasis:EffectInteraction;
+								rdfs:range	rdfs:Drug;
+								rdfs:comment	"The conncetion between drug that affects the other one through interactions with their interaction node.";
+								dcterms:modified "2017-10-23"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 #### WP2 requirements:
 
 iasis:hasPerformanceStatus	rdf:type        owl:ObjectProperty;	
