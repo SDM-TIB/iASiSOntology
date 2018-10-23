@@ -21,6 +21,12 @@ iasis:Annotation	rdf:type	owl:Class;
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
+iasis:Relation	rdf:type	owl:Class;
+					rdfs:label	"Relation";
+					rdfs:comment "Relations between concepts.";
+					dcterms:modified "2017-07-24"^^xsd:date;
+					dcterms:creator <https://en.wikipedia.org/wiki/Mar%C3%ADa-Esther_Vidal>
+
 iasis:SourceName	rdf:type	owl:Class;
 					rdfs:label	"SourceName";
 					rdfs:comment "Source name.";
@@ -255,6 +261,26 @@ iasis:Enzyme	rdf:type owl:Class;
 				dcterms:modified "2017-07-24"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+iasis:Effect	rdf:type owl:Class;
+				rdfs:label	"Effect";
+				rdfs:subClassOf	iasis:Concept;
+				rdf:comment "The effectiveness of a drug according to its interaction with another drug.";
+				dcterms:modified "2017-10-23"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:Impact	rdf:type owl:Class;
+				rdfs:label	"Impact";
+				rdfs:subClassOf	iasis:Concept;
+				rdf:comment "The impact that interaction between two drugs has on the performance of the drug.";
+				dcterms:modified "2017-10-23"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:EffectInteraction	rdf:type owl:Class;
+				rdfs:label	"EffectInteraction";
+				rdfs:subClassOf	iasis:Relation;
+				rdf:comment "The relation between two drugs that interact.";
+				dcterms:modified "2017-10-23"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 #### WP2 requirements:
 
 iasis:Patient rdf:type owl:Class;
