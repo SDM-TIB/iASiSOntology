@@ -1258,6 +1258,7 @@ iasis:externalLink	rdf:type owl:DatatypeProperty;
 
 iasis:drugDrugInteraction_noCYP	rdf:type	owl:ObjectProperty;
 								rdfs:label	"drugDrugInteraction_noCYP";
+								rdfs:subPropertyOf	iasis:drugDrugInteraction;
 								rdfs:domain	iasis:Drug;
 								rdfs:range	iasis:Drug;
 								rdfs:comment	"Interaction between drugs where no CYP enzyme is shared between the drugs (NCRDs).";
@@ -1266,6 +1267,7 @@ iasis:drugDrugInteraction_noCYP	rdf:type	owl:ObjectProperty;
 
 iasis:drugDrugInteraction_sameCYP	rdf:type	owl:ObjectProperty;
 								rdfs:label	"drugDrugInteraction_sameCYP";
+								rdfs:subPropertyOf	iasis:drugDrugInteraction;
 								rdfs:domain	iasis:Drug;
 								rdfs:range	iasis:Drug;
 								rdfs:comment	"Interaction between drugs where both drugs are metabolized by the same CY.";
@@ -1274,6 +1276,7 @@ iasis:drugDrugInteraction_sameCYP	rdf:type	owl:ObjectProperty;
 
 iasis:drugDrugInteraction_effectiveness	rdf:type	owl:ObjectProperty;
 								rdfs:label	"drugDrugInteraction_direct";
+								rdfs:subPropertyOf	iasis:drugDrugInteraction;	
 								rdfs:domain	iasis:Drug;
 								rdfs:range	iasis:Drug;
 								rdfs:comment	"Interaction between drugs where it impacts the effectiveness of them.";
@@ -1300,17 +1303,37 @@ iasis:affects	rdf:type	owl:ObjectProperty;
 								rdfs:label	"affects";
 								rdfs:domain	iasis:EffectInteraction;
 								rdfs:range	rdfs:Drug;
-								rdfs:comment	"The conncetion between drug that affects the other one through interactions with their interaction node.";
+								rdfs:comment	"The conncetion between drug that affects by the other one through their interaction and the interaction node.";
 								dcterms:modified "2017-10-23"^^xsd:date;
 								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:affects	rdf:type	owl:ObjectProperty;
-								rdfs:label	"affects";
+iasis:isAffected	rdf:type	owl:ObjectProperty;
+								rdfs:label	"isAffected";
 								rdfs:domain	iasis:EffectInteraction;
 								rdfs:range	rdfs:Drug;
-								rdfs:comment	"The conncetion between drug that affects the other one through interactions with their interaction node.";
+								rdfs:comment	"The conncetion between drug that is affected by the other one through their interaction and the interaction node.";
 								dcterms:modified "2017-10-23"^^xsd:date;
 								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:hasEffect	rdf:type	owl:ObjectProperty;
+								rdfs:label	"hasEffect";
+								rdfs:domain	iasis:EffectInteraction;
+								rdfs:range	rdfs:Effect;
+								rdfs:comment	"The conncetion between the effect of drugs interaction and the interaction node.";
+								dcterms:modified "2017-10-23"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:hasImpact	rdf:type	owl:ObjectProperty;
+								rdfs:label	"hasImpact";
+								rdfs:domain	iasis:EffectInteraction;
+								rdfs:range	rdfs:Impact;
+								rdfs:comment	"The conncetion between the impact of drugs interaction and the interaction node.";
+								dcterms:modified "2017-10-23"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+
+
+
 #### WP2 requirements:
 
 iasis:hasPerformanceStatus	rdf:type        owl:ObjectProperty;	
