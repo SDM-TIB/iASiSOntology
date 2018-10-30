@@ -333,12 +333,6 @@ iasis:TumorStage	rdf:type owl:Class;
 					dcterms:modified "2018-10-04"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:StageAtDiagnosis	rdf:type owl:Class;
-					rdfs:label	"TumorStageAtDiagnosis";
-					rdfs:comment "The stage of cancer at diagnosis date.";
-					dcterms:modified "2018-10-04"^^xsd:date;
-					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
 iasis:PerformanceStatus	rdf:type	owl:Class;
 			rdfs:label	"PerformanceStatus";
 			rdfs:comment "Patient's level of functioning in terms of her/his ability for caring her/himself, daily activities and phyical abilities.";
@@ -362,14 +356,6 @@ iasis:ChemotherapyDrug	rdf:type	owl:Class;
 						rdfs:label	"Chemotherapy";
 						rdfs:comment "Specific chemotherapy drugs prescribed to the Entity.";
 						dcterms:modified "2018-09-27"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-
-iasis:Comorbidity	rdf:type	owl:Class;
-						rdfs:subClassOf iasis:Concept;
-						rdfs:label	"Comorbidity";
-						rdfs:comment "Comorbidity is the presence of one or more additional diseases or disorders co-occurring with a primary disease or disorder; in the countable sense of the term, a comorbidity is each additional disorder or disease.";
-						dcterms:modified "2018-10-04"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:DrugGroup	rdf:type	owl:Class;
@@ -399,6 +385,14 @@ iasis:TumorType	rdf:type	owl:Class;
 						rdfs:comment "The histology kind of the lung cancer. The type of tumor.";
 						dcterms:modified "2018-10-04"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:Date	rdf:type	owl:Class;
+						rdfs:subClassOf iasis:Concept;
+						rdfs:label	"Date";
+						rdfs:comment "Date";
+						dcterms:modified "2018-10-30"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
 
 ##########################################################################################
 ########################### Properties ###################################################
@@ -1438,6 +1432,15 @@ iasis:hasPerformanceStatus	rdf:type        owl:ObjectProperty;
 						dcterms:modified "2017-10-04"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+iasis:hasObservation	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasObservation";
+						rdfs:domain	iasis:LCPatient;
+						rdfs:range	iasis:PerformanceObservation;
+						rdfs:range	iasis:TumorObservation;
+						rdfs:comment	"Connection between patient with lung cancer and performance status observation or tumor stage observation.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
 iasis:hasTki	rdf:type        owl:ObjectProperty;	
 				rdfs:label	"hasTki";
 						rdfs:domain	iasis:LCPatient;
@@ -1509,6 +1512,14 @@ iasis:hasMutation	rdf:type        owl:ObjectProperty;
 						rdfs:range	iasis:Mutation;
 						rdfs:comment	"Connection between liquid biopsy test and the mutation that has been observed.";
 						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:hasDate	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasDate";
+						rdfs:domain	iasis:Concept;
+						rdfs:range	iasis:Date;
+						rdfs:comment	"Date.";
+						dcterms:modified "2018-10-30"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 ############### Data
