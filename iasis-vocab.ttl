@@ -1411,6 +1411,23 @@ iasis:drugTargetInteraction	rdf:type	owl:ObjectProperty;
 								dcterms:modified "2018-10-30"^^xsd:date;
 								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+iasis:hasInteraction	rdf:type	owl:ObjectProperty;
+								rdfs:label	"hasInteraction";
+								rdfs:subPropertyOf	iasis:hasInteraction;
+								rdfs:domain	iasis:Drug;
+								rdfs:range	iasis:Disorder;
+								rdfs:comment	"Indication of disorders that can be related to the drug.";
+								dcterms:modified "2018-10-30"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:drugEnzymeInteraction	rdf:type	owl:ObjectProperty;
+								rdfs:label	"drugEnzymeInteraction";
+								rdfs:subPropertyOf	iasis:drugEnzymeInteraction;
+								rdfs:domain	iasis:Drug;
+								rdfs:range	iasis:Enzyme;
+								rdfs:comment	"Interaction between the drug and the enzyme.";
+								dcterms:modified "2018-10-30"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 #### WP2 requirements:
 
 iasis:hasPerformanceStatus	rdf:type        owl:ObjectProperty;	
