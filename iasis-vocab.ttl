@@ -1605,7 +1605,7 @@ iasis:disorderID 	rdf:type owl:DatatypeProperty;
 
 iasis:hasIndication	rdf:type	owl:ObjectProperty;
 								rdfs:label	"hasIndication";
-								rdfs:subPropertyOf	iasis:"hasIndication";
+								rdfs:subPropertyOf	iasis:hasIndication;
 								rdfs:domain	iasis:Concept;
 								rdfs:range	iasis:Drug;
 								rdfs:comment	".";
