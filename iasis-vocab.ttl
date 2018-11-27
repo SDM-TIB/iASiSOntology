@@ -25,7 +25,7 @@ iasis:Relation	rdf:type	owl:Class;
 					rdfs:label	"Relation";
 					rdfs:comment "Relations between concepts.";
 					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://en.wikipedia.org/wiki/Mar%C3%ADa-Esther_Vidal>
+					dcterms:creator <https://en.wikipedia.org/wiki/Mar%C3%ADa-Esther_Vidal>.
 
 iasis:SourceName	rdf:type	owl:Class;
 					rdfs:label	"SourceName";
@@ -2502,7 +2502,3 @@ iasis:similarityValue     rdf:type     owl:DatatypeProperty;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
-
-
-
