@@ -1715,7 +1715,7 @@ iasis:familiarAntecedentLabel_SPA	rdf:type        owl:DatatypeProperty;
 						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
 
-iasis:iasis:familiarAntecedentID	rdf:type        owl:DatatypeProperty;	
+iasis:familiarAntecedentID	rdf:type        owl:DatatypeProperty;	
 				rdfs:label	"familiarAntecedentID";
 						rdfs:domain	iasis:FamiliarAntecedent;
 						rdfs:range	rdfs:Literal;
