@@ -374,19 +374,6 @@ iasis:DrugGroup	rdf:type	owl:Class;
 						dcterms:modified "2018-10-04"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:ImmunotherapyDrug	rdf:type	owl:Class;
-						rdfs:subClassOf iasis:Concept;
-						rdfs:label	"ImmunotherapyDrug";
-						rdfs:comment "Specific immunotherapy drugs prescribed to the patient.";
-						dcterms:modified "2018-10-04"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
-
-iasis:TkiDrug	rdf:type	owl:Class;
-						rdfs:subClassOf iasis:Concept;
-						rdfs:label	"TkiDrug";
-						rdfs:comment "Specific tki drugs prescribed to the patient.";
-						dcterms:modified "2018-10-04"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:TumorType	rdf:type	owl:Class;
 						rdfs:subClassOf iasis:Concept;
