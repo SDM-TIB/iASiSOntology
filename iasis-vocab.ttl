@@ -498,6 +498,16 @@ iasis:relation_relatesTo_annotation	rdf:type	owl:ObjectProperty;
 								rdfs:comment	"Connection between mentionedIn or HasTopic relation with CUI.";
 								dcterms:modified "2018-04-12"^^xsd:date;
 								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:source	rdf:type	owl:ObjectProperty;
+					rdfs:label	"Source";
+					rdfs:domain iasis:Protein;
+					rdfs:range	iasis:SourceName;
+					rdfs:comment	"The  source from which the concept is extracted or derived";
+					dcterms:modified "2018-11-23"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
 #### WP4 requirements:
 
 iasis:pubmedID	rdf:type owl:DatatypeProperty;
@@ -686,6 +696,54 @@ iasis:tissueSubTypeLabel	rdf:type owl:DatatypeProperty;
 			rdfs:comment	"Name of Histology Subtype.";
 			dcterms:modified "2018-09-26"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:primaryHistology	rdf:type owl:DatatypeProperty;
+			rdfs:label	"PrimaryHistology";
+			rdfs:domain iasis:Sample;          
+		  	rdfs:range iasis:TissueType;
+			rdfs:comment	"Name of Primary Histology.";
+			dcterms:modified "2018-11-23"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:histologySubtype1	rdf:type owl:DatatypeProperty;
+			rdfs:label	"HistologySubtype1";
+			rdfs:domain iasis:Sample;          
+		  	rdfs:range iasis:TissueSubType;
+			rdfs:comment	"Name of Subtype Histology 1.";
+			dcterms:modified "2018-11-23"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:tissueSubType1	rdf:type owl:DatatypeProperty;
+			rdfs:label	"TissueSubType1";
+			rdfs:domain iasis:Sample;          
+		  	rdfs:range iasis:SubTissue;
+			rdfs:comment	".";
+			dcterms:modified "2018-11-22"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:tissueSubtype2	rdf:type owl:DatatypeProperty;
+			rdfs:label	"TissueSubType2";
+			rdfs:domain iasis:Sample;          
+		  	rdfs:range iasis:SubTissue;
+			rdfs:comment	".";
+			dcterms:modified "2018-11-22"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:primaryTissue	rdf:type owl:DatatypeProperty;
+			rdfs:label	"PrimaryTissue";
+			rdfs:domain iasis:Sample;          
+		  	rdfs:range iasis:Tissue;
+			rdfs:comment	".";
+			dcterms:modified "2018-11-23"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:zygosity   	rdf:type owl:DatatypeProperty;
+				rdfs:label	"Zygosity";
+				rdfs:domain	iasis:Mutation;
+				rdfs:range	rdfs:Zygosity;	
+				rdfs:comment	".";
+				dcterms:modified "2018-11-23"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
 iasis:zygosityLabel	rdf:type owl:DatatypeProperty;
 				rdfs:label	"ZygosityLabel";
@@ -953,6 +1011,15 @@ iasis:sampleSource	rdf:type	owl:DatatypeProperty;
 					dcterms:modified "2018-04-12"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+iasis:z_score   	rdf:type owl:DatatypeProperty;
+					rdfs:label	"z_score";
+					rdfs:domain iasis:Gexp;
+				 	rdfs:range rdfs:Literal;
+					rdfs:comment	".";
+					dcterms:modified "2018-11-23"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
 iasis:gene_isRelatedTo_sample	rdf:type	owl:ObjectProperty;
 								rdfs:label	"gene_isRelatedTo_sample";
 								rdfs:domain	iasis:Gene;
@@ -1067,6 +1134,29 @@ iasis:gexp_isRelatedTo_sample	rdf:type owl:ObjectProperty;
 							rdfs:comment	"Relation between Gexp and Sample classes.";
 							dcterms:modified "2018-09-26"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:primaryHistology	rdf:type owl:DatatypeProperty;
+			rdfs:label	"PrimaryHistology";
+			rdfs:domain iasis:Sample;          
+		  	rdfs:range iasis:TissueType;
+			rdfs:comment	"Name of Primary Histology.";
+			dcterms:modified "2018-11-23"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:histologySubtype1	rdf:type owl:DatatypeProperty;
+			rdfs:label	"HistologySubtype1";
+			rdfs:domain iasis:Sample;          
+		  	rdfs:range iasis:TissueSubType;
+			rdfs:comment	"Name of Subtype Histology 1.";
+			dcterms:modified "2018-11-23"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
+
+
+
+
+
 
 
 #### WP3 requirements:
