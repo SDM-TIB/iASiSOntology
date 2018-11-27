@@ -240,12 +240,13 @@ iasis:Drug	rdf:type owl:Class;
 			dcterms:modified "2018-07-24"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:Phenotype	rdf:type owl:Class;
-					rdfs:label	"Phenotype";
+iasis:SideEffect rdf:type	owl:Class;
+					rdfs:label	"SideEffect";
 					rdfs:subClassOf	iasis:Concept;
-					rdf:comment "The set of observable characteristics of an individual resulting from the interaction of its genotype with the environment. This class include side effects that result from different drugs.";
+					rdfs:comment "The set of observable characteristics of an individual resulting from the interaction of its genotype with the environment. This class include side effects that result from different drugs.";
 					dcterms:modified "2018-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
 
 iasis:DrugSideEffect	rdf:type owl:Class;
 						rdfs:label	"DrugSideEffectRelation";
@@ -305,6 +306,7 @@ iasis:BioSystem	rdf:type owl:Class;
 
 
 #### WP2 requirements:
+#### clinical notes:
 
 iasis:Patient rdf:type owl:Class;
 					rdfs:label	"Patient";
@@ -393,10 +395,68 @@ iasis:Date	rdf:type	owl:Class;
 						dcterms:modified "2018-10-30"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+iasis:Biomarker	 rdf:type	owl:Class;
+					rdfs:label	"Biomarker";
+					rdfs:subClassOf	iasis:Concept;
+					rdfs:comment "A biomarker, or biological marker is a measurable indicator of some biological state or condition.";
+					dcterms:modified "2018-11-22"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
-##########################################################################################
-########################### Properties ###################################################
-##########################################################################################
+
+#### clinical images:
+
+iasis:Diagnosis  	rdf:type owl:Class;
+					rdfs:label	"Diagnosis";
+					rdfs:subClassOf	iasis:Concept;
+					rdfs:comment "The identification of the nature of an illness or other problem by examination of the symptoms.";
+					dcterms:modified "2018-11-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.  
+
+iasis:LCImage   	rdf:type owl:Class;
+					rdfs:label	"LCImage";
+					rdfs:subClassOf	iasis:Concept;
+					rdfs:comment "Image of patient with Lung Cancer";
+					dcterms:modified "2018-11-25"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.  
+
+iasis:LungLaterality   	rdf:type owl:Class;
+						rdfs:label	"LungLaterality";
+						rdfs:subClassOf	iasis:LCPatient;
+						rdfs:comment "The laterality of lung to which the image refers.";
+						dcterms:modified "2018-11-26"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.  
+
+iasis:Modality   	rdf:type owl:Class;
+					rdfs:label	"Modality";
+					rdfs:subClassOf	iasis:Concept;
+					rdfs:comment "Modality of image";
+					dcterms:modified "2018-11-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>. 
+
+iasis:Organ     	rdf:type owl:Class;
+					rdfs:label	"Organ";
+					rdfs:subClassOf	iasis:Concept;
+					rdfs:comment "The organ which the image belong to.";
+					dcterms:modified "2018-11-26"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:PatientPosition   rdf:type owl:Class;
+						rdfs:label	"PatientPosition";
+						rdfs:subClassOf	iasis:Concept;
+						rdfs:comment "Patient position";
+						dcterms:modified "2018-11-26"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:BodyPartExamined rdf:type         owl:Class;
+					rdfs:label	"BodyPartExamined";
+					rdfs:subClassOf	iasis:Concept;
+					rdfs:comment "";
+					dcterms:modified "2018-11-25"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+##################################################################################################
+################################### Properties ###################################################
+##################################################################################################
 
 iasis:annID	rdf:type	owl:ObjectProperty;
 			rdfs:label	"AnnotationID";
