@@ -1531,9 +1531,9 @@ iasis:hasImpact	rdf:type	owl:ObjectProperty;
 								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:enzyme_isRelatedTo_gene	rdf:type	owl:ObjectProperty;
-									rdfs:label	"enzyme_isRelatedTo_gene"
-									rdfs:domain	iasis:Enzyme
-									rdfs:range	iasis:Gene
+									rdfs:label	"enzyme_isRelatedTo_gene";
+									rdfs:domain	iasis:Enzyme;
+									rdfs:range	iasis:Gene;
 									rdfs:comment	"The connection between the enzyme and the gene from which it is produced.";
 									dcterms:modified "2018-10-30"^^xsd:date;
 									dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
