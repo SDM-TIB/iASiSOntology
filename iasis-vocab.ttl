@@ -402,6 +402,19 @@ iasis:Biomarker	 rdf:type	owl:Class;
 					dcterms:modified "2018-11-22"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
+iasis:PerformanceObservation   rdf:type      owl:Class;
+					rdfs:label	"iasis:PerformanceObservation";
+					rdfs:subClassOf	iasis:Concept;
+					rdfs:comment "";
+					dcterms:modified "2018-11-27"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:TumorObservation    rdf:type        owl:Class;
+					rdfs:label	"iasis:TumorObservation";
+					rdfs:subClassOf	 iasis:Concept;
+					rdfs:comment "";
+					dcterms:modified "2018-11-27"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
 #### clinical images:
 
@@ -453,6 +466,15 @@ iasis:BodyPartExamined rdf:type         owl:Class;
 					rdfs:comment "";
 					dcterms:modified "2018-11-25"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+####### lc_similarity:
+
+iasis:PatientSimilarity   rdf:type owl:Class;
+			rdfs:label	"PatientSimilarity";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "";
+			dcterms:modified "2018-11-27"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
 ##################################################################################################
 ################################### Properties ###################################################
