@@ -1639,7 +1639,7 @@ iasis:drugEnzymeInteraction	rdf:type	owl:ObjectProperty;
 								dcterms:modified "2018-10-30"^^xsd:date;
 								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 iasis:drug_isPredictedToInteractsWith_target	rdf:type	owl:ObjectProperty;
-											rdfs:label	"iasis:drug_isPredictedToInteractsWith_target";
+											rdfs:label	"drug_isPredictedToInteractsWith_target";
 											rdfs:domain	iasis:Drug;
 											rdfs:range	iasis:Target;
 											rdfs:comment	"Predicts drug-target interactions ...";
@@ -1659,7 +1659,7 @@ iasis:sideEffectLabel	rdf:type	owl:DatatypeProperty;
 ##### lc_notes:
 
 iasis:hasPerformanceStatus	rdf:type        owl:ObjectProperty;	
-				rdfs:label	"hasPerformanceStatus";
+						rdfs:label	"hasPerformanceStatus";
 						rdfs:domain	iasis:PerformanceObservation;
 						rdfs:range	iasis:PerformanceStatus;
 						rdfs:comment	"Connection between patient with lung cancer and performance status observations.";
@@ -1707,7 +1707,7 @@ iasis:familiarAntecedentLabel	rdf:type        owl:DatatypeProperty;
 						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
 iasis:familiarAntecedentLabel_SPA	rdf:type        owl:DatatypeProperty;	
-				rdfs:label	"familiarAntecedentLabel_SPA";
+						rdfs:label	"familiarAntecedentLabel_SPA";
 						rdfs:domain	iasis:FamiliarAntecedent;
 						rdfs:range	rdfs:Literal;
 						rdfs:comment	"The title of familiar antecedent in Spanish.";
@@ -1716,7 +1716,7 @@ iasis:familiarAntecedentLabel_SPA	rdf:type        owl:DatatypeProperty;
 
 
 iasis:familiarAntecedentID	rdf:type        owl:DatatypeProperty;	
-				rdfs:label	"familiarAntecedentID";
+						rdfs:label	"familiarAntecedentID";
 						rdfs:domain	iasis:FamiliarAntecedent;
 						rdfs:range	rdfs:Literal;
 						rdfs:comment	"The CUI ID of familiar antecedent.";
