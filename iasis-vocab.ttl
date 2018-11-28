@@ -428,7 +428,7 @@ iasis:LCImage   	rdf:type owl:Class;
 
 iasis:LungLaterality   	rdf:type owl:Class;
 						rdfs:label	"LungLaterality";
-						rdfs:subClassOf	iasis:LCPatient;
+						rdfs:subClassOf	iasis:Concept;
 						rdfs:comment "The laterality of lung to which the image refers.";
 						dcterms:modified "2018-11-26"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.  
