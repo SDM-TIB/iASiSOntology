@@ -1554,7 +1554,7 @@ iasis:targetLabel	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2018-10-30"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:target_isRelatedTo_ge	rdf:type	owl:ObjectProperty;
+iasis:target_isRelatedTo_gene	rdf:type	owl:ObjectProperty;
 									rdfs:label	"target_isRelatedTo_gene";
 									rdfs:domain	iasis:Target;
 									rdfs:range	iasis:Gene;
