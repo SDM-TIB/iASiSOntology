@@ -713,10 +713,10 @@ iasis:subTissueLabel	rdf:type owl:DatatypeProperty;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:tissueTypeLabel	rdf:type owl:DatatypeProperty;
-			rdfs:label	"PrimaryHistologyLabel";
+			rdfs:label	"tissueTypeLabel";
 			rdfs:domain iasis:TissueType;          
 		  	rdfs:range rdfs:Literal;
-			rdfs:comment	"Name of Primary Histology.";
+			rdfs:comment	"Name of tissueType.";
 			dcterms:modified "2018-09-26"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
