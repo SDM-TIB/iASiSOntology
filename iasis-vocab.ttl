@@ -159,7 +159,7 @@ iasis:CGI 	rdf:type owl:Class;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:GExp 	rdf:type owl:Class;
-			rdfs:label	"GeneExpression";
+			rdfs:label	"GExp";
 			rdfs:subClassOf	iasis:Concept;
 			rdfs:comment "The phenotypic manifestation of a gene or genes by the processes of genetic transcription and genetic translation.";
 			dcterms:modified "2018-04-12"^^xsd:date;
@@ -1168,7 +1168,7 @@ iasis:gexp_isRelatedTo_gene	rdf:type owl:ObjectProperty;
 							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:gexp_isRelatedTo_sample	rdf:type owl:ObjectProperty;
-							rdfs:label "gexp_isRelatedTo_gene";
+							rdfs:label "gexp_isRelatedTo_sample";
 							rdfs:domain iasis:Gexp;
 			     				rdfs:range iasis:Sample;
 							rdfs:comment	"Relation between Gexp and Sample classes.";
