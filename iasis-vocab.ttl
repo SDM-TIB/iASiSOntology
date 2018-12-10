@@ -238,6 +238,13 @@ iasis:NucleotideSequence	rdf:type owl:Class;
 			dcterms:modified "2018-12-10"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+iasis:Variation	rdf:type owl:Class;
+			rdfs:label	"Variation";
+			rdfs:subClassOf	iasis:Concept;
+			rdf:comment "";
+			dcterms:modified "2018-12-10"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
 #### Drug requirements:
 
 iasis:Drug	rdf:type owl:Class;
