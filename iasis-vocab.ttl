@@ -300,7 +300,7 @@ iasis:Target	rdf:type owl:Class;
 iasis:BioSystem	rdf:type owl:Class;
 				rdfs:label	"BioSystem";
 				rdfs:subClassOf	iasis:Concept;
-				rdf:comment "Including all drug targets, enzymes, transpoders, and carriers";
+				rdf:comment "One type of biosystem is a biological pathway, which can consist of interacting genes, proteins, and small molecules. Another type of biosystem is a disease, which can involve components such as genes, biomarkers, and drugs. (in DrugBank it includes all drug targets, enzymes, transpoders, and carriers.)";
 				dcterms:modified "2018-10-30"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
