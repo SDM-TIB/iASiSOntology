@@ -840,6 +840,7 @@ iasis:cgi_chromosome	rdf:type owl:DatatypeProperty;
 						dcterms:modified "2018-04-12"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+
 iasis:mutation_strand	rdf:type owl:DatatypeProperty;
 						rdfs:label	"mutationStrand";
 						rdfs:domain iasis:Mutation;
@@ -880,13 +881,14 @@ iasis:mutation_end	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2018-04-12"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:genomic_position	rdf:type owl:DatatypeProperty;
+iasis:methylation_genomicPosition	rdf:type owl:DatatypeProperty;
 						rdfs:label	"CpGislandGenomicPosition";
 						rdfs:domain iasis:CGI;
 					   	rdfs:range rdfs:Literal;	
 						rdfs:comment	"Genomic position";
 						dcterms:modified "2018-04-12"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
 
 iasis:cnv_studyID	rdf:type owl:DatatypeProperty;
 					rdfs:label	"cnvStudyID";
@@ -1181,6 +1183,43 @@ iasis:gexp_isRelatedTo_sample	rdf:type owl:ObjectProperty;
 							rdfs:comment	"Relation between Gexp and Sample classes.";
 							dcterms:modified "2018-09-26"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+########### ClinVar ###############
+
+
+iasis:nts_genomicPosition	rdf:type owl:DatatypeProperty;
+						rdfs:label	"NucleotideSequenceGenomicPosition";
+						rdfs:domain iasis:NucleotideSequence;
+					   	rdfs:range rdfs:Literal;	
+						rdfs:comment	"Genomic position";
+						dcterms:modified "2018-12-10"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:nts_chromosome	rdf:type owl:DatatypeProperty;
+						rdfs:label	"NucleotideSequenceChromosome";
+						rdfs:domain iasis:NucleotideSequence;
+				 		rdfs:range rdfs:Literal;
+						rdfs:comment	"Chromosome in which the NucleotideSequence is loacted";
+						dcterms:modified "2018-12-10"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:nts_site	rdf:type owl:DatatypeProperty;
+						rdfs:label	"nts_site";
+						rdfs:domain iasis:NucleotideSequence;
+				 		rdfs:range rdfs:Literal;
+						rdfs:comment	"NucleotideSequence Site";
+						dcterms:modified "2018-12-10"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:nts_isRelatedTo_transcript	rdf:type owl:ObjectProperty;
+							rdfs:label "nts_isRelatedTo_transcript";
+							rdfs:domain iasis:NucleotideSequence;
+			     			rdfs:range iasis:Transcript;
+							rdfs:comment	"Relation between NucleotideSequence and Transcript classes.";
+							dcterms:modified "2018-12-10"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+
 
 #### WP3 requirements:
 
