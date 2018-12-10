@@ -167,7 +167,7 @@ iasis:GExp 	rdf:type owl:Class;
 
 iasis:Transcript	rdf:type	owl:Class;
 					rdfs:label	"Transcript";
-					rdfs:subClassOf	iasis:Concept;
+					rdfs:subClassOf	iasis:NucleotideSequence;
 					rdfs:comment "Single-stranded RNA product synthesized by transcription of DNA.";
 					dcterms:modified "2017-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
@@ -229,6 +229,13 @@ iasis:EQTL	rdf:type owl:Class;
 			rdfs:subClassOf	iasis:Concept;
 			rdf:comment "An eQTL is a locus that explains a fraction of the genetic variance of a gene expression phenotype.";
 			dcterms:modified "2018-07-24"^^xsd:date;
+			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:NucleotideSequence	rdf:type owl:Class;
+			rdfs:label	"NucleotideSequence";
+			rdfs:subClassOf	iasis:Concept;
+			rdf:comment "Includes DNA and RNAs.";
+			dcterms:modified "2018-12-10"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 #### Drug requirements:
