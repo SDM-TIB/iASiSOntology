@@ -1684,7 +1684,7 @@ iasis:disorder_has_indication	rdf:type	owl:ObjectProperty;
 								rdfs:subPropertyOf	iasis:hasIndication;
 								rdfs:domain	iasis:Disorder;
 								rdfs:range	iasis:Drug;
-								rdfs:comment	".";
+								rdfs:comment	"";
 								dcterms:modified "2019-01-07"^^xsd:date;
 								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
@@ -1693,10 +1693,18 @@ iasis:biomarker_has_indication	rdf:type	owl:ObjectProperty;
 								rdfs:subPropertyOf	iasis:hasIndication;
 								rdfs:domain	iasis:Biomarker;
 								rdfs:range	iasis:Drug;
-								rdfs:comment	".";
+								rdfs:comment	"";
 								dcterms:modified "2019-01-07"^^xsd:date;
 								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+iasis:tumorStage_has_indication	rdf:type	owl:ObjectProperty;
+								rdfs:label	"biomarker_has_indication";
+								rdfs:subPropertyOf	iasis:hasIndication;
+								rdfs:domain	iasis:TumorStage;
+								rdfs:range	iasis:Drug;
+								rdfs:comment	"";
+								dcterms:modified "2019-01-07"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:drugTargetInteraction	rdf:type	owl:ObjectProperty;
 								rdfs:label	"drugTargetInteraction";
