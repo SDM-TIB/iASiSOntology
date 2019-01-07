@@ -1342,10 +1342,18 @@ iasis:qvalue 	rdf:type owl:DatatypeProperty;
 				dcterms:modified "2018-07-24"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:dbsnp 	rdf:type owl:ObjectProperty;
+iasis:variation 	rdf:type owl:ObjectProperty;
 				rdfs:label	"dbsnpID";
 				rdfs:domain iasis:EQTL;
-				rdfs:range iasis:Dbsnp;
+				rdfs:range iasis:Variation;
+				rdfs:comment	"Varriation ID in dbsnp database";
+				dcterms:modified "2018-07-24"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:variation 	rdf:type owl:ObjectProperty;
+				rdfs:label	"dbsnpID";
+				rdfs:domain iasis:NucleotideSequence;
+				rdfs:range iasis:Variation;
 				rdfs:comment	"Varriation ID in dbsnp database";
 				dcterms:modified "2018-07-24"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
