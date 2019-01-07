@@ -1673,12 +1673,30 @@ iasis:disorderID 	rdf:type owl:DatatypeProperty;
 
 iasis:hasIndication	rdf:type	owl:ObjectProperty;
 								rdfs:label	"hasIndication";
-								rdfs:subPropertyOf	iasis:hasIndication;
 								rdfs:domain	iasis:Concept;
 								rdfs:range	iasis:Drug;
 								rdfs:comment	".";
 								dcterms:modified "2018-11-22"^^xsd:date;
 								dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:disorder_has_indication	rdf:type	owl:ObjectProperty;
+								rdfs:label	"disorder_has_indication";
+								rdfs:subPropertyOf	iasis:hasIndication;
+								rdfs:domain	iasis:Disorder;
+								rdfs:range	iasis:Drug;
+								rdfs:comment	".";
+								dcterms:modified "2019-01-07"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
+iasis:biomarker_has_indication	rdf:type	owl:ObjectProperty;
+								rdfs:label	"biomarker_has_indication";
+								rdfs:subPropertyOf	iasis:hasIndication;
+								rdfs:domain	iasis:Biomarker;
+								rdfs:range	iasis:Drug;
+								rdfs:comment	".";
+								dcterms:modified "2019-01-07"^^xsd:date;
+								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
+
 
 iasis:drugTargetInteraction	rdf:type	owl:ObjectProperty;
 								rdfs:label	"drugTargetInteraction";
