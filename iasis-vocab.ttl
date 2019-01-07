@@ -1342,20 +1342,20 @@ iasis:qvalue 	rdf:type owl:DatatypeProperty;
 				dcterms:modified "2018-07-24"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:variation 	rdf:type owl:ObjectProperty;
+iasis:eqtl_has_variation 	rdf:type owl:ObjectProperty;
 				rdfs:label	"dbsnpID";
 				rdfs:domain iasis:EQTL;
 				rdfs:range iasis:Variation;
 				rdfs:comment	"Varriation ID in dbsnp database";
-				dcterms:modified "2018-07-24"^^xsd:date;
+				dcterms:modified "2019-01-07"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:variation 	rdf:type owl:ObjectProperty;
+iasis:nts_has_variation 	rdf:type owl:ObjectProperty;
 				rdfs:label	"dbsnpID";
 				rdfs:domain iasis:NucleotideSequence;
 				rdfs:range iasis:Variation;
 				rdfs:comment	"Varriation ID in dbsnp database";
-				dcterms:modified "2018-07-24"^^xsd:date;
+				dcterms:modified "2019-01-07"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:eqtl_chromosome 	rdf:type owl:DatatypeProperty;
@@ -1374,6 +1374,13 @@ iasis:eqtl_position 	rdf:type owl:DatatypeProperty;
 						dcterms:modified "2018-07-24"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
+iasis:variation_has_phenotype 	rdf:type owl:ObjectProperty;
+				rdfs:label	"dbsnpID";
+				rdfs:domain iasis:NucleotideSequence;
+				rdfs:range iasis:Variation;
+				rdfs:comment	"Varriation ID in dbsnp database";
+				dcterms:modified "2019-01-07"^^xsd:date;
+				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 #### Drug requirements:
 
