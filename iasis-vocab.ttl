@@ -1698,7 +1698,7 @@ iasis:biomarker_has_indication	rdf:type	owl:ObjectProperty;
 								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:tumorStage_has_indication	rdf:type	owl:ObjectProperty;
-								rdfs:label	"biomarker_has_indication";
+								rdfs:label	"tumorStage_has_indication";
 								rdfs:subPropertyOf	iasis:hasIndication;
 								rdfs:domain	iasis:TumorStage;
 								rdfs:range	iasis:Drug;
