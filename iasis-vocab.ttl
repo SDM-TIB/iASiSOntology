@@ -2306,7 +2306,7 @@ iasis:protocolName       rdf:type     owl:DatatypeProperty;
 							dcterms:modified "2018-11-25"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
-iasis:patientPosition      rdf:type     owl:ObjecteProperty;
+iasis:patientPosition      rdf:type     owl:ObjectProperty;
 							rdfs:label	"patientPosition";
 							rdfs:domain	iasis:LCImage;
 							rdfs:range	iasis:PatientPosition;
