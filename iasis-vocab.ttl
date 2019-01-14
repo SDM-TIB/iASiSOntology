@@ -2236,7 +2236,7 @@ iasis:diagnosisID        rdf:type	owl:DatatypeProperty;
 
 iasis:genderLabel        rdf:type     owl:DatatypeProperty;
 							rdfs:label	"genderLabel";
-							rdfs:domain	iasis:Cocept;
+							rdfs:domain	iasis:Gender;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
@@ -2244,7 +2244,7 @@ iasis:genderLabel        rdf:type     owl:DatatypeProperty;
 
 iasis:genderID       rdf:type     owl:DatatypeProperty;
 							rdfs:label	"genderID";
-							rdfs:domain	iasis:Concept;
+							rdfs:domain	iasis:Gender;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-25"^^xsd:date;
