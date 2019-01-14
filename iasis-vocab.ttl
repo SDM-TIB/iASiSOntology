@@ -67,7 +67,7 @@ iasis:MENTIONED_IN	rdf:type owl:Class;
 
 iasis:HAS_TOPIC	rdf:type owl:Class;
 				rdfs:label	"HasTopic";
-				rdfs:subClassOf iasis:Relation;
+				rdfs:subClassOf iasis:Re13T13lation;
 				rdfs:comment	"A relation that shows which CUI has been appeared in each specific publication.";
 				dcterms:modified "2017-10-23"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
@@ -2239,7 +2239,7 @@ iasis:genderLabel        rdf:type     owl:DatatypeProperty;
 							rdfs:domain	iasis:Gender;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
-							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:modified "2019-01-14"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
 iasis:genderID       rdf:type     owl:DatatypeProperty;
@@ -2247,7 +2247,7 @@ iasis:genderID       rdf:type     owl:DatatypeProperty;
 							rdfs:domain	iasis:Gender;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
-							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:modified "2019-01-14"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
 iasis:hasImage       rdf:type     owl:ObjectProperty;
