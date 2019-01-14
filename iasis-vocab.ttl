@@ -369,7 +369,7 @@ iasis:FamiliarAntecedent	rdf:type	owl:Class;
 							dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:Gender	rdf:type	owl:Class;
-						rdfs:label	"GenderOfPatient";
+						rdfs:label	"Gender";
 						rdfs:comment "The gender of the patients.";
 						dcterms:modified "2018-09-27"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
