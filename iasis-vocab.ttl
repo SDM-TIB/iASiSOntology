@@ -1899,12 +1899,12 @@ iasis:performanceStatusDate	rdf:type        owl:DatatypeProperty;
 						dcterms:modified "2017-10-04"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:gender	rdf:type	owl:DatatypeProperty;
+iasis:gender	rdf:type	owl:ObjectProperty;
 				rdfs:label	"gender";
 				rdfs:domain	iasis:LCPatient;
-				rdfs:range	rdfs:Literal;
+				rdfs:range	iasis:Gender;
 				rdfs:comment	"Gender value of the patient.";
-				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:modified "2018-01-14"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:birthDate	rdf:type	owl:DatatypeProperty;
@@ -2178,7 +2178,7 @@ iasis:hasTumorStage	rdf:type        owl:ObjectProperty;
 
 iasis:tumorStageLabel      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"tumorStageLabel";
-							rdfs:domain	iasis:TumorStage;
+							rdfs:domain	iasis:TumorStage;ObjectProperty
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
