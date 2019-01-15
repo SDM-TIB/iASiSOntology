@@ -2178,7 +2178,7 @@ iasis:hasTumorStage	rdf:type        owl:ObjectProperty;
 
 iasis:tumorStageLabel      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"tumorStageLabel";
-							rdfs:domain	iasis:TumorStage;ObjectProperty
+							rdfs:domain	iasis:TumorStage;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
