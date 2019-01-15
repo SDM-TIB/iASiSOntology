@@ -471,7 +471,7 @@ iasis:PatientPosition   rdf:type owl:Class;
 iasis:BodyPartExamined rdf:type         owl:Class;
 					rdfs:label	"BodyPartExamined";
 					rdfs:subClassOf	iasis:Concept;
-					rdfs:comment "";
+					rdfs:comment "Body part examined";
 					dcterms:modified "2018-11-25"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
