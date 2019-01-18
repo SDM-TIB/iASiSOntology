@@ -471,7 +471,7 @@ iasis:PatientPosition   rdf:type owl:Class;
 iasis:BodyPartExamined rdf:type         owl:Class;
 					rdfs:label	"BodyPartExamined";
 					rdfs:subClassOf	iasis:Concept;
-					rdfs:comment "Body part examined";
+					rdfs:comment "";
 					dcterms:modified "2018-11-25"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
@@ -1715,13 +1715,13 @@ iasis:drugTargetInteraction	rdf:type	owl:ObjectProperty;
 								dcterms:modified "2018-10-30"^^xsd:date;
 								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:hasInteraction	rdf:type	owl:ObjectProperty;
-								rdfs:label	"hasInteraction";
-								rdfs:subPropertyOf	iasis:hasInteraction;
+iasis:hasIndication	rdf:type	owl:ObjectProperty;
+								rdfs:label	"hasIndication";
+								rdfs:subPropertyOf	iasis:hasIndication;
 								rdfs:domain	iasis:Drug;
 								rdfs:range	iasis:Disorder;
 								rdfs:comment	"Indication of disorders that can be related to the drug.";
-								dcterms:modified "2018-10-30"^^xsd:date;
+								dcterms:modified "2019-01-18"^^xsd:date;
 								dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:drugEnzymeInteraction	rdf:type	owl:ObjectProperty;
