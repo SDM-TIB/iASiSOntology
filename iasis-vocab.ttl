@@ -19,9 +19,9 @@ iasis:Annotation	rdf:type	owl:Class;
 					rdfs:label	"Annotation";
 					rdfs:comment "Explanation of a concept including label, id and source of concept.";
 					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+					dcterms:crThe page that you're looking for used information that you entered. Returning to that page might cause any action you took to be repeated. Do you want to continue?eator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
-iasis:Relation	rdf:type	owl:Class;
+iasis:Relation	rdf:type	owl:Class;The page that you're looking for used information that you entered. Returning to that page might cause any action you took to be repeated. Do you want to continue?
 					rdfs:label	"Relation";
 					rdfs:comment "Relations between concepts.";
 					dcterms:modified "2017-10-23"^^xsd:date;
