@@ -93,7 +93,7 @@ iasis:INHIBITS	rdf:type owl:Class;
 				dcterms:modified "2017-10-23"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
-iasis:INITERACTS_WITH rdf:type owl:Class;
+iasis:INTERACTS_WITH rdf:type owl:Class;
 					rdfs:label	"InteractsWith";
 					rdfs:subClassOf iasis:Relation;
 					rdfs:comment	"UMLS Annotation.";
@@ -152,6 +152,7 @@ iasis:CNV 	rdf:type owl:Class;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:CGI 	rdf:type owl:Class;
+
 			rdfs:label	"CpG_island";
 			rdfs:subClassOf	iasis:Concept;
 			rdfs:comment "CGIs are regions of the genome that contain a large number of CpG dinucleotide repeats. Although most CGIs linked to promoters are non-methylated, majority of CGIs may be completely methylated in normal cells.";
