@@ -719,7 +719,7 @@ iasis:sampleAge	rdf:type owl:DatatypeProperty;
 			dcterms:modified "2017-07-24"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:subTissueLabel	rdf:type owl:DatatypeProperty; ======
+iasis:subTissueLabel	rdf:type owl:DatatypeProperty;
 			rdfs:label	"subTissueLabel";
 			rdfs:domain iasis:SubTissue;          
 		  	rdfs:range rdfs:Literal;
@@ -727,7 +727,7 @@ iasis:subTissueLabel	rdf:type owl:DatatypeProperty; ======
 			dcterms:modified "2018-09-26"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:tissueTypeLabel	rdf:type owl:DatatypeProperty; =====
+iasis:tissueTypeLabel	rdf:type owl:DatatypeProperty;
 			rdfs:label	"tissueTypeLabel";
 			rdfs:domain iasis:TissueType;          
 		  	rdfs:range rdfs:Literal;
@@ -735,7 +735,7 @@ iasis:tissueTypeLabel	rdf:type owl:DatatypeProperty; =====
 			dcterms:modified "2018-09-26"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:tissueLabel	rdf:type owl:DatatypeProperty; =======
+iasis:tissueLabel	rdf:type owl:DatatypeProperty;
 			rdfs:label	"tissueLabel";
 			rdfs:domain iasis:Tissue;          
 		  	rdfs:range rdfs:Literal;
@@ -743,7 +743,7 @@ iasis:tissueLabel	rdf:type owl:DatatypeProperty; =======
 			dcterms:modified "2018-09-26"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:tissueSubTypeLabel	rdf:type owl:DatatypeProperty; =====
+iasis:tissueSubTypeLabel	rdf:type owl:DatatypeProperty;
 			rdfs:label	"tissueSubTypeLabel";
 			rdfs:domain iasis:TissueSubType;          
 		  	rdfs:range rdfs:Literal;
@@ -751,7 +751,7 @@ iasis:tissueSubTypeLabel	rdf:type owl:DatatypeProperty; =====
 			dcterms:modified "2018-09-26"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:primaryHistology	rdf:type owl:DatatypeProperty; =====
+iasis:primaryHistology	rdf:type owl:DatatypeProperty;
 			rdfs:label	"PrimaryHistology";
 			rdfs:domain iasis:Sample;          
 		  	rdfs:range iasis:TissueType;
@@ -759,7 +759,7 @@ iasis:primaryHistology	rdf:type owl:DatatypeProperty; =====
 			dcterms:modified "2018-11-23"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
-iasis:histologySubtype1	rdf:type owl:DatatypeProperty; ======
+iasis:histologySubtype1	rdf:type owl:DatatypeProperty;
 			rdfs:label	"HistologySubtype1";
 			rdfs:domain iasis:Sample;          
 		  	rdfs:range iasis:TissueSubType;
@@ -767,7 +767,7 @@ iasis:histologySubtype1	rdf:type owl:DatatypeProperty; ======
 			dcterms:modified "2018-11-23"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
-iasis:tissueSubtype1	rdf:type owl:DatatypeProperty; ======
+iasis:tissueSubtype1	rdf:type owl:DatatypeProperty;
 			rdfs:label	"TissueSubtype1";
 			rdfs:domain iasis:Sample;          
 		  	rdfs:range iasis:SubTissue;
@@ -775,7 +775,7 @@ iasis:tissueSubtype1	rdf:type owl:DatatypeProperty; ======
 			dcterms:modified "2018-11-22"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
-iasis:tissueSubtype2	rdf:type owl:DatatypeProperty;  ======
+iasis:tissueSubtype2	rdf:type owl:DatatypeProperty;
 			rdfs:label	"TissueSubType2";
 			rdfs:domain iasis:Sample;          
 		  	rdfs:range iasis:SubTissue;
@@ -783,7 +783,7 @@ iasis:tissueSubtype2	rdf:type owl:DatatypeProperty;  ======
 			dcterms:modified "2018-11-22"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
-iasis:primaryTissue	rdf:type owl:DatatypeProperty; ======
+iasis:primaryTissue	rdf:type owl:DatatypeProperty;
 			rdfs:label	"PrimaryTissue";
 			rdfs:domain iasis:Sample;          
 		  	rdfs:range iasis:Tissue;
