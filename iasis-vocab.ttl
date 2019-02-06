@@ -214,35 +214,35 @@ iasis:Zygosity	rdf:type	owl:Class;
 iasis:Protein 	rdf:type owl:Class;
 				rdfs:label	"Protein";
 				rdfs:subClassOf	iasis:Concept;
-				rdf:comment "Large and complex molecules that play many critical roles in the body. They are required for the structure, function and regulation of the body's tissues and organs.";
+				rdfs:comment "Large and complex molecules that play many critical roles in the body. They are required for the structure, function and regulation of the body's tissues and organs.";
 				dcterms:modified "2018-07-24"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:RBP_RNA_PhysicalInteraction	rdf:type	owl:Class;
 									rdfs:label	"RBP_RNA_PhysicalInteraction";
 									rdfs:subClassOf	iasis:Relation;
-									rdf:comment "Interaction between RNA binding protein (the mediator factor) and RNA. ";
+									rdfs:comment "Interaction between RNA binding protein (the mediator factor) and RNA. ";
 									dcterms:modified "2018-07-24"^^xsd:date;
 									dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:EQTL	rdf:type owl:Class;
 			rdfs:label	"eQTL";
 			rdfs:subClassOf	iasis:Concept;
-			rdf:comment "An eQTL is a locus that explains a fraction of the genetic variance of a gene expression phenotype.";
+			rdfs:comment "An eQTL is a locus that explains a fraction of the genetic variance of a gene expression phenotype.";
 			dcterms:modified "2018-07-24"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:NucleotideSequence	rdf:type owl:Class;
 			rdfs:label	"NucleotideSequence";
 			rdfs:subClassOf	iasis:Concept;
-			rdf:comment "Includes DNA and RNAs.";
+			rdfs:comment "Includes DNA and RNAs.";
 			dcterms:modified "2018-12-10"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:Variation	rdf:type owl:Class;
 			rdfs:label	"Variation";
 			rdfs:subClassOf	iasis:Concept;
-			rdf:comment "";
+			rdfs:comment "";
 			dcterms:modified "2018-12-10"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
@@ -251,7 +251,7 @@ iasis:Variation	rdf:type owl:Class;
 iasis:Drug	rdf:type owl:Class;
 			rdfs:label	"Drug";
 			rdfs:subClassOf	iasis:Concept;
-			rdf:comment "A substance used as a medication or in the preparation of medication.";
+			rdfs:comment "A substance used as a medication or in the preparation of medication.";
 			dcterms:modified "2018-07-24"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
@@ -266,56 +266,56 @@ iasis:Phenotype rdf:type	owl:Class;
 iasis:DrugSideEffect	rdf:type owl:Class;
 						rdfs:label	"DrugSideEffect";
 						rdfs:subClassOf	iasis:Relation;
-						rdf:comment "The Drug SideEffect relation should be a class since has two properties";
+						rdfs:comment "The Drug SideEffect relation should be a class since has two properties";
 						dcterms:modified "2017-07-24"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:Enzyme	rdf:type owl:Class;
 				rdfs:label	"Enzyme";
 				rdfs:subClassOf	iasis:Concept;
-				rdf:comment "Macromolecular biological catalyst that accelerate chemical reactions. Most enzymes are proteins.";
+				rdfs:comment "Macromolecular biological catalyst that accelerate chemical reactions. Most enzymes are proteins.";
 				dcterms:modified "2017-07-24"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:Effect	rdf:type owl:Class;
 				rdfs:label	"Effect";
 				rdfs:subClassOf	iasis:Concept;
-				rdf:comment "The effectiveness of a drug according to its interaction with another drug.";
+				rdfs:comment "The effectiveness of a drug according to its interaction with another drug.";
 				dcterms:modified "2018-10-23"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:Impact	rdf:type owl:Class;
 				rdfs:label	"Impact";
 				rdfs:subClassOf	iasis:Concept;
-				rdf:comment "The impact that interaction between two drugs has on the performance of the drug.";
+				rdfs:comment "The impact that interaction between two drugs has on the performance of the drug.";
 				dcterms:modified "2018-10-23"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:EffectInteraction	rdf:type owl:Class;
 				rdfs:label	"EffectInteraction";
 				rdfs:subClassOf	iasis:Relation;
-				rdf:comment "The relation between two drugs that interact.";
+				rdfs:comment "The relation between two drugs that interact.";
 				dcterms:modified "2018-10-23"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:Disorder	rdf:type owl:Class;
 				rdfs:label	"Disorder";
 				rdfs:subClassOf	iasis:Concept;
-				rdf:comment "Disorders!";
+				rdfs:comment "Disorders!";
 				dcterms:modified "2018-10-30"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:Target	rdf:type owl:Class;
 				rdfs:label	"Target";
 				rdfs:subClassOf	iasis:Concept;
-				rdf:comment "A drug target is a molecule in the body, usually a protein, that is intrinsically associated with a particular disease process and that could be addressed by a drug to produce a desired therapeutic effect.";
+				rdfs:comment "A drug target is a molecule in the body, usually a protein, that is intrinsically associated with a particular disease process and that could be addressed by a drug to produce a desired therapeutic effect.";
 				dcterms:modified "2018-10-30"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:PredictedDrugSideEffect	rdf:type owl:Class;
 						rdfs:label	"PredictedDrugSideEffect";
 						rdfs:subClassOf	iasis:Relation;
-						rdf:comment "The predicted Drug SideEffect relation.";
+						rdfs:comment "The predicted Drug SideEffect relation.";
 						dcterms:modified "2019-01-30"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/jozashoori>.				
 
@@ -333,14 +333,14 @@ iasis:Observation    rdf:type        owl:Class;
 iasis:Patient rdf:type owl:Class;
 					rdfs:label	"Patient";
 					rdfs:subClassOf	iasis:Concept;
-					rdf:comment "A person who is receiving medical care.";
+					rdfs:comment "A person who is receiving medical care.";
 					dcterms:modified "2018-07-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
 iasis:LCPatient	rdf:type owl:Class;
 				rdfs:label	"LungCancerPatient";
 				rdfs:subClassOf	iasis:Patient;
-				rdf:comment "A patient who is diagnosed with Lung Cancer.";
+				rdfs:comment "A patient who is diagnosed with Lung Cancer.";
 				dcterms:modified "2018-07-24"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 	
