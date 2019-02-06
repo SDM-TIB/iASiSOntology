@@ -2045,7 +2045,7 @@ iasis:surgery	rdf:type	owl:DatatypeProperty;
 				dcterms:modified "2017-10-04"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/jozashoori>.
 
-iasis:familiarAntecedents	rdf:type	owl:DataProperty;
+iasis:familiarAntecedents	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"familiarAntecedents";
 				rdfs:domain	iasis:LCPatient;
 				rdfs:range	rdfs:Literal;
