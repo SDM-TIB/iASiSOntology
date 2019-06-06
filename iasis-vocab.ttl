@@ -58,6 +58,13 @@ iasis:Publication	rdf:type	owl:Class;
 					dcterms:modified "2017-10-23"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
+iasis:Author	rdf:type	owl:Class;
+					rdfs:label	"Author";
+					rdfs:subClassOf	iasis:Concept;
+					rdfs:comment "Author of Scientific publications.";
+					dcterms:modified "2019-05-24"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
 iasis:MENTIONED_IN	rdf:type owl:Class;
 					rdfs:label	"MentionedIn";
 					rdfs:subClassOf iasis:Relation;
@@ -67,7 +74,7 @@ iasis:MENTIONED_IN	rdf:type owl:Class;
 
 iasis:HAS_TOPIC	rdf:type owl:Class;
 				rdfs:label	"HasTopic";
-				rdfs:subClassOf iasis:Re13T13lation;
+				rdfs:subClassOf iasis:Relation;
 				rdfs:comment	"A relation that shows which CUI has been appeared in each specific publication.";
 				dcterms:modified "2017-10-23"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
@@ -209,6 +216,13 @@ iasis:Zygosity	rdf:type	owl:Class;
 					dcterms:modified "2018-09-26"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
+iasis:Evidence	rdf:type	owl:Class;
+					rdfs:label	"Evidence";
+					rdfs:subClassOf	iasis:Concept;
+					rdfs:comment "";
+					dcterms:modified "2019-06-06"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
 #### WP3 requirements:
 
 iasis:Protein 	rdf:type owl:Class;
@@ -241,9 +255,9 @@ iasis:NucleotideSequence	rdf:type owl:Class;
 
 iasis:Variation	rdf:type owl:Class;
 			rdfs:label	"Variation";
-			rdfs:subClassOf	iasis:Concept;
+			rdfs:subClassOf	iasis:EQTL;
 			rdfs:comment "";
-			dcterms:modified "2018-12-10"^^xsd:date;
+			dcterms:modified "201-06-06"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 #### Drug requirements:
@@ -252,8 +266,24 @@ iasis:Drug	rdf:type owl:Class;
 			rdfs:label	"Drug";
 			rdfs:subClassOf	iasis:Concept;
 			rdfs:comment "A substance used as a medication or in the preparation of medication.";
-			dcterms:modified "2018-07-24"^^xsd:date;
+			dcterms:modified "2018-07-23"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:DementiaDrug	rdf:type owl:Class;
+			rdfs:label	"DementiaDrug";
+			rdfs:subClassOf	iasis:Drug;
+			rdfs:comment "A Drug used in the Alzheimer treatment.";
+			dcterms:modified "2019-05-23"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:LungCancerDrug	rdf:type owl:Class;
+			rdfs:label	"LungCancerDrug";
+			rdfs:subClassOf	iasis:Drug;
+			rdfs:comment "A Drug used in the Lung Cancer treatment.";
+			dcterms:modified "2019-05-23"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
 
 iasis:Phenotype rdf:type	owl:Class;
 					rdfs:label	"Phenotype";
@@ -343,6 +373,13 @@ iasis:LCPatient	rdf:type owl:Class;
 				rdfs:comment "A patient who is diagnosed with Lung Cancer.";
 				dcterms:modified "2018-07-24"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:ADPatient	rdf:type owl:Class;
+				rdfs:label	"AlzheimerPatient";
+				rdfs:subClassOf	iasis:Patient;
+				rdfs:comment "A patient who is diagnosed with Alzheimer.";
+				dcterms:modified "2019-06-06"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
 	
 iasis:LiquidBiopsy 	rdf:type owl:Class;
 					rdfs:label	"LiquidBiopsy";
@@ -416,6 +453,13 @@ iasis:TumorObservation    rdf:type        owl:Class;
 					rdfs:subClassOf	 iasis:Observation;
 					rdfs:comment "";
 					dcterms:modified "2018-11-27"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:ToxicityObservation    rdf:type        owl:Class;
+					rdfs:label	"iasis:ToxicityObservation";
+					rdfs:subClassOf	 iasis:Observation;
+					rdfs:comment "";
+					dcterms:modified "2019-05-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
 #### clinical images:
@@ -542,6 +586,15 @@ iasis:hasHPOAnnotation	rdf:type owl:ObjectProperty;
 
 #### WP4 requirements:
 
+
+iasis:title     rdf:type     owl:DatatypeProperty;
+							rdfs:label	"title";
+							rdfs:domain	iasis:Publication;
+                                                      	rdfs:range	rdfs:Literal;
+							rdfs:comment "Title of Publication.";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
 iasis:pubmedID	rdf:type owl:DatatypeProperty;
 					rdfs:label "PubMed ID";
 					rdfs:domain iasis:Publication;
@@ -566,13 +619,29 @@ iasis:year	rdf:type	owl:DatatypeProperty;
 			dcterms:modified "2018-04-12"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:author	rdf:type	owl:DatatypeProperty;
+iasis:author	rdf:type	owl:ObjectProperty;
 				rdfs:label	"authors";
 				rdfs:domain	iasis:Publication;
-				rdfs:range	rdfs:Literal;
+				rdfs:range	iasis:Author;
 				rdfs:comment	"Authors of publication";
-				dcterms:modified "2018-04-12"^^xsd:date;
+				dcterms:modified "2019-05-24"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:authorName	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"authorName";
+				rdfs:domain	iasis:Author;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Name of Author";
+				dcterms:modified "2019-05-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:authorList	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"authorList";
+				rdfs:domain	iasis:Publication;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"List of Authors";
+				dcterms:modified "2019-06-06"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
 
 iasis:journal	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"journal";
@@ -582,13 +651,55 @@ iasis:journal	rdf:type	owl:DatatypeProperty;
 				dcterms:modified "2018-04-12"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>. 
 
+iasis:rankingScore_SJR	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"rankingScore_SJR";
+				rdfs:domain	iasis:Publication;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"ranking Score_SJR Journal of publication";
+				dcterms:modified "2019-05-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>. 
+
+iasis:rankingScore_hIndex	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"rankingScore_hIndex";
+				rdfs:domain	iasis:Publication;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"ranking Score_hIndex of Journal of publication";
+				dcterms:modified "2019-05-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>. 
+
+
+iasis:publicationType	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"iasis:publicationType";
+				rdfs:domain	iasis:Publication;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Type of Publication";
+				dcterms:modified "2019-05-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>. 
+
+iasis:authorAffiliation	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"authorAffiliation";
+				rdfs:domain	iasis:Publication;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Affiliation of Author";
+				dcterms:modified "2019-05-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
 iasis:annotates	rdf:type	owl:ObjectProperty;
 							rdfs:label	"annotates";
 							rdfs:domain	iasis:Relation;
-							rdfs:range	iasis:Annotation;
+							rdfs:range	iasis:Publication;
 							rdfs:comment	"Connection between mentionedIn or HasTopic relation with CUI.";
-							dcterms:modified "2018-04-12"^^xsd:date;
+							dcterms:modified "2019-05-24"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:publication_isRelatedTo_Disease	rdf:type	owl:ObjectProperty;
+							rdfs:label	"publication_isRelatedTo_Disease";
+							rdfs:domain	iasis:Publication;
+							rdfs:range	iasis:Disorder;
+							rdfs:comment	"";
+							dcterms:modified "2019-05-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-mcastellanosd87/>.
 
 iasis:confidence     rdf:type     owl:DatatypeProperty;
 							rdfs:label	"confidence";
@@ -596,6 +707,14 @@ iasis:confidence     rdf:type     owl:DatatypeProperty;
                                                       	rdfs:range	rdfs:Literal;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:negation     rdf:type     owl:DatatypeProperty;
+							rdfs:label	"negation";
+							rdfs:domain	iasis:Relation;
+                                                      	rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2019-05-24"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
 iasis:relation_isRelatedTo_annotation	rdf:type        owl:ObjectProperty;	
@@ -606,13 +725,15 @@ iasis:relation_isRelatedTo_annotation	rdf:type        owl:ObjectProperty;
 						dcterms:modified "2018-11-27"^^xsd:date;
 						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
-iasis:title     rdf:type     owl:DatatypeProperty;
-							rdfs:label	"title";
-							rdfs:domain	iasis:Publication;
-                                                      	rdfs:range	rdfs:Literal;
-							rdfs:comment "Title of Publication.";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:relation_isRelatedTo_publication	rdf:type        owl:ObjectProperty;	
+				                rdfs:label	"relation_isRelatedTo_publication";
+						rdfs:domain	iasis:Relation;
+						rdfs:range	iasis:Publication;
+						rdfs:comment	".";
+						dcterms:modified "2019-05-24"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
 
 #### COSMIC requirements:
 
@@ -631,6 +752,63 @@ iasis:geneHugoID	rdf:type owl:DatatypeProperty;
                   			rdfs:comment "HUGU ID for the gene.";
 					dcterms:modified "2018-09-26"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:geneFullName	rdf:type owl:DatatypeProperty;
+					rdfs:label "geneFullName";
+					rdfs:domain iasis:Gene;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment ".";
+					dcterms:modified "2019-06-06"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:geneDescription	rdf:type owl:DatatypeProperty;
+					rdfs:label "geneDescription";
+					rdfs:domain iasis:Gene;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment ".";
+					dcterms:modified "2019-06-06"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:gene_associatedWith_disease	rdf:type owl:DatatypeProperty;
+					rdfs:label "gene_associatedWith_disease";
+					rdfs:domain iasis:Gene;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment ".";
+					dcterms:modified "2019-06-06"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:gene_tissueSpecificity	rdf:type owl:DatatypeProperty;
+					rdfs:label "gene_tissueSpecificity";
+					rdfs:domain iasis:Gene;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment ".";
+					dcterms:modified "2019-06-06"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
+iasis:pLi	rdf:type owl:DatatypeProperty;
+					rdfs:label "pLi";
+					rdfs:domain iasis:Gene;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment ".";
+					dcterms:modified "2019-06-06"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:pRec	rdf:type owl:DatatypeProperty;
+					rdfs:label "pRec";
+					rdfs:domain iasis:Gene;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment ".";
+					dcterms:modified "2019-06-06"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:pNull	rdf:type owl:DatatypeProperty;
+					rdfs:label "pRec";
+					rdfs:domain iasis:Gene;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment ".";
+					dcterms:modified "2019-06-06"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
 
 iasis:sampleLabel	rdf:type owl:DatatypeProperty;
 					rdfs:label "SampleName";
@@ -744,52 +922,52 @@ iasis:tissueSubTypeLabel	rdf:type owl:DatatypeProperty;
 			dcterms:modified "2018-09-26"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:primaryHistology	rdf:type owl:DatatypeProperty;
+iasis:primaryHistology	rdf:type owl:ObjectProperty;
 			rdfs:label	"PrimaryHistology";
 			rdfs:domain iasis:Sample;          
 		  	rdfs:range iasis:TissueType;
 			rdfs:comment	"Name of Primary Histology.";
-			dcterms:modified "2018-11-23"^^xsd:date;
+			dcterms:modified "2019-05-24"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
-iasis:histologySubtype1	rdf:type owl:DatatypeProperty;
+iasis:histologySubtype1	rdf:type owl:ObjectProperty;
 			rdfs:label	"HistologySubtype1";
 			rdfs:domain iasis:Sample;          
 		  	rdfs:range iasis:TissueSubType;
 			rdfs:comment	"Name of Subtype Histology 1.";
-			dcterms:modified "2018-11-23"^^xsd:date;
+			dcterms:modified "2019-05-24"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
-iasis:tissueSubtype1	rdf:type owl:DatatypeProperty;
+iasis:tissueSubtype1	rdf:type owl:ObjectProperty;
 			rdfs:label	"TissueSubtype1";
 			rdfs:domain iasis:Sample;          
 		  	rdfs:range iasis:SubTissue;
 			rdfs:comment	".";
-			dcterms:modified "2018-11-22"^^xsd:date;
+			dcterms:modified "2019-05-24"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
-iasis:tissueSubtype2	rdf:type owl:DatatypeProperty;
+iasis:tissueSubtype2	rdf:type owl:ObjectProperty;
 			rdfs:label	"TissueSubType2";
 			rdfs:domain iasis:Sample;          
 		  	rdfs:range iasis:SubTissue;
 			rdfs:comment	".";
-			dcterms:modified "2018-11-22"^^xsd:date;
+			dcterms:modified "2019-05-24"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
-iasis:primaryTissue	rdf:type owl:DatatypeProperty;
+iasis:primaryTissue	rdf:type owl:ObjectProperty;
 			rdfs:label	"PrimaryTissue";
 			rdfs:domain iasis:Sample;          
 		  	rdfs:range iasis:Tissue;
 			rdfs:comment	".";
-			dcterms:modified "2018-11-23"^^xsd:date;
+			dcterms:modified "2019-05-24"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
-iasis:zygosity   	rdf:type owl:DatatypeProperty;
+iasis:zygosity   	rdf:type owl:ObjectProperty;
 				rdfs:label	"Zygosity";
 				rdfs:domain	iasis:Mutation;
 				rdfs:range	rdfs:Zygosity;	
 				rdfs:comment	".";
-				dcterms:modified "2018-11-23"^^xsd:date;
+				dcterms:modified "2019-05-24"^^xsd:date;
 				dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
 iasis:zygosityLabel	rdf:type owl:DatatypeProperty;
@@ -965,10 +1143,10 @@ iasis:mutation_somatic_status 	rdf:type owl:DatatypeProperty;
 
 iasis:tumor_origin 	rdf:type owl:DatatypeProperty;
 					rdfs:label	"tumorOrigin";
-					rdfs:domain iasis:Mutation;
+					rdfs:domain iasis:Tumor;
 				   	rdfs:range rdfs:Literal;
 					rdfs:comment	"Describes where the sample has originated from including the tumour type";
-					dcterms:modified "2018-04-12"^^xsd:date;
+					dcterms:modified "2019-05-24"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:beta_value	rdf:type owl:DatatypeProperty;
@@ -1047,7 +1225,7 @@ iasis:mutationDescription	rdf:type owl:DatatypeProperty;
 							rdfs:label	"mutationDescription";
 							rdfs:domain	iasis:Mutation;
 							rdfs:range	rdfs:Literal;
-							rdfs:comment "Is extracted from mutation dataset. ";
+							rdfs:comment "Is extracted from mutation dataset.";
 							dcterms:modified "2018-04-12"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -1086,6 +1264,7 @@ iasis:gene_isTranscribedAs_transcript	rdf:type	owl:ObjectProperty;
 											rdfs:comment "Transcript of gene.";
 											dcterms:modified "2018-04-12"^^xsd:date;
 											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
 
 iasis:mutation_mentionedIn_publication	rdf:type owl:ObjectProperty;
 										rdfs:label	"MutationMentionedInPublication";
@@ -1154,7 +1333,7 @@ iasis:cgi_isLocatedIn_sample	rdf:type owl:ObjectProperty;
 iasis:cnv_isLocatedIn_gene	rdf:type owl:ObjectProperty;
 							rdfs:label	"cnv_isLocatedIn_gene";
 							rdfs:domain iasis:CNV;
-			     			rdfs:range iasis:Gene;
+			     			        rdfs:range iasis:Gene;
 							rdfs:comment	"Relation between CNV and Gene classes.";
 							dcterms:modified "2018-04-12"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
@@ -1184,6 +1363,171 @@ iasis:gexp_isRelatedTo_sample	rdf:type owl:ObjectProperty;
 							rdfs:comment	"Relation between Gexp and Sample classes.";
 							dcterms:modified "2018-09-26"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:evidence_isRelatedTo_disorder	rdf:type owl:ObjectProperty;
+							rdfs:label	"evidence_isRelatedTo_disorder";
+							rdfs:domain iasis:Evidence;
+			     			        rdfs:range iasis:Disorder;
+							rdfs:comment	".";
+							dcterms:modified "2019-05-24"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
+iasis:evidenceType                      	rdf:type owl:DatatypeProperty;
+											rdfs:label	"evidenceType";
+											rdfs:domain iasis:Evidence;
+			        						        rdfs:range rdfs:Literal;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:evidenceDirection                      	rdf:type owl:DatatypeProperty;
+											rdfs:label	"evidenceDirection";
+											rdfs:domain iasis:Evidence;
+			        						        rdfs:range rdfs:Literal;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:evidenceLevel                      	rdf:type owl:DatatypeProperty;
+											rdfs:label	"evidenceLevel";
+											rdfs:domain iasis:Evidence;
+			        						        rdfs:range rdfs:Literal;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:evidenceStatement                      	rdf:type owl:DatatypeProperty;
+											rdfs:label	"evidenceStatement";
+											rdfs:domain iasis:Evidence;
+			        						        rdfs:range rdfs:Literal;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
+iasis:evidence_externalLink                      	rdf:type owl:DatatypeProperty;
+											rdfs:label	"evidence_externalLink";
+											rdfs:domain iasis:Evidence;
+			        						        rdfs:range rdfs:Literal;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:evidence_mentionedIn_publication                     rdf:type owl:ObjectProperty;
+											rdfs:label	"evidence_mentionedIn_publication";
+											rdfs:domain iasis:Evidence;
+			        						        rdfs:range iasis:Publication;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:evidence_isRelatedTo_variation                    rdf:type owl:ObjectProperty;
+											rdfs:label	"evidence_isRelatedTo_variation";
+											rdfs:domain iasis:Evidence;
+			        						        rdfs:range iasis:Variation;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+iasis:evidence_isRelatedTo_drug                    rdf:type owl:ObjectProperty;
+											rdfs:label	"evidence_isRelatedTo_drug";
+											rdfs:domain iasis:Evidence;
+			        						        rdfs:range iasis:Drug;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:variantLabel                                  	rdf:type owl:DatatypeProperty;
+											rdfs:label	"variantLabel";
+											rdfs:domain iasis:Variation;
+			        						        rdfs:range rdfs:Literal;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
+iasis:variant_start                                  	rdf:type owl:DatatypeProperty;
+											rdfs:label	"variant_start";
+											rdfs:domain iasis:Variation;
+			        						        rdfs:range rdfs:Literal;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:variant_end                                  	rdf:type owl:DatatypeProperty;
+											rdfs:label	"variant_end";
+											rdfs:domain iasis:Variation;
+			        						        rdfs:range rdfs:Literal;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:variant_externalLink                                	rdf:type owl:DatatypeProperty;
+											rdfs:label	"variant_externalLink";
+											rdfs:domain iasis:Variation;
+			        						        rdfs:range rdfs:Literal;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:gene_externalLink                                  	rdf:type owl:DatatypeProperty;
+											rdfs:label	"gene_externalLink";
+											rdfs:domain iasis:Variation;
+			        						        rdfs:range rdfs:Literal;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
+iasis:variation_isLocatedIn_transcript                                  	rdf:type owl:ObjectProperty;
+											rdfs:label	"variation_isLocatedIn_transcript";
+											rdfs:domain iasis:Variation;
+			        						        rdfs:range iasis:Transcript;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:drugInteractionType                     	rdf:type owl:DatatypeProperty;
+											rdfs:label	"drugInteractionType";
+											rdfs:domain iasis:Evidence;
+			        						        rdfs:range rdfs:Literal;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
+iasis:variation_isLocatedIn_upstreamGene                                  	rdf:type owl:ObjectProperty;
+											rdfs:label	"variation_isLocatedIn_upstreamGene";
+											rdfs:domain iasis:EQTL;
+			        						        rdfs:range iasis:Gene;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:variationLabel                                                           rdf:type owl:DatatypeProperty;
+											rdfs:label	"variationLabel";
+											rdfs:domain iasis:Variation;
+			        						        rdfs:range rdfs:Literal;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
+iasis:gexpChanges_occuredIn_downstreamTranscript                                  	rdf:type owl:ObjectProperty;
+											rdfs:label	"gexpChanges_occuredIn_downstreamTranscript";
+											rdfs:domain iasis:EQTL;
+			        						        rdfs:range iasis:Transcript;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+iasis:geneENSG                   	rdf:type owl:DatatypeProperty;
+											rdfs:label	"geneENSG";
+											rdfs:domain iasis:Gene;
+			        						        rdfs:range rdfs:Literal;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
 
 ########### ClinVar ###############
 
@@ -1269,6 +1613,14 @@ iasis:transcriptID                      	rdf:type owl:DatatypeProperty;
 											dcterms:modified "2018-11-27"^^xsd:date;
 											dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
+iasis:transcript_isRelatedTo_gene	rdf:type	owl:ObjectProperty;
+											rdfs:label	"transcript_isRelatedTo_gene";
+											rdfs:domain	iasis:Transcript;	
+											rdfs:range	iasis:Gene;
+											rdfs:comment ".";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
 
 iasis:proteinID                    	rdf:type owl:DatatypeProperty;
 												rdfs:label	"proteinID";
@@ -1295,10 +1647,13 @@ iasis:transcript_isRelatedTo_physicalInteraction	rdf:type owl:ObjectProperty;
 													dcterms:modified "2018-07-24"^^xsd:date;
 													dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:omixcore 	rdf:type owl:DatatypeProperty;
+
+
+
+iasis:omixcore         rdf:type owl:DatatypeProperty;
 				rdfs:label	"omixcore";
 				rdfs:domain iasis:RBP_RNA_PhysicalInteraction;
-               	rdfs:range rdfs:Literal;
+                        	rdfs:range rdfs:Literal;
 				rdfs:comment	"OmiXcore is an algorithm as part of catRAPID integrates the information coming from protein and >14,000 lincRNA fragments into an overall binding propensity value. It is based on a non-linear algorithm trained on the interaction propensities of protein fragments for RNA regions to predict binding affinities (i.e. read counts normalized by expression levels).";
 				dcterms:modified "2018-07-24"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
@@ -1323,7 +1678,7 @@ iasis:eqtlType 	rdf:type owl:DatatypeProperty;
 iasis:variation_isLocatedIn_gene 	rdf:type owl:ObjectProperty;
 									rdfs:label	"UpstreamGene";
 									rdfs:domain iasis:EQTL;
-               						rdfs:range iasis:Gene;
+               						                rdfs:range iasis:Gene;
 									rdfs:comment	"The gene on which the variation is located.";
 									dcterms:modified "2018-07-24"^^xsd:date;
 									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
@@ -1379,76 +1734,388 @@ iasis:eqtl_position 	rdf:type owl:DatatypeProperty;
 
 iasis:variation_has_phenotype 	rdf:type owl:ObjectProperty;
 				rdfs:label	"variation_has_phenotype";
-				rdfs:domain iasis:NucleotideSequence;
-				rdfs:range iasis:Variation;
-				rdfs:comment	"Varriation ID in dbsnp database";
-				dcterms:modified "2019-01-07"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+				rdfs:domain iasis:Variation;
+				rdfs:range iasis:Phenotype;
+				rdfs:comment	"";
+				dcterms:modified "2019-05-24"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
 
 iasis:dbsnpID 	rdf:type owl:DatatypeProperty;
 						rdfs:label	"dbsnpID";
-						rdfs:domain iasis:Varriation;
+						rdfs:domain iasis:Variation;
                			rdfs:range rdfs:Literal;
 						rdfs:comment	"";
-						dcterms:modified "2019-01-30"^^xsd:date;
+						dcterms:modified "2019-05-24"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
+
+iasis:variant_chromosome                                  	rdf:type owl:DatatypeProperty;
+											rdfs:label	"variant_chromosome";
+											rdfs:domain iasis:Variation;
+			        						        rdfs:range rdfs:Literal;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:variant_site                                  	rdf:type owl:DatatypeProperty;
+											rdfs:label	"variant_site";
+											rdfs:domain iasis:Variation;
+			        						        rdfs:range rdfs:Literal;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:variant_origin                                  	rdf:type owl:DatatypeProperty;
+											rdfs:label	"variant_origin";
+											rdfs:domain iasis:Variation;
+			        						        rdfs:range rdfs:Literal;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:variant_genomicPosition                                  	rdf:type owl:DatatypeProperty;
+											rdfs:label	"variant_genomicPosition";
+											rdfs:domain iasis:Variation;
+			        						        rdfs:range rdfs:Literal;
+											rdfs:comment	"";
+											dcterms:modified "2019-05-24"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
 iasis:originalNT 	rdf:type owl:DatatypeProperty;
 						rdfs:label	"originalNT";
-						rdfs:domain iasis:Varriation;
+						rdfs:domain iasis:Variation;
                			rdfs:range rdfs:Literal;
 						rdfs:comment	"";
-						dcterms:modified "2019-01-30"^^xsd:date;
+						dcterms:modified "2019-05-24"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.										
 
 iasis:variantNT 	rdf:type owl:DatatypeProperty;
 						rdfs:label	"variantNT";
-						rdfs:domain iasis:Varriation;
+						rdfs:domain iasis:Variation;
                			rdfs:range rdfs:Literal;
 						rdfs:comment	"";
-						dcterms:modified "2019-01-30"^^xsd:date;
+						dcterms:modified "2019-05-24"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:originalBase 	rdf:type owl:DatatypeProperty;
 						rdfs:label	"originalBase";
-						rdfs:domain iasis:Varriation;
-               			rdfs:range rdfs:Literal;
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
 						rdfs:comment	"";
-						dcterms:modified "2019-01-30"^^xsd:date;
+						dcterms:modified "2019-05-24"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
 iasis:variantBase 	rdf:type owl:DatatypeProperty;
 						rdfs:label	"variantBase";
-						rdfs:domain iasis:Varriation;
-               			rdfs:range rdfs:Literal;
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
 						rdfs:comment	"";
-						dcterms:modified "2019-01-30"^^xsd:date;
+						dcterms:modified "2019-05-24"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:variantRegion 	rdf:type owl:DatatypeProperty;
+						rdfs:label	"variantRegion";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:functionalConsequence 	rdf:type owl:DatatypeProperty;
+						rdfs:label	"functionalConsequence";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:omim 	rdf:type owl:DatatypeProperty;
+						rdfs:label	"omim";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:all_AF_1000GP 	rdf:type owl:DatatypeProperty;
+						rdfs:label	"all_AF_1000GP";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:all_AF_ExAC	rdf:type owl:DatatypeProperty;
+						rdfs:label	"all_AF_ExAC";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:all_AF_gnomAD_genome	rdf:type owl:DatatypeProperty;
+						rdfs:label	"all_AF_gnomAD_genome";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+iasis:all_AF_gnomAD_exome	rdf:type owl:DatatypeProperty;
+						rdfs:label	"all_AF_gnomAD_exome";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
+iasis:all_AF_Kaviar	rdf:type owl:DatatypeProperty;
+						rdfs:label	"all_AF_Kaviar";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
+iasis:variant_associatedWith_disease	rdf:type owl:DatatypeProperty;
+						rdfs:label	"variant_associatedWith_disease";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:predictionScore_SIFT	rdf:type owl:DatatypeProperty;
+						rdfs:label	"predictionScore_SIFT";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
+iasis:predictionScore_Polyphen2_HDIV	rdf:type owl:DatatypeProperty;
+						rdfs:label	"predictionScore_Polyphen2_HDIV";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:predictionScore_Polyphen2_HVAR	rdf:type owl:DatatypeProperty;
+						rdfs:label	"predictionScore_Polyphen2_HVAR";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:predictionScore_LRT	rdf:type owl:DatatypeProperty;
+						rdfs:label	"predictionScore_LRT";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:predictionScore_MutationTaster	rdf:type owl:DatatypeProperty;
+						rdfs:label	"predictionScore_MutationTaster";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:predictionScore_MutationAssessor	rdf:type owl:DatatypeProperty;
+						rdfs:label	"predictionScore_MutationAssessor";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
+iasis:predictionScore_FATHMM	rdf:type owl:DatatypeProperty;
+						rdfs:label	"predictionScore_FATHMM";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
+iasis:prediction_FATHMM	rdf:type owl:DatatypeProperty;
+						rdfs:label	"prediction_FATHMM";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:predictionScore_CADD	rdf:type owl:DatatypeProperty;
+						rdfs:label	"predictionScore_CADD";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:predictionScore_fathmm-MKL	rdf:type owl:DatatypeProperty;
+						rdfs:label	"predictionScore_fathmm-MKL";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:prediction_fathmm-MKL	rdf:type owl:DatatypeProperty;
+						rdfs:label	"prediction_fathmm-MKL";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:predictionScore_GERP_RS	rdf:type owl:DatatypeProperty;
+						rdfs:label	"predictionScore_GERP_RS";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:predictionScore_phyloP100way_vertebrate	rdf:type owl:DatatypeProperty;
+						rdfs:label	"predictionScore_phyloP100way_vertebrate";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
+iasis:predictionScore_phyloP20way_mammalian	rdf:type owl:DatatypeProperty;
+						rdfs:label	"predictionScore_phyloP20way_mammalian";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:iasis:predictionScore_phastCons100way_vertebrate  	rdf:type owl:DatatypeProperty;
+						rdfs:label	"predictionScore_phastCons100way_vertebrate";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
+iasis:predictionScore_phastCons20way_mammalian  	rdf:type owl:DatatypeProperty;
+						rdfs:label	"predictionScore_phastCons20way_mammalian";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
+iasis:predictionScore_SiPhy 	rdf:type owl:DatatypeProperty;
+						rdfs:label	"predictionScore_SiPhy";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:proteinDomain_Interpro 	rdf:type owl:DatatypeProperty;
+						rdfs:label	"proteinDomain_Interpro";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:sample_AF  	rdf:type owl:DatatypeProperty;
+						rdfs:label	"sample_AF";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+
+iasis:variant_isObservedIn_patient 	rdf:type owl:ObjectProperty;
+						rdfs:label	"variant_isObservedIn_patient";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range iasis:LCPatient;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:variant_isObservedIn_liquidBiopsy 	rdf:type owl:ObjectProperty;
+						rdfs:label	"variant_isObservedIn_liquidBiopsy";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range iasis:LiquidBiopsy;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:variant_dbsnpLink  	rdf:type owl:ObjectProperty;
+						rdfs:label	"variant_dbsnpLink";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range iasis:Variation;
+						rdfs:comment	"";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:variantSummary 	rdf:type owl:DatatypeProperty;
+						rdfs:label	"variantSummary";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-05-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:variantOrigin 	rdf:type owl:DatatypeProperty;
+						rdfs:label	"variantOrigin";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-05-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:variantType 	rdf:type owl:DatatypeProperty;
+						rdfs:label	"variantType";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"";
+						dcterms:modified "2019-05-24"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
 
 iasis:clinicalSignificance 	rdf:type owl:DatatypeProperty;
 						rdfs:label	"clinicalSignificance";
-						rdfs:domain iasis:Varriation;
-               			rdfs:range rdfs:Literal;
+						rdfs:domain iasis:EQTL;
+               			                rdfs:range rdfs:Literal;
 						rdfs:comment	"";
-						dcterms:modified "2019-01-30"^^xsd:date;
+						dcterms:modified "2019-05-24"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:clinicalSignificanceLabel 	rdf:type owl:DatatypeProperty;
 						rdfs:label	"clinicalSignificanceLabel";
-						rdfs:domain iasis:Varriation;
-               			rdfs:range rdfs:Literal;
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
 						rdfs:comment	"";
-						dcterms:modified "2019-01-30"^^xsd:date;
+						dcterms:modified "2019-05-24"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
 iasis:geneticTest 	rdf:type owl:DatatypeProperty;
 						rdfs:label	"geneticTest";
-						rdfs:domain iasis:Varriation;
-               			rdfs:range rdfs:Literal;
+						rdfs:domain iasis:Variation;
+               			                rdfs:range rdfs:Literal;
 						rdfs:comment	"";
-						dcterms:modified "2019-01-30"^^xsd:date;
+						dcterms:modified "2019-05-24"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 #### Drug requirements:
@@ -1471,11 +2138,35 @@ iasis:drugLabel_ENG	rdf:type owl:DatatypeProperty;
 
 iasis:disorderLabel_ENG	rdf:type owl:DatatypeProperty;
 					rdfs:label "disorderLabel_ENG";
-					rdfs:domain iasis:Drug;
+					rdfs:domain iasis:Disorder;
 				  	rdfs:range rdfs:Literal;
-                  			rdfs:comment "Drug label.";
-					dcterms:modified "2019-01-30"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+                  			rdfs:comment "Disorder label.";
+					dcterms:modified "2019-05-24"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.	
+
+iasis:isPrescribedFor	rdf:type owl:ObjectProperty;
+					rdfs:label "isPrescribedFor";
+					rdfs:domain iasis:Drug;
+				  	rdfs:range iasis:Disorder;
+                  			rdfs:comment "Drug is prescribed for a Disorder.";
+					dcterms:modified "2019-05-23"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:drugDrugInteraction_drugBank	rdf:type owl:ObjectProperty;
+					rdfs:label "drugDrugInteraction_drugBank";
+					rdfs:domain iasis:Drug;
+				  	rdfs:range iasis:Drug;
+                  			rdfs:comment ".";
+					dcterms:modified "2019-05-23"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:drugDrugInteraction_pubMed	rdf:type owl:ObjectProperty;
+					rdfs:label "drugDrugInteraction_pubMed";
+					rdfs:domain iasis:Drug;
+				  	rdfs:range iasis:Drug;
+                  			rdfs:comment ".";
+					dcterms:modified "2019-05-23"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
 
 iasis:phenotypeLabel	rdf:type owl:DatatypeProperty;
 					rdfs:label "PhenotypeLabel";
@@ -1859,11 +2550,11 @@ iasis:familiarAntecedentLabel_ENG	rdf:type        owl:DatatypeProperty;
 
 iasis:hasDrug	rdf:type        owl:ObjectProperty;	
 				rdfs:label	"hasDrug";
-						rdfs:domain	iasis:LCPatient;
+						rdfs:domain	iasis:Patient;
 						rdfs:range	iasis:Drug;
-						rdfs:comment	"Connection between patient with lung cancer and the drugs that has been prescribed.";
-						dcterms:modified "2017-10-04"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+						rdfs:comment	"Connection between patient with lung cancer or Alzheimer and the drugs that has been prescribed.";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
 
 iasis:hasDrugGroup	rdf:type        owl:ObjectProperty;	
 				rdfs:label	"hasDrug";
@@ -1876,11 +2567,11 @@ iasis:hasDrugGroup	rdf:type        owl:ObjectProperty;
 
 iasis:hasComorbidity	rdf:type        owl:ObjectProperty;	
 				rdfs:label	"hasComorbidity";
-						rdfs:domain	iasis:LCPatient;
+						rdfs:domain	iasis:Patient;
 						rdfs:range	iasis:Disorder;
-						rdfs:comment	"Connection between patient with lung cancer and her/his Comorbidities.";
-						dcterms:modified "2018-11-27"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+						rdfs:comment	"Connection between patient with lung cancer or Alzheimer and her/his Comorbidities.";
+						dcterms:modified "2019-06-06"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
 
 iasis:hasChemotherapy	rdf:type        owl:ObjectProperty;	
 				rdfs:label	"hasChemotherapy";
@@ -1911,15 +2602,7 @@ iasis:hasDate	rdf:type        owl:ObjectProperty;
 						rdfs:domain	iasis:Concept;
 						rdfs:range	iasis:Date;
 						rdfs:comment	"Date.";
-						dcterms:modified "2018-10-30"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:hasDate	rdf:type        owl:ObjectProperty;	
-				rdfs:label	"hasDate";
-						rdfs:domain	iasis:Observation;
-						rdfs:range	iasis:Date;
-						rdfs:comment	"Date.";
-						dcterms:modified "2019-01-30"^^xsd:date;
+						dcterms:modified "2019-05-24"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:hasPerformanceObservation	rdf:type        owl:ObjectProperty;	
@@ -1971,30 +2654,30 @@ iasis:biomarkers	rdf:type	owl:DatatypeProperty;
 				dcterms:modified "2019-01-30"^^xsd:date;
 				dcterms:creator  <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:bioEgfr	rdf:type	owl:DatatypeProperty;
+iasis:bioEgfr	rdf:type	owl:ObjectProperty;
 				rdfs:label	"bioEgfr";
 				rdfs:domain	iasis:LCPatient;
-				rdfs:range	rdfs:Literal;
+				rdfs:range	iasis:Biomarker;
 				rdfs:comment	"Whether the patient's biopsies have been studied in terms of EGFR biomarker and if the result has been positive or negative in the case of this specific biomarker.";
-				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:modified "2019-05-24"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
-iasis:bioAlk	rdf:type	owl:DatatypeProperty;
+iasis:bioAlk	rdf:type	owl:ObjectProperty;
 				rdfs:label	"bioAlk";
 				rdfs:domain	iasis:LCPatient;
-				rdfs:range	rdfs:Literal;
+				rdfs:range	iasis:Biomarker;
 				rdfs:comment	"Whether the patient's biopsies have been studied in terms of ALK biomarker and if the result has been positive or negative in the case of this specific biomarker.";
-				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:modified "2019-05-24"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
-iasis:bioRos1	rdf:type	owl:DatatypeProperty;
+iasis:bioRos1	rdf:type	owl:ObjectProperty;
 				rdfs:label	"bioRos1";
 				rdfs:domain	iasis:LCPatient;
-				rdfs:range	rdfs:Literal;
+				rdfs:range	iasis:Biomarker;
 				rdfs:comment	"Whether the patient's biopsies have been studied in terms of ROS1 biomarker and if the result has been positive or negative in the case of this specific biomarker.";
-				dcterms:modified "2017-10-04"^^xsd:date;
+				dcterms:modified "2019-05-24"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:chemotherapy	rdf:type	owl:DatatypeProperty;
@@ -2088,20 +2771,20 @@ iasis:survivalMonths	rdf:type	owl:DatatypeProperty;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
-iasis:sampleDate	rdf:type	owl:DatatypeProperty;
+iasis:sampleDate	rdf:type	owl:ObjectProperty;
 					rdfs:label	"sampleDate";
 					rdfs:domain	iasis:LiquidBiopsy;
-					rdfs:range	xsd:date;
+					rdfs:range	iasis:Date;
 					rdfs:comment "Date on which the biopsy sample has been taken.";
-					dcterms:modified "2017-10-04"^^xsd:date;
+					dcterms:modified "2019-05-24"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:resultDate	rdf:type	owl:DatatypeProperty;
+iasis:resultDate	rdf:type	owl:ObjectProperty;
 					rdfs:label	"resultDate";
 					rdfs:domain	iasis:LiquidBiopsy;
-					rdfs:range	xsd:date;
+					rdfs:range	iasis:Date;
 					rdfs:comment "Date on which the biopsy result has been provided.";
-					dcterms:modified "2017-10-04"^^xsd:date;
+					dcterms:modified "2019-05-24"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:targetTotal	rdf:type	owl:DatatypeProperty;
@@ -2134,6 +2817,14 @@ iasis:tumorTypeLabel_ENG	rdf:type owl:DatatypeProperty;
 				  	rdfs:range rdfs:Literal;
                   			rdfs:comment "English tumor Type Label.";
 					dcterms:modified "2018-11-27"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:secondTumorTypeLabel	rdf:type owl:DatatypeProperty;
+					rdfs:label "secondTumorTypeLabel";
+					rdfs:domain iasis:TumorType;
+				  	rdfs:range rdfs:Literal;
+                  			rdfs:comment "second tumor Type Label.";
+					dcterms:modified "2019-05-24"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
 
@@ -2193,6 +2884,31 @@ iasis:tumorStageLabel      rdf:type     owl:DatatypeProperty;
 							rdfs:comment ".";
 							dcterms:modified "2018-11-27"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:hasToxicityObservation	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasToxicityObservation";
+						rdfs:domain	iasis:LCPatient;
+						rdfs:range	iasis:ToxicityObservation;
+						rdfs:comment	".";
+						dcterms:modified "2019-05-24"^^xsd:date;
+						dcterms:creator  <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:hasToxicity	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasToxicity";
+						rdfs:domain	iasis:ToxicityObservation;
+						rdfs:range	iasis:Phenotype;
+						rdfs:comment	".";
+						dcterms:modified "2019-05-24"^^xsd:date;
+						dcterms:creator  <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:toxicityLabel_ENG 	rdf:type        owl:DatatypeProperty;	
+				rdfs:label	"toxicityLabel_ENG";
+						rdfs:domain	iasis:Phenotype;
+						rdfs:range	rdfs:Literal;
+						rdfs:comment	".";
+						dcterms:modified "2019-05-24"^^xsd:date;
+						dcterms:creator  <https://www.l3s.de/de/user/mcastellanosd87>.
+
 
 ##### lc_images:
 
@@ -2423,11 +3139,20 @@ iasis:hasDiagnosisTumorStage   rdf:type     owl:ObjectProperty;
 							dcterms:modified "2018-11-27"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
+iasis:hasDiagnosisTumorType   rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasDiagnosisTumorType";
+							rdfs:domain	iasis:Diagnosis;
+							rdfs:range	iasis:TumorType;
+							rdfs:comment ".";
+							dcterms:modified "2019-05-23"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
 iasis:hasDiagnosisDate   rdf:type     owl:ObjectProperty;
 							rdfs:label	"hasDiagnosisDate";
 							rdfs:domain	iasis:Diagnosis;
 							rdfs:range	iasis:Date;
-							rdfs:comment ".";
+							rdfs:comment "The date that the patient was  diagnosed with the disease.";
 							dcterms:modified "2018-11-27"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
@@ -2435,16 +3160,16 @@ iasis:hasDiagnosisAge   rdf:type     owl:DatatypeProperty;
 							rdfs:label	"hasDiagnosisAge";
 							rdfs:domain	iasis:Diagnosis;
 							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
+							rdfs:comment "Age of patient when was diagnosed with the disease.";
 							dcterms:modified "2018-11-27"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
 iasis:hasDiagnosisPerformanceStatus   rdf:type     owl:ObjectProperty;
 							rdfs:label	"hasDiagnosisPerformanceStatus";
 							rdfs:domain	iasis:Diagnosis;
-							rdfs:range	iasis:status;
+							rdfs:range	iasis:PerformanceStatus;
 							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:modified "2019-05-24"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
 iasis:patientPositionLabel     rdf:type     owl:DatatypeProperty;
