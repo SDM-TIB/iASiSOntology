@@ -1677,10 +1677,10 @@ iasis:eqtlType 	rdf:type owl:DatatypeProperty;
 
 iasis:variation_isLocatedIn_gene 	rdf:type owl:ObjectProperty;
 									rdfs:label	"UpstreamGene";
-									rdfs:domain iasis:EQTL;
+									rdfs:domain iasis:Variation;
                						                rdfs:range iasis:Gene;
 									rdfs:comment	"The gene on which the variation is located.";
-									dcterms:modified "2018-07-24"^^xsd:date;
+									dcterms:modified "2019-06-10"^^xsd:date;
 									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:gexpChanges_occuredIn_gene 	rdf:type owl:ObjectProperty;
