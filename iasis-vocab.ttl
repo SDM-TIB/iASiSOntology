@@ -34,7 +34,7 @@ iasis:SourceName	rdf:type	owl:Class;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
 iasis:Image rdf:type owl:Class;
-			rdfs:label	"MedicalImage";
+			rdfs:label	"MedicalImage";201
 			rdfs:subClassOf	iasis:Concept;
 			iasis:partOf iasis:ClinicalRecord;
 			rdfs:comment "Patient's medical images.";
@@ -257,8 +257,8 @@ iasis:Variation	rdf:type owl:Class;
 			rdfs:label	"Variation";
 			rdfs:subClassOf	iasis:Concept;
 			rdfs:comment "";
-			dcterms:modified "201-06-06"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+			dcterms:modified "2019-06-06"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
 
 #### Drug requirements:
 
