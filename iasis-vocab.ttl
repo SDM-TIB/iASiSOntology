@@ -255,7 +255,7 @@ iasis:NucleotideSequence	rdf:type owl:Class;
 
 iasis:Variation	rdf:type owl:Class;
 			rdfs:label	"Variation";
-			rdfs:subClassOf	iasis:EQTL;
+			rdfs:subClassOf	iasis:Concept;
 			rdfs:comment "";
 			dcterms:modified "201-06-06"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
