@@ -1504,15 +1504,6 @@ iasis:variation_isLocatedIn_upstreamGene                                  	rdf:t
 											dcterms:modified "2019-05-24"^^xsd:date;
 											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
 
-iasis:variationLabel                                                           rdf:type owl:DatatypeProperty;
-											rdfs:label	"variationLabel";
-											rdfs:domain iasis:Variation;
-			        						        rdfs:range rdfs:Literal;
-											rdfs:comment	"";
-											dcterms:modified "2019-05-24"^^xsd:date;
-											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
-
-
 iasis:gexpChanges_occuredIn_downstreamTranscript                                  	rdf:type owl:ObjectProperty;
 											rdfs:label	"gexpChanges_occuredIn_downstreamTranscript";
 											rdfs:domain iasis:EQTL;
