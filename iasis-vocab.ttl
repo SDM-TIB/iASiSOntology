@@ -384,8 +384,15 @@ iasis:ADPatient	rdf:type owl:Class;
 iasis:LiquidBiopsy 	rdf:type owl:Class;
 					rdfs:label	"LiquidBiopsy";
 					rdfs:subClassOf	iasis:Test;
-					rdfs:comment	"A test done on a sample of blood to look for cancer cells from a tumor that are circulating in the blood or for pieces of DNA from tumor cells that are in the blood.";
+					rdfs:comment	"A test done on a sample of blood to look for cancer cells from a tumor that are circulating in the blood or for pieces of DNA from tumor cells that are in the blood. It generally provides a picture of all mutations found in all tumors, if the cancer has spread.";
 					dcterms:modified "2018-07-24"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:SolidBiopsy 	rdf:type owl:Class;
+					rdfs:label	"SolidBiopsy";
+					rdfs:subClassOf	iasis:Test;
+					rdfs:comment	"A sample that is taken directly from within a tumor. It generally provides a picture of the mutations found directly within an individual tumor.";
+					dcterms:modified "2019-06-17"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:TumorStage	rdf:type owl:Class;
@@ -1667,7 +1674,7 @@ iasis:eqtlType 	rdf:type owl:DatatypeProperty;
 
 
 iasis:variation_isLocatedIn_gene 	rdf:type owl:ObjectProperty;
-									rdfs:label	"UpstreamGene";
+									rdfs:label	"variation_isLocatedIn_gene";
 									rdfs:domain iasis:Variation;
                						                rdfs:range iasis:Gene;
 									rdfs:comment	"The gene on which the variation is located.";
@@ -2048,9 +2055,18 @@ iasis:variant_isObservedIn_liquidBiopsy 	rdf:type owl:ObjectProperty;
 						rdfs:label	"variant_isObservedIn_liquidBiopsy";
 						rdfs:domain iasis:Variation;
                			                rdfs:range iasis:LiquidBiopsy;
-						rdfs:comment	"";
+						rdfs:comment	"Links the variation to the liquid biopsy sample in which it has been observed.";
 						dcterms:modified "2019-06-06"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/mcastellanosd87/>.
+
+iasis:variant_isObservedIn_SolidBiopsy 	rdf:type owl:ObjectProperty;
+						rdfs:label	"variant_isObservedIn_SolidBiopsy";
+						rdfs:domain iasis:Variation;
+               			                rdfs:range iasis:SolidBiopsy;
+						rdfs:comment	"Links the variation to the solid biopsy sample in which it has been observed.";
+						dcterms:modified "2019-06-17"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
 
 iasis:variant_dbsnpLink  	rdf:type owl:ObjectProperty;
 						rdfs:label	"variant_dbsnpLink";
@@ -2764,10 +2780,10 @@ iasis:survivalMonths	rdf:type	owl:DatatypeProperty;
 
 iasis:sampleDate	rdf:type	owl:ObjectProperty;
 					rdfs:label	"sampleDate";
-					rdfs:domain	iasis:LiquidBiopsy;
+					rdfs:domain	iasis:Test;
 					rdfs:range	iasis:Date;
 					rdfs:comment "Date on which the biopsy sample has been taken.";
-					dcterms:modified "2019-05-24"^^xsd:date;
+					dcterms:modified "2019-06-17"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:resultDate	rdf:type	owl:ObjectProperty;
