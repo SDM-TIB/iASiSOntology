@@ -394,7 +394,7 @@ iasis:TumorStage	rdf:type owl:Class;
 
 iasis:PerformanceStatus	rdf:type	owl:Class;
 			rdfs:label	"PerformanceStatus";
-			rdfs:comment "Patient's level of functioning in terms of her/his ability for caring her/himself, daily activities and phyical abilities.";
+			rdfs:comment "Group the value of ECOG; patient's level of functioning in terms of her/his ability for caring her/himself, daily activities and phyical abilities.";
 			dcterms:modified "2018-09-27"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -406,7 +406,7 @@ iasis:FamiliarAntecedent	rdf:type	owl:Class;
 
 iasis:Gender	rdf:type	owl:Class;
 						rdfs:label	"Gender";
-						rdfs:comment "The gender of the patients.";
+						rdfs:comment "The gender of patients.";
 						dcterms:modified "2018-09-27"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -440,21 +440,21 @@ iasis:Biomarker	 rdf:type	owl:Class;
 					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
 iasis:PerformanceObservation   rdf:type      owl:Class;
-					rdfs:label	"iasis:PerformanceObservation";
+					rdfs:label	"PerformanceObservation";
 					rdfs:subClassOf	iasis:Observation;
-					rdfs:comment "";
+					rdfs:comment "Performance status at each examination.";
 					dcterms:modified "2018-11-27"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
 iasis:TumorObservation    rdf:type        owl:Class;
-					rdfs:label	"iasis:TumorObservation";
+					rdfs:label	"TumorObservation";
 					rdfs:subClassOf	 iasis:Observation;
 					rdfs:comment "";
 					dcterms:modified "2018-11-27"^^xsd:date;
 					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
 iasis:ToxicityObservation    rdf:type        owl:Class;
-					rdfs:label	"iasis:ToxicityObservation";
+					rdfs:label	"ToxicityObservation";
 					rdfs:subClassOf	 iasis:Observation;
 					rdfs:comment "";
 					dcterms:modified "2019-05-24"^^xsd:date;
@@ -466,6 +466,28 @@ iasis:PatientSimilarity   rdf:type owl:Class;
 			rdfs:comment "";
 			dcterms:modified "2018-11-27"^^xsd:date;
 			dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:OncologicalSurgeryObservation	rdf:type	owl:Class;
+									rdfs:label	"OncologicalSurgeryObservation";
+									rdfs:subClassOf iasis:Observation;
+									rdfs:comment "";
+									dcterms:modified "2019-07-02"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:OncologicalSurgery	rdf:type	owl:Class;
+							rdfs:label	"OncologicalSurgery";
+							rdfs:subClassOf iasis:Concept;
+							rdfs:comment "";
+							dcterms:modified "2019-07-02"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:OncologicalTreatmentLine	rdf:type	owl:Class;
+								rdfs:label	"OncologicalTreatmentLine";
+								rdfs:subClassOf iasis:Concept;
+								rdfs:comment "";
+								dcterms:modified "2019-07-02"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
 
 #######################################################
 ################## Clinical Images ####################
@@ -2563,7 +2585,6 @@ iasis:hasPerformanceObservation	rdf:type        owl:ObjectProperty;
 						dcterms:modified "2019-01-30"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-
 iasis:gender	rdf:type	owl:ObjectProperty;
 				rdfs:label	"gender";
 				rdfs:domain	iasis:Patient;
@@ -2596,129 +2617,129 @@ iasis:biomarkerLabel	rdf:type	owl:DatatypeProperty;
 				dcterms:modified "2018-11-22"^^xsd:date;
 				dcterms:creator   <https://www.l3s.de/de/user/mcastellanosd87>.
 
-iasis:biomarkers	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"biomarkers";
-				rdfs:domain	iasis:LCPatient;
-				rdfs:range	rdfs:Literal;
-				rdfs:comment	"";
-				dcterms:modified "2019-01-30"^^xsd:date;
-				dcterms:creator  <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+iasis:existenceOf_biomarker	rdf:type	owl:DatatypeProperty;
+							rdfs:label	"biomarkers";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment	"If an Entity has been studied, and if the result has been positive or negative in any biomarker (true/ false/ not studied).";
+							dcterms:modified "2019-07-02"^^xsd:date;
+							dcterms:creator  <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:bioEgfr	rdf:type	owl:ObjectProperty;
-				rdfs:label	"bioEgfr";
-				rdfs:domain	iasis:LCPatient;
-				rdfs:range	iasis:Biomarker;
-				rdfs:comment	"Whether the patient's biopsies have been studied in terms of EGFR biomarker and if the result has been positive or negative in the case of this specific biomarker.";
-				dcterms:modified "2019-05-24"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-
-iasis:bioAlk	rdf:type	owl:ObjectProperty;
-				rdfs:label	"bioAlk";
-				rdfs:domain	iasis:LCPatient;
-				rdfs:range	iasis:Biomarker;
-				rdfs:comment	"Whether the patient's biopsies have been studied in terms of ALK biomarker and if the result has been positive or negative in the case of this specific biomarker.";
-				dcterms:modified "2019-05-24"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+iasis:existenceOf_bioEgfr	rdf:type	owl:DatatypeProperty;
+							rdfs:label	"existenceOf_bioEgfr";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment	"Whether the patient's biopsies have been studied in terms of EGFR biomarker and if the result has been positive or negative in this specific biomarker (true/ false/ not studied).";
+							dcterms:modified "2019-07-02"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
-iasis:bioRos1	rdf:type	owl:ObjectProperty;
-				rdfs:label	"bioRos1";
-				rdfs:domain	iasis:LCPatient;
-				rdfs:range	iasis:Biomarker;
-				rdfs:comment	"Whether the patient's biopsies have been studied in terms of ROS1 biomarker and if the result has been positive or negative in the case of this specific biomarker.";
-				dcterms:modified "2019-05-24"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:chemotherapy	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"chemotherapy";
-				rdfs:domain	iasis:LCPatient;
-				rdfs:range	rdfs:Literal;
-				rdfs:comment	"Whether the patient has received chemotherapy oncology treatment.";
-				dcterms:modified "2017-10-04"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:tki	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"tki";
-				rdfs:domain	iasis:LCPatient;
-				rdfs:range	rdfs:Literal;
-				rdfs:comment	"Whether the patient has received tki oncology treatment.";
-				dcterms:modified "2017-10-04"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:immunotherapy	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"immunotherapy";
-				rdfs:domain	iasis:LCPatient;
-				rdfs:range	rdfs:Literal;
-				rdfs:comment	"Whether the patient has received immunotherapy oncology treatment.";
-				dcterms:modified "2017-10-04"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:antiangiogentic	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"antiangiogentic";
-				rdfs:domain	iasis:LCPatient;
-				rdfs:range	rdfs:Literal;
-				rdfs:comment	"Whether the patient has received antiangiogentic oncology treatment.";
-				dcterms:modified "2017-10-04"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:radiationtherapy	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"radiationtherapy";
-				rdfs:domain	iasis:LCPatient;
-				rdfs:range	rdfs:Literal;
-				rdfs:comment	"Whether the patient has received radiationtherapy oncology treatment.";
-				dcterms:modified "2017-10-04"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:surgery	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"surgery";
-				rdfs:domain	iasis:LCPatient;
-				rdfs:range	rdfs:Literal;
-				rdfs:comment	"Whether the patient has received radiationtherapy oncology treatment.";
-				dcterms:modified "2017-10-04"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:familiarAntecedents	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"familiarAntecedents";
-				rdfs:domain	iasis:LCPatient;
-				rdfs:range	rdfs:Literal;
-				rdfs:comment	"Whether the patient has families with antecedents of cancer.";
-				dcterms:modified "2019-01-30"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+iasis:existenceOf_bioAlk	rdf:type	owl:DatatypeProperty;
+							rdfs:label	"existenceOf_bioAlk";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment	"Whether the patient's biopsies have been studied in terms of ALK biomarker and if the result has been positive or negative in this specific biomarker (true/ false/ not studied).";
+							dcterms:modified "2019-07-02"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
-iasis:systemicProgression	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"systemicProgression";
-				rdfs:domain	iasis:LCPatient;
-				rdfs:range	rdfs:Literal;
-				rdfs:comment	"Whether the patient has developed systemic progression which means a progression of the tumor to other organs apart from lungs.";
-				dcterms:modified "2017-10-04"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+iasis:existenceOf_bioRos1	rdf:type	owl:DatatypeProperty;
+							rdfs:label	"existenceOf_bioRos1";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment	"Whether the patient's biopsies have been studied in terms of ROS1 biomarker and if the result has been positive or negative in this specific biomarker (true/ false/ not studied).";
+							dcterms:modified "2019-07-02"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:localProgression	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"localProgression";
-				rdfs:domain	iasis:LCPatient;
-				rdfs:range	rdfs:Literal;
-				rdfs:comment	"Whether the patient has developed local progression which means a progression of the tumor in the lungs.";
-				dcterms:modified "2017-10-04"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+iasis:existenceOf_chemotherapy	rdf:type	owl:DatatypeProperty;
+								rdfs:label	"existenceOf_chemotherapy";
+								rdfs:domain	iasis:LCPatient;
+								rdfs:range	rdfs:Literal;
+								rdfs:comment	"Whether the patient has received chemotherapy oncology treatment (true/ false/ not studied).";
+								dcterms:modified "2019-07-02"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:brainMetastasis	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"brainMetastasis";
-				rdfs:domain	iasis:LCPatient;
-				rdfs:range	rdfs:Literal;
-				rdfs:comment	"Whether brain metastasis has been detected in the patient.";
-				dcterms:modified "2017-10-04"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+iasis:existenceOf_tki	rdf:type	owl:DatatypeProperty;
+						rdfs:label	"existenceOf_tki";
+						rdfs:domain	iasis:LCPatient;
+						rdfs:range	rdfs:Literal;
+						rdfs:comment	"Whether the patient has received tki oncology treatment (true/ false/ not studied).";
+						dcterms:modified "2019-07-02"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:existenceOf_immunotherapy	rdf:type	owl:DatatypeProperty;
+								rdfs:label	"existenceOf_immunotherapy";
+								rdfs:domain	iasis:LCPatient;
+								rdfs:range	rdfs:Literal;
+								rdfs:comment	"Whether the patient has received immunotherapy oncology treatment (true/ false/ not studied).";
+								dcterms:modified "2019-07-02"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:existenceOf_antiangiogentic	rdf:type	owl:DatatypeProperty;
+									rdfs:label	"existenceOf_antiangiogentic";
+									rdfs:domain	iasis:LCPatient;
+									rdfs:range	rdfs:Literal;
+									rdfs:comment	"Whether the patient has received antiangiogentic oncology treatment (true/ false/ not studied).";
+									dcterms:modified "2019-07-02"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:existenceOf_radiationtherapy	rdf:type	owl:DatatypeProperty;
+									rdfs:label	"existenceOf_radiationtherapy";
+									rdfs:domain	iasis:LCPatient;
+									rdfs:range	rdfs:Literal;
+									rdfs:comment	"Whether the patient has received radiationtherapy oncology treatment (true/ false/ not studied).";
+									dcterms:modified "2019-07-02"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:existenceOf_surgery	rdf:type	owl:DatatypeProperty;
+							rdfs:label	"existenceOf_surgery";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment	"Whether the patient has received radiationtherapy oncology treatment (true/ false/ not studied).";
+							dcterms:modified "2019-07-02"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:existenceOf_familiarAntecedents	rdf:type	owl:DatatypeProperty;
+										rdfs:label	"existenceOf_familiarAntecedents";
+										rdfs:domain	iasis:LCPatient;
+										rdfs:range	rdfs:Literal;
+										rdfs:comment	"Whether the patient has families with antecedents of cancer (true/ false/ not studied).";
+										dcterms:modified "2019-07-02"^^xsd:date;
+										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+iasis:existenceOf_systemicProgression	rdf:type	owl:DatatypeProperty;
+										rdfs:label	"existenceOf_systemicProgression";
+										rdfs:domain	iasis:LCPatient;
+										rdfs:range	rdfs:Literal;
+										rdfs:comment	"Whether the patient has developed systemic progression which means a progression of the tumor to other organs apart from lungs (true/ false/ not studied).";
+										dcterms:modified "2019-07-02"^^xsd:date;
+										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:existenceOf_localProgression	rdf:type	owl:DatatypeProperty;
+									rdfs:label	"existenceOf_localProgression";
+									rdfs:domain	iasis:LCPatient;
+									rdfs:range	rdfs:Literal;
+									rdfs:comment	"Whether the patient has developed local progression which means a progression of the tumor in the lungs (true/ false/ not studied).";
+									dcterms:modified "2019-07-02"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:existenceOf_brainMetastasis	rdf:type	owl:DatatypeProperty;
+									rdfs:label	"existenceOf_brainMetastasis";
+									rdfs:domain	iasis:LCPatient;
+									rdfs:range	rdfs:Literal;
+									rdfs:comment	"Whether brain metastasis has been detected in the patient (true/ false/ not studied).";
+									dcterms:modified "2019-07-02"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
 iasis:survivalMonths	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"survivalMonths";
-				rdfs:domain	iasis:LCPatient;
-				rdfs:range	rdfs:Literal;
-				rdfs:comment	"Months from diagnosis to death or until the last documented record of the patient.";
-				dcterms:modified "2017-10-04"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+						rdfs:label	"survivalMonths";
+						rdfs:domain	iasis:LCPatient;
+						rdfs:range	rdfs:Literal;
+						rdfs:comment	"Months from diagnosis to death or until the last documented record of the patient.";
+						dcterms:modified "2017-10-04"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
 iasis:sampleDate	rdf:type	owl:ObjectProperty;
@@ -2819,7 +2840,7 @@ iasis:hasTumorStage	rdf:type        owl:ObjectProperty;
 						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
 iasis:hasTumorObservation	rdf:type        owl:ObjectProperty;	
-				rdfs:label	"hasTumorObservation";
+						rdfs:label	"hasTumorObservation";
 						rdfs:domain	iasis:LCPatient;
 						rdfs:range	iasis:TumorObservation;
 						rdfs:comment	".";
@@ -2860,6 +2881,428 @@ iasis:toxicityLabel_ENG 	rdf:type        owl:DatatypeProperty;
 						dcterms:creator  <https://www.l3s.de/de/user/mcastellanosd87>.
 
 
+iasis:hasDiagnosisTumorStage   rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasDiagnosisTumorStage";
+							rdfs:domain	iasis:Diagnosis;
+							rdfs:range	iasis:TumorStage;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:hasDiagnosisTumorType   rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasDiagnosisTumorType";
+							rdfs:domain	iasis:Diagnosis;
+							rdfs:range	iasis:TumorType;
+							rdfs:comment ".";
+							dcterms:modified "2019-05-23"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
+iasis:hasDiagnosisDate   rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasDiagnosisDate";
+							rdfs:domain	iasis:Diagnosis;
+							rdfs:range	iasis:Date;
+							rdfs:comment "The date that the patient was  diagnosed with the disease.";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:hasDiagnosisAge   rdf:type     owl:DatatypeProperty;
+							rdfs:label	"hasDiagnosisAge";
+							rdfs:domain	iasis:Diagnosis;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment "Age of patient when was diagnosed with the disease.";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:hasDiagnosisPerformanceStatus   rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasDiagnosisPerformanceStatus";
+							rdfs:domain	iasis:Diagnosis;
+							rdfs:range	iasis:PerformanceStatus;
+							rdfs:comment ".";
+							dcterms:modified "2019-05-24"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:patientPositionLabel     rdf:type     owl:DatatypeProperty;
+							rdfs:label	"patientPositionLabel";
+							rdfs:domain	iasis:PatientPosition;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-25"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
+iasis:genderLabel_ENG        rdf:type     owl:DatatypeProperty;
+							rdfs:label	"genderLabel_ENG";
+							rdfs:domain	iasis:Gender;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment "Gender name (Female/Male/F/M)";
+							dcterms:modified "2019-01-30"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+
+iasis:chemotherapyList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"chemotherapyList";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
+iasis:immunotherapyList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"immunotherapyList";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+
+iasis:tkiList      	rdf:type     owl:DatatypeProperty;
+					rdfs:label	"tkiList";
+					rdfs:domain	iasis:LCPatient;
+					rdfs:range	rdfs:Literal;
+					rdfs:comment ".";
+					dcterms:modified "2018-11-27"^^xsd:date;
+					dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:comorbidityList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"comorbidityList";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:drugGroupList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"drugGroupList";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:biopsyList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"biopsyList";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:ecogList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"ecogList";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:stageList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"stageList";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:familialAntecedentList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"familialAntecedentList";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:nonOncologicalTreatmentList      rdf:type     owl:DatatypeProperty;
+							rdfs:label	"nonOncologicalTreatmentList";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:isBetweenPatients	rdf:type        owl:ObjectProperty;	
+			            rdfs:label	"isBetweenPatients";
+						rdfs:domain	iasis:PatientSimilarity;
+						rdfs:range	iasis:LCPatient;
+						rdfs:comment	".";
+						dcterms:modified "2018-11-27"^^xsd:date;
+						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:similarityValue     rdf:type     owl:DatatypeProperty;
+							rdfs:label	"similarityValue";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:hasDiagnosis     rdf:type     owl:ObjectProperty;
+							rdfs:label	"hasDiagnosis";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	iasis:Diagnosis;
+							rdfs:comment ".";
+							dcterms:modified "2018-11-27"^^xsd:date;
+							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
+
+iasis:beingIn_hospitalHealthArea	rdf:type        owl:DatatypeProperty;	
+									rdfs:label	"beingIn_hospitalHealthArea";
+									rdfs:domain	iasis:LCPatient;
+									rdfs:range	rdfs:Literal;
+									rdfs:comment	"if the patient lives in a city which belong to the municipal scope area awarded to the hospital (True/False).";
+									dcterms:modified "2019-07-02"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:distanceToHospital	rdf:type        owl:DatatypeProperty;	
+									rdfs:label	"distanceToHospital";
+									rdfs:domain	iasis:LCPatient;
+									rdfs:range	rdfs:Literal;
+									rdfs:comment	"The distance in kilometers from the city in which the patient lives to the hospital.";
+									dcterms:modified "2019-07-02"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:radonRiskLevel	rdf:type        owl:DatatypeProperty;	
+									rdfs:label	"radonRiskLevel";
+									rdfs:domain	iasis:LCPatient;
+									rdfs:range	rdfs:Literal;
+									rdfs:comment	"The radon risk level [from 1 (lowest) to 6 (highest)]..";
+									dcterms:modified "2019-07-02"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:numberOfCigarettesPerYear	rdf:type        owl:DatatypeProperty;	
+									rdfs:label	"numberOfCigarettesPerYear";
+									rdfs:domain	iasis:LCPatient;
+									rdfs:range	rdfs:Literal;
+									rdfs:comment	"The number of cigarettes per year if the patient is current or former smoker.";
+									dcterms:modified "2019-07-02"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:isDead	rdf:type        owl:DatatypeProperty;	
+								rdfs:label	"isDead";
+								rdfs:domain	iasis:LCPatient;
+								rdfs:range	rdfs:Literal;
+								rdfs:comment	"If the patient is currently dead (True/False).";
+								dcterms:modified "2019-07-02"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:ageAtDeath	rdf:type        owl:DatatypeProperty;	
+									rdfs:label	"ageAtDeath";
+									rdfs:domain	iasis:LCPatient;
+									rdfs:range	rdfs:Literal;
+									rdfs:comment	"The age at which the patient died.";
+									dcterms:modified "2019-07-02"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:placeOfDeath	rdf:type        owl:DatatypeProperty;	
+									rdfs:label	"placeOfDeath";
+									rdfs:domain	iasis:LCPatient;
+									rdfs:range	rdfs:Literal;
+									rdfs:comment	"The place where the patient died (home/ hospital/ alive: if the patient is alive).";
+									dcterms:modified "2019-07-02"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:ageAtDeath	rdf:type        owl:DatatypeProperty;	
+									rdfs:label	"ageAtDeath";
+									rdfs:domain	iasis:LCPatient;
+									rdfs:range	rdfs:Literal;
+									rdfs:comment	"The age at which the patient died.";
+									dcterms:modified "2019-07-02"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:ageAtDeath	rdf:type        owl:DatatypeProperty;	
+									rdfs:label	"ageAtDeath";
+									rdfs:domain	iasis:LCPatient;
+									rdfs:range	rdfs:Literal;
+									rdfs:comment	"The age at which the patient died.";
+									dcterms:modified "2019-07-02"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:ageAtDeath	rdf:type        owl:DatatypeProperty;	
+									rdfs:label	"ageAtDeath";
+									rdfs:domain	iasis:LCPatient;
+									rdfs:range	rdfs:Literal;
+									rdfs:comment	"The age at which the patient died.";
+									dcterms:modified "2019-07-02"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:hasOncologicalSurgery	rdf:type        owl:ObjectProperty;	
+											rdfs:label	"hasOncologicalSurgery";
+											rdfs:domain	iasis:OncologicalSurgeryObservation;
+											rdfs:range	iasis:OncologicalSurgery;
+											rdfs:comment	"";
+											dcterms:modified "2019-07-02"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:existenceOf_complication	rdf:type        owl:DatatypeProperty;	
+												rdfs:label	"existenceOf_complication";
+												rdfs:domain	iasis:LCPatient;
+												rdfs:range	rdfs:Literal;
+												rdfs:comment	"If there exists any complication during the surgery of the patient (true/ false).";
+												dcterms:modified "2019-07-02"^^xsd:date;
+												dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:oncologicalSurgeryLabel_ENG       rdf:type     owl:DatatypeProperty;
+										rdfs:label	"oncologicalSurgeryLabel_ENG";
+										rdfs:domain	iasis:OncologicalSurgery;
+										rdfs:range	rdfs:Literal;
+										rdfs:comment "";
+										dcterms:modified "2019-07-02"^^xsd:date;
+										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:hasOncologicalTreatmentLine       rdf:type     owl:ObjectProperty;
+										rdfs:label	"hasOncologicalTreatmentLine";
+										rdfs:domain	iasis:LCPatient;
+										rdfs:range	iasis:OncologicalTreatmentLine;
+										rdfs:comment "";
+										dcterms:modified "2019-07-02"^^xsd:date;
+										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:treatmentInitDate     rdf:type     owl:ObjectProperty;
+							rdfs:label	"treatmentInitDate";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	iasis:Date;
+							rdfs:comment "";
+							dcterms:modified "2019-07-02"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:treatmentFinishDate       rdf:type     owl:ObjectProperty;
+								rdfs:label	"treatmentFinishDate";
+								rdfs:domain	iasis:LCPatient;
+								rdfs:range	iasis:Date;
+								rdfs:comment "";
+								dcterms:modified "2019-07-02"^^xsd:date;
+								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:treatmentType       	rdf:type     owl:DatatypeProperty;
+							rdfs:label	"treatmentType";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment "";
+							dcterms:modified "2019-07-02"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:treatmentLineNumber       	rdf:type     owl:DatatypeProperty;
+									rdfs:label	"treatmentLineNumber";
+									rdfs:domain	iasis:LCPatient;
+									rdfs:range	rdfs:Literal;
+									rdfs:comment "";
+									dcterms:modified "2019-07-02"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:treatmentDurationMonths       	rdf:type     owl:DatatypeProperty;
+										rdfs:label	"treatmentDurationMonths";
+										rdfs:domain	iasis:LCPatient;
+										rdfs:range	rdfs:Literal;
+										rdfs:comment "";
+										dcterms:modified "2019-07-02"^^xsd:date;
+										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:existenceOf_toxicity       	rdf:type     owl:DatatypeProperty;
+									rdfs:label	"existenceOf_toxicity";
+									rdfs:domain	iasis:LCPatient;
+									rdfs:range	rdfs:Literal;
+									rdfs:comment "";
+									dcterms:modified "2019-07-02"^^xsd:date;
+									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:existenceOf_gastrointestinalToxicity       	rdf:type     owl:DatatypeProperty;
+							rdfs:label	"existenceOf_gastrointestinalToxicity";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment "";
+							dcterms:modified "2019-07-02"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:existenceOf_endocrinaToxicity       	rdf:type     owl:DatatypeProperty;
+							rdfs:label	"existenceOf_endocrinaToxicity";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment "";
+							dcterms:modified "2019-07-02"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:existenceOf_cutaneaToxicity       	rdf:type     owl:DatatypeProperty;
+							rdfs:label	"existenceOf_cutaneaToxicity";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment "";
+							dcterms:modified "2019-07-02"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:existenceOf_neumologicalToxicity       	rdf:type     owl:DatatypeProperty;
+							rdfs:label	"existenceOf_neumologicalToxicity";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment "";
+							dcterms:modified "2019-07-02"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+			
+iasis:existenceOf_analyticalToxicity       	rdf:type     owl:DatatypeProperty;
+							rdfs:label	"existenceOf_analyticalToxicity";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment "";
+							dcterms:modified "2019-07-02"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:existenceOf_neurologicalToxicity       	rdf:type     owl:DatatypeProperty;
+							rdfs:label	"existenceOf_neurologicalToxicity";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment "";
+							dcterms:modified "2019-07-02"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:existenceOf_otherToxicity       	rdf:type     owl:DatatypeProperty;
+							rdfs:label	"existenceOf_otherToxicity";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment "";
+							dcterms:modified "2019-07-02"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:existenceOf_localProgression       	rdf:type     owl:DatatypeProperty;
+							rdfs:label	"existenceOf_localProgression";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment "";
+							dcterms:modified "2019-07-02"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:existenceOf_systemicProgression       	rdf:type     owl:DatatypeProperty;
+							rdfs:label	"existenceOf_systemicProgression";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment "";
+							dcterms:modified "2019-07-02"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:existenceOf_brainMetastasis       	rdf:type     owl:DatatypeProperty;
+							rdfs:label	"existenceOf_brainMetastasis";
+							rdfs:domain	iasis:LCPatient;
+							rdfs:range	rdfs:Literal;
+							rdfs:comment "";
+							dcterms:modified "2019-07-02"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+													
+iasis:hasNonOncologicalDrug       rdf:type     owl:ObjectProperty;
+										rdfs:label	"hasNonOncologicalDrug";
+										rdfs:domain	iasis:LCPatient;
+										rdfs:range	iasis:Drug;
+										rdfs:comment "";
+										dcterms:modified "2019-07-02"^^xsd:date;
+										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:treatment_has_drug       rdf:type     owl:ObjectProperty;
+										rdfs:label	"treatment_has_drug";
+										rdfs:domain	iasis:LCPatient;
+										rdfs:range	iasis:Drug;
+										rdfs:comment "";
+										dcterms:modified "2019-07-02"^^xsd:date;
+										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+																												
 #######################################################
 ################# Clinical Images #####################
 #######################################################
@@ -3066,14 +3509,6 @@ iasis:hasOrgans     rdf:type     owl:ObjectProperty;
 							dcterms:modified "2018-11-27"^^xsd:date;
 							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
-iasis:hasDiagnosis     rdf:type     owl:ObjectProperty;
-							rdfs:label	"hasDiagnosis";
-							rdfs:domain	iasis:LCPatient;
-							rdfs:range	iasis:Diagnosis;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
 iasis:hasDiagnosis_imageBased     rdf:type     owl:ObjectProperty;
 							rdfs:label	"hasDiagnosis_imageBased";
 							rdfs:domain	iasis:LCPatient;
@@ -3082,163 +3517,6 @@ iasis:hasDiagnosis_imageBased     rdf:type     owl:ObjectProperty;
 							dcterms:modified "2019-01-30"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-
-iasis:hasDiagnosisTumorStage   rdf:type     owl:ObjectProperty;
-							rdfs:label	"hasDiagnosisTumorStage";
-							rdfs:domain	iasis:Diagnosis;
-							rdfs:range	iasis:TumorStage;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
-iasis:hasDiagnosisTumorType   rdf:type     owl:ObjectProperty;
-							rdfs:label	"hasDiagnosisTumorType";
-							rdfs:domain	iasis:Diagnosis;
-							rdfs:range	iasis:TumorType;
-							rdfs:comment ".";
-							dcterms:modified "2019-05-23"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
-
-iasis:hasDiagnosisDate   rdf:type     owl:ObjectProperty;
-							rdfs:label	"hasDiagnosisDate";
-							rdfs:domain	iasis:Diagnosis;
-							rdfs:range	iasis:Date;
-							rdfs:comment "The date that the patient was  diagnosed with the disease.";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
-iasis:hasDiagnosisAge   rdf:type     owl:DatatypeProperty;
-							rdfs:label	"hasDiagnosisAge";
-							rdfs:domain	iasis:Diagnosis;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment "Age of patient when was diagnosed with the disease.";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
-iasis:hasDiagnosisPerformanceStatus   rdf:type     owl:ObjectProperty;
-							rdfs:label	"hasDiagnosisPerformanceStatus";
-							rdfs:domain	iasis:Diagnosis;
-							rdfs:range	iasis:PerformanceStatus;
-							rdfs:comment ".";
-							dcterms:modified "2019-05-24"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
-iasis:patientPositionLabel     rdf:type     owl:DatatypeProperty;
-							rdfs:label	"patientPositionLabel";
-							rdfs:domain	iasis:PatientPosition;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
-
-iasis:genderLabel_ENG        rdf:type     owl:DatatypeProperty;
-							rdfs:label	"genderLabel_ENG";
-							rdfs:domain	iasis:Gender;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2019-01-30"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-
-iasis:chemotherapyList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"chemotherapyList";
-							rdfs:domain	iasis:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
-
-iasis:immunotherapyList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"immunotherapyList";
-							rdfs:domain	iasis:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
-
-iasis:tkiList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"tkiList";
-							rdfs:domain	iasis:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
-iasis:comorbidityList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"comorbidityList";
-							rdfs:domain	iasis:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
-iasis:drugGroupList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"drugGroupList";
-							rdfs:domain	iasis:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
-iasis:biopsyList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"biopsyList";
-							rdfs:domain	iasis:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
-iasis:ecogList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"ecogList";
-							rdfs:domain	iasis:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
-iasis:stageList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"stageList";
-							rdfs:domain	iasis:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
-iasis:familialAntecedentList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"familialAntecedentList";
-							rdfs:domain	iasis:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
-iasis:nonOncologicalTreatmentList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"nonOncologicalTreatmentList";
-							rdfs:domain	iasis:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
-iasis:isBetweenPatients	rdf:type        owl:ObjectProperty;	
-				                rdfs:label	"isBetweenPatients";
-						rdfs:domain	iasis:PatientSimilarity;
-						rdfs:range	iasis:LCPatient;
-						rdfs:comment	".";
-						dcterms:modified "2018-11-27"^^xsd:date;
-						dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
-
-iasis:similarityValue     rdf:type     owl:DatatypeProperty;
-							rdfs:label	"similarityValue";
-							rdfs:domain	iasis:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-27"^^xsd:date;
-							dcterms:creator <https://www.l3s.de/de/user/mcastellanosd87>.
 
 #######################################################
 ######################## OPTIMA #######################
