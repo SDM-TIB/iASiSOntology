@@ -4087,6 +4087,246 @@ iasis:trem2_status	rdf:type	owl:DatatypeProperty;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.			
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:birthYear		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"birthYear";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:age_stoped_smoking	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"age_stoped_smoking";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.	
+
+iasis:lengthOf_longest_irritableEpisode		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"lengthOf_longest_irritableEpisode";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.	
+
+iasis:severaityOf_irritableEpisode		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"severaityOf_irritableEpisode";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:existenceOf_majorDepressionEpisode		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"existenceOf_majorDepressionEpisode";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.	
+
+iasis:existenceOf_currentModerateDepression		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"existenceOf_currentModerateDepression";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:bipolar_majorDepression_status		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"bipolar_majorDepression_status";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:alcohol		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"alcohol";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.	
+
+iasis:alcoholUnitDrunk		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"alcoholUnitDrunk";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:existenceOf_anxiety_forOneMonthOrLonger		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"existenceOf_anxiety_forOneMonthOrLonger";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.	
+
+iasis:firstDepressionAge		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"firstDepressionAge";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:lastDepressionAge		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"lastDepressionAge";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:existenceOf_psychoticMedication		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"existenceOf_psychoticMedication";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:existenceOf_maniaOrExcitabilityPeriod		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"existenceOf_maniaOrExcitabilityPeriod";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:depressionRelatedSubstances		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"depressionRelatedSubstances";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:primaryCauseOfDeath		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"primaryCauseOfDeath";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:secondaryCauseOfDeath		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"secondaryCauseOfDeath";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:mainCauseOfDeath		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"mainCauseOfDeath";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:stemiDate		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"stemiDate";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:stemiReportSource		rdf:type	owl:DatatypeProperty;
+				rdfs:label	"stemiReportSource";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+
+iasis:nstemiDate	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"nstemiDate";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:nstemiReportSource	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"nstemiReportSource";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:strokeDate	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"strokeDate";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:strokeReportSource	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"strokeReportSource";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:ischaemicStrokeReportSource	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"ischaemicStrokeReportSource";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:intracerebralHaemorrhageDate	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"intracerebralHaemorrhageDate";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:intracerebralHaemorrhageReportSource	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"intracerebralHaemorrhageReportSource";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:subarachnoidHaemorrhageDate	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"subarachnoidHaemorrhageDate";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:subarachnoidHaemorrhageReportSource	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"subarachnoidHaemorrhageReportSource";
+				rdfs:domain	iasis:ADPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+
+
+
+
+						
+			
 
 
