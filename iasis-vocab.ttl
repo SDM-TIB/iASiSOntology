@@ -67,14 +67,14 @@ iasis:Author	rdf:type	owl:Class;
 					dcterms:modified "2019-05-24"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:MENTIONED_IN	rdf:type owl:Class;
+iasis:MENTIONED_IN	rdf:type	owl:Class;
 					rdfs:label	"MentionedIn";
 					rdfs:subClassOf iasis:Relation;
 					rdfs:comment	"A relation that shows in which publication each specific CUI term has been appeared.";
 					dcterms:modified "2017-10-23"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
-iasis:HAS_TOPIC		rdf:type owl:Class;
+iasis:HAS_TOPIC		rdf:type	owl:Class;
 				rdfs:label	"HasTopic";
 				rdfs:subClassOf iasis:Relation;
 				rdfs:comment	"A relation that shows which CUI has been appeared in each specific publication.";
@@ -88,35 +88,35 @@ iasis:ASSOCIATED_WITH	rdf:type owl:Class;
 						dcterms:modified "2017-10-23"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
-iasis:CAUSES	rdf:type owl:Class;
+iasis:CAUSES	rdf:type	owl:Class;
 				rdfs:label	"Causes";
 				rdfs:subClassOf iasis:Relation;
 				rdfs:comment	"UMLS Annotation.";
 				dcterms:modified "2017-10-23"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
-iasis:INHIBITS	rdf:type owl:Class;
+iasis:INHIBITS	rdf:type	owl:Class;
 				rdfs:label	"Inhibits";
 				rdfs:subClassOf iasis:Relation;
 				rdfs:comment	"UMLS Annotation.";
 				dcterms:modified "2017-10-23"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
-iasis:INTERACTS_WITH	rdf:type owl:Class;
+iasis:INTERACTS_WITH	rdf:type	owl:Class;
 					rdfs:label	"InteractsWith";
 					rdfs:subClassOf iasis:Relation;
 					rdfs:comment	"UMLS Annotation.";
 					dcterms:modified "2017-10-23"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
-iasis:PREDISPOSES 	rdf:type owl:Class;
+iasis:PREDISPOSES	rdf:type	owl:Class;
 					rdfs:label	"Predisposes";
 					rdfs:subClassOf iasis:Relation;
 					rdfs:comment	"UMLS Annotation.";
 					dcterms:modified "2017-10-23"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
-iasis:STIMULATES 	rdf:type owl:Class;
+iasis:STIMULATES 	rdf:type	owl:Class;
 					rdfs:label	"Stimulates";
 					rdfs:subClassOf iasis:Relation;
 					rdfs:comment	"UMLS Annotation.";
@@ -127,42 +127,42 @@ iasis:STIMULATES 	rdf:type owl:Class;
 ####################### Genomics ######################
 ####################################################### 
 
-iasis:Gene 	rdf:type owl:Class;
+iasis:Gene	rdf:type	owl:Class;
 			rdfs:label	"Gene";
 			rdfs:subClassOf	iasis:Concept;
 			rdfs:comment "Genes, which are made up of DNA, are the basic physical and functional unit of heredity.";
 			dcterms:modified "2018-04-12"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:Sample 	rdf:type owl:Class;
+iasis:Sample	rdf:type	owl:Class;
 				rdfs:label	"Sample";
 				rdfs:subClassOf	iasis:Concept;
 				rdfs:comment "A specimen of a whole entity.";
 				dcterms:modified "2018-04-12"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:Tumor rdf:type owl:Class;
+iasis:Tumor	rdf:type	owl:Class;
 			rdfs:label	"Tumor";
 			rdfs:subClassOf	iasis:Concept;
 			rdfs:comment "Tumor is an abnormal mass of tisuue that results when cells didive more than they should or do not die when they should.";
 			dcterms:modified "2018-04-12"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:Mutation 	rdf:type owl:Class;
+iasis:Mutation	rdf:type	owl:Class;
 				rdfs:label	"Mutation";
 				rdfs:subClassOf	iasis:Concept;
 				rdfs:comment "A permanent alteration in the DNA sequence that makes up a gene, such that the sequence differs from what is found in most people.";
 				dcterms:modified "2018-04-12"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:CNV 	rdf:type owl:Class;
+iasis:CNV	rdf:type	owl:Class;
 			rdfs:label	"CopyNumberVariation";
 			rdfs:subClassOf	iasis:Concept;
 			rdfs:comment "The genetic trait involving the variation of the number of copies of a particular gene present in the genome between individuals. ";
 			dcterms:modified "2018-04-12"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:CGI 	rdf:type owl:Class;
+iasis:CGI	rdf:type	owl:Class;
 
 			rdfs:label	"CpG_island";
 			rdfs:subClassOf	iasis:Concept;
@@ -170,7 +170,7 @@ iasis:CGI 	rdf:type owl:Class;
 			dcterms:modified "2018-04-12"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:GExp 	rdf:type owl:Class;
+iasis:GExp	rdf:type	owl:Class;
 			rdfs:label	"GExp";
 			rdfs:subClassOf	iasis:Concept;
 			rdfs:comment "The phenotypic manifestation of a gene or genes by the processes of genetic transcription and genetic translation.";
@@ -227,7 +227,7 @@ iasis:Evidence	rdf:type	owl:Class;
 					dcterms:modified "2019-06-06"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:Protein 	rdf:type owl:Class;
+iasis:Protein	rdf:type	owl:Class;
 				rdfs:label	"Protein";
 				rdfs:subClassOf	iasis:Concept;
 				rdfs:comment "Large and complex molecules that play many critical roles in the body. They are required for the structure, function and regulation of the body's tissues and organs.";
@@ -241,7 +241,7 @@ iasis:RBP_RNA_PhysicalInteraction	rdf:type	owl:Class;
 									dcterms:modified "2018-07-24"^^xsd:date;
 									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:EQTL	rdf:type owl:Class;
+iasis:EQTL	rdf:type	owl:Class;
 			rdfs:label	"eQTL";
 			rdfs:subClassOf	iasis:Concept;
 			rdfs:comment "An eQTL is a locus that explains a fraction of the genetic variance of a gene expression phenotype.";
@@ -255,7 +255,7 @@ iasis:NucleotideSequence	rdf:type owl:Class;
 			dcterms:modified "2018-12-10"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:Variation	rdf:type owl:Class;
+iasis:Variation	rdf:type	owl:Class;
 			rdfs:label	"Variation";
 			rdfs:subClassOf	iasis:Concept;
 			rdfs:comment "";
@@ -266,14 +266,14 @@ iasis:Variation	rdf:type owl:Class;
 ######################## Drugs ########################
 ####################################################### 
 
-iasis:Drug	rdf:type owl:Class;
+iasis:Drug	rdf:type	owl:Class;
 			rdfs:label	"Drug";
 			rdfs:subClassOf	iasis:Concept;
 			rdfs:comment "A substance used as a medication or in the preparation of medication.";
 			dcterms:modified "2018-07-23"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:NonOncologicalDrug	rdf:type owl:Class;
+iasis:NonOncologicalDrug	rdf:type	owl:Class;
 			rdfs:label	"NonOncologicalDrug";
 			rdfs:subClassOf	iasis:Drug;
 			rdfs:comment "A drug no oncological.";
@@ -281,7 +281,7 @@ iasis:NonOncologicalDrug	rdf:type owl:Class;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
-iasis:LungCancerDrug	rdf:type owl:Class;
+iasis:LungCancerDrug	rdf:type	owl:Class;
 			rdfs:label	"LungCancerDrug";
 			rdfs:subClassOf	iasis:Drug;
 			rdfs:comment "A Drug used in the Lung Cancer treatment.";
@@ -298,35 +298,35 @@ iasis:Phenotype	rdf:type	owl:Class;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
-iasis:DrugSideEffect	rdf:type owl:Class;
+iasis:DrugSideEffect	rdf:type	owl:Class;
 						rdfs:label	"DrugSideEffect";
 						rdfs:subClassOf	iasis:Relation;
 						rdfs:comment "The Drug SideEffect relation should be a class since has two properties";
 						dcterms:modified "2017-07-24"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:Enzyme	rdf:type owl:Class;
+iasis:Enzyme	rdf:type	owl:Class;
 				rdfs:label	"Enzyme";
 				rdfs:subClassOf	iasis:Concept;
 				rdfs:comment "Macromolecular biological catalyst that accelerate chemical reactions. Most enzymes are proteins.";
 				dcterms:modified "2017-07-24"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:Effect	rdf:type owl:Class;
+iasis:Effect	rdf:type	owl:Class;
 				rdfs:label	"Effect";
 				rdfs:subClassOf	iasis:Concept;
 				rdfs:comment "The effectiveness of a drug according to its interaction with another drug.";
 				dcterms:modified "2018-10-23"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:Impact	rdf:type owl:Class;
+iasis:Impact	rdf:type	owl:Class;
 				rdfs:label	"Impact";
 				rdfs:subClassOf	iasis:Concept;
 				rdfs:comment "The impact that interaction between two drugs has on the performance of the drug.";
 				dcterms:modified "2018-10-23"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:EffectInteraction	rdf:type owl:Class;
+iasis:EffectInteraction	rdf:type	owl:Class;
 				rdfs:label	"EffectInteraction";
 				rdfs:subClassOf	iasis:Relation;
 				rdfs:comment "The relation between two drugs that interact.";
@@ -334,14 +334,14 @@ iasis:EffectInteraction	rdf:type owl:Class;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
-iasis:DDI	rdf:type owl:Class;
+iasis:DDI	rdf:type	owl:Class;
 				rdfs:label	"DDI";
 				rdfs:subClassOf	iasis:Relation;
 				rdfs:comment "The relation between two drugs that interact.";
 				dcterms:modified "2019-11-11"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:DDI_Prediction	rdf:type owl:Class;
+iasis:DDI_Prediction	rdf:type	owl:Class;
 				rdfs:label	"DDI_Prediction";
 				rdfs:subClassOf	iasis:Relation;
 				rdfs:comment "Prediction of the relation between two drugs that interact.";
@@ -349,21 +349,21 @@ iasis:DDI_Prediction	rdf:type owl:Class;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
-iasis:DEI	rdf:type owl:Class;
+iasis:DEI	rdf:type	owl:Class;
 				rdfs:label	"DEI";
 				rdfs:subClassOf	iasis:Relation;
 				rdfs:comment "Interaction between drugs and enzymes.";
 				dcterms:modified "2019-11-11"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:DEI_Prediction	rdf:type owl:Class;
+iasis:DEI_Prediction	rdf:type	owl:Class;
 				rdfs:label	"DEI_Prediction";
 				rdfs:subClassOf	iasis:Relation;
 				rdfs:comment "Prediction of the interaction between drugs and enzymes.";
 				dcterms:modified "2019-11-11"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:DTI	rdf:type owl:Class;
+iasis:DTI	rdf:type	owl:Class;
 				rdfs:label	"DTI";
 				rdfs:subClassOf	iasis:Relation;
 				rdfs:comment "Interaction between drugs and Targets.";
@@ -371,35 +371,35 @@ iasis:DTI	rdf:type owl:Class;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
-iasis:DTI_Prediction	rdf:type owl:Class;
+iasis:DTI_Prediction	rdf:type	owl:Class;
 				rdfs:label	"DTI_Prediction";
 				rdfs:subClassOf	iasis:Relation;
 				rdfs:comment "Prediction of the interaction between drugs and Targets.";
 				dcterms:modified "2019-11-11"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:Disorder	rdf:type owl:Class;
+iasis:Disorder	rdf:type	owl:Class;
 				rdfs:label	"Disorder";
 				rdfs:subClassOf	iasis:Concept;
 				rdfs:comment "Disorders!";
 				dcterms:modified "2018-10-30"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:DrugDisorder	rdf:type owl:Class;
+iasis:DrugDisorder	rdf:type	owl:Class;
 				rdfs:label	"DrugDisorder";
 				rdfs:subClassOf	iasis:Concept;
 				rdfs:comment "Drug Disorders!";
 				dcterms:modified "2019-11-11"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:Target	rdf:type owl:Class;
+iasis:Target	rdf:type	owl:Class;
 				rdfs:label	"Target";
 				rdfs:subClassOf	iasis:Concept;
 				rdfs:comment "A drug target is a molecule in the body, usually a protein, that is intrinsically associated with a particular disease process and that could be addressed by a drug to produce a desired therapeutic effect.";
 				dcterms:modified "2018-10-30"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:PredictedDrugSideEffect	rdf:type owl:Class;
+iasis:PredictedDrugSideEffect	rdf:type	owl:Class;
 						rdfs:label	"PredictedDrugSideEffect";
 						rdfs:subClassOf	iasis:Relation;
 						rdfs:comment "The predicted Drug SideEffect relation.";
@@ -411,42 +411,42 @@ iasis:PredictedDrugSideEffect	rdf:type owl:Class;
 ################## Clinical notes #####################
 ####################################################### 
 
-iasis:Observation    rdf:type        owl:Class;
+iasis:Observation	rdf:type	owl:Class;
 					rdfs:label	"iasis:Observation";
 					rdfs:subClassOf	 iasis:Concept;
 					rdfs:comment "Any record that relates to monitoring a process.";
 					dcterms:modified "2018-11-27"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:Patient	rdf:type owl:Class;
+iasis:Patient	rdf:type	owl:Class;
 					rdfs:label	"Patient";
 					rdfs:subClassOf	iasis:Concept;
 					rdfs:comment "A person who is receiving medical care.";
 					dcterms:modified "2018-07-24"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:LCPatient	rdf:type owl:Class;
+iasis:LCPatient	rdf:type	owl:Class;
 				rdfs:label	"LungCancerPatient";
 				rdfs:subClassOf	iasis:Patient;
 				rdfs:comment "A patient who is diagnosed with Lung Cancer.";
 				dcterms:modified "2018-07-24"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:LiquidBiopsy	rdf:type owl:Class;
+iasis:LiquidBiopsy	rdf:type	owl:Class;
 					rdfs:label	"LiquidBiopsy";
 					rdfs:subClassOf	iasis:Test;
 					rdfs:comment	"A test done on a sample of blood to look for cancer cells from a tumor that are circulating in the blood or for pieces of DNA from tumor cells that are in the blood. It generally provides a picture of all mutations found in all tumors, if the cancer has spread.";
 					dcterms:modified "2018-07-24"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:SolidBiopsy	rdf:type owl:Class;
+iasis:SolidBiopsy	rdf:type	owl:Class;
 					rdfs:label	"SolidBiopsy";
 					rdfs:subClassOf	iasis:Test;
 					rdfs:comment	"A sample that is taken directly from within a tumor. It generally provides a picture of the mutations found directly within an individual tumor.";
 					dcterms:modified "2019-06-17"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:TumorStage	rdf:type owl:Class;
+iasis:TumorStage	rdf:type	owl:Class;
 					rdfs:label	"TumorStage";
 					rdfs:comment "Represents the assessment of the stage of tumor in a particular date.";
 					dcterms:modified "2018-10-04"^^xsd:date;
