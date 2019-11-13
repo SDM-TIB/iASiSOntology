@@ -34,7 +34,7 @@ iasis:SourceName	rdf:type	owl:Class;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
 iasis:Image	rdf:type owl:Class;
-			rdfs:label	"MedicalImage";
+			rdfs:label	"MedicalImage";201
 			rdfs:subClassOf	iasis:Concept;
 			iasis:partOf iasis:ClinicalRecord;
 			rdfs:comment "Patient's medical images.";
@@ -1135,7 +1135,7 @@ iasis:zygosityLabel	rdf:type owl:DatatypeProperty;
 
 iasis:z_score	rdf:type owl:DatatypeProperty;
 					rdfs:label	"z_score";
-					rdfs:domain iasis:Gexp;
+					rdfs:domain iasis:GExp;
 				 	rdfs:range rdfs:Literal;
 					rdfs:comment	".";
 					dcterms:modified "2018-11-23"^^xsd:date;
@@ -4321,3 +4321,12 @@ iasis:subarachnoidHaemorrhageReportSource	rdf:type	owl:DatatypeProperty;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+
+
+
+
+						
+			
+
+
