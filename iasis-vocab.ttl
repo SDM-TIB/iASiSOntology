@@ -2905,7 +2905,7 @@ iasis:hasMutation	rdf:type        owl:ObjectProperty;
 						dcterms:modified "2019-11-11"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:hasDate	rdf:type        owl:DataTypeProperty;	
+iasis:hasDate	rdf:type        owl:DatatypeProperty;	
 				rdfs:label	"hasDate";
 						rdfs:domain	iasis:Concept;
 						rdfs:range	rdfs:Literal;
