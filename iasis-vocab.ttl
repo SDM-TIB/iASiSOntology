@@ -34,7 +34,7 @@ iasis:SourceName	rdf:type	owl:Class;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
 iasis:Image	rdf:type owl:Class;
-			rdfs:label	"MedicalImage";201
+			rdfs:label	"MedicalImage";
 			rdfs:subClassOf	iasis:Concept;
 			iasis:partOf iasis:ClinicalRecord;
 			rdfs:comment "Patient's medical images.";
