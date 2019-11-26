@@ -49,6 +49,16 @@ iasis:Test	rdf:type owl:Class;
 			dcterms:modified "2017-10-23"^^xsd:date;
 			dcterms:creator <https://en.wikipedia.org/wiki/Mar%C3%ADa-Esther_Vidal>.
 
+iasis:Interaction	rdf:type owl:Class;
+			rdfs:label	"Interaction";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "Interaction between drogs  and disorder, enzyme, target.";
+			dcterms:modified "2019-11-22"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+
+
+
 #######################################################
 ##################### Publications ####################
 ####################################################### 
@@ -155,13 +165,20 @@ iasis:Mutation	rdf:type	owl:Class;
 				dcterms:modified "2018-04-12"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:Variation	rdf:type	owl:Class;
-			rdfs:label	"Variation";
+iasis:CNV	rdf:type	owl:Class;
+			rdfs:label	"CopyNumberVariation";
 			rdfs:subClassOf	iasis:Concept;
-			rdfs:comment "";
-			dcterms:modified "2019-06-06"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			rdfs:comment "The genetic trait involving the variation of the number of copies of a particular gene present in the genome between individuals. ";
+			dcterms:modified "2018-04-12"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
+iasis:CGI	rdf:type	owl:Class;
+
+			rdfs:label	"CpG_island";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "CGIs are regions of the genome that contain a large number of CpG dinucleotide repeats. Although most CGIs linked to promoters are non-methylated, majority of CGIs may be completely methylated in normal cells.";
+			dcterms:modified "2018-04-12"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:GExp	rdf:type	owl:Class;
 			rdfs:label	"GExp";
@@ -241,6 +258,20 @@ iasis:EQTL	rdf:type	owl:Class;
 			dcterms:modified "2018-07-24"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
+iasis:NucleotideSequence	rdf:type owl:Class;
+			rdfs:label	"NucleotideSequence";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "Includes DNA and RNAs.";
+			dcterms:modified "2018-12-10"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:Variation	rdf:type	owl:Class;
+			rdfs:label	"Variation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "";
+			dcterms:modified "2019-06-06"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
 #######################################################
 ######################## Drugs ########################
 ####################################################### 
@@ -277,11 +308,11 @@ iasis:Phenotype	rdf:type	owl:Class;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
-iasis:DrugSideEffect	rdf:type	owl:Class;
-						rdfs:label	"DrugSideEffect";
+iasis:DrugSideEffectInteraction	rdf:type	owl:Class;
+						rdfs:label	"DrugSideEffectInteraction";
 						rdfs:subClassOf	iasis:Relation;
 						rdfs:comment "The Drug SideEffect relation should be a class since has two properties";
-						dcterms:modified "2017-07-24"^^xsd:date;
+						dcterms:modified "2019-11-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:Enzyme	rdf:type	owl:Class;
@@ -313,45 +344,45 @@ iasis:EffectInteraction	rdf:type	owl:Class;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
-iasis:DDI	rdf:type	owl:Class;
-				rdfs:label	"DDI";
+iasis:DrugDrugInteraction	rdf:type	owl:Class;
+				rdfs:label	"DrugDrugInteraction";
 				rdfs:subClassOf	iasis:Relation;
 				rdfs:comment "The relation between two drugs that interact.";
-				dcterms:modified "2019-11-11"^^xsd:date;
+				dcterms:modified "2019-11-21"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:DDI_Prediction	rdf:type	owl:Class;
-				rdfs:label	"DDI_Prediction";
+iasis:DrugDrugPrediction	rdf:type	owl:Class;
+				rdfs:label	"DrugDrugPrediction";
 				rdfs:subClassOf	iasis:Relation;
 				rdfs:comment "Prediction of the relation between two drugs that interact.";
 				dcterms:modified "2019-11-11"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
-iasis:DEI	rdf:type	owl:Class;
-				rdfs:label	"DEI";
+iasis:DrugEnzymeInteraction	rdf:type	owl:Class;
+				rdfs:label	"DrugEnzymeInteraction";
 				rdfs:subClassOf	iasis:Relation;
 				rdfs:comment "Interaction between drugs and enzymes.";
 				dcterms:modified "2019-11-11"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:DEI_Prediction	rdf:type	owl:Class;
-				rdfs:label	"DEI_Prediction";
+iasis:DrugEnzymePrediction	rdf:type	owl:Class;
+				rdfs:label	"DrugEnzymePrediction";
 				rdfs:subClassOf	iasis:Relation;
 				rdfs:comment "Prediction of the interaction between drugs and enzymes.";
 				dcterms:modified "2019-11-11"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:DTI	rdf:type	owl:Class;
-				rdfs:label	"DTI";
+iasis:DrugTargetInteraction	rdf:type	owl:Class;
+				rdfs:label	"DrugTargetInteraction";
 				rdfs:subClassOf	iasis:Relation;
 				rdfs:comment "Interaction between drugs and Targets.";
 				dcterms:modified "2019-11-11"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
-iasis:DTI_Prediction	rdf:type	owl:Class;
-				rdfs:label	"DTI_Prediction";
+iasis:DrugTargetPrediction	rdf:type	owl:Class;
+				rdfs:label	"DrugTargetPrediction";
 				rdfs:subClassOf	iasis:Relation;
 				rdfs:comment "Prediction of the interaction between drugs and Targets.";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -383,8 +414,15 @@ iasis:PredictedDrugSideEffect	rdf:type	owl:Class;
 						rdfs:subClassOf	iasis:Relation;
 						rdfs:comment "The predicted Drug SideEffect relation.";
 						dcterms:modified "2019-01-30"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.				
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
+			
+iasis:DrugDisorderInteraction	rdf:type	owl:Class;
+				rdfs:label	"DrugDisorderInteraction";
+				rdfs:subClassOf	iasis:Concept;
+				rdfs:comment "A drug-induced disorder.";
+				dcterms:modified "2019-11-21"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 #######################################################
 ################## Clinical notes #####################
@@ -587,18 +625,40 @@ iasis:BodyPartExamined	rdf:type         owl:Class;
 #######################################################
 
 
+iasis:DementiaPatient	rdf:type owl:Class;
+				rdfs:label	"DementiaPatient";
+				rdfs:subClassOf	iasis:Patient;
+				rdfs:comment "A patient who is diagnosed with Dementia.";
+				dcterms:modified "2019-11-22"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+
 iasis:ADPatient	rdf:type owl:Class;
 				rdfs:label	"ADPatient";
-				rdfs:subClassOf	iasis:Patient;
-				rdfs:comment "A patient who is diagnosed with Alzheimer/Dementia.";
-				dcterms:modified "2019-07-01"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+				rdfs:subClassOf	iasis:DementiaPatient;
+				rdfs:comment "A patient who is diagnosed with Alzheimer.";
+				dcterms:modified "2019-11-26"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 	
 iasis:DementiaDrug	rdf:type owl:Class;
 			rdfs:label	"DementiaDrug";
 			rdfs:subClassOf	iasis:Drug;
 			rdfs:comment "A Drug used in the Alzheimer treatment.";
 			dcterms:modified "2019-05-23"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:generalPractitionerPracticeCode	rdf:type owl:Class;
+			rdfs:label	"generalPractitionerPracticeCode";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment ".";
+			dcterms:modified "2019-11-22"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:ConsultantMainSpeciality	rdf:type owl:Class;
+			rdfs:label	"ConsultantMainSpeciality";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment ".";
+			dcterms:modified "2019-11-22"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
@@ -2422,7 +2482,7 @@ iasis:drugDrugInteraction_pubMed	rdf:type owl:ObjectProperty;
 
 iasis:interactor1	rdf:type owl:ObjectProperty;
 					rdfs:label "interactor1";
-					rdfs:domain iasis:DrugDisorder;
+					rdfs:domain iasis:Interaction;
 				  	rdfs:range iasis:Drug;
                   			rdfs:comment ".";
 					dcterms:modified "2019-11-11"^^xsd:date;
@@ -2431,8 +2491,8 @@ iasis:interactor1	rdf:type owl:ObjectProperty;
 
 iasis:interactor2	rdf:type owl:ObjectProperty;
 					rdfs:label "interactor2";
-					rdfs:domain iasis:DrugDisorder;
-				  	rdfs:range iasis:Disorder;
+					rdfs:domain iasis:Interaction;
+				  	rdfs:range iasis:Concept;
                   			rdfs:comment ".";
 					dcterms:modified "2019-11-11"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
@@ -2523,7 +2583,7 @@ iasis:drug_isPredictedToHave_sideEffect	rdf:type	owl:ObjectProperty;
 iasis:drug_isRelatedTo_dse	rdf:type	owl:ObjectProperty;
 							rdfs:label	"drug_isRelatedTo_dse";
 							rdfs:domain	iasis:Drug;
-							rdfs:range	iasis:DrugSideEffect;
+							rdfs:range	iasis:DrugSideEffectInteraction;
 							rdfs:comment	"Connection between drug and drug-sideEffect relation.";
 							dcterms:modified "2018-07-24"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
@@ -2531,14 +2591,14 @@ iasis:drug_isRelatedTo_dse	rdf:type	owl:ObjectProperty;
 iasis:sideEffect_isRelatedTo_dse	rdf:type	owl:ObjectProperty;
 									rdfs:label	"sideEffect_isRelatedTo_dse";
 									rdfs:domain	iasis:Phenotype;
-									rdfs:range	iasis:DrugSideEffect;
+									rdfs:range	iasis:DrugSideEffectInteraction;
 									rdfs:comment	"Connection between sideEffect and drug-sideEffect relation.";
 									dcterms:modified "2018-07-24"^^xsd:date;
 									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:dse_AvgFrequency	rdf:type	owl:DatatypeProperty;
 						rdfs:label	"dse_AvgFrequency";
-						rdfs:domain	iasis:DrugSideEffect;
+						rdfs:domain	iasis:DrugSideEffectInteraction;
 						rdfs:range	rdfs:Literal;
 						rdfs:comment	"Represents the average frequecy of particular drug having specific side effect.";
 						dcterms:modified "2018-07-24"^^xsd:date;
@@ -2546,7 +2606,7 @@ iasis:dse_AvgFrequency	rdf:type	owl:DatatypeProperty;
 
 iasis:dse_StandardDeviation	rdf:type	owl:DatatypeProperty;
 							rdfs:label	"dse_StandardDeviation";
-							rdfs:domain	iasis:DrugSideEffect;
+							rdfs:domain	iasis:DrugSideEffectInteraction;
 							rdfs:range	rdfs:Literal;
 							rdfs:commnet	"Represents standard deviation from average frequecy of particular drug having specific side effect.";
 							dcterms:modified "2018-07-24"^^xsd:date;
@@ -2595,7 +2655,7 @@ iasis:impactLabel	rdf:type	owl:DatatypeProperty;
 
 iasis:affects	rdf:type	owl:ObjectProperty;
 								rdfs:label	"affects";
-								rdfs:domain	iasis:DDI;
+								rdfs:domain	iasis:DrugDrugInteraction;
 								rdfs:range	iasis:Drug;
 								rdfs:comment	"The conncetion between drug that affects by the other one through their interaction and the interaction node.";
 								dcterms:modified "2019-11-11"^^xsd:date;
@@ -2603,7 +2663,7 @@ iasis:affects	rdf:type	owl:ObjectProperty;
 
 iasis:isAffected	rdf:type	owl:ObjectProperty;
 								rdfs:label	"isAffected";
-								rdfs:domain	iasis:DDI;
+								rdfs:domain	iasis:DrugDrugInteraction;
 								rdfs:range	iasis:Drug;
 								rdfs:comment	"The conncetion between drug that is affected by the other one through their interaction and the interaction node.";
 								dcterms:modified "2019-11-11"^^xsd:date;
@@ -2611,7 +2671,7 @@ iasis:isAffected	rdf:type	owl:ObjectProperty;
 
 iasis:hasEffect	rdf:type	owl:ObjectProperty;
 								rdfs:label	"hasEffect";
-								rdfs:domain	iasis:DDI;
+								rdfs:domain	iasis:DrugDrugInteraction;
 								rdfs:range	iasis:Effect;
 								rdfs:comment	"The conncetion between the effect of drugs interaction and the interaction node.";
 								dcterms:modified "2019-11-11"^^xsd:date;
@@ -2619,7 +2679,7 @@ iasis:hasEffect	rdf:type	owl:ObjectProperty;
 
 iasis:hasImpact	rdf:type	owl:ObjectProperty;
 								rdfs:label	"hasImpact";
-								rdfs:domain	iasis:DDI;
+								rdfs:domain	iasis:DrugDrugInteraction;
 								rdfs:range	iasis:Impact;
 								rdfs:comment	"The conncetion between the impact of drugs interaction and the interaction node.";
 								dcterms:modified "2019-11-11"^^xsd:date;
@@ -2702,8 +2762,8 @@ iasis:biomarker_has_indication	rdf:type	owl:ObjectProperty;
 								rdfs:label	"biomarker_has_indication";
 								rdfs:domain	iasis:Biomarker;
 								rdfs:range	iasis:Drug;
-								rdfs:comment	"";
-								dcterms:modified "2019-01-07"^^xsd:date;
+								rdfs:comment	"A biomarker has indication Drug";
+								dcterms:modified "2019-11-21"^^xsd:date;
 								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:tumorStage_has_indication	rdf:type	owl:ObjectProperty;
@@ -2768,7 +2828,7 @@ iasis:sideEffect_isRelatedTo_pdse	rdf:type	owl:ObjectProperty;
 
 iasis:predictionMethod	rdf:type	owl:DatatypeProperty;
 						rdfs:label	"predictionMethod";
-						rdfs:domain iasis:DDI_Prediction;
+						rdfs:domain iasis:DrugDrugPrediction;
                			                rdfs:range rdfs:Literal;
 						rdfs:comment	"Predictions Method";
 						dcterms:modified "2019-1-11"^^xsd:date;
@@ -2776,7 +2836,7 @@ iasis:predictionMethod	rdf:type	owl:DatatypeProperty;
 
 iasis:interaction_isRelatedTo_Disease	rdf:type        owl:ObjectProperty;	
 						rdfs:label	"hasPerformanceStatus";
-						rdfs:domain	iasis:DDI_Prediction;
+						rdfs:domain	iasis:DrugDrugPrediction;
 						rdfs:range	iasis:Disorder;
 						rdfs:comment	"Connection between DDI_Prediction and Disorder.";
 						dcterms:modified "2019-11-11"^^xsd:date;
@@ -3836,7 +3896,7 @@ iasis:hasDiagnosis_imageBased     rdf:type     owl:ObjectProperty;
 
 iasis:existenceOf_dementia        rdf:type     owl:DatatypeProperty;
 							rdfs:label	"existenceOf_dementia";
-							rdfs:domain	iasis:ADPatient;
+							rdfs:domain	iasis:DementiaPatient;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment "If the patient has been diagnosed with dementia.(True/ False)";
 							dcterms:modified "2019-07-01"^^xsd:date;
@@ -4045,7 +4105,7 @@ iasis:firstEpisodeDateOf_moderate_MMSEscore	rdf:type	owl:DatatypeProperty;
 	
 iasis:apoe_WES_status	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"apoe_WES_status";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4054,7 +4114,7 @@ iasis:apoe_WES_status	rdf:type	owl:DatatypeProperty;
 	
 iasis:apoe_genetic_status	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"apoe_genetic_status";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4062,7 +4122,7 @@ iasis:apoe_genetic_status	rdf:type	owl:DatatypeProperty;
 
 iasis:trem2_status	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"trem2_status";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4070,7 +4130,7 @@ iasis:trem2_status	rdf:type	owl:DatatypeProperty;
 
 iasis:birthYear		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"birthYear";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4078,7 +4138,7 @@ iasis:birthYear		rdf:type	owl:DatatypeProperty;
 
 iasis:age_stoped_smoking	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"age_stoped_smoking";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4086,7 +4146,7 @@ iasis:age_stoped_smoking	rdf:type	owl:DatatypeProperty;
 
 iasis:lengthOf_longest_irritableEpisode		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"lengthOf_longest_irritableEpisode";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4094,7 +4154,7 @@ iasis:lengthOf_longest_irritableEpisode		rdf:type	owl:DatatypeProperty;
 
 iasis:severaityOf_irritableEpisode		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"severaityOf_irritableEpisode";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4102,7 +4162,7 @@ iasis:severaityOf_irritableEpisode		rdf:type	owl:DatatypeProperty;
 
 iasis:existenceOf_majorDepressionEpisode	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"existenceOf_majorDepressionEpisode";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4110,7 +4170,7 @@ iasis:existenceOf_majorDepressionEpisode	rdf:type	owl:DatatypeProperty;
 
 iasis:existenceOf_currentModerateDepression	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"existenceOf_currentModerateDepression";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4118,7 +4178,7 @@ iasis:existenceOf_currentModerateDepression	rdf:type	owl:DatatypeProperty;
 
 iasis:bipolar_majorDepression_status		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"bipolar_majorDepression_status";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4126,7 +4186,7 @@ iasis:bipolar_majorDepression_status		rdf:type	owl:DatatypeProperty;
 
 iasis:alcohol		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"alcohol";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4134,7 +4194,7 @@ iasis:alcohol		rdf:type	owl:DatatypeProperty;
 
 iasis:alcoholUnitDrunk		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"alcoholUnitDrunk";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4142,7 +4202,7 @@ iasis:alcoholUnitDrunk		rdf:type	owl:DatatypeProperty;
 
 iasis:existenceOf_anxiety_forOneMonthOrLonger		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"existenceOf_anxiety_forOneMonthOrLonger";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4150,7 +4210,7 @@ iasis:existenceOf_anxiety_forOneMonthOrLonger		rdf:type	owl:DatatypeProperty;
 
 iasis:firstDepressionAge		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"firstDepressionAge";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4158,7 +4218,7 @@ iasis:firstDepressionAge		rdf:type	owl:DatatypeProperty;
 
 iasis:lastDepressionAge		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"lastDepressionAge";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4166,7 +4226,7 @@ iasis:lastDepressionAge		rdf:type	owl:DatatypeProperty;
 
 iasis:existenceOf_psychoticMedication		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"existenceOf_psychoticMedication";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4174,7 +4234,7 @@ iasis:existenceOf_psychoticMedication		rdf:type	owl:DatatypeProperty;
 
 iasis:existenceOf_maniaOrExcitabilityPeriod		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"existenceOf_maniaOrExcitabilityPeriod";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4182,7 +4242,7 @@ iasis:existenceOf_maniaOrExcitabilityPeriod		rdf:type	owl:DatatypeProperty;
 
 iasis:depressionRelatedSubstances		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"depressionRelatedSubstances";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4190,7 +4250,7 @@ iasis:depressionRelatedSubstances		rdf:type	owl:DatatypeProperty;
 
 iasis:primaryCauseOfDeath		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"primaryCauseOfDeath";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4198,7 +4258,7 @@ iasis:primaryCauseOfDeath		rdf:type	owl:DatatypeProperty;
 
 iasis:secondaryCauseOfDeath		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"secondaryCauseOfDeath";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4206,7 +4266,7 @@ iasis:secondaryCauseOfDeath		rdf:type	owl:DatatypeProperty;
 
 iasis:mainCauseOfDeath		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"mainCauseOfDeath";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4214,7 +4274,7 @@ iasis:mainCauseOfDeath		rdf:type	owl:DatatypeProperty;
 
 iasis:stemiDate		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"stemiDate";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4222,7 +4282,7 @@ iasis:stemiDate		rdf:type	owl:DatatypeProperty;
 
 iasis:stemiReportSource		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"stemiReportSource";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4231,7 +4291,7 @@ iasis:stemiReportSource		rdf:type	owl:DatatypeProperty;
 
 iasis:nstemiDate	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"nstemiDate";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4239,7 +4299,7 @@ iasis:nstemiDate	rdf:type	owl:DatatypeProperty;
 
 iasis:nstemiReportSource	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"nstemiReportSource";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4247,7 +4307,7 @@ iasis:nstemiReportSource	rdf:type	owl:DatatypeProperty;
 
 iasis:strokeDate	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"strokeDate";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4255,7 +4315,7 @@ iasis:strokeDate	rdf:type	owl:DatatypeProperty;
 
 iasis:strokeReportSource	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"strokeReportSource";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4263,7 +4323,7 @@ iasis:strokeReportSource	rdf:type	owl:DatatypeProperty;
 
 iasis:ischaemicStrokeReportSource	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"ischaemicStrokeReportSource";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4271,7 +4331,7 @@ iasis:ischaemicStrokeReportSource	rdf:type	owl:DatatypeProperty;
 
 iasis:intracerebralHaemorrhageDate	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"intracerebralHaemorrhageDate";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4279,7 +4339,7 @@ iasis:intracerebralHaemorrhageDate	rdf:type	owl:DatatypeProperty;
 
 iasis:intracerebralHaemorrhageReportSource	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"intracerebralHaemorrhageReportSource";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4287,7 +4347,7 @@ iasis:intracerebralHaemorrhageReportSource	rdf:type	owl:DatatypeProperty;
 
 iasis:subarachnoidHaemorrhageDate	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"subarachnoidHaemorrhageDate";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
@@ -4295,8 +4355,34 @@ iasis:subarachnoidHaemorrhageDate	rdf:type	owl:DatatypeProperty;
 
 iasis:subarachnoidHaemorrhageReportSource	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"subarachnoidHaemorrhageReportSource";
-				rdfs:domain	iasis:ADPatient;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-11"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:hasICD10Annotation	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"hasICD10Annotation";
+				rdfs:domain	iasis:Disorder;
+				rdfs:range	iasis:Annotation;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-22"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:represents	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"represents";
+				rdfs:domain	iasis:Concept;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-22"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:hasHospitalEpisodeObservation	rdf:type	owl:ObjectProperty;
+				rdfs:label	"represents";
+				rdfs:domain	iasis:Concept;
+				rdfs:range	iasis:HospitalEpisodeObservation;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-26"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+
