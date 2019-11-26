@@ -1782,8 +1782,8 @@ iasis:variant_genomicPosition	rdf:type owl:DatatypeProperty;
 											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
-iasis:variation_effect	rdf:type owl:DatatypeProperty;
-											rdfs:label	"variation_effect";
+iasis:mutation_effect	rdf:type owl:DatatypeProperty;
+											rdfs:label	"mutation_effect";
 											rdfs:domain iasis:Variation;
 			        						        rdfs:range rdfs:Literal;
 											rdfs:comment	"";
@@ -1994,7 +1994,7 @@ iasis:predictionScore_LRT	rdf:type owl:DatatypeProperty;
 						dcterms:modified "2019-06-06"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:predictionScore_variationTaster	rdf:type owl:DatatypeProperty;
+iasis:predictionScore_MutationTaster	rdf:type owl:DatatypeProperty;
 						rdfs:label	"predictionScore_variationTaster";
 						rdfs:domain iasis:Variation;
                			                rdfs:range rdfs:Literal;
@@ -2002,7 +2002,7 @@ iasis:predictionScore_variationTaster	rdf:type owl:DatatypeProperty;
 						dcterms:modified "2019-06-06"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:predictionScore_variationAssessor	rdf:type owl:DatatypeProperty;
+iasis:predictionScore_MutationAssessor	rdf:type owl:DatatypeProperty;
 						rdfs:label	"predictionScore_variationAssessor";
 						rdfs:domain iasis:Variation;
                			                rdfs:range rdfs:Literal;
