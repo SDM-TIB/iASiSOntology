@@ -158,19 +158,12 @@ iasis:Tumor	rdf:type	owl:Class;
 			dcterms:modified "2018-04-12"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:variation	rdf:type	owl:Class;
+iasis:Variation	rdf:type	owl:Class;
 				rdfs:label	"variation";
 				rdfs:subClassOf	iasis:Concept;
 				rdfs:comment "A permanent alteration in the DNA sequence that makes up a gene, such that the sequence differs from what is found in most people.";
 				dcterms:modified "2018-04-12"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:GExp	rdf:type	owl:Class;
-			rdfs:label	"GExp";
-			rdfs:subClassOf	iasis:Concept;
-			rdfs:comment "The phenotypic manifestation of a gene or genes by the processes of genetic transcription and genetic translation.";
-			dcterms:modified "2018-04-12"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:Transcript	rdf:type	owl:Class;
 					rdfs:label	"Transcript";
@@ -249,13 +242,6 @@ iasis:NucleotideSequence	rdf:type owl:Class;
 			rdfs:comment "Includes DNA and RNAs.";
 			dcterms:modified "2018-12-10"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:Variation	rdf:type	owl:Class;
-			rdfs:label	"Variation";
-			rdfs:subClassOf	iasis:Concept;
-			rdfs:comment "";
-			dcterms:modified "2019-06-06"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 #######################################################
 ######################## Drugs ########################
@@ -1156,14 +1142,6 @@ iasis:zygosityLabel	rdf:type owl:DatatypeProperty;
 				dcterms:modified "2018-09-26"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:z_score	rdf:type	owl:DatatypeProperty;
-					rdfs:label	"z_score";
-					rdfs:domain iasis:GExp;
-				 	rdfs:range rdfs:Literal;
-					rdfs:comment	".";
-					dcterms:modified "2018-11-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
 
 iasis:variation_NucleotideSeq	rdf:type	owl:DatatypeProperty;
 								rdfs:label	"variationNucleotideSequence";
@@ -1206,14 +1184,6 @@ iasis:variation_end	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2019-11-11"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:methylation_genomicPosition	rdf:type owl:DatatypeProperty;
-						rdfs:label	"CpGislandGenomicPosition";
-						rdfs:domain iasis:CGI;
-					   	rdfs:range rdfs:Literal;	
-						rdfs:comment	"Genomic position";
-						dcterms:modified "2018-04-12"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
 
 iasis:variation_studyID	rdf:type owl:DatatypeProperty;
 						rdfs:label	"variationStudyID";
@@ -1223,14 +1193,6 @@ iasis:variation_studyID	rdf:type owl:DatatypeProperty;
 						dcterms:modified "2019-11-11"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-
-iasis:gexp_studyID	rdf:type owl:DatatypeProperty;
-					rdfs:label	"gexpStudyID";
-					rdfs:domain iasis:GExp;
-			   		rdfs:range rdfs:Literal;
-					rdfs:comment	"The ID of the srudy in which the geneExpression is mentioned";
-					dcterms:modified "2018-11-27"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:variation_cds	rdf:type owl:DatatypeProperty;
 					rdfs:label	"variationCDS";
@@ -1279,47 +1241,7 @@ iasis:tumor_origin	rdf:type owl:DatatypeProperty;
 					rdfs:comment	"Describes where the sample has originated from including the tumour type";
 					dcterms:modified "2019-05-24"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:beta_value	rdf:type owl:DatatypeProperty;
-					rdfs:label	"beta-value";
-					rdfs:domain iasis:CGI;
-				 	rdfs:range rdfs:Literal;
-					rdfs:comment	"Beta-value for the probe in the tumour sample. Only values > 0.8 (High) or < 0.2 (Low) are included.";
-					dcterms:modified "2018-04-12"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:avg_beta_value	rdf:type owl:DatatypeProperty;
-						rdfs:label	"averageBeta-value";
-						rdfs:domain iasis:CGI;
-					 	rdfs:range rdfs:Literal;
-						rdfs:comment	"Average beta-value across the normal population.";
-						dcterms:modified "2018-04-12"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:two_sided_p-value	rdf:type owl:DatatypeProperty;
-						rdfs:label	"twoSidedP-value";
-						rdfs:domain iasis:CGI;
-						rdfs:range rdfs:Literal;
-						rdfs:comment	"Combining two statistical tests in a two-part model.";
-						dcterms:modified "2018-04-12"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
  
-
-iasis:minor_allele	rdf:type owl:DatatypeProperty;
-					rdfs:label	"minorAllele";
-					rdfs:domain iasis:CNV;
-				   	rdfs:range rdfs:Literal;
-					rdfs:comment	"Number of copies of the least frequent allele.";
-					dcterms:modified "2018-04-12"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:methylation	rdf:type owl:DatatypeProperty;
-					rdfs:label	"methylation";
-					rdfs:domain	iasis:CGI;
-					rdfs:range	rdfs:Literal;
-					rdfs:comment	"Methylation level: H (High) : beta-value > 0.8, L (Low) : beta-value < 0.2 ";
-					dcterms:modified "2018-04-12"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:loh	rdf:type owl:DatatypeProperty;
 			rdfs:label	"LOH";
@@ -1336,14 +1258,6 @@ iasis:snp	rdf:type owl:DatatypeProperty;
 			rdfs:comment	"All the known SNPs are flagged as: is SNP.";
 			dcterms:modified "2019-11-11"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:regulation	rdf:type owl:DatatypeProperty;
-					rdfs:label	"Regulation";
-					rdfs:domain	iasis:GExp;
-					rdfs:range	rdfs:Literal;
-					rdfs:comment	"It could be over or under depending on the scores from different platforms if they are above or below the threshold.";
-					dcterms:modified "2018-04-12"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:variationDescription	rdf:type owl:DatatypeProperty;
 							rdfs:label	"variationDescription";
@@ -1430,38 +1344,6 @@ iasis:sample_isTakenFrom_tumor	rdf:type owl:ObjectProperty;
 								dcterms:modified "2018-04-12"^^xsd:date;
 								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:cgi_isLocatedIn_gene	rdf:type owl:ObjectProperty;
-							rdfs:label	"cgi_isLocatedIn_gene";
-							rdfs:domain iasis:CGI;
-				 			rdfs:range iasis:Gene;
-							rdfs:comment	"Relation between CGI and Gene classes.";
-							dcterms:modified "2018-04-12"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:cgi_isLocatedIn_sample	rdf:type owl:ObjectProperty;
-								rdfs:label	"cgi_isLocatedIn_sample";
-								rdfs:domain iasis:CGI;
-					 			rdfs:range iasis:Sample;
-								rdfs:comment	"Relation between CGI and Sample classes.";
-								dcterms:modified "2018-04-12"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-
-iasis:gexp_isRelatedTo_gene	rdf:type owl:ObjectProperty;
-							rdfs:label "gexp_isRelatedTo_gene";
-							rdfs:domain iasis:GExp;
-			     				rdfs:range iasis:Gene;
-							rdfs:comment	"Relation between Gexp and Gene classes.";
-							dcterms:modified "2018-09-26"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:gexp_isRelatedTo_sample	rdf:type owl:ObjectProperty;
-							rdfs:label "gexp_isRelatedTo_sample";
-							rdfs:domain iasis:GExp;
-			     				rdfs:range iasis:Sample;
-							rdfs:comment	"Relation between Gexp and Sample classes.";
-							dcterms:modified "2018-09-26"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:evidence_isRelatedTo_disorder	rdf:type owl:ObjectProperty;
 							rdfs:label	"evidence_isRelatedTo_disorder";
@@ -1636,13 +1518,6 @@ iasis:variation_isLocatedIn_upstreamGene	rdf:type owl:ObjectProperty;
 											dcterms:modified "2019-05-24"^^xsd:date;
 											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:gexpChanges_occuredIn_downstreamTranscript	rdf:type owl:ObjectProperty;
-											rdfs:label	"gexpChanges_occuredIn_downstreamTranscript";
-											rdfs:domain iasis:EQTL;
-			        						        rdfs:range iasis:Transcript;
-											rdfs:comment	"";
-											dcterms:modified "2019-05-24"^^xsd:date;
-											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 iasis:geneENSG	rdf:type owl:DatatypeProperty;
 											rdfs:label	"geneENSG";
 											rdfs:domain iasis:Gene;
@@ -1746,14 +1621,6 @@ iasis:variation_isLocatedIn_gene	rdf:type owl:ObjectProperty;
                						                rdfs:range iasis:Gene;
 									rdfs:comment	"The gene on which the variation is located.";
 									dcterms:modified "2019-06-10"^^xsd:date;
-									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:gexpChanges_occuredIn_gene	rdf:type owl:ObjectProperty;
-									rdfs:label	"DownstreamGene";
-									rdfs:domain iasis:EQTL;
-               								rdfs:range iasis:Gene;
-									rdfs:comment	"The gene where the GE level is changed.";
-									dcterms:modified "2018-07-24"^^xsd:date;
 									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
