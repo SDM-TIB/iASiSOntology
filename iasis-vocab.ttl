@@ -309,9 +309,9 @@ iasis:Phenotype	rdf:type	owl:Class;
 
 
 iasis:DrugSideEffectInteraction	rdf:type	owl:Class;
-						rdfs:label	"An effect, whether therapeutic or adverse, that is secondary to the one intended.";
+						rdfs:label	"DrugSideEffectInteraction";
 						rdfs:subClassOf	iasis:Relation;
-						rdfs:comment "";
+						rdfs:comment "The Drug SideEffect relation should be a class since has two properties";
 						dcterms:modified "2019-11-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -362,9 +362,9 @@ iasis:DrugDrugPrediction	rdf:type	owl:Class;
 iasis:DrugEnzymeInteraction	rdf:type	owl:Class;
 				rdfs:label	"DrugEnzymeInteraction";
 				rdfs:subClassOf	iasis:Relation;
-				rdfs:comment "Interactions similar to drug receptor interactions where drugs resemble the natural substrates and bind enzymes.";
+				rdfs:comment "Interaction between drugs and enzymes.";
 				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 iasis:DrugEnzymePrediction	rdf:type	owl:Class;
 				rdfs:label	"DrugEnzymePrediction";
@@ -376,9 +376,9 @@ iasis:DrugEnzymePrediction	rdf:type	owl:Class;
 iasis:DrugTargetInteraction	rdf:type	owl:Class;
 				rdfs:label	"DrugTargetInteraction";
 				rdfs:subClassOf	iasis:Relation;
-				rdfs:comment "Interactions between chemical compounds and the protein targets in the human body.";
+				rdfs:comment "Interaction between drugs and Targets.";
 				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
 iasis:DrugTargetPrediction	rdf:type	owl:Class;
@@ -647,8 +647,8 @@ iasis:DementiaDrug	rdf:type owl:Class;
 			dcterms:modified "2019-05-23"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:generalPractitionerPracticeCode	rdf:type owl:Class;
-			rdfs:label	"generalPractitionerPracticeCode";
+iasis:GeneralPractitionerPracticeCode	rdf:type owl:Class;
+			rdfs:label	"GeneralPractitionerPracticeCode";
 			rdfs:subClassOf	iasis:Concept;
 			rdfs:comment ".";
 			dcterms:modified "2019-11-22"^^xsd:date;
@@ -661,6 +661,20 @@ iasis:ConsultantMainSpeciality	rdf:type owl:Class;
 			dcterms:modified "2019-11-22"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
+
+iasis:HospitalEpisodeObservation	rdf:type owl:Class;
+			rdfs:label	"HospitalEpisodeObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment ".";
+			dcterms:modified "2019-11-26"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:ConsultantTreatmentSpeciality	rdf:type owl:Class;
+			rdfs:label	"ConsultantTreatmentSpeciality";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment ".";
+			dcterms:modified "2019-11-26"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 ##################################################################################################
 ################################### Properties ###################################################
@@ -4379,10 +4393,59 @@ iasis:represents	rdf:type	owl:DatatypeProperty;
 
 iasis:hasHospitalEpisodeObservation	rdf:type	owl:ObjectProperty;
 				rdfs:label	"represents";
-				rdfs:domain	iasis:Concept;
+				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	iasis:HospitalEpisodeObservation;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-26"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
+iasis:hospitalEpisodeType	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"hospitalEpisodeType";
+				rdfs:domain	iasis:HospitalEpisodeObservation;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-26"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:generalPractitionerPracticeCode	rdf:type	owl:ObjectProperty;
+				rdfs:label	"generalPractitionerPracticeCode";
+				rdfs:domain	iasis:HospitalEpisodeObservation;
+				rdfs:range	iasis:GeneralPractitionerPracticeCode;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-26"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:consultantMainSpeciality	rdf:type	owl:ObjectProperty;
+				rdfs:label	"ConsultantMainSpeciality";
+				rdfs:domain	iasis:HospitalEpisodeObservation;
+				rdfs:range	iasis:ConsultantMainSpeciality;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-26"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+
+iasis:consultantTreatmentSpeciality	rdf:type	owl:ObjectProperty;
+				rdfs:label	"consultantTreatmentSpeciality";
+				rdfs:domain	iasis:HospitalEpisodeObservation;
+				rdfs:range	iasis:ConsultantTreatmentSpeciality;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-26"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+
+iasis:arrayIndex	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"arrayIndex";
+				rdfs:domain	iasis:HospitalEpisodeObservation;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-26"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:diagnosisLevel	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"diagnosisLevel";
+				rdfs:domain	iasis:HospitalEpisodeObservation;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	".";
+				dcterms:modified "2019-11-26"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
