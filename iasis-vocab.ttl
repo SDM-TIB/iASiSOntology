@@ -296,7 +296,7 @@ iasis:DrugSideEffectPrediction	rdf:type	owl:Class;
 iasis:DrugSideEffectInteraction	rdf:type	owl:Class;
 						rdfs:label	"DrugSideEffectInteraction";
 						rdfs:subClassOf	iasis:Relation;
-						rdfs:comment "The Drug SideEffect relation should be a class since has two properties";
+						rdfs:comment "Effects of drugs, whether therapeutic or adverse, that are secondary to the one intended.";
 						dcterms:modified "2019-11-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -326,8 +326,8 @@ iasis:DrugDrugInteraction	rdf:type	owl:Class;
 				rdfs:label	"DrugDrugInteraction";
 				rdfs:subClassOf	iasis:Relation;
 				rdfs:comment "The relation between two drugs that interact.";
-				dcterms:modified "2019-11-21"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				dcterms:modified "2019-11-26"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:DrugDrugPrediction	rdf:type	owl:Class;
 				rdfs:label	"DrugDrugPrediction";
@@ -340,9 +340,9 @@ iasis:DrugDrugPrediction	rdf:type	owl:Class;
 iasis:DrugEnzymeInteraction	rdf:type	owl:Class;
 				rdfs:label	"DrugEnzymeInteraction";
 				rdfs:subClassOf	iasis:Relation;
-				rdfs:comment "Interaction between drugs and enzymes.";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "Interactions similar to drug receptor interactions where drugs resemble the natural substrates and bind enzymes.";
+				dcterms:modified "2019-11-26"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:DrugEnzymePrediction	rdf:type	owl:Class;
 				rdfs:label	"DrugEnzymePrediction";
@@ -354,9 +354,9 @@ iasis:DrugEnzymePrediction	rdf:type	owl:Class;
 iasis:DrugTargetInteraction	rdf:type	owl:Class;
 				rdfs:label	"DrugTargetInteraction";
 				rdfs:subClassOf	iasis:Relation;
-				rdfs:comment "Interaction between drugs and Targets.";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "Interactions between chemical compounds and the protein targets in the human body.";
+				dcterms:modified "2019-11-26"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
 iasis:DrugTargetPrediction	rdf:type	owl:Class;
@@ -386,13 +386,6 @@ iasis:Target	rdf:type	owl:Class;
 				rdfs:comment "A drug target is a molecule in the body, usually a protein, that is intrinsically associated with a particular disease process and that could be addressed by a drug to produce a desired therapeutic effect.";
 				dcterms:modified "2018-10-30"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:PredictedDrugSideEffect	rdf:type	owl:Class;
-						rdfs:label	"PredictedDrugSideEffect";
-						rdfs:subClassOf	iasis:Relation;
-						rdfs:comment "The predicted Drug SideEffect relation.";
-						dcterms:modified "2019-01-30"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 			
 iasis:DrugDisorderInteraction	rdf:type	owl:Class;
