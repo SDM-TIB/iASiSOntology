@@ -155,20 +155,13 @@ iasis:Mutation	rdf:type	owl:Class;
 				dcterms:modified "2018-04-12"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:CNV	rdf:type	owl:Class;
-			rdfs:label	"CopyNumberVariation";
+iasis:Variation	rdf:type	owl:Class;
+			rdfs:label	"Variation";
 			rdfs:subClassOf	iasis:Concept;
-			rdfs:comment "The genetic trait involving the variation of the number of copies of a particular gene present in the genome between individuals. ";
-			dcterms:modified "2018-04-12"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+			rdfs:comment "";
+			dcterms:modified "2019-06-06"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:CGI	rdf:type	owl:Class;
-
-			rdfs:label	"CpG_island";
-			rdfs:subClassOf	iasis:Concept;
-			rdfs:comment "CGIs are regions of the genome that contain a large number of CpG dinucleotide repeats. Although most CGIs linked to promoters are non-methylated, majority of CGIs may be completely methylated in normal cells.";
-			dcterms:modified "2018-04-12"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:GExp	rdf:type	owl:Class;
 			rdfs:label	"GExp";
@@ -254,13 +247,6 @@ iasis:NucleotideSequence	rdf:type owl:Class;
 			rdfs:comment "Includes DNA and RNAs.";
 			dcterms:modified "2018-12-10"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:Variation	rdf:type	owl:Class;
-			rdfs:label	"Variation";
-			rdfs:subClassOf	iasis:Concept;
-			rdfs:comment "";
-			dcterms:modified "2019-06-06"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 #######################################################
 ######################## Drugs ########################
