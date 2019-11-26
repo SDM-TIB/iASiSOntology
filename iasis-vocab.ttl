@@ -362,9 +362,9 @@ iasis:DrugDrugPrediction	rdf:type	owl:Class;
 iasis:DrugEnzymeInteraction	rdf:type	owl:Class;
 				rdfs:label	"DrugEnzymeInteraction";
 				rdfs:subClassOf	iasis:Relation;
-				rdfs:comment "Interaction between drugs and enzymes.";
+				rdfs:comment "Interactions similar to drug receptor interactions where drugs resemble the natural substrates and bind enzymes.";
 				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:DrugEnzymePrediction	rdf:type	owl:Class;
 				rdfs:label	"DrugEnzymePrediction";
@@ -376,9 +376,9 @@ iasis:DrugEnzymePrediction	rdf:type	owl:Class;
 iasis:DrugTargetInteraction	rdf:type	owl:Class;
 				rdfs:label	"DrugTargetInteraction";
 				rdfs:subClassOf	iasis:Relation;
-				rdfs:comment "Interaction between drugs and Targets.";
+				rdfs:comment "Interactions between chemical compounds and the protein targets in the human body.";
 				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
 iasis:DrugTargetPrediction	rdf:type	owl:Class;
