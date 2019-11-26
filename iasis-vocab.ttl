@@ -309,9 +309,9 @@ iasis:Phenotype	rdf:type	owl:Class;
 
 
 iasis:DrugSideEffectInteraction	rdf:type	owl:Class;
-						rdfs:label	"DrugSideEffectInteraction";
+						rdfs:label	"An effect, whether therapeutic or adverse, that is secondary to the one intended.";
 						rdfs:subClassOf	iasis:Relation;
-						rdfs:comment "The Drug SideEffect relation should be a class since has two properties";
+						rdfs:comment "";
 						dcterms:modified "2019-11-21"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
