@@ -158,27 +158,12 @@ iasis:Tumor	rdf:type	owl:Class;
 			dcterms:modified "2018-04-12"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:Mutation	rdf:type	owl:Class;
-				rdfs:label	"Mutation";
+iasis:variation	rdf:type	owl:Class;
+				rdfs:label	"variation";
 				rdfs:subClassOf	iasis:Concept;
 				rdfs:comment "A permanent alteration in the DNA sequence that makes up a gene, such that the sequence differs from what is found in most people.";
 				dcterms:modified "2018-04-12"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:CNV	rdf:type	owl:Class;
-			rdfs:label	"CopyNumberVariation";
-			rdfs:subClassOf	iasis:Concept;
-			rdfs:comment "The genetic trait involving the variation of the number of copies of a particular gene present in the genome between individuals. ";
-			dcterms:modified "2018-04-12"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:CGI	rdf:type	owl:Class;
-
-			rdfs:label	"CpG_island";
-			rdfs:subClassOf	iasis:Concept;
-			rdfs:comment "CGIs are regions of the genome that contain a large number of CpG dinucleotide repeats. Although most CGIs linked to promoters are non-methylated, majority of CGIs may be completely methylated in normal cells.";
-			dcterms:modified "2018-04-12"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:GExp	rdf:type	owl:Class;
 			rdfs:label	"GExp";
@@ -224,9 +209,9 @@ iasis:TissueSubType	rdf:type	owl:Class;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:Zygosity	rdf:type	owl:Class;
-					rdfs:label	"Mutation Zygosity";
+					rdfs:label	"variation Zygosity";
 					rdfs:subClassOf	iasis:Concept;
-					rdfs:comment "Type of mutation on whether the mutation was reported to be homozygous, heterozygous or unknown within the sample.";
+					rdfs:comment "Type of variation on whether the variation was reported to be homozygous, heterozygous or unknown within the sample.";
 					dcterms:modified "2018-09-26"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -452,14 +437,14 @@ iasis:LCPatient	rdf:type	owl:Class;
 iasis:LiquidBiopsy	rdf:type	owl:Class;
 					rdfs:label	"LiquidBiopsy";
 					rdfs:subClassOf	iasis:Test;
-					rdfs:comment	"A test done on a sample of blood to look for cancer cells from a tumor that are circulating in the blood or for pieces of DNA from tumor cells that are in the blood. It generally provides a picture of all mutations found in all tumors, if the cancer has spread.";
+					rdfs:comment	"A test done on a sample of blood to look for cancer cells from a tumor that are circulating in the blood or for pieces of DNA from tumor cells that are in the blood. It generally provides a picture of all variations found in all tumors, if the cancer has spread.";
 					dcterms:modified "2018-07-24"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:SolidBiopsy	rdf:type	owl:Class;
 					rdfs:label	"SolidBiopsy";
 					rdfs:subClassOf	iasis:Test;
-					rdfs:comment	"A sample that is taken directly from within a tumor. It generally provides a picture of the mutations found directly within an individual tumor.";
+					rdfs:comment	"A sample that is taken directly from within a tumor. It generally provides a picture of the variations found directly within an individual tumor.";
 					dcterms:modified "2019-06-17"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -1025,54 +1010,39 @@ iasis:tumorID	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2018-09-26"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:mutationID	rdf:type owl:DatatypeProperty;
-					rdfs:label "MutationID";
+iasis:variationID	rdf:type owl:DatatypeProperty;
+					rdfs:label "variationID";
 					rdfs:domain iasis:Variation;
 				  	rdfs:range rdfs:Literal;
-                  			rdfs:comment "Mutation ID.";
+                  			rdfs:comment "variation ID.";
 					dcterms:modified "2018-09-26"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
-iasis:genomic_mutationID	rdf:type owl:DatatypeProperty;
-					rdfs:label "genomic_mutationID";
+iasis:genomic_variationID	rdf:type owl:DatatypeProperty;
+					rdfs:label "genomic_variationID";
 					rdfs:domain iasis:Variation;
 				  	rdfs:range rdfs:Literal;
-                  			rdfs:comment "Mutation ID.";
+                  			rdfs:comment "variation ID.";
 					dcterms:modified "2019-11-11"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:legacy_mutationID		rdf:type owl:DatatypeProperty;
-					rdfs:label "legacy_mutationID";
+iasis:legacy_variationID		rdf:type owl:DatatypeProperty;
+					rdfs:label "legacy_variationID";
 					rdfs:domain iasis:Variation;
 				  	rdfs:range rdfs:Literal;
-                  			rdfs:comment "Mutation ID.";
+                  			rdfs:comment "variation ID.";
 					dcterms:modified "2019-11-11"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:mutationLabel	rdf:type owl:DatatypeProperty;
-					rdfs:label "MutationName";
-					rdfs:domain iasis:Mutation;
+iasis:variationLabel	rdf:type owl:DatatypeProperty;
+					rdfs:label "variationName";
+					rdfs:domain iasis:variation;
 				  	rdfs:range rdfs:Literal;
-                  			rdfs:comment "Mutation Name.";
+                  			rdfs:comment "variation Name.";
 					dcterms:modified "2018-09-26"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:cgiID	rdf:type owl:DatatypeProperty;
-					rdfs:label "CGI_ID";
-					rdfs:domain iasis:CGI;
-				  	rdfs:range rdfs:Literal;
-                  			rdfs:comment "CGI ID.";
-					dcterms:modified "2018-09-26"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:cnvID	rdf:type owl:DatatypeProperty;
-					rdfs:label "CNV_ID";
-					rdfs:domain iasis:CNV;
-				  	rdfs:range rdfs:Literal;
-                  			rdfs:comment "CNV ID.";
-					dcterms:modified "2018-09-26"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:sampleSource	rdf:type owl:DatatypeProperty;
 					rdfs:label "SampleSource";
@@ -1195,76 +1165,44 @@ iasis:z_score	rdf:type	owl:DatatypeProperty;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
-iasis:mutation_NucleotideSeq	rdf:type	owl:DatatypeProperty;
-								rdfs:label	"MutationNucleotideSequence";
+iasis:variation_NucleotideSeq	rdf:type	owl:DatatypeProperty;
+								rdfs:label	"variationNucleotideSequence";
 								rdfs:domain	iasis:Variation;
 								rdfs:range rdfs:Literal;
-								rdfs:comment "The new column produced from Mutation CDS column, excluding c. Those including extra characters are ignored to be added to this column.";
+								rdfs:comment "The new column produced from variation CDS column, excluding c. Those including extra characters are ignored to be added to this column.";
 								dcterms:modified "2019-11-11"^^xsd:date;
 								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:cnv_chromosome	rdf:type owl:DatatypeProperty;
-						rdfs:label	"cnvChromosome";
-						rdfs:domain iasis:CNV;
-				 		rdfs:range rdfs:Literal;
-						rdfs:comment	"Chromose in which the CNV is located on";
-						dcterms:modified "2018-04-12"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:mutation_chromosome	rdf:type owl:DatatypeProperty;
-							rdfs:label	"mutationChromosome";
+iasis:variation_chromosome	rdf:type owl:DatatypeProperty;
+							rdfs:label	"variationChromosome";
 							rdfs:domain iasis:Variation;
 				 			rdfs:range rdfs:Literal;
-							rdfs:comment	"Chromosome in which the mutation is occured";
+							rdfs:comment	"Chromosome in which the variation is occured";
 							dcterms:modified "2019-11-11"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:cgi_chromosome	rdf:type owl:DatatypeProperty;
-						rdfs:label	"CpGislandChromosome";
-						rdfs:domain iasis:CGI;
-				 		rdfs:range rdfs:Literal;
-						rdfs:comment	"Chromosome in which the CGI is loacted";
-						dcterms:modified "2018-04-12"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-
-iasis:mutation_strand	rdf:type owl:DatatypeProperty;
-						rdfs:label	"mutationStrand";
+iasis:variation_strand	rdf:type owl:DatatypeProperty;
+						rdfs:label	"variationStrand";
 						rdfs:domain iasis:Variation;
 			 			rdfs:range rdfs:Literal;
-						rdfs:comment	"Strand in which the mutation is occured";
+						rdfs:comment	"Strand in which the variation is occured";
 						dcterms:modified "2019-11-11"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:cnv_start	rdf:type owl:DatatypeProperty;
-				rdfs:label	"cnvStartPosition";
-				rdfs:domain iasis:CNV;
-				rdfs:range rdfs:Literal;
-				rdfs:comment	"Starting point of CNV";
-				dcterms:modified "2018-04-12"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:mutation_start	rdf:type owl:DatatypeProperty;
-						rdfs:label	"mutationStartPosition";
+iasis:variation_start	rdf:type owl:DatatypeProperty;
+						rdfs:label	"variationStartPosition";
 						rdfs:domain iasis:Variation;
 						rdfs:range rdfs:Literal;
-						rdfs:comment	"Starting point of the mutation";
+						rdfs:comment	"Starting point of the variation";
 						dcterms:modified "2019-11-11"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:cnv_end	rdf:type owl:DatatypeProperty;
-				rdfs:label	"cnvEndPosition";
-				rdfs:domain iasis:CNV;
-		  		rdfs:range rdfs:Literal;
-				rdfs:comment	"Ending point of CNV";
-				dcterms:modified "2018-04-12"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:mutation_end	rdf:type owl:DatatypeProperty;
-					rdfs:label	"mutationEndPosition";
+iasis:variation_end	rdf:type owl:DatatypeProperty;
+					rdfs:label	"variationEndPosition";
 					rdfs:domain iasis:Variation;
 		  			rdfs:range rdfs:Literal;
-					rdfs:comment	"Ending point of the mutation";
+					rdfs:comment	"Ending point of the variation";
 					dcterms:modified "2019-11-11"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -1277,29 +1215,14 @@ iasis:methylation_genomicPosition	rdf:type owl:DatatypeProperty;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
-iasis:cnv_studyID	rdf:type owl:DatatypeProperty;
-					rdfs:label	"cnvStudyID";
-					rdfs:domain iasis:CNV;
-			   		rdfs:range rdfs:Literal;
-					rdfs:comment	"The ID of the study in which the CNV is mentioned";
-					dcterms:modified "2018-11-27"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:mutation_studyID	rdf:type owl:DatatypeProperty;
-						rdfs:label	"mutationStudyID";
+iasis:variation_studyID	rdf:type owl:DatatypeProperty;
+						rdfs:label	"variationStudyID";
 						rdfs:domain iasis:Variation;
 			   			rdfs:range rdfs:Literal;
-						rdfs:comment	"The ID of the study in which the mutation is mentioned";
+						rdfs:comment	"The ID of the study in which the variation is mentioned";
 						dcterms:modified "2019-11-11"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:cgi_studyID	rdf:type owl:DatatypeProperty;
-					rdfs:label	"CpGislandStudyID";
-					rdfs:domain iasis:CGI;
-			   		rdfs:range rdfs:Literal;
-					rdfs:comment	"The ID of the study in which the CGI is mentioned";
-					dcterms:modified "2018-11-27"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:gexp_studyID	rdf:type owl:DatatypeProperty;
 					rdfs:label	"gexpStudyID";
@@ -1309,19 +1232,19 @@ iasis:gexp_studyID	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2018-11-27"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:mutation_cds	rdf:type owl:DatatypeProperty;
-					rdfs:label	"mutationCDS";
+iasis:variation_cds	rdf:type owl:DatatypeProperty;
+					rdfs:label	"variationCDS";
 					rdfs:domain iasis:Variation;
 				   	rdfs:range rdfs:Literal;
-					rdfs:comment	"Nucleotide sequence of the mutation";
+					rdfs:comment	"Nucleotide sequence of the variation";
 					dcterms:modified "2019-11-11"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:mutation_aa	rdf:type owl:DatatypeProperty;
-					rdfs:label	"mutationAA";
+iasis:variation_aa	rdf:type owl:DatatypeProperty;
+					rdfs:label	"variationAA";
 					rdfs:domain iasis:Variation;
 				  	rdfs:range rdfs:Literal;
-					rdfs:comment	"Peptide sequence of the mutation";
+					rdfs:comment	"Peptide sequence of the variation";
 					dcterms:modified "2019-11-11"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>. 
 
@@ -1337,12 +1260,12 @@ iasis:fathmm_score	rdf:type owl:DatatypeProperty;
 					rdfs:label	"fathmmScore";
 					rdfs:domain iasis:Variation;
 				   	rdfs:range rdfs:Literal;
-					rdfs:comment	"A single p-value, ranging from 0 to 1. Scores above 0.5 are deleterious, but in order to highlight the most significant data in COSMIC, only scores ≥ 0.7 are classified as 'Pathogenic'. Mutations are classed as 'Neutral' if the score is ≤ 0.5.";
+					rdfs:comment	"A single p-value, ranging from 0 to 1. Scores above 0.5 are deleterious, but in order to highlight the most significant data in COSMIC, only scores ≥ 0.7 are classified as 'Pathogenic'. variations are classed as 'Neutral' if the score is ≤ 0.5.";
 					dcterms:modified "2019-11-11"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:mutation_somatic_status	rdf:type owl:DatatypeProperty;
-								rdfs:label	"mutation_somatic_status";
+iasis:variation_somatic_status	rdf:type owl:DatatypeProperty;
+								rdfs:label	"variation_somatic_status";
 								rdfs:domain iasis:Variation;
 							  	rdfs:range rdfs:Literal;
 								rdfs:comment	"Information on whether the sample was reported to be Confirmed Somatic, Previously Reported or Variant of unknown origin.";
@@ -1380,14 +1303,7 @@ iasis:two_sided_p-value	rdf:type owl:DatatypeProperty;
 						rdfs:comment	"Combining two statistical tests in a two-part model.";
 						dcterms:modified "2018-04-12"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:total_cn	rdf:type owl:DatatypeProperty;
-				rdfs:label	"totalCopyNumber";
-				rdfs:domain iasis:CNV;
-			   	rdfs:range rdfs:Literal;
-				rdfs:comment	"Sum of the major and minor allele counts.";
-				dcterms:modified "2018-04-12"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.   
+ 
 
 iasis:minor_allele	rdf:type owl:DatatypeProperty;
 					rdfs:label	"minorAllele";
@@ -1429,28 +1345,20 @@ iasis:regulation	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2018-04-12"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:mutationDescription	rdf:type owl:DatatypeProperty;
-							rdfs:label	"mutationDescription";
+iasis:variationDescription	rdf:type owl:DatatypeProperty;
+							rdfs:label	"variationDescription";
 							rdfs:domain	iasis:Variation;
 							rdfs:range	rdfs:Literal;
-							rdfs:comment "Is extracted from mutation dataset.";
+							rdfs:comment "Is extracted from variation dataset.";
 							dcterms:modified "2019-11-11"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:mutationType	rdf:type owl:DatatypeProperty;
-					rdfs:label	"MutationType";
-					rdfs:domain	iasis:CNV;
-					rdfs:range	rdfs:Literal;
-					rdfs:comment "Is extracted from CNV dataset";
-					dcterms:modified "2018-04-12"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
 iasis:sampleSource	rdf:type	owl:DatatypeProperty;
 					rdfs:label	"sampleSource";
 					rdfs:domain	iasis:Sample;
 					rdfs:range	rdfs:Literal;
-					rdfs:comment "Appears in resistanceMutation dataset";
+					rdfs:comment "Appears in resistancevariation dataset";
 					dcterms:modified "2018-04-12"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -1474,44 +1382,44 @@ iasis:gene_isTranscribedAs_transcript	rdf:type	owl:ObjectProperty;
 											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
-iasis:mutation_mentionedIn_publication	rdf:type owl:ObjectProperty;
-										rdfs:label	"MutationMentionedInPublication";
+iasis:variation_mentionedIn_publication	rdf:type owl:ObjectProperty;
+										rdfs:label	"variationMentionedInPublication";
 										rdfs:domain iasis:Variation;
 				   						rdfs:range iasis:Publication;
-										rdfs:comment	"Extracted from Mutation dataset.";
+										rdfs:comment	"Extracted from variation dataset.";
 										dcterms:modified "2019-11-11"^^xsd:date;
 										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
-iasis:mutation_isLocatedIn_gene	rdf:type owl:ObjectProperty;
-								rdfs:label	"MutationIsLocatedInGene";
+iasis:variation_isLocatedIn_gene	rdf:type owl:ObjectProperty;
+								rdfs:label	"variationIsLocatedInGene";
 								rdfs:domain iasis:Variation;
 				  				rdfs:range iasis:Gene;
-								rdfs:comment	"The gene in which the mutation occurs.";
+								rdfs:comment	"The gene in which the variation occurs.";
 								dcterms:modified "2019-11-11"^^xsd:date;
 								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:mutation_isLocatedIn_sample	rdf:type owl:ObjectProperty;
-									rdfs:label	"mutation_isLocatedIn_sample";
+iasis:variation_isLocatedIn_sample	rdf:type owl:ObjectProperty;
+									rdfs:label	"variation_isLocatedIn_sample";
 									rdfs:domain iasis:Variation;
 				  					rdfs:range iasis:Sample;
-									rdfs:comment	"The sample in which the mutation occurs.";
+									rdfs:comment	"The sample in which the variation occurs.";
 									dcterms:modified "2019-11-11"^^xsd:date;
 									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:mutation_isResistantTo_drug	rdf:type	owl:ObjectProperty;
-									rdfs:label	"mutation_isResistantTo_drug";
+iasis:variation_isResistantTo_drug	rdf:type	owl:ObjectProperty;
+									rdfs:label	"variation_isResistantTo_drug";
 									rdfs:domain	iasis:Variation;
 									rdfs:range	iasis:Drug;
-									rdfs:comment	" Yes: if reported mutation confers drug resistance. -: means resistance data is unknown; there is no evidence for resistance or it is a known primary mutation.";
+									rdfs:comment	" Yes: if reported variation confers drug resistance. -: means resistance data is unknown; there is no evidence for resistance or it is a known primary variation.";
 									dcterms:modified "2018-04-12"^^xsd:date;
 									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:mutation_isLocatedIn_transcript	rdf:type	owl:ObjectProperty;	
-										rdfs:label	"mutation_isLocatedIn_transcript";
+iasis:variation_isLocatedIn_transcript	rdf:type	owl:ObjectProperty;	
+										rdfs:label	"variation_isLocatedIn_transcript";
 										rdfs:domain iasis:Variation;
 				  						rdfs:range iasis:Transcript;
-										rdfs:comment	"The transcript in which the mutation occurs.";
+										rdfs:comment	"The transcript in which the variation occurs.";
 										dcterms:modified "2019-11-11"^^xsd:date;
 										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 iasis:sample_isTakenFrom_tumor	rdf:type owl:ObjectProperty;
@@ -1535,23 +1443,6 @@ iasis:cgi_isLocatedIn_sample	rdf:type owl:ObjectProperty;
 								rdfs:domain iasis:CGI;
 					 			rdfs:range iasis:Sample;
 								rdfs:comment	"Relation between CGI and Sample classes.";
-								dcterms:modified "2018-04-12"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:cnv_isLocatedIn_gene	rdf:type owl:ObjectProperty;
-							rdfs:label	"cnv_isLocatedIn_gene";
-							rdfs:domain iasis:CNV;
-			     			        rdfs:range iasis:Gene;
-							rdfs:comment	"Relation between CNV and Gene classes.";
-							dcterms:modified "2018-04-12"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-
-iasis:cnv_isLocatedIn_sample	rdf:type owl:ObjectProperty;
-								rdfs:label	"cnv_isLocatedIn_sample";
-								rdfs:domain iasis:CNV;
-				  				rdfs:range iasis:Sample;
-								rdfs:comment	"Relation between CNV and Sample classes.";
 								dcterms:modified "2018-04-12"^^xsd:date;
 								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -1972,8 +1863,8 @@ iasis:variant_genomicPosition	rdf:type owl:DatatypeProperty;
 											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
-iasis:mutation_effect	rdf:type owl:DatatypeProperty;
-											rdfs:label	"mutation_effect";
+iasis:variation_effect	rdf:type owl:DatatypeProperty;
+											rdfs:label	"variation_effect";
 											rdfs:domain iasis:Variation;
 			        						        rdfs:range rdfs:Literal;
 											rdfs:comment	"";
@@ -2184,16 +2075,16 @@ iasis:predictionScore_LRT	rdf:type owl:DatatypeProperty;
 						dcterms:modified "2019-06-06"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:predictionScore_MutationTaster	rdf:type owl:DatatypeProperty;
-						rdfs:label	"predictionScore_MutationTaster";
+iasis:predictionScore_variationTaster	rdf:type owl:DatatypeProperty;
+						rdfs:label	"predictionScore_variationTaster";
 						rdfs:domain iasis:Variation;
                			                rdfs:range rdfs:Literal;
 						rdfs:comment	"";
 						dcterms:modified "2019-06-06"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:predictionScore_MutationAssessor	rdf:type owl:DatatypeProperty;
-						rdfs:label	"predictionScore_MutationAssessor";
+iasis:predictionScore_variationAssessor	rdf:type owl:DatatypeProperty;
+						rdfs:label	"predictionScore_variationAssessor";
 						rdfs:domain iasis:Variation;
                			                rdfs:range rdfs:Literal;
 						rdfs:comment	"";
@@ -2950,11 +2841,11 @@ iasis:hasLiquidBiopsy	rdf:type        owl:ObjectProperty;
 						dcterms:modified "2017-10-04"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:hasMutation	rdf:type        owl:ObjectProperty;	
-				rdfs:label	"hasMutation";
+iasis:hasvariation	rdf:type        owl:ObjectProperty;	
+				rdfs:label	"hasvariation";
 						rdfs:domain	iasis:LiquidBiopsy;
 						rdfs:range	iasis:Variation;
-						rdfs:comment	"Connection between liquid biopsy test and the mutation that has been observed.";
+						rdfs:comment	"Connection between liquid biopsy test and the variation that has been observed.";
 						dcterms:modified "2019-11-11"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
