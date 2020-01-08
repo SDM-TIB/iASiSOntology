@@ -3961,13 +3961,13 @@ iasis:birthYear		rdf:type	owl:DatatypeProperty;
 				dcterms:modified "2019-11-11"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:age_stoped_smoking	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"age_stoped_smoking";
+iasis:stoppedSmokingAge	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"stoppedSmokingAge";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.	
+				rdfs:comment	"";
+				dcterms:modified "2020-01-08"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 iasis:lengthOf_longest_irritableEpisode		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"lengthOf_longest_irritableEpisode";
