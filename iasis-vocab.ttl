@@ -3443,13 +3443,13 @@ iasis:existenceOf_otherToxicity		rdf:type	owl:DatatypeProperty;
 							dcterms:modified "2019-11-11"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:existenceOf_brainMetastasis	rdf:type	owl:DatatypeProperty;
-							rdfs:label	"existenceOf_brainMetastasis";
+iasis:existenceOf_brainMetastasis_inOncologicalTreatmentLine	rdf:type	owl:DatatypeProperty;
+							rdfs:label	"existenceOf_brainMetastasis_inOncologicalTreatmentLine";
 							rdfs:domain	iasis:OncologicalTreatmentLine;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment "";
-							dcterms:modified "2019-11-11"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+							dcterms:modified "2019-03-12"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 													
 iasis:hasNonOncologicalDrug	rdf:type	owl:ObjectProperty;
 										rdfs:label	"hasNonOncologicalDrug";
