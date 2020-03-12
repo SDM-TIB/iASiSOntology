@@ -2908,22 +2908,6 @@ iasis:existenceOf_familiarAntecedents	rdf:type	owl:DatatypeProperty;
 										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
-iasis:existenceOf_systemicProgression	rdf:type	owl:DatatypeProperty;
-										rdfs:label	"existenceOf_systemicProgression";
-										rdfs:domain	iasis:LCPatient;
-										rdfs:range	rdfs:Literal;
-										rdfs:comment	"Whether the patient has developed systemic progression which means a progression of the tumor to other organs apart from lungs (true/ false/ not studied).";
-										dcterms:modified "2019-07-02"^^xsd:date;
-										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:existenceOf_localProgression	rdf:type	owl:DatatypeProperty;
-									rdfs:label	"existenceOf_localProgression";
-									rdfs:domain	iasis:LCPatient;
-									rdfs:range	rdfs:Literal;
-									rdfs:comment	"Whether the patient has developed local progression which means a progression of the tumor in the lungs (true/ false/ not studied).";
-									dcterms:modified "2019-07-02"^^xsd:date;
-									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
 iasis:existenceOf_brainMetastasis	rdf:type	owl:DatatypeProperty;
 									rdfs:label	"existenceOf_brainMetastasis";
 									rdfs:domain	iasis:LCPatient;
@@ -3453,22 +3437,6 @@ iasis:existenceOf_neurologicalToxicity	rdf:type	owl:DatatypeProperty;
 
 iasis:existenceOf_otherToxicity		rdf:type	owl:DatatypeProperty;
 							rdfs:label	"existenceOf_otherToxicity";
-							rdfs:domain	iasis:OncologicalTreatmentLine;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment "";
-							dcterms:modified "2019-11-11"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:existenceOf_localProgression	rdf:type	owl:DatatypeProperty;
-							rdfs:label	"existenceOf_localProgression";
-							rdfs:domain	iasis:OncologicalTreatmentLine;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment "";
-							dcterms:modified "2019-11-11"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:existenceOf_systemicProgression	rdf:type	owl:DatatypeProperty;
-							rdfs:label	"existenceOf_systemicProgression";
 							rdfs:domain	iasis:OncologicalTreatmentLine;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment "";
@@ -4259,4 +4227,3 @@ iasis:diagnosisLevel	rdf:type	owl:DatatypeProperty;
 				rdfs:comment	".";
 				dcterms:modified "2019-11-26"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
