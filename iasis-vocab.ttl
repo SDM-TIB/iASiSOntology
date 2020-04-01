@@ -2244,6 +2244,15 @@ iasis:variant_mentionedIn_publication	rdf:type owl:ObjectProperty;
 						dcterms:modified "2019-11-11"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
+iasis:cosmicID	rdf:type owl:DatatypeProperty;
+					rdfs:label	"cosmicID";
+					rdfs:domain iasis:Variation;
+				   	rdfs:range rdfs:Literal;
+					rdfs:comment	"";
+					dcterms:modified "2020-04-01"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+
 
 #######################################################
 ######################### Drugs #######################
@@ -2657,6 +2666,14 @@ iasis:predictionMethod	rdf:type	owl:DatatypeProperty;
                			                rdfs:range rdfs:Literal;
 						rdfs:comment	"Predictions Method";
 						dcterms:modified "2019-1-11"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:methodAbbreviation	rdf:type	owl:DatatypeProperty;
+						rdfs:label	"methodAbbreviation";
+						rdfs:domain iasis:DrugDrugPrediction;
+               			                rdfs:range rdfs:Literal;
+						rdfs:comment	"Abbreviation of Predictions Method";
+						dcterms:modified "2020-04-01"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 iasis:interaction_isRelatedTo_Disease	rdf:type        owl:ObjectProperty;	
