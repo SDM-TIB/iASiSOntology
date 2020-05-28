@@ -85,60 +85,131 @@ iasis:Author	rdf:type	owl:Class;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 iasis:MENTIONED_IN	rdf:type	owl:Class;
-					rdfs:label	"MentionedIn";
+					rdfs:label	"MENTIONED_IN";
 					rdfs:subClassOf iasis:Relation;
 					rdfs:comment	"A relation that shows in which publication each specific CUI term has been appeared.";
 					dcterms:modified "2017-10-23"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
 iasis:HAS_TOPIC		rdf:type	owl:Class;
-				rdfs:label	"HasTopic";
+				rdfs:label	"HAS_TOPIC";
 				rdfs:subClassOf iasis:Relation;
 				rdfs:comment	"A relation that shows which CUI has been appeared in each specific publication.";
 				dcterms:modified "2017-10-23"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:ASSOCIATED_WITH	rdf:type owl:Class;
-						rdfs:label	"AssociatedWith";
+						rdfs:label	"ASSOCIATED_WITH";
 						rdfs:subClassOf iasis:Relation;
 						rdfs:comment	"UMLS Annotation.";
 						dcterms:modified "2017-10-23"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
 iasis:CAUSES	rdf:type	owl:Class;
-				rdfs:label	"Causes";
+				rdfs:label	"CAUSES";
 				rdfs:subClassOf iasis:Relation;
 				rdfs:comment	"UMLS Annotation.";
 				dcterms:modified "2017-10-23"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
 iasis:INHIBITS	rdf:type	owl:Class;
-				rdfs:label	"Inhibits";
+				rdfs:label	"INHIBITS";
 				rdfs:subClassOf iasis:Relation;
 				rdfs:comment	"UMLS Annotation.";
 				dcterms:modified "2017-10-23"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
 iasis:INTERACTS_WITH	rdf:type	owl:Class;
-					rdfs:label	"InteractsWith";
+					rdfs:label	"INTERACTS_WITH";
 					rdfs:subClassOf iasis:Relation;
 					rdfs:comment	"UMLS Annotation.";
 					dcterms:modified "2017-10-23"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
 iasis:PREDISPOSES	rdf:type	owl:Class;
-					rdfs:label	"Predisposes";
+					rdfs:label	"PREDISPOSES";
 					rdfs:subClassOf iasis:Relation;
 					rdfs:comment	"UMLS Annotation.";
 					dcterms:modified "2017-10-23"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
 
 iasis:STIMULATES 	rdf:type	owl:Class;
-					rdfs:label	"Stimulates";
+					rdfs:label	"STIMULATES";
 					rdfs:subClassOf iasis:Relation;
 					rdfs:comment	"UMLS Annotation.";
 					dcterms:modified "2017-10-23"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+
+iasis:AFFECTS		rdf:type	owl:Class;
+				rdfs:label	"AFFECTS";
+				rdfs:subClassOf iasis:Relation;
+				rdfs:comment	"";
+				dcterms:modified "2020-05-28"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:DISRUPTS		rdf:type	owl:Class;
+				rdfs:label	"DISRUPTS";
+				rdfs:subClassOf iasis:Relation;
+				rdfs:comment	"";
+				dcterms:modified "2020-05-28"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:AUGMENTS		rdf:type	owl:Class;
+				rdfs:label	"AUGMENTS";
+				rdfs:subClassOf iasis:Relation;
+				rdfs:comment	"";
+				dcterms:modified "2020-05-28"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:ADMINISTERED_TO		rdf:type	owl:Class;
+							rdfs:label	"ADMINISTERED_TO";
+							rdfs:subClassOf iasis:Relation;
+							rdfs:comment	"";
+							dcterms:modified "2020-05-28"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:MANIFESTATION_OF		rdf:type	owl:Class;
+							rdfs:label	"MANIFESTATION_OF";
+							rdfs:subClassOf iasis:Relation;
+							rdfs:comment	"";
+							dcterms:modified "2020-05-28"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:TREATS	rdf:type	owl:Class;
+				rdfs:label	"TREATS";
+				rdfs:subClassOf iasis:Relation;
+				rdfs:comment	"";
+				dcterms:modified "2020-05-28"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:LOCATION_OF	rdf:type	owl:Class;
+					rdfs:label	"LOCATION_OF";
+					rdfs:subClassOf iasis:Relation;
+					rdfs:comment	"";
+					dcterms:modified "2020-05-28"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:PART_OF	rdf:type	owl:Class;
+				rdfs:label	"PART_OF";
+				rdfs:subClassOf iasis:Relation;
+				rdfs:comment	"";
+				dcterms:modified "2020-05-28"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:PROCESS_OF	rdf:type	owl:Class;
+					rdfs:label	"PROCESS_OF";
+					rdfs:subClassOf iasis:Relation;
+					rdfs:comment	"";
+					dcterms:modified "2020-05-28"^^xsd:date;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:COEXISTS_WITH		rdf:type	owl:Class;
+						rdfs:label	"COEXISTS_WITH";
+						rdfs:subClassOf iasis:Relation;
+						rdfs:comment	"";
+						dcterms:modified "2020-05-28"^^xsd:date;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																																				
+				
 
 #######################################################
 ####################### Genomics ######################
