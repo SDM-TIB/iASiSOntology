@@ -1045,8 +1045,8 @@ iasis:pLi	rdf:type owl:DatatypeProperty;
 					rdfs:label "pLi";
 					rdfs:domain iasis:Gene;
 				  	rdfs:range rdfs:Literal;
-                  			rdfs:comment ".";
-					dcterms:modified "2019-06-06"^^xsd:date;
+                  			rdfs:comment "The pLI score is the probability that a given gene falls into the Haploinsufficient category, therefore is extremely intolerant of loss-of-function variation.";
+					dcterms:modified "2020-06-15"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 iasis:pRec	rdf:type owl:DatatypeProperty;
@@ -1058,11 +1058,11 @@ iasis:pRec	rdf:type owl:DatatypeProperty;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 iasis:pNull	rdf:type owl:DatatypeProperty;
-					rdfs:label "pRec";
+					rdfs:label "pNull";
 					rdfs:domain iasis:Gene;
 				  	rdfs:range rdfs:Literal;
-                  			rdfs:comment ".";
-					dcterms:modified "2019-06-06"^^xsd:date;
+                  			rdfs:comment "The probability of being tolerant to both heterozygous and homozygous LoF variants.";
+					dcterms:modified "2020-06-15"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 iasis:sampleLabel	rdf:type owl:DatatypeProperty;
@@ -1086,16 +1086,16 @@ iasis:hasLiquidBiopsySeqSample	rdf:type owl:ObjectProperty;
 					rdfs:label "hasLiquidBiopsySeqSample";
 					rdfs:domain iasis:LCPatient;
 				  	rdfs:range iasis:LiquidBiopsy;
-                  			rdfs:comment ".";
-					dcterms:modified "2019-01-01"^^xsd:date;
+                  			rdfs:comment "Relationship between a patient and the liquid biopsy.";
+					dcterms:modified "2020-06-15"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 iasis:hasSolidBiopsySeqSample	rdf:type owl:ObjectProperty;
 					rdfs:label "hasSolidBiopsySeqSample";
 					rdfs:domain iasis:LCPatient;
 				  	rdfs:range iasis:SolidBiopsy;
-                  			rdfs:comment ".";
-					dcterms:modified "2019-01-01"^^xsd:date;
+                  			rdfs:comment "Relationship between a patient and the Solid Biopsy.";
+					dcterms:modified "2020-06-15"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 iasis:tumorID	rdf:type owl:DatatypeProperty;
