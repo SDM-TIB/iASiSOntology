@@ -289,7 +289,7 @@ iasis:Zygosity	rdf:type	owl:Class;
 iasis:Evidence	rdf:type	owl:Class;
 					rdfs:label	"Evidence";
 					rdfs:subClassOf	iasis:Concept;
-					rdfs:comment "";
+					rdfs:comment "Shows the proved association between concepts (such as variation, disease, drugs, etc) based on literatures or clincial observations.";
 					dcterms:modified "2019-06-06"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
@@ -440,7 +440,7 @@ iasis:DrugTargetPrediction	rdf:type	owl:Class;
 iasis:Disorder	rdf:type	owl:Class;
 				rdfs:label	"Disorder";
 				rdfs:subClassOf	iasis:Concept;
-				rdfs:comment "An illness that disrupts normal physical or mental functions";
+				rdfs:comment "A particular abnormal condition that negatively affects the structure or function of all or part of an organism, and that is not due to any immediate external injury.";
 				dcterms:modified "2020-06-15"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -589,7 +589,7 @@ iasis:PatientSimilarity   rdf:type owl:Class;
 iasis:OncologicalSurgeryObservation	rdf:type	owl:Class;
 									rdfs:label	"OncologicalSurgeryObservation";
 									rdfs:subClassOf iasis:Observation;
-									rdfs:comment "";
+									rdfs:comment "Records of patients in clinical notes that are related to oncological surgeries";
 									dcterms:modified "2019-07-02"^^xsd:date;
 									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -603,7 +603,7 @@ iasis:OncologicalSurgery	rdf:type	owl:Class;
 iasis:OncologicalTreatmentLine	rdf:type	owl:Class;
 								rdfs:label	"OncologicalTreatmentLine";
 								rdfs:subClassOf iasis:Concept;
-								rdfs:comment "Combination of drugs or cancer treatments";
+								rdfs:comment "Records of patients in clinical notes that are related to oncological treatment lines";
 								dcterms:modified "2020-06-15"^^xsd:date;
 								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -699,14 +699,14 @@ iasis:ADDrug	rdf:type owl:Class;
 iasis:GeneralPractitionerPracticeCode	rdf:type owl:Class;
 			rdfs:label	"GeneralPractitionerPracticeCode";
 			rdfs:subClassOf	iasis:Concept;
-			rdfs:comment ".";
+			rdfs:comment "General Practitioner Practice Code";
 			dcterms:modified "2019-11-22"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 iasis:ConsultantMainSpeciality	rdf:type owl:Class;
 			rdfs:label	"ConsultantMainSpeciality";
 			rdfs:subClassOf	iasis:Concept;
-			rdfs:comment "Consultation with the main specialist.";
+			rdfs:comment "The main speciality of the consultant";
 			dcterms:modified "2019-11-22"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
@@ -714,14 +714,14 @@ iasis:ConsultantMainSpeciality	rdf:type owl:Class;
 iasis:HospitalEpisodeObservation	rdf:type owl:Class;
 			rdfs:label	"HospitalEpisodeObservation";
 			rdfs:subClassOf	iasis:Concept;
-			rdfs:comment ".";
+			rdfs:comment "Records that are related to the episodes of hospitalization of patients";
 			dcterms:modified "2019-11-26"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 iasis:ConsultantTreatmentSpeciality	rdf:type owl:Class;
 			rdfs:label	"ConsultantTreatmentSpeciality";
 			rdfs:subClassOf	iasis:Concept;
-			rdfs:comment ".";
+			rdfs:comment "The main speciality of the treatment consultant";
 			dcterms:modified "2019-11-26"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
@@ -918,7 +918,7 @@ iasis:confidence     rdf:type     owl:DatatypeProperty;
 							rdfs:label	"confidence";
 							rdfs:domain	iasis:Relation;
                                                       	rdfs:range	rdfs:Literal;
-							rdfs:comment "Probability of interaction occurrence.";
+							rdfs:comment "Confidence score of the concept";
 							dcterms:modified "2020-06-15"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
@@ -926,7 +926,7 @@ iasis:negation     rdf:type     owl:DatatypeProperty;
 							rdfs:label	"negation";
 							rdfs:domain	iasis:Relation;
                                                       	rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
+							rdfs:comment "negation";
 							dcterms:modified "2019-05-24"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
@@ -1045,7 +1045,7 @@ iasis:pLi	rdf:type owl:DatatypeProperty;
 					rdfs:label "pLi";
 					rdfs:domain iasis:Gene;
 				  	rdfs:range rdfs:Literal;
-                  			rdfs:comment "The pLI score is the probability that a given gene falls into the Haploinsufficient category, therefore is extremely intolerant of loss-of-function variation.";
+                  	rdfs:comment "Probability of being loss-of-function intolerant. The closer pLI is to one, the more LoF intolerant the gene appears to be. pLI >= 0.9 is considered as an extremely LoF intolerant set of genes.";
 					dcterms:modified "2020-06-15"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
@@ -1053,7 +1053,7 @@ iasis:pRec	rdf:type owl:DatatypeProperty;
 					rdfs:label "pRec";
 					rdfs:domain iasis:Gene;
 				  	rdfs:range rdfs:Literal;
-                  			rdfs:comment ".";
+                  	rdfs:comment "Probability of being loss-of-function intolerant of two loss-of-function variants (like recessive genes, observed ~ 0.5expected)";
 					dcterms:modified "2019-06-06"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
@@ -1061,7 +1061,7 @@ iasis:pNull	rdf:type owl:DatatypeProperty;
 					rdfs:label "pNull";
 					rdfs:domain iasis:Gene;
 				  	rdfs:range rdfs:Literal;
-                  			rdfs:comment "The probability of being tolerant to both heterozygous and homozygous LoF variants.";
+                  	rdfs:comment "Probability of being completely tolerant of loss-of-function variation";
 					dcterms:modified "2020-06-15"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
@@ -1192,7 +1192,7 @@ iasis:primaryHistology	rdf:type owl:ObjectProperty;
 			rdfs:label	"PrimaryHistology";
 			rdfs:domain iasis:Sample;          
 		  	rdfs:range iasis:TissueType;
-			rdfs:comment	"Name of Primary Histology.";
+			rdfs:comment	"The histological classification of sample.";
 			dcterms:modified "2019-05-24"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
@@ -1200,7 +1200,7 @@ iasis:histologySubtype1	rdf:type owl:ObjectProperty;
 			rdfs:label	"HistologySubtype1";
 			rdfs:domain iasis:Sample;          
 		  	rdfs:range iasis:TissueSubType;
-			rdfs:comment	"Name of Subtype Histology 1.";
+			rdfs:comment	"Further histological classification (level 1) of the sample.";
 			dcterms:modified "2019-05-24"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
@@ -1208,7 +1208,7 @@ iasis:tissueSubtype1	rdf:type owl:ObjectProperty;
 			rdfs:label	"TissueSubtype1";
 			rdfs:domain iasis:Sample;          
 		  	rdfs:range iasis:SubTissue;
-			rdfs:comment	"Name of Tissue Subtype 1.";
+			rdfs:comment	"Sub classification (level 1) of the samples tissue of origin.";
 			dcterms:modified "2020-066-22"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
@@ -1216,7 +1216,7 @@ iasis:tissueSubtype2	rdf:type owl:ObjectProperty;
 			rdfs:label	"TissueSubType2";
 			rdfs:domain iasis:Sample;          
 		  	rdfs:range iasis:SubTissue;
-			rdfs:comment	".";
+			rdfs:comment	"Sub classification (level 2) of the samples tissue of origin.";
 			dcterms:modified "2019-05-24"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
@@ -1224,7 +1224,7 @@ iasis:primaryTissue	rdf:type owl:ObjectProperty;
 			rdfs:label	"PrimaryTissue";
 			rdfs:domain iasis:Sample;          
 		  	rdfs:range iasis:Tissue;
-			rdfs:comment	".";
+			rdfs:comment	"The primary tissue/cancer from which the sample originated.";
 			dcterms:modified "2019-05-24"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
