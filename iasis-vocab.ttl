@@ -1036,7 +1036,7 @@ iasis:gene_tissueSpecificity	rdf:type owl:DatatypeProperty;
 					rdfs:label "gene_tissueSpecificity";
 					rdfs:domain iasis:Gene;
 				  	rdfs:range rdfs:Literal;
-                  			rdfs:comment "gene tissue specificity.";
+                  			rdfs:comment "Gene tissue specificity.";
 					dcterms:modified "2020-06-15"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
@@ -1208,8 +1208,8 @@ iasis:tissueSubtype1	rdf:type owl:ObjectProperty;
 			rdfs:label	"TissueSubtype1";
 			rdfs:domain iasis:Sample;          
 		  	rdfs:range iasis:SubTissue;
-			rdfs:comment	".";
-			dcterms:modified "2019-05-24"^^xsd:date;
+			rdfs:comment	"Name of Tissue Subtype 1.";
+			dcterms:modified "2020-066-22"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 iasis:tissueSubtype2	rdf:type owl:ObjectProperty;
