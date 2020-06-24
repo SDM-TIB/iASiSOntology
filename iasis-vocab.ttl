@@ -103,42 +103,42 @@ iasis:ASSOCIATED_WITH	rdf:type owl:Class;
 						rdfs:subClassOf iasis:Relation;
 						rdfs:comment	"A relation that shows the association between two CUIs.";
 						dcterms:modified "2017-10-23"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:CAUSES	rdf:type	owl:Class;
 				rdfs:label	"CAUSES";
 				rdfs:subClassOf iasis:Relation;
 				rdfs:comment	"Shows the causal relationship between two CUIs.";
 				dcterms:modified "2017-10-23"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:INHIBITS	rdf:type	owl:Class;
 				rdfs:label	"INHIBITS";
 				rdfs:subClassOf iasis:Relation;
 				rdfs:comment	"Shows the inhibitory relationship between two CUIs.";
 				dcterms:modified "2017-10-23"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:INTERACTS_WITH	rdf:type	owl:Class;
 					rdfs:label	"INTERACTS_WITH";
 					rdfs:subClassOf iasis:Relation;
 					rdfs:comment	"A relation that shows the interaction between two CUIs.";
 					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:PREDISPOSES	rdf:type	owl:Class;
 					rdfs:label	"PREDISPOSES";
 					rdfs:subClassOf iasis:Relation;
 					rdfs:comment	"Shows the predispositional relationship between two CUIs.";
 					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:STIMULATES 	rdf:type	owl:Class;
 					rdfs:label	"STIMULATES";
 					rdfs:subClassOf iasis:Relation;
 					rdfs:comment	"Shows the stimulational relationship between two CUIs.";
 					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:AFFECTS		rdf:type	owl:Class;
 				rdfs:label	"AFFECTS";
@@ -242,6 +242,28 @@ iasis:Variation	rdf:type	owl:Class;
 			rdfs:comment "The difference in DNA sequences between individuals within a population. It may occur in germ cells.";
 			dcterms:modified "2019-11-26"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:GDNA-Variation	rdf:type	owl:Class;
+			rdfs:label	"GDNA-Variation";
+			rdfs:subClassOf	iasis:Variation;
+			rdfs:comment "Nucleotide variation on genomic DNA (including both coding and non-coding regions.)";
+			dcterms:modified "2019-11-26"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:CDNA-Variation	rdf:type	owl:Class;
+			rdfs:label	"CDNA-Variation";
+			rdfs:subClassOf	iasis:Variation;
+			rdfs:comment "Nucleotide variation on coding DNA";
+			dcterms:modified "2019-11-26"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
+iasis:Peptide-Variation	rdf:type	owl:Class;
+			rdfs:label	"Peptide-Variation";
+			rdfs:subClassOf	iasis:Variation;
+			rdfs:comment "Amino acid sequence variation";
+			dcterms:modified "2019-11-26"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.						
+
 
 iasis:Transcript	rdf:type	owl:Class;
 					rdfs:label	"Transcript";
@@ -759,7 +781,7 @@ iasis:provenance	rdf:type	owl:ObjectProperty;
 					rdfs:range	iasis:SourceName;
 					rdfs:comment	"The name of the source from which the concept is extracted or derived";
 					dcterms:modified "2017-11-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:hasAnnotation	rdf:type owl:ObjectProperty;
 								rdfs:label	"hasAnnotation";
