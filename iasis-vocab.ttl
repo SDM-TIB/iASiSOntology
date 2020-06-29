@@ -1219,6 +1219,9 @@ iasis:primaryHistology	rdf:type owl:ObjectProperty;
 =======
 			rdfs:comment	"The histological classification of sample.";
 >>>>>>> 9c7bce9635e355443b474c874b0bffa8350b34a6
+=======
+			rdfs:comment	"The histological classification of sample.";
+>>>>>>> 9c7bce9635e355443b474c874b0bffa8350b34a6
 			dcterms:modified "2019-05-24"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
@@ -1236,6 +1239,9 @@ iasis:tissueSubtype1	rdf:type owl:ObjectProperty;
 		  	rdfs:range iasis:SubTissue;
 <<<<<<< HEAD
 			rdfs:comment	".";
+=======
+			rdfs:comment	"Sub classification (level 1) of the samples tissue of origin.";
+>>>>>>> 9c7bce9635e355443b474c874b0bffa8350b34a6
 =======
 			rdfs:comment	"Sub classification (level 1) of the samples tissue of origin.";
 >>>>>>> 9c7bce9635e355443b474c874b0bffa8350b34a6
