@@ -4024,8 +4024,8 @@ iasis:apoe_WES_status	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"apoe_WES_status";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
+				rdfs:comment	"Status of  Apolipoprotein E gene and whole-exome sequence (WES).";
+				dcterms:modified "2020-06-29"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.			
 
 	
@@ -4033,8 +4033,8 @@ iasis:apoe_genetic_status	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"apoe_genetic_status";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
+				rdfs:comment	"Status of  Apolipoprotein E gene.";
+				dcterms:modified "2020-06-29"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 iasis:trem2_status	rdf:type	owl:DatatypeProperty;
