@@ -2107,7 +2107,7 @@ iasis:predictionScore_Polyphen2_HVAR	rdf:type owl:DatatypeProperty;
 iasis:predictionScore_LRT	rdf:type owl:DatatypeProperty;
 						rdfs:label	"predictionScore_LRT";
 						rdfs:domain iasis:Variation;
-               					dfs:range rdfs:Literal;
+						rdfs:range rdfs:Literal;
 						rdfs:comment	"Prediction score based on LRT algorithm.";
 						dcterms:modified "2020-07-01"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
