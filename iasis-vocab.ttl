@@ -313,7 +313,7 @@ iasis:Evidence	rdf:type	owl:Class;
 					rdfs:subClassOf	iasis:Concept;
 					rdfs:comment "Shows the proved association between concepts (such as variation, disease, drugs, etc) based on literatures or clincial observations.";
 					dcterms:modified "2020-06-22"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 					dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:Protein	rdf:type	owl:Class;
@@ -724,7 +724,7 @@ iasis:GeneralPractitionerPracticeCode	rdf:type owl:Class;
 			rdfs:subClassOf	iasis:Concept;
 			rdfs:comment "General Practitioner Practice Code";
 			dcterms:modified "2020-06-22"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 			dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:ConsultantMainSpeciality	rdf:type owl:Class;
@@ -732,7 +732,7 @@ iasis:ConsultantMainSpeciality	rdf:type owl:Class;
 			rdfs:subClassOf	iasis:Concept;
 			rdfs:comment "The main speciality of the consultant";
 			dcterms:modified "2020-06-22"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 			dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
@@ -741,7 +741,7 @@ iasis:HospitalEpisodeObservation	rdf:type owl:Class;
 			rdfs:subClassOf	iasis:Concept;
 			rdfs:comment "Records that are related to the episodes of hospitalization of patients";
 			dcterms:modified "2020-06-22"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 			dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:ConsultantTreatmentSpeciality	rdf:type owl:Class;
@@ -749,7 +749,7 @@ iasis:ConsultantTreatmentSpeciality	rdf:type owl:Class;
 			rdfs:subClassOf	iasis:Concept;
 			rdfs:comment "The main speciality of the treatment consultant";
 			dcterms:modified "2020-06-22"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 			dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 ##################################################################################################
@@ -947,7 +947,7 @@ iasis:confidence     rdf:type     owl:DatatypeProperty;
                            				rdfs:range	rdfs:Literal;
 							rdfs:comment "Confidence score of the concept";
 							dcterms:modified "2020-06-22"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 							dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:negation     rdf:type     owl:DatatypeProperty;
@@ -956,7 +956,7 @@ iasis:negation     rdf:type     owl:DatatypeProperty;
                             				rdfs:range	rdfs:Literal;
 							rdfs:comment "negation";
 							dcterms:modified "2020-06-22"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 							dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:relation_isRelatedTo_annotation	rdf:type        owl:ObjectProperty;	
@@ -1076,7 +1076,7 @@ iasis:pLi	rdf:type owl:DatatypeProperty;
 				  	rdfs:range rdfs:Literal;
                   			rdfs:comment "Probability of being loss-of-function intolerant. The closer pLI is to one, the more LoF intolerant the gene appears to be. pLI >= 0.9 is considered as an extremely LoF intolerant set of genes.";
 					dcterms:modified "2020-06-22"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 					dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:pRec	rdf:type owl:DatatypeProperty;
@@ -1085,7 +1085,7 @@ iasis:pRec	rdf:type owl:DatatypeProperty;
 				  	rdfs:range rdfs:Literal;
                   			rdfs:comment "Probability of being loss-of-function intolerant of two loss-of-function variants (like recessive genes, observed ~ 0.5expected)";
 					dcterms:modified "2020-06-22"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 					dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:pNull	rdf:type owl:DatatypeProperty;
@@ -1094,7 +1094,7 @@ iasis:pNull	rdf:type owl:DatatypeProperty;
 				  	rdfs:range rdfs:Literal;
                   			rdfs:comment "Probability of being completely tolerant of loss-of-function variation";
 					dcterms:modified "2020-06-22"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 					dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:sampleLabel	rdf:type owl:DatatypeProperty;
@@ -1226,7 +1226,7 @@ iasis:primaryHistology	rdf:type owl:ObjectProperty;
 		  	rdfs:range iasis:TissueType;
 			rdfs:comment	"The histological classification of sample.";
 			dcterms:modified "2020-06-22"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 			dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:histologySubtype1	rdf:type owl:ObjectProperty;
@@ -1235,7 +1235,7 @@ iasis:histologySubtype1	rdf:type owl:ObjectProperty;
 		  	rdfs:range iasis:TissueSubType;
 			rdfs:comment	"Further histological classification (level 1) of the sample.";
 			dcterms:modified "2020-06-22"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 			dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:tissueSubtype1	rdf:type owl:ObjectProperty;
@@ -1244,7 +1244,7 @@ iasis:tissueSubtype1	rdf:type owl:ObjectProperty;
 		  	rdfs:range iasis:SubTissue;
 			rdfs:comment	"Sub classification (level 1) of the samples tissue of origin.";
 			dcterms:modified "2020-06-22"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 			dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:tissueSubtype2	rdf:type owl:ObjectProperty;
@@ -1253,7 +1253,7 @@ iasis:tissueSubtype2	rdf:type owl:ObjectProperty;
 		  	rdfs:range iasis:SubTissue;
 			rdfs:comment	"Sub classification (level 2) of the samples tissue of origin.";
 			dcterms:modified "2020-06-22"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 			dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:primaryTissue	rdf:type owl:ObjectProperty;
@@ -1262,7 +1262,7 @@ iasis:primaryTissue	rdf:type owl:ObjectProperty;
 		  	rdfs:range iasis:Tissue;
 			rdfs:comment	"The primary tissue/cancer from which the sample originated.";
 			dcterms:modified "2020-06-22"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 			dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:zygosity	rdf:type owl:ObjectProperty;
@@ -1271,7 +1271,7 @@ iasis:zygosity	rdf:type owl:ObjectProperty;
 				rdfs:range	iasis:Zygosity;	
 				rdfs:comment	".";
 				dcterms:modified "2020-06-22"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:zygosityLabel	rdf:type owl:DatatypeProperty;
@@ -1514,7 +1514,7 @@ iasis:evidenceReported_initialYear	rdf:type owl:DatatypeProperty;
 			        							rdfs:range rdfs:Literal;
 											rdfs:comment "Evidence that is reported in the initial year.";
 											dcterms:modified "2020-06-30"^^xsd:date;
-											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 											dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:evidenceReported_finalYear	rdf:type owl:DatatypeProperty;
@@ -1523,7 +1523,7 @@ iasis:evidenceReported_finalYear	rdf:type owl:DatatypeProperty;
 			        							rdfs:range rdfs:Literal;
 											rdfs:comment "Evidence that is reported in the final year.";
 											dcterms:modified "2020-06-30"^^xsd:date;
-											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 											dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:evidenceDirection	rdf:type owl:DatatypeProperty;
@@ -1656,7 +1656,7 @@ iasis:variation_isLocatedIn_upstreamGene	rdf:type owl:ObjectProperty;
 			        							rdfs:range iasis:Gene;
 											rdfs:comment "the relation between the variation and the upstream gene on which it had occured.";
 											dcterms:modified "2020-06-30"^^xsd:date;
-											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 											dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:gexpChanges_occuredIn_downstreamTranscript	rdf:type owl:ObjectProperty;
@@ -1665,7 +1665,7 @@ iasis:gexpChanges_occuredIn_downstreamTranscript	rdf:type owl:ObjectProperty;
 			        							rdfs:range iasis:Transcript;
 											rdfs:comment	"The relation between the gene expression changes and related downstream transcript.";
 											dcterms:modified "2020-06-30"^^xsd:date;
-											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 											dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:geneENSG	rdf:type owl:DatatypeProperty;
@@ -1959,7 +1959,7 @@ iasis:omim	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment "The relation between the variant and the reference gene.";
 						dcterms:modified "2020-06-30"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:all_AF_1000GP	rdf:type owl:DatatypeProperty;
@@ -1968,7 +1968,7 @@ iasis:all_AF_1000GP	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment "The allele frequency from all populations of the 1000 Genomes Project";
 						dcterms:modified "2020-06-30"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:all_AF_ExAC	rdf:type owl:DatatypeProperty;
@@ -1977,7 +1977,7 @@ iasis:all_AF_ExAC	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment "The allele frequency of the variant in the Exome Aggregation Consortium (ExAC) database, all populations";
 						dcterms:modified "2020-06-30"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:africanAmerican_AF_ExAC	rdf:type owl:DatatypeProperty;
@@ -2042,7 +2042,7 @@ iasis:all_AF_gnomAD_genome	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment "The allele frequency of the variant in the Genome Aggregation database (gnomad) database, all populations";
 						dcterms:modified "2020-06-30"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:all_AF_gnomAD_exome	rdf:type owl:DatatypeProperty;
@@ -2051,7 +2051,7 @@ iasis:all_AF_gnomAD_exome	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment "The allele frequency of the variant in the Genome Aggregation database (gnomad) database, all populations";
 						dcterms:modified "2020-06-30"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
@@ -2061,7 +2061,7 @@ iasis:all_AF_Kaviar	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment "The allele frequency of the variant in the Kaviar database. http://db.systemsbiology.net/kaviar/";
 						dcterms:modified "2020-06-30"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
@@ -2088,7 +2088,7 @@ iasis:predictionScore_Polyphen2_HDIV	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment	"Polyphen2 score based on the HumDiv database. The database was compiled from all damaging alleles with known effects on the molecular function causing human Mendelian diseases, present in the UniProtKB database, together with differences between human proteins and their closely related mammalian homologs, assumed to be non-damaging.";
 						dcterms:modified "2020-07--1"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:predictionScore_Polyphen2_HVAR	rdf:type owl:DatatypeProperty;
@@ -2097,7 +2097,7 @@ iasis:predictionScore_Polyphen2_HVAR	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment	"Polyphen2_HVAR_score based on HumVar database. This database consisted of all human disease-causing mutations from UniProtKB, together with common human nsSNPs (MAF>1%) without annotated involvement in disease, which were treated as non-damaging.";
 						dcterms:modified "2020-07-01"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:predictionScore_LRT	rdf:type owl:DatatypeProperty;
@@ -2106,7 +2106,7 @@ iasis:predictionScore_LRT	rdf:type owl:DatatypeProperty;
                					dfs:range rdfs:Literal;
 						rdfs:comment	"Prediction score based on LRT algorithm.";
 						dcterms:modified "2020-07-01"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:predictionScore_MutationTaster	rdf:type owl:DatatypeProperty;
@@ -2115,7 +2115,7 @@ iasis:predictionScore_MutationTaster	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment	"Prediction score based on MutationTaster algorithm.";
 						dcterms:modified "2020-07-01"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:predictionScore_MutationAssessor	rdf:type owl:DatatypeProperty;
@@ -2124,7 +2124,7 @@ iasis:predictionScore_MutationAssessor	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment	"Prediction score based on MutationAssessor algorithm.";
 						dcterms:modified "2020-07-01"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
@@ -2134,7 +2134,7 @@ iasis:predictionScore_FATHMM	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment	"Protein Variation Effect Analyzer.";
 						dcterms:modified "2020-07-01"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
@@ -2144,7 +2144,7 @@ iasis:prediction_FATHMM	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment	"Protein Variation Effect Analyzer";
 						dcterms:modified "2020-07-01"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:predictionScore_CADD	rdf:type owl:DatatypeProperty;
@@ -2153,7 +2153,7 @@ iasis:predictionScore_CADD	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment	"CADD Combined annotation dependent depletion. (Linear kernel SVM)";
 						dcterms:modified "2020-07-01"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:predictionScore_fathmm_MKL	rdf:type owl:DatatypeProperty;
@@ -2162,7 +2162,7 @@ iasis:predictionScore_fathmm_MKL	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment	"Predicting the effects of both coding and non-coding variants using nucleotide-based HMMs.";
 						dcterms:modified "2020-07-01"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:prediction_fathmm_MKL	rdf:type owl:DatatypeProperty;
@@ -2171,7 +2171,7 @@ iasis:prediction_fathmm_MKL	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment	"Predicting the effects of both coding and non-coding variants using nucleotide-based HMMs.";
 						dcterms:modified "2020-07-01"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:predictionScore_GERP_RS	rdf:type owl:DatatypeProperty;
@@ -2180,7 +2180,7 @@ iasis:predictionScore_GERP_RS	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment	"Genome Evolutionary Rate Profiling ++. (maximum likelihood estimation procedure)";
 						dcterms:modified "2020-07-01"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:predictionScore_phyloP100way_vertebrate	rdf:type owl:DatatypeProperty;
@@ -2189,7 +2189,7 @@ iasis:predictionScore_phyloP100way_vertebrate	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment	"Phylogentic p-values";
 						dcterms:modified "2020-07-01"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
@@ -2199,7 +2199,7 @@ iasis:predictionScore_phyloP20way_mammalian	rdf:type owl:DatatypeProperty;
 						rdfs:range rdfs:Literal;
 						rdfs:comment	"Phylogentic p-values";
 						dcterms:modified "2020-07-01"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:predictionScore_phastCons100way_vertebrate	rdf:type owl:DatatypeProperty;
@@ -2208,7 +2208,7 @@ iasis:predictionScore_phastCons100way_vertebrate	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment	"A phylogenetic hidden Markov model (phylo-HMM) Use 7 species.";
 						dcterms:modified "2020-07-01"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
@@ -2218,7 +2218,7 @@ iasis:predictionScore_phastCons20way_mammalian	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment	"A phylogenetic hidden Markov model (phylo-HMM) Use 7 species.";
 						dcterms:modified "2020-07-01"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
@@ -2228,7 +2228,7 @@ iasis:predictionScore_SiPhy	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment	"Probablistic framework, HMM Use 29 species.";
 						dcterms:modified "2020-07-01"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:proteinDomain_Interpro	rdf:type owl:DatatypeProperty;
@@ -2237,7 +2237,7 @@ iasis:proteinDomain_Interpro	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment	"Interpro id.";
 						dcterms:modified "2020-07-01"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:sample_AF	rdf:type owl:DatatypeProperty;
@@ -2246,7 +2246,7 @@ iasis:sample_AF	rdf:type owl:DatatypeProperty;
                					rdfs:range rdfs:Literal;
 						rdfs:comment	"Allele frequency.";
 						dcterms:modified "2020-07-01"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:variantType_AF	rdf:type owl:ObjectProperty;
@@ -3326,7 +3326,7 @@ iasis:ecogList      rdf:type     owl:DatatypeProperty;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment "A list of patient performance status evaluated based on ECOG.";
 							dcterms:modified "2020-07-01"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 							dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:stageList      rdf:type     owl:DatatypeProperty;
@@ -4057,7 +4057,7 @@ iasis:apoe_WES_status	rdf:type	owl:DatatypeProperty;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	"Status of Apolipoprotein E gene in the whole-exome sequence (WES).";
 				dcterms:modified "2020-07-01"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;	
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;	
 				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.		
 
 	
@@ -4067,7 +4067,7 @@ iasis:apoe_genetic_status	rdf:type	owl:DatatypeProperty;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	"Status of Apolipoprotein E gene in the genetic dataset.";
 				dcterms:modified "2020-07-01"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:trem2_status	rdf:type	owl:DatatypeProperty;
@@ -4076,7 +4076,7 @@ iasis:trem2_status	rdf:type	owl:DatatypeProperty;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	"Status of TREM2 gene in the whole-exome sequence (WES).";
 				dcterms:modified "2020-07-01"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:birthYear		rdf:type	owl:DatatypeProperty;
