@@ -752,6 +752,13 @@ iasis:ConsultantTreatmentSpeciality	rdf:type owl:Class;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 			dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
+iasis:MisdiagnosisObservation	rdf:type owl:Class;
+			rdfs:label	"MisdiagnosisObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "";
+			dcterms:modified "2020-07-08"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
 ##################################################################################################
 ################################### Properties ###################################################
 ##################################################################################################
