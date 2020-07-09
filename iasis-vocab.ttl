@@ -249,6 +249,20 @@ iasis:GDNA-Variation	rdf:type	owl:Class;
 			rdfs:comment "Nucleotide variation on genomic DNA (including both coding and non-coding regions.)";
 			dcterms:modified "2019-11-26"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+			
+iasis:GDNA-Variation1	rdf:type owl:Class;
+			rdfs:label	"GDNA-Variation1";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "Nucleotide variation on genomic DNA (including both coding and non-coding regions.)";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:GDNA-Variation2	rdf:type owl:Class;
+			rdfs:label	"GDNA-Variation2";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "Nucleotide variation on genomic DNA (including both coding and non-coding regions.)";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 iasis:CDNA-Variation	rdf:type	owl:Class;
 			rdfs:label	"CDNA-Variation";
@@ -488,6 +502,27 @@ iasis:DrugDisorderInteraction	rdf:type	owl:Class;
 				rdfs:comment "A drug-induced disorder.";
 				dcterms:modified "2019-11-21"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				
+iasis:Annotation1	rdf:type owl:Class;
+			rdfs:label	"Annotation1";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment ".";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:Annotation2	rdf:type owl:Class;
+			rdfs:label	"Annotation2";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment ".";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:Annotation3	rdf:type owl:Class;
+			rdfs:label	"Annotation3";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment ".";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 #######################################################
 ################## Clinical notes #####################
@@ -760,6 +795,148 @@ iasis:MisdiagnosisObservation	rdf:type owl:Class;
 			dcterms:modified "2020-07-09"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 			dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+			
+iasis:DiagnosisObservation	rdf:type owl:Class;
+			rdfs:label	"DiagnosisObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment ".";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:CompletedEducationObservation	rdf:type owl:Class;
+			rdfs:label	"CompletedEducationObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "Education process completed by the patient.";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:StartedSmokingObservation	rdf:type owl:Class;
+			rdfs:label	"StartedSmokingObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "Period of started smoking by the patient.";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:AlcoholIntakeObservation	rdf:type owl:Class;
+			rdfs:label	"AlcoholIntakeObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "Alcohol intake by the patient.";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:SecondaryCauseOfDeathObservation	rdf:type owl:Class;
+			rdfs:label	"SecondaryCauseOfDeathObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "The secondary cause of the Patient's death.";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:CurrentTobaccoSmokingObservation	rdf:type owl:Class;
+			rdfs:label	"CurrentTobaccoSmokingObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "The patient is current tobacco smoking.";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:MainDiagnosisObservation	rdf:type owl:Class;
+			rdfs:label	"MainDiagnosisObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "The main diagnosis of the patient.";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:SecondaryDiagnosisObservation	rdf:type owl:Class;
+			rdfs:label	"SecondaryDiagnosisObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "The secondary diagnosis of the patient.";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:EverSmokedObservation	rdf:type owl:Class;
+			rdfs:label	"EverSmokedObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "The patient ever smoked .";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:LongestDepressionEpisodeObservation	rdf:type owl:Class;
+			rdfs:label	"LongestDepressionEpisodeObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "The longest depression episode of the patient.";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:NonCancerIllnessObservation	rdf:type owl:Class;
+			rdfs:label	"NonCancerIllnessObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "Patient's non-cancer illnesses.";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:DailyNumberOfCigarettesObservation	rdf:type owl:Class;
+			rdfs:label	"DailyNumberOfCigarettesObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "The daily number of cigarettes consumed by the patient.";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:PackYearsOfSmokingObservation	rdf:type owl:Class;
+			rdfs:label	"PackYearsOfSmokingObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "The number of cigarettes packs smoking per years by the patient.";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:PastTobaccoSmokingObservation	rdf:type owl:Class;
+			rdfs:label	"PastTobaccoSmokingObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "The patient was tobacco smoking.";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:PlateletCountObservation	rdf:type owl:Class;
+			rdfs:label	"PlateletCountObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "Platelet count of the patient.";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:SmokingStatusObservation	rdf:type owl:Class;
+			rdfs:label	"SmokingStatusObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "Smoking status of the patient.";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:TreatmentObservation	rdf:type owl:Class;
+			rdfs:label	"TreatmentObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "The patient's treatment.";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:CancerTypeObservation	rdf:type owl:Class;
+			rdfs:label	"CancerTypeObservation";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "Cancer type of the patient.";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:Treatment	rdf:type owl:Class;
+			rdfs:label	"Treatment";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment "Treatment.";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+iasis:Period	rdf:type owl:Class;
+			rdfs:label	"Period";
+			rdfs:subClassOf	iasis:Concept;
+			rdfs:comment ".";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			
+						
 
 ##################################################################################################
 ################################### Properties ###################################################
