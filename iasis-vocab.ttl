@@ -755,9 +755,10 @@ iasis:ConsultantTreatmentSpeciality	rdf:type owl:Class;
 iasis:MisdiagnosisObservation	rdf:type owl:Class;
 			rdfs:label	"MisdiagnosisObservation";
 			rdfs:subClassOf	iasis:Concept;
-			rdfs:comment "";
-			dcterms:modified "2020-07-08"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+			rdfs:comment "Information about misdiagnosis episodes that each patient may have had.";
+			dcterms:modified "2020-07-09"^^xsd:date;
+			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+			dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 ##################################################################################################
 ################################### Properties ###################################################
@@ -1276,8 +1277,8 @@ iasis:zygosity	rdf:type owl:ObjectProperty;
 				rdfs:label	"Zygosity";
 				rdfs:domain	iasis:Variation;
 				rdfs:range	iasis:Zygosity;	
-				rdfs:comment	".";
-				dcterms:modified "2020-06-22"^^xsd:date;
+				rdfs:comment "The relation between Variation and Zygosity.";
+				dcterms:modified "2020-07-09"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -2595,7 +2596,7 @@ iasis:dse_StandardDeviation	rdf:type	owl:DatatypeProperty;
 							rdfs:label	"dse_StandardDeviation";
 							rdfs:domain	iasis:DrugSideEffectInteraction;
 							rdfs:range	rdfs:Literal;
-							rdfs:commnet	"Represents standard deviation from average frequecy of particular drug having specific side effect.";
+							rdfs:comment	"Represents standard deviation from average frequecy of particular drug having specific side effect.";
 							dcterms:modified "2018-07-24"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -2945,7 +2946,7 @@ iasis:hasDate	rdf:type        owl:DatatypeProperty;
 						rdfs:label	"hasDate";
 						rdfs:domain	iasis:Concept;
 						rdfs:range	rdfs:Literal;
-						rdfs:comment	"Has date.";
+						rdfs:comment "Related date.";
 						dcterms:modified "2020-06-24"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -2953,7 +2954,7 @@ iasis:hasPerformanceObservation	rdf:type	owl:ObjectProperty;
 						rdfs:label	"hasPerformanceObservation";
 						rdfs:domain	iasis:LCPatient;
 						rdfs:range	iasis:PerformanceObservation;
-						rdfs:comment	"Performance Status of the patient on a specific date";
+						rdfs:comment "Performance Status of the patient on a specific date";
 						dcterms:modified "2020-06-24"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
@@ -3241,7 +3242,7 @@ iasis:hasDiagnosisTumorStage   rdf:type     owl:ObjectProperty;
 							rdfs:label	"hasDiagnosisTumorStage";
 							rdfs:domain	iasis:Diagnosis;
 							rdfs:range	iasis:TumorStage;
-							rdfs:comment ".";
+							rdfs:comment "The tumor stage at the time of the diagnosis.";
 							dcterms:modified "2018-11-27"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
@@ -3457,17 +3458,18 @@ iasis:hasOncologicalSurgery	rdf:type        owl:ObjectProperty;
 											rdfs:label	"hasOncologicalSurgery";
 											rdfs:domain	iasis:OncologicalSurgeryObservation;
 											rdfs:range	iasis:OncologicalSurgery;
-											rdfs:comment	"";
-											dcterms:modified "2019-07-02"^^xsd:date;
+											rdfs:comment "A relation between each oncological surgery observation and related data.";
+											dcterms:modified "2020-07-09"^^xsd:date;
 											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:hasOncologicalSurgeryObservation	rdf:type        owl:ObjectProperty;	
 											rdfs:label	"hasOncologicalSurgeryObservation";
 											rdfs:domain	iasis:LCPatient;
 											rdfs:range	iasis:OncologicalSurgeryObservation;
-											rdfs:comment	"";
-											dcterms:modified "2019-11-11"^^xsd:date;
-											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos//>.
+											rdfs:comment "Patients observations regarding surgeries on oncological sites.";
+											dcterms:modified "2020-07-09"^^xsd:date;
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos//>;
+											dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
 iasis:existenceOf_complication	rdf:type        owl:DatatypeProperty;	
@@ -3698,9 +3700,10 @@ iasis:manufacturer       rdf:type     owl:DatatypeProperty;
 							rdfs:label	"manufacturer";
 							rdfs:domain	iasis:LCImage;
 							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+							rdfs:comment "Extra charactersitics of the images.";
+							dcterms:modified "2020-07-09"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+							dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:studyDescription       rdf:type     owl:DatatypeProperty;
 							rdfs:label	"studyDescription";
@@ -3723,9 +3726,10 @@ iasis:sliceThickness       rdf:type     owl:DatatypeProperty;
 							rdfs:label	"sliceThickness";
 							rdfs:domain	iasis:LCImage;
 							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+							rdfs:comment "Extra charactersitics of the images.";
+							dcterms:modified "2020-07-09"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+							dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:protocolName       rdf:type     owl:DatatypeProperty;
 							rdfs:label	"protocolName";
@@ -3747,7 +3751,7 @@ iasis:patientPositionLabel     rdf:type     owl:DatatypeProperty;
 							rdfs:label	"patientPositionLabel";
 							rdfs:domain	iasis:PatientPosition;
 							rdfs:range	rdfs:Literal;
-							rdfs:comment "Label of the patient position.";
+							rdfs:comment "Label of the patient position for the lung image.";
 							dcterms:modified "2020-06-26"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.							
 
@@ -3755,81 +3759,91 @@ iasis:rows       rdf:type     owl:DatatypeProperty;
 							rdfs:label	"rows";
 							rdfs:domain	iasis:LCImage;
 							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+							rdfs:comment "Extra charactersitics of the images.";
+							dcterms:modified "2020-07-09"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+							dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:columns       rdf:type     owl:DatatypeProperty;
 							rdfs:label	"columns";
 							rdfs:domain	iasis:LCImage;
 							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+							rdfs:comment "Extra charactersitics of the images.";
+							dcterms:modified "2020-07-09"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+							dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:pixelSpacingX       rdf:type     owl:DatatypeProperty;
 							rdfs:label	"pixelSpacingX";
 							rdfs:domain	iasis:LCImage;
 							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+							rdfs:comment "Extra charactersitics of the images.";
+							dcterms:modified "2020-07-09"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+							dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:pixelSpacingY      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"pixelSpacingY";
 							rdfs:domain	iasis:LCImage;
 							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+							rdfs:comment "Extra charactersitics of the images.";
+							dcterms:modified "2020-07-09"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+							dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:bitsAllocated      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"bitsAllocated";
 							rdfs:domain	iasis:LCImage;
 							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+							rdfs:comment "Extra charactersitics of the images.";
+							dcterms:modified "2020-07-09"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+							dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:bitsStored      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"bitsStored";
 							rdfs:domain	iasis:LCImage;
 							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+							rdfs:comment "Extra charactersitics of the images.";
+							dcterms:modified "2020-07-09"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+							dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:highBit      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"highBit";
 							rdfs:domain	iasis:LCImage;
 							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+							rdfs:comment "Extra charactersitics of the images.";
+							dcterms:modified "2020-07-09"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+							dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:rescaleIntercept      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"rescaleIntercept";
 							rdfs:domain	iasis:LCImage;
 							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+							rdfs:comment "Extra charactersitics of the images.";
+							dcterms:modified "2020-07-09"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+							dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:rescaleSlope      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"rescaleSlope";
 							rdfs:domain	iasis:LCImage;
 							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+							rdfs:comment "Extra charactersitics of the images.";
+							dcterms:modified "2020-07-09"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+							dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:huphm      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"huphm";
 							rdfs:domain	iasis:LCImage;
 							rdfs:range	rdfs:Literal;
-							rdfs:comment ".";
-							dcterms:modified "2018-11-25"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+							rdfs:comment "Extra charactersitics of the images.";
+							dcterms:modified "2020-07-09"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+							dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:lungLaterality      rdf:type     owl:ObjectProperty;
 							rdfs:label	"lungLaterality";
@@ -4119,305 +4133,342 @@ iasis:birthYear		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"birthYear";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The year of the birth.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:stoppedSmokingAge	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"stoppedSmokingAge";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	"";
-				dcterms:modified "2020-01-08"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+				rdfs:comment "The age at which the patient stopped smoking.";
+				dcterms:modified "2020-07-098"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 iasis:lengthOf_longest_irritableEpisode		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"lengthOf_longest_irritableEpisode";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.	
+				rdfs:comment "The length of the longest irritable eposide.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 iasis:severaityOf_irritableEpisode		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"severaityOf_irritableEpisode";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "Severity of the irrutable eposide.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:existenceOf_majorDepressionEpisode	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"existenceOf_majorDepressionEpisode";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.	
+				rdfs:comment "If the patient has suffered from major depression episode.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 iasis:existenceOf_currentModerateDepression	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"existenceOf_currentModerateDepression";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "If the patient is suffering depression currently.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:bipolar_majorDepression_status		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"bipolar_majorDepression_status";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "If the patient is bipolar or suffering from major depression.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:alcohol		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"alcohol";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.	
+				rdfs:comment "If the patient consumes alcohol.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 iasis:alcoholUnitDrunk		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"alcoholUnitDrunk";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "Alcohol unit.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:existenceOf_anxiety_forOneMonthOrLonger		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"existenceOf_anxiety_forOneMonthOrLonger";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.	
+				rdfs:comment "If anxiety has been observed in the patient for one month or longer.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
 iasis:firstDepressionAge		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"firstDepressionAge";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The age of the patient when the first episode of the depression is observed.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:lastDepressionAge		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"lastDepressionAge";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The age of the patient when the last episode of the depression is observed.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:existenceOf_psychoticMedication		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"existenceOf_psychoticMedication";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "If the patient has had psychotic medication.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:existenceOf_maniaOrExcitabilityPeriod		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"existenceOf_maniaOrExcitabilityPeriod";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "If any period of mania or excitability has been observed in the patient.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:depressionRelatedSubstances		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"depressionRelatedSubstances";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The substances that the patients has taken for depression.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:primaryCauseOfDeath		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"primaryCauseOfDeath";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "Primary cause of the death of the patient.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:secondaryCauseOfDeath		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"secondaryCauseOfDeath";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "Secondary cause of the death of the patient.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:mainCauseOfDeath		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"mainCauseOfDeath";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "Main cause of the death of the patient.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:stemiDate		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"stemiDate";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The date of the earliest reported ST-Elevation Miocardial Infarction.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:stemiReportSource		rdf:type	owl:DatatypeProperty;
 				rdfs:label	"stemiReportSource";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
+				rdfs:comment "The source of the earliest reported ST-Elevation Miocardial Infarction.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:nstemiDate	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"nstemiDate";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The date of the earliest reported non-ST-Elevation Miocardial Infarction.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:nstemiReportSource	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"nstemiReportSource";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The source of the earliest reported non-ST-Elevation Miocardial Infarction.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:strokeDate	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"strokeDate";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The date of the earliest reported stroke.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:strokeReportSource	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"strokeReportSource";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The source of the earliest reported stroke.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:ischaemicStrokeReportSource	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"ischaemicStrokeReportSource";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The source of the earliest reported ischaemic stroke.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:intracerebralHaemorrhageDate	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"intracerebralHaemorrhageDate";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The date of the earliest reported intracerebral haemorrhage.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:intracerebralHaemorrhageReportSource	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"intracerebralHaemorrhageReportSource";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The source of the earliest reported intracerebral haemorrhage.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:subarachnoidHaemorrhageDate	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"subarachnoidHaemorrhageDate";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The date of the earliest reported subarachnoid haemorrhage.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:subarachnoidHaemorrhageReportSource	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"subarachnoidHaemorrhageReportSource";
 				rdfs:domain	iasis:DementiaPatient;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The source of the earliest reported subarachnoid haemorrhage.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:hasICD10Annotation	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"hasICD10Annotation";
 				rdfs:domain	iasis:Disorder;
 				rdfs:range	iasis:Annotation;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-22"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "ICD10 annotations for diseases.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:represents	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"represents";
 				rdfs:domain	iasis:Concept;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-22"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "Represents.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:hasHospitalEpisodeObservation	rdf:type	owl:ObjectProperty;
 				rdfs:label	"hasHospitalEpisodeObservation";
 				rdfs:domain	iasis:DPatient;
 				rdfs:range	iasis:HospitalEpisodeObservation;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-26"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "Observations related to the hospital episodes.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:hospitalEpisodeType	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"hospitalEpisodeType";
 				rdfs:domain	iasis:HospitalEpisodeObservation;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-26"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The types of the hospital episodes.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:generalPractitionerPracticeCode	rdf:type	owl:ObjectProperty;
 				rdfs:label	"generalPractitionerPracticeCode";
 				rdfs:domain	iasis:HospitalEpisodeObservation;
 				rdfs:range	iasis:GeneralPractitionerPracticeCode;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-26"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The relation between hospital episode observation and general practitioner practiceCode.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:consultantMainSpeciality	rdf:type	owl:ObjectProperty;
 				rdfs:label	"ConsultantMainSpeciality";
 				rdfs:domain	iasis:HospitalEpisodeObservation;
 				rdfs:range	iasis:ConsultantMainSpeciality;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-26"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The relation between between hospital episode observation and consultant main speciality.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
 iasis:consultantTreatmentSpeciality	rdf:type	owl:ObjectProperty;
 				rdfs:label	"consultantTreatmentSpeciality";
 				rdfs:domain	iasis:HospitalEpisodeObservation;
 				rdfs:range	iasis:ConsultantTreatmentSpeciality;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-26"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The relation between between hospital episode observation and consultant treatment speciality.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
 iasis:arrayIndex	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"arrayIndex";
 				rdfs:domain	iasis:HospitalEpisodeObservation;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-26"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The array indexes.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:diagnosisLevel	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"diagnosisLevel";
 				rdfs:domain	iasis:HospitalEpisodeObservation;
 				rdfs:range	rdfs:Literal;
-				rdfs:comment	".";
-				dcterms:modified "2019-11-26"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				rdfs:comment "The confidence level of the diagnosis.";
+				dcterms:modified "2020-07-09"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
