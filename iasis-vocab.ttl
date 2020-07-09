@@ -751,6 +751,7 @@ iasis:ConsultantTreatmentSpeciality	rdf:type owl:Class;
 			dcterms:modified "2020-06-22"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 			dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+			
 
 ##################################################################################################
 ################################### Properties ###################################################
