@@ -52,7 +52,7 @@ iasis:Test	rdf:type owl:Class;
 iasis:Interaction	rdf:type owl:Class;
 			rdfs:label	"Interaction";
 			rdfs:subClassOf	iasis:Concept;
-			rdfs:comment "Interaction between drogs  and disorder, enzyme, target.";
+			rdfs:comment "Interaction between drugs  and disorder, enzyme, target.";
 			dcterms:modified "2019-11-22"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
