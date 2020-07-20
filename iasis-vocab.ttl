@@ -208,7 +208,9 @@ iasis:COEXISTS_WITH		rdf:type	owl:Class;
 						rdfs:subClassOf iasis:Relation;
 						rdfs:comment	"Shows the coexistential relationship between two CUIs.";
 						dcterms:modified "2020-06-22"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.																																				
+						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+
+						
 				
 
 #######################################################
@@ -1168,6 +1170,22 @@ iasis:hasAuthor	rdf:type	owl:ObjectProperty;
 				rdfs:range	iasis:Author;
 				rdfs:comment	"A publication has authors";
 				dcterms:modified "2020-06-15"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				
+iasis:citedBy	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"citedBy";
+				rdfs:domain	iasis:Publication;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"A publication was cited in other publication";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				
+iasis:citedByLink	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"citedByLink";
+				rdfs:domain	iasis:Publication;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"The link to the publication cited";
+				dcterms:modified "2020-07-10"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 iasis:annotation_isRelatedTo_Disease	rdf:type	owl:ObjectProperty;
@@ -2253,6 +2271,15 @@ iasis:all_AF_Kaviar	rdf:type owl:DatatypeProperty;
 						dcterms:modified "2020-06-30"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+						
+iasis:all_AC_Kaviar	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"all_AC_Kaviar";
+				rdfs:domain	iasis:Variation;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"The allele frequency of the variant in the Kaviar database. http://db.systemsbiology.net/kaviar/";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
 iasis:variant_associatedWith_disease	rdf:type owl:DatatypeProperty;
@@ -4084,8 +4111,24 @@ iasis:alcoholConsumption	rdf:type	owl:DatatypeProperty;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	"The amount of alcohol a patient consumes.";
 				dcterms:modified "2019-07-01"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.				
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 
+iasis:alcoholIntakingFrequency	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"alcoholIntakingFrequency";
+				rdfs:domain	iasis:AlcoholIntakeObservation;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Frequency of alcohol Intaking by the patient";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.				
+
+iasis:alcoholIntakingPeriod	rdf:type	owl:ObjectProperty;
+				rdfs:label	"alcoholIntakingPeriod";
+				rdfs:domain	iasis:AlcoholIntakeObservation;
+				rdfs:range	iasis:Period;
+				rdfs:comment	"Period of alcohol intaking by the patient";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				
 iasis:educationStatus	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"educationStatus";
 				rdfs:domain	iasis:Patient;
@@ -4650,3 +4693,11 @@ iasis:diagnosisLevel	rdf:type	owl:DatatypeProperty;
 				dcterms:modified "2020-07-09"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+				
+iasis:cancerTypePeriod	rdf:type	owl:ObjectProperty;
+				rdfs:label	"cancerTypePeriod";
+				rdfs:domain	iasis:CancerTypeObservation;
+				rdfs:range	iasis:Period;
+				rdfs:comment	"Type cancer period";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
