@@ -4701,3 +4701,35 @@ iasis:cancerTypePeriod	rdf:type	owl:ObjectProperty;
 				rdfs:comment	"Type cancer period";
 				dcterms:modified "2020-07-10"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				
+iasis:completedEducationAge	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"completedEducationAge";
+				rdfs:domain	iasis:CompletedEducationObservation;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Patient's age of studies completion";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				
+iasis:completedEducationPeriod	rdf:type	owl:ObjectProperty;
+				rdfs:label	"completedEducationPeriod";
+				rdfs:domain	iasis:CompletedEducationObservation;
+				rdfs:range	iasis:Period;
+				rdfs:comment	"The patient completed the education period";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				
+iasis:currentTobaccoSmokingPeriod	rdf:type	owl:ObjectProperty;
+				rdfs:label	"currentTobaccoSmokingPeriod";
+				rdfs:domain	iasis:CurrentTobaccoSmokingObservation;
+				rdfs:range	iasis:Period;
+				rdfs:comment	"Period of tobacco smoking (current)";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				
+iasis:dailyNumberOfCigarettesPeriod	rdf:type	owl:ObjectProperty;
+				rdfs:label	"dailyNumberOfCigarettesPeriod";
+				rdfs:domain	iasis:DailyNumberOfCigarettesObservation;
+				rdfs:range	iasis:Period;
+				rdfs:comment	"Period with this daily number of cigarettes";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
