@@ -1127,6 +1127,22 @@ iasis:authorAffiliation	rdf:type	owl:DatatypeProperty;
 				rdfs:comment	"Affiliation of Author";
 				dcterms:modified "2019-05-24"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				
+iasis:publicationType	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"publicationType";
+				rdfs:domain	iasis:Publication;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:publicationTypeName	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"publicationTypeName";
+				rdfs:domain	iasis:PublicationType;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Name of publication type";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
 iasis:annotates	rdf:type	owl:ObjectProperty;
@@ -1316,6 +1332,14 @@ iasis:pNull	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2020-06-22"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 					dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+					
+iasis:rankScore	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"rankScore";
+				rdfs:domain	iasis:Variation;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 iasis:sampleLabel	rdf:type owl:DatatypeProperty;
 					rdfs:label "SampleName";
@@ -1379,7 +1403,7 @@ iasis:legacy_variationID	rdf:type owl:DatatypeProperty;
 					rdfs:label "legacy_variationID";
 					rdfs:domain iasis:Variation;
 				  	rdfs:range rdfs:Literal;
-                  			rdfs:comment "legacy_variation ID.";
+                  			rdfs:comment "Legacy_variation ID.";
 					dcterms:modified "2019-11-26"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
@@ -3343,6 +3367,14 @@ iasis:survivalMonths	rdf:type	owl:DatatypeProperty;
 						rdfs:comment	"Months from diagnosis to death or until the last documented record of the patient.";
 						dcterms:modified "2017-10-04"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+						
+iasis:patientCurrentStatus	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"patientCurrentStatus";
+				rdfs:domain	iasis:LCPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"Current status of Lung Cancer patient (dead, alive_with_cancer, alive_without_cancer, withdrawn of the study)";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 
 iasis:sampleDate	rdf:type	owl:DatatypeProperty;
@@ -5040,6 +5072,14 @@ iasis:hasPlateletCountObservation	rdf:type	owl:ObjectProperty;
 				dcterms:modified "2020-07-10"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 				
+iasis:plateletCountPeriod	rdf:type	owl:ObjectProperty;
+				rdfs:label	"plateletCountPeriod";
+				rdfs:domain	iasis:PlateletCountObservation;
+				rdfs:range	iasis:Period;
+				rdfs:comment	"Period of platelet count";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				
 iasis:hasSecondaryCauseOfDeath	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"hasSecondaryCauseOfDeath";
 				rdfs:domain	iasis:SecondaryCauseOfDeathObservation;
@@ -5224,4 +5264,51 @@ iasis:pastTobaccoSmokingPeriod	rdf:type	owl:ObjectProperty;
 				dcterms:modified "2020-07-10"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
+iasis:secondaryCauseOfDeathPeriod	rdf:type	owl:ObjectProperty;
+				rdfs:label	"secondaryCauseOfDeathPeriod";
+				rdfs:domain	iasis:SecondaryCauseOfDeathObservation;
+				rdfs:range	iasis:Period;
+				rdfs:comment	"Period with the health problem that contributed to the death (how secondary cause)";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:secondaryDiagnosisEpisode	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"secondaryDiagnosisEpisode";
+				rdfs:domain	iasis:DementiaPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"The Dementia patient has a diagnosis of a secondary episode";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:secondaryDiagnosisPeriod	rdf:type	owl:ObjectProperty;
+				rdfs:label	"secondaryDiagnosisPeriod";
+				rdfs:domain	iasis:SecondaryDiagnosisObservation;
+				rdfs:range	iasis:Period;
+				rdfs:comment	"The Dementia patient has a period of a secondary episode diagnosis.";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:smokingStatusPeriod	rdf:type	owl:ObjectProperty;
+				rdfs:label	"smokingStatusPeriod";
+				rdfs:domain	iasis:SmokingStatusObservation;
+				rdfs:range	iasis:Period;
+				rdfs:comment	"Period with specific smoking status."
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:startedSmokingAge	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"startedSmokingAge";
+				rdfs:domain	iasis:StartedSmokingObservation;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"The age of the patient when he started smoking";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:startedSmokingPeriod	rdf:type	owl:ObjectProperty;
+				rdfs:label	"startedSmokingPeriod";
+				rdfs:domain	iasis:StartedSmokingObservation;
+				rdfs:range	iasis:Period;
+				rdfs:comment	"The period when the patient started smoking";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
