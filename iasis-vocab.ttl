@@ -2343,7 +2343,7 @@ iasis:all_AC_Kaviar	rdf:type	owl:DatatypeProperty;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	"The allele frequency of the variant in the Kaviar database. http://db.systemsbiology.net/kaviar/";
 				dcterms:modified "2020-07-10"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 
