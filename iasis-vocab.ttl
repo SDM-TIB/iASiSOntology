@@ -5309,6 +5309,7 @@ iasis:smokingStatusPeriod	rdf:type	owl:ObjectProperty;
 				rdfs:domain	iasis:SmokingStatusObservation;
 				rdfs:range	iasis:Period;
 				rdfs:comment	"Period with specific smoking status."
+				rdfs:comment	"Period with specific smoking status.";
 				dcterms:modified "2020-07-10"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
