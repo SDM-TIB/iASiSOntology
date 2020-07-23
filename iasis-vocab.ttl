@@ -27,12 +27,6 @@ iasis:Relation	rdf:type	owl:Class;
 					dcterms:modified "2017-10-23"^^xsd:date;
 					dcterms:creator <https://en.wikipedia.org/wiki/Mar%C3%ADa-Esther_Vidal>.
 
-iasis:SourceName	rdf:type	owl:Class;
-					rdfs:label	"SourceName";
-					rdfs:comment "Source name.";
-					dcterms:modified "2017-10-23"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/>.
-
 iasis:Image	rdf:type owl:Class;
 			rdfs:label	"MedicalImage";
 			rdfs:subClassOf	iasis:Concept;
@@ -341,7 +335,7 @@ iasis:Protein	rdf:type	owl:Class;
 
 iasis:RBP_RNA_PhysicalInteraction	rdf:type	owl:Class;
 									rdfs:label	"RBP_RNA_PhysicalInteraction";
-									rdfs:subClassOf	iasis:Relation;
+									rdfs:subClassOf	iasis:Interaction;
 									rdfs:comment "Interaction between RNA binding protein (the mediator factor) and RNA. ";
 									dcterms:modified "2018-07-24"^^xsd:date;
 									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
@@ -365,14 +359,6 @@ iasis:Drug	rdf:type	owl:Class;
 			dcterms:modified "2018-07-23"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:NonOncologicalDrug	rdf:type	owl:Class;
-			rdfs:label	"NonOncologicalDrug";
-			rdfs:subClassOf	iasis:Drug;
-			rdfs:comment "A drug no oncological.";
-			dcterms:modified "2018-07-23"^^xsd:date;
-			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-
 iasis:LungCancerDrug	rdf:type	owl:Class;
 			rdfs:label	"LungCancerDrug";
 			rdfs:subClassOf	iasis:Drug;
@@ -380,21 +366,12 @@ iasis:LungCancerDrug	rdf:type	owl:Class;
 			dcterms:modified "2019-05-23"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-
-
 iasis:Phenotype	rdf:type	owl:Class;
 					rdfs:label	"Phenotype";
 					rdfs:subClassOf	iasis:Concept;
 					rdfs:comment "The set of observable characteristics of an individual resulting from the interaction of its genotype with the environment. This class include side effects that result from different drugs.";
 					dcterms:modified "2019-01-30"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:DrugSideEffect rdf:type	owl:Class;
-						rdfs:label	"DrugSideEffect";
-						rdfs:subClassOf	iasis:Concept;
-						rdfs:comment "The SideEffect of Drug ";
-						dcterms:modified "2019-11-26"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 iasis:DrugSideEffectPrediction	rdf:type	owl:Class;
 						rdfs:label	"DrugSideEffectPrediction";
@@ -449,7 +426,7 @@ iasis:DrugDrugPrediction	rdf:type	owl:Class;
 
 iasis:DrugEnzymeInteraction	rdf:type	owl:Class;
 				rdfs:label	"DrugEnzymeInteraction";
-				rdfs:subClassOf	iasis:Relation;
+				rdfs:subClassOf	iasis:Interaction;
 				rdfs:comment "Interactions similar to drug receptor interactions where drugs resemble the natural substrates and bind enzymes.";
 				dcterms:modified "2019-11-26"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
@@ -463,7 +440,7 @@ iasis:DrugEnzymePrediction	rdf:type	owl:Class;
 
 iasis:DrugTargetInteraction	rdf:type	owl:Class;
 				rdfs:label	"DrugTargetInteraction";
-				rdfs:subClassOf	iasis:Relation;
+				rdfs:subClassOf	iasis:Interaction;
 				rdfs:comment "Interactions between chemical compounds and the protein targets in the human body.";
 				dcterms:modified "2019-11-26"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
@@ -483,13 +460,6 @@ iasis:Disorder	rdf:type	owl:Class;
 				dcterms:modified "2020-06-22"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:DrugDisorder	rdf:type	owl:Class;
-				rdfs:label	"DrugDisorder";
-				rdfs:subClassOf	iasis:Concept;
-				rdfs:comment "Drug Disorders!";
-				dcterms:modified "2019-11-11"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
 iasis:Target	rdf:type	owl:Class;
 				rdfs:label	"Target";
 				rdfs:subClassOf	iasis:Concept;
@@ -500,7 +470,7 @@ iasis:Target	rdf:type	owl:Class;
 			
 iasis:DrugDisorderInteraction	rdf:type	owl:Class;
 				rdfs:label	"DrugDisorderInteraction";
-				rdfs:subClassOf	iasis:Concept;
+				rdfs:subClassOf	iasis:Interaction;
 				rdfs:comment "A drug-induced disorder.";
 				dcterms:modified "2019-11-21"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
@@ -618,20 +588,6 @@ iasis:Biomarker	 rdf:type	owl:Class;
 					dcterms:modified "2018-11-22"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:PerformanceObservation   rdf:type      owl:Class;
-					rdfs:label	"PerformanceObservation";
-					rdfs:subClassOf	iasis:Observation;
-					rdfs:comment "Performance status at each examination.";
-					dcterms:modified "2018-11-27"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-iasis:TumorObservation    rdf:type        owl:Class;
-					rdfs:label	"TumorObservation";
-					rdfs:subClassOf	 iasis:Observation;
-					rdfs:comment "Tumor stage at each examination";
-					dcterms:modified "2020-06-15"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
 iasis:ToxicityObservation    rdf:type        owl:Class;
 					rdfs:label	"ToxicityObservation";
 					rdfs:subClassOf	 iasis:Observation;
@@ -645,13 +601,6 @@ iasis:PatientSimilarity   rdf:type owl:Class;
 			rdfs:comment "Similarity between patients";
 			dcterms:modified "2020-06-15"^^xsd:date;
 			dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-iasis:OncologicalSurgeryObservation	rdf:type	owl:Class;
-									rdfs:label	"OncologicalSurgeryObservation";
-									rdfs:subClassOf iasis:Observation;
-									rdfs:comment "Records of patients in clinical notes that are related to oncological surgeries";
-									dcterms:modified "2019-07-02"^^xsd:date;
-									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:OncologicalSurgery	rdf:type	owl:Class;
 							rdfs:label	"OncologicalSurgery";
@@ -984,10 +933,10 @@ iasis:annLabel_SPA	rdf:type	owl:DatatypeProperty;
 				dcterms:modified "2019-01-30"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:provenance	rdf:type	owl:ObjectProperty;
+iasis:provenance	rdf:type	owl:DatatypeProperty;
 					rdfs:label	"provenance";
 					rdfs:domain     iasis:Concept;
-					rdfs:range	iasis:SourceName;
+					rdfs:range	rdfs:Literal;
 					rdfs:comment	"The name of the source from which the concept is extracted or derived";
 					dcterms:modified "2017-11-23"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
@@ -1069,14 +1018,6 @@ iasis:authorName	rdf:type	owl:DatatypeProperty;
 				rdfs:range	rdfs:Literal;
 				rdfs:comment	"Name of Author";
 				dcterms:modified "2019-05-24"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-iasis:authorList	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"authorList";
-				rdfs:domain	iasis:Publication;
-				rdfs:range	rdfs:Literal;
-				rdfs:comment	"List of Authors";
-				dcterms:modified "2019-06-06"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
 iasis:journal	rdf:type	owl:DatatypeProperty;
@@ -2091,15 +2032,6 @@ iasis:variation_has_phenotype	rdf:type owl:ObjectProperty;
 				dcterms:modified "2020-06-22"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:dbsnpID	rdf:type owl:DatatypeProperty;
-						rdfs:label	"dbsnpID";
-						rdfs:domain iasis:Variation;
-               					rdfs:range rdfs:Literal;
-						rdfs:comment	"ID of dbsnp";
-						dcterms:modified "2020-06-22"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>;
-						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
 iasis:variant_chromosome	rdf:type owl:DatatypeProperty;
 											rdfs:label	"variant_chromosome";
 											rdfs:domain iasis:Variation;
@@ -2580,7 +2512,6 @@ iasis:variant_isObservedIn_SolidBiopsy	rdf:type owl:ObjectProperty;
 						dcterms:modified "2019-06-17"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-
 iasis:variant_dbsnpLink	rdf:type owl:ObjectProperty;
 						rdfs:label	"variant_dbsnpLink";
 						rdfs:domain iasis:Variation;
@@ -2621,16 +2552,6 @@ iasis:clinicalSignificance	rdf:type owl:DatatypeProperty;
 						dcterms:modified "2020-06-24"^^xsd:date;
 						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>;
 						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-iasis:clinicalSignificanceLabel	rdf:type owl:DatatypeProperty;
-						rdfs:label	"clinicalSignificanceLabel";
-						rdfs:domain iasis:Variation;
-               					rdfs:range rdfs:Literal;
-						rdfs:comment	"Name of Clinical significance";
-						dcterms:modified "2020-06-24"^^xsd:date;
-						dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>;
-						dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
 
 iasis:geneticTest	rdf:type owl:DatatypeProperty;
 						rdfs:label	"geneticTest";
@@ -2721,22 +2642,6 @@ iasis:isPrescribedFor	rdf:type owl:ObjectProperty;
 					dcterms:modified "2019-05-23"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:drugDrugInteraction_drugBank	rdf:type owl:ObjectProperty;
-					rdfs:label "drugDrugInteraction_drugBank";
-					rdfs:domain iasis:Drug;
-				  	rdfs:range iasis:Drug;
-                  			rdfs:comment "Interactions between drugs from DrugBank.";
-					dcterms:modified "2020-06-24"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-iasis:drugDrugInteraction_pubMed	rdf:type owl:ObjectProperty;
-					rdfs:label "drugDrugInteraction_pubMed";
-					rdfs:domain iasis:Drug;
-				  	rdfs:range iasis:Drug;
-                  			rdfs:comment "Interactions between drugs from PubMed.";
-					dcterms:modified "2020-06-24"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
 iasis:interactor1	rdf:type owl:ObjectProperty;
 					rdfs:label "interactor1";
 					rdfs:domain iasis:Interaction;
@@ -2787,65 +2692,6 @@ iasis:enzymeLabel	rdf:type owl:DatatypeProperty;
 					dcterms:modified "2018-09-26"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:drugDrugInteraction	rdf:type	owl:ObjectProperty;
-								rdfs:label	"drug_interactsWith_drug";
-								rdfs:domain	iasis:Drug;
-								rdfs:range	iasis:Drug;
-								rdfs:comment	"Represents drug-drug interactions.";
-								dcterms:modified "2018-07-24"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-
-iasis:drug_isPredictedToInteractWith_drug	rdf:type	owl:ObjectProperty;
-											rdfs:label	"drug_isPredictedToInteractWith_drug";
-											rdfs:domain	iasis:Drug;
-											rdfs:range	iasis:Drug;
-											rdfs:comment	"Predicts drug-drug interactions using semEP.";
-											dcterms:modified "2018-07-24"^^xsd:date;
-											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:drug_isPredictedToInteractsWith_enzyme	rdf:type	owl:ObjectProperty;
-											rdfs:label	"drug_isPredictedToInteractsWith_enzyme";
-											rdfs:domain	iasis:Drug;
-											rdfs:range	iasis:Enzyme;
-											rdfs:comment	"Predicts drug-enzyme interactions using semEP.";
-											dcterms:modified "2019-01-30"^^xsd:date;
-											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.											
-
-iasis:drug_interactsWith_enzyme	rdf:type	owl:ObjectProperty;
-								rdfs:label	"drug_interactsWith_enzyme";
-								rdfs:domain	iasis:Drug;
-								rdfs:range	iasis:Enzyme;
-								rdfs:comment	"Represents drug-enzyme (as target) interactions.";
-								dcterms:modified "2018-07-24"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-
-iasis:drug_isPredictedToInteractWith_enzyme	rdf:type	owl:ObjectProperty;
-											rdfs:label	"drug_isPredictedToInteractWith_enzyme";
-											rdfs:domain	iasis:Drug;
-											rdfs:range	iasis:Enzyme;
-											rdfs:comment	"Predicts drug-enzyme interactions using semEP.";
-											dcterms:modified "2018-07-24"^^xsd:date;
-											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:drug_interactsWith_protein	rdf:type	owl:ObjectProperty;
-									rdfs:label	"drug_interactsWith_protein";
-									rdfs:domain	iasis:Drug;
-									rdfs:range	iasis:Protein;
-									rdfs:comment	"Represents drug-protein (as target) interactions.";
-									dcterms:modified "2018-07-24"^^xsd:date;
-									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-
-iasis:drug_isPredictedToHave_sideEffect	rdf:type	owl:ObjectProperty;
-										rdfs:label	"drug_isPredictedToHave_sideEffect";
-										rdfs:domain	iasis:Drug;
-										rdfs:range	iasis:Phenotype;
-										rdfs:comment	"Predicts drug-sideEffect relations using semEP.";
-										dcterms:modified "2018-07-24"^^xsd:date;
-										dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
 iasis:drug_isRelatedTo_dse	rdf:type	owl:ObjectProperty;
 							rdfs:label	"drug_isRelatedTo_dse";
 							rdfs:domain	iasis:Drug;
@@ -2885,23 +2731,6 @@ iasis:externalLink	rdf:type owl:DatatypeProperty;
                   			rdfs:comment "Link to external resources.";
 					dcterms:modified "2018-09-26"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:drugDrugInteraction_noCYP	rdf:type	owl:ObjectProperty;
-								rdfs:label	"drugDrugInteraction_noCYP";
-								rdfs:domain	iasis:Drug;
-								rdfs:range	iasis:Drug;
-								rdfs:comment	"Interaction between drugs where no CYP enzyme is shared between the drugs (NCRDs).";
-								dcterms:modified "2018-10-23"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:drugDrugInteraction_sameCYP	rdf:type	owl:ObjectProperty;
-								rdfs:label	"drugDrugInteraction_sameCYP";
-								rdfs:domain	iasis:Drug;
-								rdfs:range	iasis:Drug;
-								rdfs:comment	"Interaction between drugs where both drugs are metabolized by the same CY.";
-								dcterms:modified "2018-10-23"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
 
 iasis:effectLabel	rdf:type	owl:DatatypeProperty;
 								rdfs:label	"effectLabel";
@@ -3007,32 +2836,6 @@ iasis:disorderLabel	rdf:type	owl:DatatypeProperty;
 					dcterms:modified "2018-10-30"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:disorderLabel_SPA	rdf:type	owl:DatatypeProperty;
-					rdfs:label "disorderLabel_SPA";
-					rdfs:domain iasis:Disorder;
-				  	rdfs:range rdfs:Literal;
-                  			rdfs:comment "Disorder Label_SPA.";
-					dcterms:modified "2018-11-25"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-iasis:disorderID	rdf:type	owl:DatatypeProperty;
-					rdfs:label "disorderID";
-					rdfs:domain iasis:Disorder;
-				  	rdfs:range rdfs:Literal;
-                  			rdfs:comment "Disorder ID.";
-					dcterms:modified "2018-11-25"^^xsd:date;
-					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-
-iasis:disorder_has_indication	rdf:type	owl:ObjectProperty;
-								rdfs:label	"disorder_has_indication";
-								rdfs:domain	iasis:Disorder;
-								rdfs:range	iasis:Drug;
-								rdfs:comment	"Disorder has indication drug";
-								dcterms:modified "2020-06-24"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>;
-								dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
 iasis:biomarker_has_indication	rdf:type	owl:ObjectProperty;
 								rdfs:label	"biomarker_has_indication";
 								rdfs:domain	iasis:Biomarker;
@@ -3049,24 +2852,6 @@ iasis:tumorStage_has_indication	rdf:type	owl:ObjectProperty;
 								dcterms:modified "2020-06-23"^^xsd:date;
 								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>;
 								dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-iasis:drugTargetInteraction	rdf:type	owl:ObjectProperty;
-								rdfs:label	"drugTargetInteraction";
-								rdfs:subPropertyOf	iasis:drugTargetInteraction;
-								rdfs:domain	iasis:Drug;
-								rdfs:range	iasis:Target;
-								rdfs:comment	"Interaction between drug and its target.";
-								dcterms:modified "2018-10-30"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:drugEnzymeInteraction	rdf:type	owl:ObjectProperty;
-								rdfs:label	"drugEnzymeInteraction";
-								rdfs:subPropertyOf	iasis:drugEnzymeInteraction;
-								rdfs:domain	iasis:Drug;
-								rdfs:range	iasis:Enzyme;
-								rdfs:comment	"Interaction between the drug and the enzyme.";
-								dcterms:modified "2018-10-30"^^xsd:date;
-								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:drug_isPredictedToInteractsWith_target	rdf:type	owl:ObjectProperty;
 											rdfs:label	"drug_isPredictedToInteractsWith_target";
@@ -3582,16 +3367,6 @@ iasis:genderLabel_ENG        rdf:type     owl:DatatypeProperty;
 							dcterms:modified "2019-01-30"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-
-iasis:chemotherapyList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"chemotherapyList";
-							rdfs:domain	iasis:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment "List of chemotherapy received by the patient.";
-							dcterms:modified "2020-06-26"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-
 iasis:immunotherapyList      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"immunotherapyList";
 							rdfs:domain	iasis:LCPatient;
@@ -3609,27 +3384,11 @@ iasis:tkiList	rdf:type     owl:DatatypeProperty;
 					dcterms:modified "2020-06-26"^^xsd:date;
 					dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
-iasis:comorbidityList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"comorbidityList";
-							rdfs:domain	iasis:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment "The patient's comorbidities list.";
-							dcterms:modified "2020-06-26"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
 iasis:drugGroupList      rdf:type     owl:DatatypeProperty;
 							rdfs:label	"drugGroupList";
 							rdfs:domain	iasis:LCPatient;
 							rdfs:range	rdfs:Literal;
 							rdfs:comment "List of drugs group received by the patient.";
-							dcterms:modified "2020-06-26"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-iasis:biopsyList      rdf:type     owl:DatatypeProperty;
-							rdfs:label	"biopsyList";
-							rdfs:domain	iasis:LCPatient;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment "List of biopsy's results of the patient.";
 							dcterms:modified "2020-06-26"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
@@ -3750,29 +3509,11 @@ iasis:placeOfDeath	rdf:type        owl:DatatypeProperty;
 
 iasis:hasOncologicalSurgery	rdf:type        owl:ObjectProperty;	
 											rdfs:label	"hasOncologicalSurgery";
-											rdfs:domain	iasis:OncologicalSurgeryObservation;
+											rdfs:domain	iasis:LCPatient;
 											rdfs:range	iasis:OncologicalSurgery;
 											rdfs:comment "A relation between each oncological surgery observation and related data.";
 											dcterms:modified "2020-07-09"^^xsd:date;
 											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-iasis:hasOncologicalSurgeryObservation	rdf:type        owl:ObjectProperty;	
-											rdfs:label	"hasOncologicalSurgeryObservation";
-											rdfs:domain	iasis:LCPatient;
-											rdfs:range	iasis:OncologicalSurgeryObservation;
-											rdfs:comment "Patients observations regarding surgeries on oncological sites.";
-											dcterms:modified "2020-07-09"^^xsd:date;
-											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos//>;
-											dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-
-iasis:existenceOf_complication	rdf:type        owl:DatatypeProperty;	
-												rdfs:label	"existenceOf_complication";
-												rdfs:domain	iasis:OncologicalSurgeryObservation;
-												rdfs:range	rdfs:Literal;
-												rdfs:comment	"If there exists any complication during the surgery of the patient (true/ false).";
-												dcterms:modified "2019-07-02"^^xsd:date;
-												dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:oncologicalSurgeryLabel_ENG       rdf:type     owl:DatatypeProperty;
 										rdfs:label	"oncologicalSurgeryLabel_ENG";
@@ -3956,15 +3697,6 @@ iasis:bodyPartExaminedLabel	rdf:type	owl:DatatypeProperty;
 							rdfs:comment "Name of the body part examined";
 							dcterms:modified "2020-06-26"^^xsd:date;
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
-iasis:diagnosisLabel    rdf:type	owl:DatatypeProperty;
-							rdfs:label	"diagnosisLabel";
-							rdfs:domain	iasis:Diagnosis;
-							rdfs:range	rdfs:Literal;
-							rdfs:comment "Diagnosis label.";
-							dcterms:modified "2020-06-26"^^xsd:date;
-							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
-
 
 iasis:hasImage       rdf:type     owl:ObjectProperty;
 							rdfs:label	"hasImage";
@@ -4785,16 +4517,6 @@ iasis:consultantTreatmentSpeciality	rdf:type	owl:ObjectProperty;
 				rdfs:domain	iasis:HospitalEpisodeObservation;
 				rdfs:range	iasis:ConsultantTreatmentSpeciality;
 				rdfs:comment "The relation between between hospital episode observation and consultant treatment speciality.";
-				dcterms:modified "2020-07-09"^^xsd:date;
-				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
-				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
-
-
-iasis:arrayIndex	rdf:type	owl:DatatypeProperty;
-				rdfs:label	"arrayIndex";
-				rdfs:domain	iasis:HospitalEpisodeObservation;
-				rdfs:range	rdfs:Literal;
-				rdfs:comment "The array indexes.";
 				dcterms:modified "2020-07-09"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 				dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
