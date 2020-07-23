@@ -4373,6 +4373,14 @@ iasis:hasMainDiagnosisObservation	rdf:type	owl:ObjectProperty;
 				dcterms:modified "2020-07-10"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
 
+iasis:iasis:mainDiagnosisPeriod	rdf:type	owl:ObjectProperty;
+				rdfs:label	"mainDiagnosisPeriod";
+				rdfs:domain	iasis:MainDiagnosisObservation;
+				rdfs:range	iasis:iasis:Period;
+				rdfs:comment	"Represents the period of the main diagnosis of the dementia Patient.";
+				dcterms:modified "2020-07-23"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
+
 iasis:hasMisdiagnosisEpisodeDuration	rdf:type	owl:DatatypeProperty;
 				rdfs:label	"hasMisdiagnosisEpisodeDuration";
 				rdfs:domain	iasis:MisdiagnosisObservation;
@@ -4614,6 +4622,14 @@ iasis:mainDiagnosisEpisode	rdf:type	owl:DatatypeProperty;
 				rdfs:comment	"The Dementia patient has the main diagnosis episode";
 				dcterms:modified "2020-07-10"^^xsd:date;
 				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+
+iasis:mainDiagnosisEpisode	rdf:type	owl:DatatypeProperty;
+				rdfs:label	"mainDiagnosisEpisode";
+				rdfs:domain	iasis:DementiaPatient;
+				rdfs:range	rdfs:Literal;
+				rdfs:comment	"The Dementia patient has the main diagnosis episode";
+				dcterms:modified "2020-07-10"^^xsd:date;
+				dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.				
 				
 iasis:nonCancerIllnessPeriod	rdf:type	owl:ObjectProperty;
 				rdfs:label	"nonCancerIllnessPeriod";
