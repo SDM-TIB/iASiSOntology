@@ -1789,7 +1789,7 @@ iasis:transcriptID	rdf:type owl:DatatypeProperty;
 			        							rdfs:range rdfs:Literal;
 											rdfs:comment	"Represents the Ensemble ID of transcript.";
 											dcterms:modified "2018-11-27"^^xsd:date;
-											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>.
+											dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-isabel-castellanos/>;
 											dcterms:contributor <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
 iasis:transcript_isRelatedTo_gene	rdf:type	owl:ObjectProperty;
