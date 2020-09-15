@@ -591,7 +591,28 @@ iasis:OncologicalTreatmentLine	rdf:type	owl:Class;
 								dcterms:modified "2020-06-15"^^xsd:date;
 								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
+iasis:ImmunotherapyDrug	rdf:type	owl:Class;
+							rdfs:label	"ImmunotherapyDrug";
+							rdfs:subClassOf	iasis:Drug;
+							rdfs:comment "An immunotherapy drug which is prescribed as the Lung Cancer treatment.";
+							dcterms:modified "2020-09-15"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
+iasis:NonOncologicalDrug	rdf:type	owl:Class;
+							rdfs:label	"NonOncologicalDrug";
+							rdfs:subClassOf	iasis:Drug;
+							rdfs:comment "A non-oncological drug which is prescribed to the patient as the treatment of a disorder other than lung cancer.";
+							dcterms:modified "2020-09-15"^^xsd:date;
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+
+iasis:TkiDrug	rdf:type	owl:Class;
+							rdfs:label	"TkiDrug";
+							rdfs:subClassOf	iasis:Drug;
+							rdfs:comment "Represents TKIs or Tyrosine kinase inhibitors that are type of targeted therapy.";
+							dcterms:modified "2020-09-15"^^xsd:date;
+							prv:File "tkiList.ttl";
+							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
+														
 #######################################################
 ################## Clinical Images ####################
 ####################################################### 
