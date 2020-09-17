@@ -2911,11 +2911,11 @@ iasis:existenceOf_immunotherapy	rdf:type	owl:DatatypeProperty;
 								dcterms:modified "2019-07-02"^^xsd:date;
 								dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
-iasis:existenceOf_antiangiogentic	rdf:type	owl:DatatypeProperty;
-									rdfs:label	"existenceOf_antiangiogentic";
+iasis:existenceOf_antiangiogenic	rdf:type	owl:DatatypeProperty;
+									rdfs:label	"existenceOf_antiangiogenic";
 									rdfs:domain	iasis:LCPatient;
 									rdfs:range	rdfs:Literal;
-									rdfs:comment	"Whether the patient has received antiangiogentic oncology treatment (true/ false/ not studied).";
+									rdfs:comment	"Whether the patient has received angiogenesis inhibitor treatment (true/ false/ not studied).";
 									dcterms:modified "2019-07-02"^^xsd:date;
 									dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.
 
