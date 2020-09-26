@@ -610,7 +610,6 @@ iasis:TkiDrug	rdf:type	owl:Class;
 							rdfs:subClassOf	iasis:Drug;
 							rdfs:comment "Represents TKIs or Tyrosine kinase inhibitors that are type of targeted therapy.";
 							dcterms:modified "2020-09-15"^^xsd:date;
-							prv:File "tkiList.ttl";
 							dcterms:creator <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/>.	
 														
 #######################################################
